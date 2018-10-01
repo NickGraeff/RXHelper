@@ -243,34 +243,39 @@
         <scene sceneID="xkv-7e-c4n">
             <objects>
                 <viewController title="StartViewController" id="KTe-MX-zU8" customClass="StartViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qHQ-pB-Mpg">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="qHQ-pB-Mpg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-PJ-x1v">
-                                <rect key="frame" x="145" y="475" width="84" height="54"/>
+                                <rect key="frame" x="145" y="462" width="84" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.36862745098039218" green="0.61176470588235299" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="StartToLoginButton:" destination="KTe-MX-zU8" eventType="touchUpInside" id="VAh-OJ-e65"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logos" translatesAutoresizingMaskIntoConstraints="NO" id="eJ6-86-Owr">
+                                <rect key="frame" x="38" y="48" width="299" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xo9-Np-Aee">
-                                <rect key="frame" x="128" y="521" width="119" height="54"/>
+                                <rect key="frame" x="128" y="524" width="119" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.36862745098039218" green="0.61176470588235299" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="StartToSignUpButton:" destination="KTe-MX-zU8" eventType="touchUpInside" id="be3-eo-wz9"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eJ6-86-Owr">
-                                <rect key="frame" x="67" y="98" width="240" height="279"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.36862745099999999" green="0.61176470589999998" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="peC-Je-2Jo"/>
                     </view>
                     <connections>
@@ -284,8 +289,11 @@
             <point key="canvasLocation" x="340" y="52.623688155922046"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logos" width="709" height="696"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zpe-xU-BXU"/>
-        <segue reference="upD-6D-qgR"/>
+        <segue reference="Js2-Gy-f94"/>
     </inferredMetricsTieBreakers>
 </document>
