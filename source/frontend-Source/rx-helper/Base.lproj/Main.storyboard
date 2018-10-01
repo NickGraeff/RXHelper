@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ux2-Nw-ql8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="53"/>
+            <point key="canvasLocation" x="4218" y="53"/>
         </scene>
         <!--SignUpViewController-->
         <scene sceneID="H8D-Uy-cdb">
@@ -187,13 +187,57 @@
                         <outlet property="email" destination="eHa-tP-k91" id="7bL-8r-rlF"/>
                         <outlet property="password" destination="8Fp-v5-77y" id="tjJ-uT-Eq0"/>
                         <outlet property="passwordConfirm" destination="rS5-Kw-qWX" id="28u-Tg-b4c"/>
-                        <segue destination="r6z-YU-3G0" kind="presentation" identifier="SignUpToHome" id="Mf6-0O-ydb"/>
                         <segue destination="KTe-MX-zU8" kind="showDetail" identifier="SignUpToStart" id="zpe-xU-BXU"/>
+                        <segue destination="wiY-8U-qgr" kind="presentation" identifier="SignUpToGetInfo" id="qDt-2S-P05"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bWa-9B-3FR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1585" y="704"/>
+        </scene>
+        <!--GetInfoViewController-->
+        <scene sceneID="YQg-SS-CIH">
+            <objects>
+                <viewController title="GetInfoViewController" id="wiY-8U-qgr" customClass="GetInfoViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Csn-2a-87G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Enter Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6s8-OY-o6l">
+                                <rect key="frame" x="16" y="132" width="307" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdQ-0U-iDx">
+                                <rect key="frame" x="16" y="176" width="307" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEv-03-p1d">
+                                <rect key="frame" x="141" y="393" width="68" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="EnterAction:" destination="wiY-8U-qgr" eventType="touchUpInside" id="kUK-7t-EpZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ajz-Bx-eDL"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="BdQ-0U-iDx" id="heF-Vn-YnQ"/>
+                        <segue destination="r6z-YU-3G0" kind="presentation" identifier="GetInfoToHome" id="upD-6D-qgR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEJ-oe-0zM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2624.8000000000002" y="703.89805097451278"/>
         </scene>
         <!--StartViewController-->
         <scene sceneID="xkv-7e-c4n">
@@ -241,7 +285,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="D6K-L1-M7i"/>
-        <segue reference="Js2-Gy-f94"/>
+        <segue reference="zpe-xU-BXU"/>
+        <segue reference="upD-6D-qgR"/>
     </inferredMetricsTieBreakers>
 </document>
