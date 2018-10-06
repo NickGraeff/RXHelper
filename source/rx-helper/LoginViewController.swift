@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseUI
 
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if Auth.auth().currentUser != nil {
+         performSegue(withIdentifier: "toHome", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,8 +64,6 @@ extension LoginViewController: FUIAuthDelegate {
         performSegue(withIdentifier: "toHome", sender: self)
     }
 }
-
-
 
 
 
