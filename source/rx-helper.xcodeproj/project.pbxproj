@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		B550E0C021628F1B0042B389 /* GetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B550E0BF21628F1B0042B389 /* GetInfoViewController.swift */; };
-		B55ED52A215BFD710087D341 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55ED529215BFD710087D341 /* LoginViewController.swift */; };
-		B55ED52C215BFD8E0087D341 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55ED52B215BFD8E0087D341 /* SignUpViewController.swift */; };
-		B55ED52E215BFDCF0087D341 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55ED52D215BFDCF0087D341 /* HomeViewController.swift */; };
-		B5F6EB9E21656F0300572C17 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EB9D21656F0300572C17 /* StartViewController.swift */; };
+		B5F6EBA42168A2D900572C17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA32168A2D900572C17 /* LoginViewController.swift */; };
+		B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA52168A49D00572C17 /* HomeViewController.swift */; };
 		C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61566C42150DF6E0031A3D4 /* AppDelegate.swift */; };
 		C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566C82150DF6E0031A3D4 /* Main.storyboard */; };
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
@@ -22,12 +19,9 @@
 
 /* Begin PBXFileReference section */
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
-		B550E0BF21628F1B0042B389 /* GetInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInfoViewController.swift; sourceTree = "<group>"; };
-		B55ED529215BFD710087D341 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B55ED52B215BFD8E0087D341 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		B55ED52D215BFDCF0087D341 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
-		B5F6EB9D21656F0300572C17 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		B5F6EBA32168A2D900572C17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B5F6EBA52168A49D00572C17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C61566C12150DF6E0031A3D4 /* rx-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61566C42150DF6E0031A3D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C61566C92150DF6E0031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,11 +86,8 @@
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
 				C61566C42150DF6E0031A3D4 /* AppDelegate.swift */,
-				B5F6EB9D21656F0300572C17 /* StartViewController.swift */,
-				B55ED52D215BFDCF0087D341 /* HomeViewController.swift */,
-				B55ED52B215BFD8E0087D341 /* SignUpViewController.swift */,
-				B55ED529215BFD710087D341 /* LoginViewController.swift */,
-				B550E0BF21628F1B0042B389 /* GetInfoViewController.swift */,
+				B5F6EBA32168A2D900572C17 /* LoginViewController.swift */,
+				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
 				C61566D02150DF730031A3D4 /* Info.plist */,
@@ -117,6 +108,7 @@
 				C61566BE2150DF6E0031A3D4 /* Frameworks */,
 				C61566BF2150DF6E0031A3D4 /* Resources */,
 				D37757F43FA3824B6CA66E09 /* [CP] Embed Pods Frameworks */,
+				460267A0C9D78ACE977E838F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +172,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		460267A0C9D78ACE977E838F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8D42342E3B0AF404B0418451 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,12 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B55ED52E215BFDCF0087D341 /* HomeViewController.swift in Sources */,
-				B55ED52A215BFD710087D341 /* LoginViewController.swift in Sources */,
+				B5F6EBA42168A2D900572C17 /* LoginViewController.swift in Sources */,
 				C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */,
-				B550E0C021628F1B0042B389 /* GetInfoViewController.swift in Sources */,
-				B55ED52C215BFD8E0087D341 /* SignUpViewController.swift in Sources */,
-				B5F6EB9E21656F0300572C17 /* StartViewController.swift in Sources */,
+				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
