@@ -1,2 +1,4 @@
 source/Pods
-source/rx-helper.xcworkspace/xcuserdata/Brena.xcuserdatad/UserInterfaceState.xcuserstate
+*.xcuserstate
+source/rx-helper.xcworkspace/
+
