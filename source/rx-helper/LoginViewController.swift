@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
         
         guard authUI != nil else {
             //Log error
+            print("Firebase failed to launch authentication")
             return
         }
         
