@@ -11,12 +11,12 @@ import Firebase
 import FirebaseUI
 
 class LoginViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if Auth.auth().currentUser != nil {
-         performSegue(withIdentifier: "toHome", sender: self)
+            performSegue(withIdentifier: "toHome", sender: self)
         }
     }
 
@@ -32,7 +32,6 @@ class LoginViewController: UIViewController {
         
         guard authUI != nil else {
             //Log error
-            print("Firebase failed to launch authentication")
             return
         }
         

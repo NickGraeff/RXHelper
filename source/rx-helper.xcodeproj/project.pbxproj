@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385A6DC9216B74BB00E08E66 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A6DC8216B74BB00E08E66 /* Prescription.swift */; };
+		385A6DCB216B777C00E08E66 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A6DCA216B777C00E08E66 /* PrescriptionTableViewCell.swift */; };
+		385A6DCD216B7AE600E08E66 /* PrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A6DCC216B7AE600E08E66 /* PrescriptionTableViewController.swift */; };
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B5F6EBA42168A2D900572C17 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA32168A2D900572C17 /* LoginViewController.swift */; };
 		B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA52168A49D00572C17 /* HomeViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		385A6DC8216B74BB00E08E66 /* Prescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
+		385A6DCA216B777C00E08E66 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		385A6DCC216B7AE600E08E66 /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
 		B5F6EBA32168A2D900572C17 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 			children = (
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
+				385A6DCC216B7AE600E08E66 /* PrescriptionTableViewController.swift */,
+				385A6DCA216B777C00E08E66 /* PrescriptionTableViewCell.swift */,
+				385A6DC8216B74BB00E08E66 /* Prescription.swift */,
 				C61566C42150DF6E0031A3D4 /* AppDelegate.swift */,
 				B5F6EBA32168A2D900572C17 /* LoginViewController.swift */,
 				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
@@ -240,8 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5F6EBA42168A2D900572C17 /* LoginViewController.swift in Sources */,
+				385A6DCB216B777C00E08E66 /* PrescriptionTableViewCell.swift in Sources */,
 				C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */,
 				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
+				385A6DC9216B74BB00E08E66 /* Prescription.swift in Sources */,
+				385A6DCD216B7AE600E08E66 /* PrescriptionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
