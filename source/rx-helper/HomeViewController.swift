@@ -7,13 +7,28 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var welcomeLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+
+        //Display welcome users.displayName
+        welcomeLabel.text = "Welcome " + getUserDisplayName()
+    }
+
+    func getUserDisplayName() -> String {
+        let user = Auth.auth().currentUser
+        if user != nil {
+            return (user?.displayName!)!
+        }
+        return ("Error: No current user logged in")
     }
 
     override func didReceiveMemoryWarning() {

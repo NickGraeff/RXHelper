@@ -57,10 +57,11 @@ extension LoginViewController: FUIAuthDelegate {
             //Log error
             return
         }
-        
+
         //get uid
         //authDataResult?.user.uid
-        
+
+
         performSegue(withIdentifier: "toHome", sender: self)
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oKY-Nb-Pfz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oKY-Nb-Pfz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,9 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnJ-9K-Znp">
-                                <rect key="frame" x="145" y="532" width="84" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="Logos" translatesAutoresizingMaskIntoConstraints="NO" id="jgC-Bv-DAq">
+                                <rect key="frame" x="37.5" y="77" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jgC-Bv-DAq" secondAttribute="height" multiplier="1:1" id="MC8-TD-6EB"/>
+                                    <constraint firstAttribute="width" constant="300" id="f5b-Lx-F9q"/>
+                                    <constraint firstAttribute="height" constant="300" id="ipV-ox-5l0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnJ-9K-Znp">
+                                <rect key="frame" x="145.5" y="532" width="84" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.36862745098039218" green="0.61176470588235299" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -29,12 +36,19 @@
                                     <action selector="loginButton:" destination="oKY-Nb-Pfz" eventType="touchUpInside" id="Byy-eJ-q4u"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Logos" translatesAutoresizingMaskIntoConstraints="NO" id="jgC-Bv-DAq">
-                                <rect key="frame" x="37" y="77" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FUz-Ga-qzH" firstAttribute="trailing" secondItem="JnJ-9K-Znp" secondAttribute="trailing" constant="145.5" id="HvH-Kn-C0R"/>
+                            <constraint firstItem="JnJ-9K-Znp" firstAttribute="centerX" secondItem="jgC-Bv-DAq" secondAttribute="centerX" id="HxQ-z5-Ihf"/>
+                            <constraint firstItem="JnJ-9K-Znp" firstAttribute="centerX" secondItem="KX1-9E-qGk" secondAttribute="centerX" id="a9p-ip-i23"/>
+                            <constraint firstItem="jgC-Bv-DAq" firstAttribute="top" secondItem="FUz-Ga-qzH" secondAttribute="top" constant="57" id="fLW-CW-7Rv"/>
+                            <constraint firstItem="FUz-Ga-qzH" firstAttribute="bottom" secondItem="JnJ-9K-Znp" secondAttribute="bottom" constant="81" id="ihy-aS-2ZV"/>
+                            <constraint firstItem="JnJ-9K-Znp" firstAttribute="leading" secondItem="FUz-Ga-qzH" secondAttribute="leading" constant="145.5" id="nh6-fV-4lb"/>
+                            <constraint firstItem="JnJ-9K-Znp" firstAttribute="centerX" secondItem="KX1-9E-qGk" secondAttribute="centerX" id="oVb-fJ-yN6"/>
+                            <constraint firstItem="JnJ-9K-Znp" firstAttribute="centerY" secondItem="KX1-9E-qGk" secondAttribute="centerY" constant="225.5" id="udb-cB-iJa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FUz-Ga-qzH"/>
                     </view>
                     <connections>
                         <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="WYD-lX-O6T"/>
@@ -52,10 +66,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-X0-MVX">
-                                <rect key="frame" x="117" y="183" width="141" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="QUc-Be-TUA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,10 +77,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0ZH-v6-Ril"/>
                     </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="QUc-Be-TUA" id="zzZ-f2-Aqx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvu-t3-MUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4130" y="233"/>
+            <point key="canvasLocation" x="4128.8000000000002" y="232.53373313343329"/>
         </scene>
     </scenes>
     <resources>
