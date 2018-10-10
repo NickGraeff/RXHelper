@@ -15,13 +15,21 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
 
+    @IBOutlet var homeView: UIView!
+    @IBOutlet weak var homeSegmentedControl: UISegmentedControl!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         //Display welcome users.displayName
         welcomeLabel.text = "Welcome " + getUserDisplayName()
+        welcomeLabel.isHidden = true;
     }
+
+    @IBAction func scTapped(_ sender: Any) {
+    }
+
 
     func getUserDisplayName() -> String {
         let user = Auth.auth().currentUser

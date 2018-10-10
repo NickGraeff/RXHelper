@@ -67,17 +67,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="QUc-Be-TUA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="152" width="375" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WnO-NH-9SA">
+                                <rect key="frame" x="17" y="87" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="All"/>
+                                    <segment title="Taken Today"/>
+                                    <segment title="Upcoming"/>
+                                    <segment title="Missed"/>
+                                </segments>
+                                <connections>
+                                    <action selector="scTapped:" destination="qie-E2-2wT" eventType="valueChanged" id="Mfd-mt-Arj"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0ZH-v6-Ril"/>
                     </view>
                     <connections>
+                        <outlet property="homeSegmentedControl" destination="WnO-NH-9SA" id="egp-Ms-Fl4"/>
+                        <outlet property="homeView" destination="CSW-yU-nmw" id="XaD-FN-J2v"/>
                         <outlet property="welcomeLabel" destination="QUc-Be-TUA" id="zzZ-f2-Aqx"/>
                     </connections>
                 </viewController>
