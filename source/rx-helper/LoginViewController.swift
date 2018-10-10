@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         if Auth.auth().currentUser != nil {
-         performSegue(withIdentifier: "toHome", sender: self)
+         performSegue(withIdentifier: "toWelcome", sender: self)
         }
     }
 
@@ -62,7 +62,7 @@ extension LoginViewController: FUIAuthDelegate {
         //authDataResult?.user.uid
 
 
-        performSegue(withIdentifier: "toHome", sender: self)
+        performSegue(withIdentifier: "toWelcome", sender: self)
     }
 }
 

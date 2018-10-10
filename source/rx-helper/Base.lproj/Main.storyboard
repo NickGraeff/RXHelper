@@ -51,7 +51,7 @@
                         <viewLayoutGuide key="safeArea" id="FUz-Ga-qzH"/>
                     </view>
                     <connections>
-                        <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="WYD-lX-O6T"/>
+                        <segue destination="fog-eU-5dq" kind="show" identifier="toWelcome" id="Ws1-n2-sXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiH-eq-hja" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,13 +66,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="QUc-Be-TUA">
-                                <rect key="frame" x="0.0" y="152" width="375" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WnO-NH-9SA">
                                 <rect key="frame" x="17" y="87" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -93,12 +86,43 @@
                     <connections>
                         <outlet property="homeSegmentedControl" destination="WnO-NH-9SA" id="egp-Ms-Fl4"/>
                         <outlet property="homeView" destination="CSW-yU-nmw" id="XaD-FN-J2v"/>
-                        <outlet property="welcomeLabel" destination="QUc-Be-TUA" id="zzZ-f2-Aqx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvu-t3-MUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4128.8000000000002" y="232.53373313343329"/>
+            <point key="canvasLocation" x="5214" y="233"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="B1t-Nb-RG4">
+            <objects>
+                <viewController id="fog-eU-5dq" customClass="WelcomeViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBu-K3-4Pv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logos" translatesAutoresizingMaskIntoConstraints="NO" id="x28-eF-uhZ">
+                                <rect key="frame" x="37.5" y="77" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2B-a4-sjJ">
+                                <rect key="frame" x="38" y="415" width="300" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XEP-QZ-Idp"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="D2B-a4-sjJ" id="Nnk-xJ-ub4"/>
+                        <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="wLF-tO-C8c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLe-L8-oga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4248.8000000000002" y="232.53373313343329"/>
         </scene>
     </scenes>
     <resources>
