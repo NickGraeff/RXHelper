@@ -79,6 +79,13 @@
                                     <action selector="scTapped:" destination="qie-E2-2wT" eventType="valueChanged" id="Mfd-mt-Arj"/>
                                 </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hI8-sH-S4P">
+                                <rect key="frame" x="16" y="123" width="343" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="FJA-TV-lpL" kind="embed" id="R29-L5-X3l"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0ZH-v6-Ril"/>
@@ -90,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvu-t3-MUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5214" y="233"/>
+            <point key="canvasLocation" x="5213.6000000000004" y="232.53373313343329"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="B1t-Nb-RG4">
@@ -124,8 +131,149 @@
             </objects>
             <point key="canvasLocation" x="4248.8000000000002" y="232.53373313343329"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y0z-Uh-7O8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FJA-TV-lpL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5ue-dZ-j4g">
+                        <rect key="frame" x="0.0" y="20" width="343" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Nm7-Sk-fax" kind="relationship" relationship="rootViewController" id="ElA-9P-DWx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzr-LJ-Tlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5214" y="1035"/>
+        </scene>
+        <!--Your Prescriptions-->
+        <scene sceneID="23U-Rn-RHt">
+            <objects>
+                <tableViewController id="Nm7-Sk-fax" customClass="PrescriptionTableViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IOZ-rn-Gge">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrescriptionTableViewCellIdentifier" rowHeight="90" id="Xuh-lU-sWd" customClass="PrescriptionTableViewCell" customModule="rx_helper" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="343" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xuh-lU-sWd" id="vtH-MZ-616">
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Due:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-6T-Dkm">
+                                            <rect key="frame" x="174" y="21" width="76" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-AT-KHM">
+                                            <rect key="frame" x="263" y="21" width="80" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="nextDueLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKB-zc-Ur2">
+                                            <rect key="frame" x="4" y="21" width="71" height="47"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="prescriptionImageView"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyj-0A-Aoh">
+                                            <rect key="frame" x="83" y="21" width="67" height="45"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="nameLabel"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="Iyj-0A-Aoh" id="cGR-uy-cig"/>
+                                    <outlet property="nextDueLabel" destination="TWr-AT-KHM" id="0h0-He-PJU"/>
+                                    <outlet property="prescriptionImageView" destination="MKB-zc-Ur2" id="gpO-Nn-eRF"/>
+                                    <segue destination="oPS-gF-Kkf" kind="show" identifier="ShowDetail" id="vEi-Y5-Y2Q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Nm7-Sk-fax" id="Cts-UA-z0Z"/>
+                            <outlet property="delegate" destination="Nm7-Sk-fax" id="vqM-fM-zwm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Your Prescriptions" id="1dT-PO-jTu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fcz-U3-6xV">
+                            <connections>
+                                <segue destination="8Qu-XB-Ay6" kind="presentation" identifier="AddPrescription" id="e2j-Bg-nbX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIy-8D-tnm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6148" y="1034"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pa8-Kf-LZA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Qu-XB-Ay6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vTe-01-Nyx">
+                        <rect key="frame" x="0.0" y="20" width="343" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oPS-gF-Kkf" kind="relationship" relationship="rootViewController" id="AVr-z7-xdC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyx-Bs-nly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6756" y="1674"/>
+        </scene>
+        <!--New Prescription-->
+        <scene sceneID="KKs-yC-Gdf">
+            <objects>
+                <viewController id="oPS-gF-Kkf" customClass="PrescriptionViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gce-7q-QgW">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bUS-Q9-c2Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Prescription" id="YIC-nN-uY9">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="j8B-Oi-IG3">
+                            <connections>
+                                <action selector="cancel:" destination="oPS-gF-Kkf" id="yF6-Qk-By7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="6Ic-Yn-0gO">
+                            <connections>
+                                <segue destination="yoT-An-1iS" kind="unwind" unwindAction="unwindToMealListWithSender:" id="oe8-xA-NXF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="6Ic-Yn-0gO" id="ldE-z3-w7E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZK-qb-BXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yoT-An-1iS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7502" y="1034"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Logos" width="709" height="696"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AVr-z7-xdC"/>
+    </inferredMetricsTieBreakers>
 </document>

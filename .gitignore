@@ -1,4 +1,6 @@
 source/Pods
 *.xcuserstate
 source/rx-helper.xcworkspace/
-
+source/Podfile.lock
+source/rx-helper.xcodeproj/xcuserdata/
+source/rx-helper.xcodeproj/project.xcworkspace/xcuserdata
