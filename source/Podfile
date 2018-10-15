@@ -10,5 +10,6 @@ target 'rx-helper' do
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'SwiftyJSON'
   
 end
