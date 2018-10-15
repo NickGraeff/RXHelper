@@ -76,14 +76,14 @@ class rxListPetsTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "medDetailsViewController") as? medDetailsViewController
         var data: JSON
         data = rxlist[indexPath.row]
         let countryName = data["term"].stringValue
         vc?.name = countryName
         self.navigationController?.pushViewController(vc!, animated: true)
-    }*/
+    }
     
 }
 
