@@ -27,9 +27,14 @@ class WelcomeViewController: UIViewController {
     func getUserDisplayName() -> String {
         let user = Auth.auth().currentUser
         if user != nil {
-            return (user?.displayName!)!
+            if user?.displayName != nil {
+                return (user?.displayName!)!
+            }
+            else{
+                return("")
+            }
         }
-        return ("Error: No current user logged in")
+        return ("Error: no user logged in")
     }
 
 }

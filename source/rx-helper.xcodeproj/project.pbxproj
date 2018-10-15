@@ -99,8 +99,8 @@
 			children = (
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
-				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
 				B5FB1D602172F90500795C7E /* SignUpViewController.swift */,
+				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
 				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
 				38CBB47F217192B900F7CE05 /* Prescription.swift */,
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,

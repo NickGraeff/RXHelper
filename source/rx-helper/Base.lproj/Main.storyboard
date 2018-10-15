@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kvu-t3-MUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5213.6000000000004" y="232.53373313343329"/>
+            <point key="canvasLocation" x="5214" y="232"/>
         </scene>
         <!--Start-->
         <scene sceneID="k8v-9q-dkG">
@@ -115,7 +115,7 @@
                         <outlet property="startView" destination="oAr-mq-JRB" id="09W-Zh-dt8"/>
                         <segue destination="gSy-3D-Jez" kind="show" identifier="toLogin" id="Fyw-oe-9Li"/>
                         <segue destination="GJz-be-AOe" kind="show" identifier="toSignUp" id="n7a-Jc-2Vy"/>
-                        <segue destination="fog-eU-5dq" kind="show" identifier="toWelcome" id="OMV-f4-2wz"/>
+                        <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="Ro8-NW-3Ei"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7p-13-Xki" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -544,7 +544,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AVr-z7-xdC"/>
-        <segue reference="Ucg-Nn-3Uq"/>
-        <segue reference="GFu-Z9-wLc"/>
+        <segue reference="Tuo-27-eKB"/>
+        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="Ro8-NW-3Ei"/>
     </inferredMetricsTieBreakers>
 </document>
