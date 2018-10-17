@@ -40,6 +40,8 @@ class SignUpViewController: UIViewController {
         self.passwordConfirm.layer.borderWidth = 1
         self.passwordConfirm.layer.cornerRadius = 5
         self.passwordConfirm.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
+
+        self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -102,4 +104,15 @@ class SignUpViewController: UIViewController {
         }
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action:    #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
