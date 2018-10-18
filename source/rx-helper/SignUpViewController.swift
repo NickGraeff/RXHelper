@@ -42,6 +42,11 @@ class SignUpViewController: UIViewController {
         self.passwordConfirm.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
 
         self.hideKeyboardWhenTappedAround()
+
+        email.delegate = self
+        name.delegate = self
+        password.delegate = self
+        passwordConfirm.delegate = self
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -114,5 +119,22 @@ extension UIViewController {
     }
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case email:
+            name.becomeFirstResponder()
+        case name:
+            password.becomeFirstResponder()
+        case password:
+            passwordConfirm.becomeFirstResponder()
+        default:
+            passwordConfirm.resignFirstResponder()
+        }
+
+        return true
     }
 }

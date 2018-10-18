@@ -316,7 +316,7 @@
                                 <rect key="frame" x="22" y="470" width="330" height="34"/>
                                 <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtP-uh-Zi7">
                                 <rect key="frame" x="25" y="345" width="105" height="30"/>
@@ -700,8 +700,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AVr-z7-xdC"/>
-        <segue reference="Tuo-27-eKB"/>
-        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="Ucg-Nn-3Uq"/>
+        <segue reference="GFu-Z9-wLc"/>
         <segue reference="Ro8-NW-3Ei"/>
     </inferredMetricsTieBreakers>
 </document>
