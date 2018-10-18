@@ -31,6 +31,8 @@ class LoginViewController: UIViewController {
         self.password.layer.borderWidth = 1
         self.password.layer.cornerRadius = 5
         self.password.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
+
+        self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func backButton(_ sender: Any) {
