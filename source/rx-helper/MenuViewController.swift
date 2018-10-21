@@ -12,7 +12,17 @@ protocol SlideMenuDelegate {
     func slideMenuItemSelectedAtIndex(_ index: Int32)
 }
 
-class MenuViewController: UIViewController {
+class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
+        
+        return cell
+    }
+    
 
 
     var btnMenu: UIButton!

@@ -19,6 +19,7 @@
 		B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5C2172D20C00795C7E /* StartViewController.swift */; };
 		B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */; };
 		B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D602172F90500795C7E /* SignUpViewController.swift */; };
+		B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCA292217C7536000A441A /* MenuTableViewCell.swift */; };
 		C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61566C42150DF6E0031A3D4 /* AppDelegate.swift */; };
 		C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566C82150DF6E0031A3D4 /* Main.storyboard */; };
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		B5FB1D5C2172D20C00795C7E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5FB1D602172F90500795C7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B5FCA292217C7536000A441A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C61566C12150DF6E0031A3D4 /* rx-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61566C42150DF6E0031A3D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C61566C92150DF6E0031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
+				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
 				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
 				B503FDA5217C0E0B005E13CD /* BaseViewController.swift */,
@@ -294,6 +297,7 @@
 				C682FCAD21740E4D000403A8 /* rxListTableViewController.swift in Sources */,
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
+				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				C682FCAF21741090000403A8 /* MedChoiceViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
 				C682FCB521741850000403A8 /* medDetailsViewController.swift in Sources */,
