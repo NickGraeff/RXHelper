@@ -15,11 +15,14 @@ class HomeViewController: BaseViewController {
 
     @IBOutlet weak var HomeNavBar: UINavigationItem!
 
+    @IBAction func addButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMedChoice", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
         addSlideMenuButton()
-        HomeNavBar.title = getUserDisplayName()
+        self.HomeNavBar.title = getUserDisplayName()
     }
 
 
