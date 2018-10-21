@@ -11,19 +11,15 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-class HomeViewController: UIViewController {
-
-    @IBOutlet var homeView: UIView!
-    @IBOutlet weak var homeSegmentedControl: UISegmentedControl!
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
+        addSlideMenuButton()
     }
 
-    @IBAction func scTapped(_ sender: Any) {
-        
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

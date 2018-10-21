@@ -12,6 +12,8 @@
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
 		38CBB483217192B900F7CE05 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47F217192B900F7CE05 /* Prescription.swift */; };
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
+		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
 		B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */; };
 		B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA52168A49D00572C17 /* HomeViewController.swift */; };
 		B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5C2172D20C00795C7E /* StartViewController.swift */; };
@@ -36,6 +38,8 @@
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		38CBB47F217192B900F7CE05 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
+		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../../AKSwiftSlideMenu/AKSwiftSlideMenu/BaseViewController.swift; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
 		B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B5F6EBA52168A49D00572C17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,9 @@
 			children = (
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
+				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
+				B503FDA5217C0E0B005E13CD /* BaseViewController.swift */,
+				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
 				C682FCB421741850000403A8 /* medDetailsViewController.swift */,
 				C682FCB021741172000403A8 /* rxListPetsTableViewController.swift */,
 				C682FCAE21741090000403A8 /* MedChoiceViewController.swift */,
@@ -125,7 +132,6 @@
 				38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
 				C61566C42150DF6E0031A3D4 /* AppDelegate.swift */,
-				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
 				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */,
+				B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */,
 				C682FCAD21740E4D000403A8 /* rxListTableViewController.swift in Sources */,
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
@@ -295,6 +302,7 @@
 				38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */,
 				38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */,
 				C682FCB121741172000403A8 /* rxListPetsTableViewController.swift in Sources */,
+				B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */,
 				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
 				38CBB483217192B900F7CE05 /* Prescription.swift in Sources */,
 			);
