@@ -23,16 +23,27 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
 
     }
-    
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var btnCloseMenuOverlay: UIButton!
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func onCloseMenuClick(_ button: UIButton!) {
+        btnMenu.tag = 0
+
+        if (self.delegate != nil) {
+            var index = Int32((button as AnyObject).tag)
+            if(button == self.btnCloseMenuOverlay){
+                index = -1
+            }
+            delegate?.slideMenuItemSelectedAtIndex(index)
+        }
+
+        UIView.animate(withDuration: 0.3, animations: { () -> Void in
+            self.view.frame = CGRect(x: -UIScreen.main.bounds.size.width, y: 0, width: UIScreen.main.bounds.size.width,height: UIScreen.main.bounds.size.height)
+            self.view.layoutIfNeeded()
+            self.view.backgroundColor = UIColor.clear
+        }, completion: { (finished) -> Void in
+            self.view.removeFromSuperview()
+            self.removeFromParent()
+        })
     }
-    */
-
 }
