@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 protocol SlideMenuDelegate {
     func slideMenuItemSelectedAtIndex(_ index: Int32)
@@ -24,7 +25,14 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
+    @IBAction func logoutButton(_ sender: Any) {
+        let alert = UIAlertController(title: "Log out of " + getUserDisplayName(), message: nil, preferredStyle: .alert)
 
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Log out", style: .default, handler: logoutHandler))
+
+        self.present(alert, animated: true)
+    }
     var btnMenu: UIButton!
     var delegate: SlideMenuDelegate?
 
@@ -55,5 +63,31 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.view.removeFromSuperview()
             self.removeFromParent()
         })
+    }
+
+    func getUserDisplayName() -> String {
+        let user = Auth.auth().currentUser
+        if user != nil {
+            if user?.displayName != nil {
+                return (user?.displayName!)!
+            }
+            else{
+                return("")
+            }
+        }
+        return ("Error: no user logged in")
+    }
+
+    func logoutHandler(alert: UIAlertAction) {
+        do {
+            try Auth.auth().signOut()
+        }
+        catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initial = storyboard.instantiateInitialViewController()
+        UIApplication.shared.keyWindow?.rootViewController = initial
     }
 }
