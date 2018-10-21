@@ -14,6 +14,7 @@ class rxListPetsTableViewController: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListPets", ofType: "json")!)! as Data)
     var filteredRxList = [JSON]()
+    //let data = rxlist[indexPath.row]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,7 @@ class rxListPetsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if searchController.isActive && searchController.searchBar.text != ""{
+        if isFiltering(){//searchController.isActive && searchController.searchBar.text != ""{
             return filteredRxList.count
         }
         return rxlist.count
@@ -50,9 +51,9 @@ class rxListPetsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rxCel", for: indexPath)
         
-        var data: JSON
+        var data: JSON //THIS WILL BE MY CANDY variable
         
-        if searchController.isActive && searchController.searchBar.text != "" {
+        if isFiltering(){//searchController.isActive && searchController.searchBar.text != "" {
             data = filteredRxList[indexPath.row]
         }else{
             data = rxlist[indexPath.row]
@@ -70,20 +71,67 @@ class rxListPetsTableViewController: UITableViewController {
     
     
     func filteredContentForSearchText(searchText: String){
+        
+        
         filteredRxList = rxlist.array!.filter { country in
             return country["term"].stringValue.localizedLowercase.contains(searchText.localizedLowercase)
         }
+        
         tableView.reloadData()
+        
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "medDetailsViewController") as? medDetailsViewController
-        var data: JSON
-        data = rxlist[indexPath.row]
+        //var data: JSON
+        let data = rxlist[indexPath.row]
         let countryName = data["term"].stringValue
         vc?.name = countryName
         self.navigationController?.pushViewController(vc!, animated: true)
+        //if tableView == self.searchDisplayController?.searchResultsTableView{
+            //self.performSegue(withIdentifier: "showDetail", sender: self)
+        //}
+        
+    }*/
+    
+    func searchBarIsEmpty() -> Bool{
+        return searchController.searchBar.text?.isEmpty ?? true
+        
     }
+    
+    func isFiltering() -> Bool{
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moreInfo"{
+            //if var selectedRowIndex = self.tableView.indexPathForSelectedRow()
+            //let mapViewController = segue.destination as! medDetailsViewController
+            if let indexPath = tableView.indexPathForSelectedRow{
+                //let candy = rxlist[indexPath.row]/////////////
+                // let countryName = candy["term"].stringValue
+                //controller.name = countryName
+                
+                let data: JSON
+                if isFiltering(){
+                    data = filteredRxList[indexPath.row]
+                    
+                }else{
+                    data = rxlist[indexPath.row]
+                    
+                }
+              
+                let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
+                let final = data["term"].stringValue
+                controller.name = final //countryName
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+   }
+    
+
+    
     
 }
 
@@ -91,4 +139,7 @@ extension rxListPetsTableViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         filteredContentForSearchText(searchText: searchController.searchBar.text!)
     }
+
 }
+
+

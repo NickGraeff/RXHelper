@@ -36,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add new medicine"/>
                                 <connections>
-                                    <segue destination="C4f-0m-0xX" kind="show" id="4vV-Y9-xF0"/>
+                                    <segue destination="C4f-0m-0xX" kind="show" identifier="" id="4vV-Y9-xF0"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hI8-sH-S4P">
@@ -112,6 +112,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BAa-8l-cpc" kind="show" identifier="moreInfo" id="hO2-uV-1Qn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -175,17 +178,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUo-0u-BNG">
+                                <rect key="frame" x="22" y="127" width="51" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="fa2-55-QhE" kind="show" id="oHJ-Ra-lvC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AFA-Ox-LYU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qqd-b4-c8G"/>
                     <connections>
                         <outlet property="lbl" destination="pWj-dT-zMc" id="1Vi-XP-8VN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pr-hr-TFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9989.6000000000004" y="159.60591133004928"/>
+            <point key="canvasLocation" x="10932" y="880"/>
         </scene>
         <!--Start-->
         <scene sceneID="k8v-9q-dkG">
@@ -691,6 +704,24 @@
             </objects>
             <point key="canvasLocation" x="5213.6000000000004" y="232.01970443349754"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k7X-8J-BmQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BAa-8l-cpc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XJ6-Sd-yWh">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hx6-9b-q4u" kind="relationship" relationship="rootViewController" id="BtW-cL-9bN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boi-q2-GGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10932" y="159.60591133004928"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
@@ -700,5 +731,6 @@
         <segue reference="AVr-z7-xdC"/>
         <segue reference="Ucg-Nn-3Uq"/>
         <segue reference="GFu-Z9-wLc"/>
+        <segue reference="oHJ-Ra-lvC"/>
     </inferredMetricsTieBreakers>
 </document>
