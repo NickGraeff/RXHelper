@@ -31,6 +31,11 @@ class LoginViewController: UIViewController {
         self.password.layer.borderWidth = 1
         self.password.layer.cornerRadius = 5
         self.password.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
+
+        self.hideKeyboardWhenTappedAround()
+
+        email.delegate = self
+        password.delegate = self
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -55,4 +60,16 @@ class LoginViewController: UIViewController {
         }
     }
     
+}
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case email:
+            password.becomeFirstResponder()
+        default:
+            password.resignFirstResponder()
+        }
+
+        return true
+    }
 }

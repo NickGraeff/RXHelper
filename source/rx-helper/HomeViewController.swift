@@ -11,23 +11,41 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
-    @IBOutlet var homeView: UIView!
-    @IBOutlet weak var homeSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var HomeNavBar: UINavigationItem!
 
+    @IBAction func addButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMedChoice", sender: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
+        addSlideMenuButton()
+        self.HomeNavBar.title = getUserDisplayName()
     }
 
-    @IBAction func scTapped(_ sender: Any) {
-        
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    //This function will return the name of the user that is logged in
+    //We will need to modify this to change in case the person decides
+    //to change profile
+    func getUserDisplayName() -> String {
+        let user = Auth.auth().currentUser
+        if user != nil {
+            if user?.displayName != nil {
+                return (user?.displayName!)!
+            }
+            else{
+                return("")
+            }
+        }
+        return ("Error: no user logged in")
+    }
+
 }

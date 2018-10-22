@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "toHome", sender: self)
+        }
         // Do any additional setup after loading the view.
         self.startView.layer.borderWidth = 9
         self.startView.layer.cornerRadius = 35

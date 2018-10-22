@@ -40,6 +40,13 @@ class SignUpViewController: UIViewController {
         self.passwordConfirm.layer.borderWidth = 1
         self.passwordConfirm.layer.cornerRadius = 5
         self.passwordConfirm.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
+
+        self.hideKeyboardWhenTappedAround()
+
+        email.delegate = self
+        name.delegate = self
+        password.delegate = self
+        passwordConfirm.delegate = self
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -50,16 +57,16 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var passwordConfirm: UITextField!
-    
+
     @IBAction func signUpAction(_ sender: Any) {
-        
+
         if password.text?.isEmpty == true {
             let alertController = UIAlertController(title: "Password is empty", message: "Please type in a password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
         }
-        
+
         else if password.text != passwordConfirm.text {
             let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -68,11 +75,29 @@ class SignUpViewController: UIViewController {
         }
         else {
             Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (user, error) in
-                
+
                 if error == nil {
                     //creation of account successful
-                    //TO DOinsert name
-                    self.performSegue(withIdentifier: "toWelcome", sender: self)
+                    //insert name of user
+                    let user = Auth.auth().currentUser
+                    if let user = user {
+                        let changeRequest = user.createProfileChangeRequest()
+
+                        changeRequest.displayName = self.name.text!
+                        changeRequest.commitChanges { error in
+                            if let error = error {
+                                //error
+                                let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                alertController.addAction(defaultAction)
+                                self.present(alertController, animated: true, completion: nil)
+                            }
+                            else {
+                                //change request works
+                                self.performSegue(withIdentifier: "toWelcome", sender: self)
+                            }
+                        }
+                    }
                 }
                 else {
                     let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -84,4 +109,32 @@ class SignUpViewController: UIViewController {
         }
     }
     
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer =     UITapGestureRecognizer(target: self, action:    #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+extension SignUpViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case email:
+            name.becomeFirstResponder()
+        case name:
+            password.becomeFirstResponder()
+        case password:
+            passwordConfirm.becomeFirstResponder()
+        default:
+            passwordConfirm.resignFirstResponder()
+        }
+
+        return true
+    }
 }
