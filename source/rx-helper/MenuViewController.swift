@@ -26,7 +26,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     @IBAction func logoutButton(_ sender: Any) {
-        let alert = UIAlertController(title: "Log out of " + getUserDisplayName(), message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Log out of " + getUserDisplayName() + "?", message: nil, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Log out", style: .default, handler: logoutHandler))
