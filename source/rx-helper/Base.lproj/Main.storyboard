@@ -18,7 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hI8-sH-S4P">
                                 <rect key="frame" x="16" y="254" width="343" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -60,7 +59,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <state key="normal" title="Pets"/>
                                 <connections>
-                                    <segue destination="fa2-55-QhE" kind="show" id="Jvu-ao-wCS"/>
+                                    <segue destination="fa2-55-QhE" kind="show" id="Bjl-q1-gfU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-JH-8q1">
@@ -80,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NT-7j-hR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7817" y="232"/>
+            <point key="canvasLocation" x="7778" y="231"/>
         </scene>
         <!--Rx List Pets Table View Controller-->
         <scene sceneID="TZe-km-VzD">
@@ -99,7 +98,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BAa-8l-cpc" kind="show" identifier="moreInfo" id="hO2-uV-1Qn"/>
+                                    <segue destination="Hx6-9b-q4u" kind="show" identifier="moreInfo" id="eNl-LO-Xoj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -108,10 +107,11 @@
                             <outlet property="delegate" destination="fa2-55-QhE" id="Qnt-tg-1aq"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="12x-fb-Hu8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7s-qb-Kdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8975.2000000000007" y="581.5270935960591"/>
+            <point key="canvasLocation" x="9412" y="816"/>
         </scene>
         <!--Rx List Table View Controller-->
         <scene sceneID="pxo-7D-azY">
@@ -129,6 +129,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Hx6-9b-q4u" kind="show" identifier="moreinfo" id="wqp-w4-L3D"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -139,7 +142,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgw-LS-gEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8975.2000000000007" y="-228.32512315270938"/>
+            <point key="canvasLocation" x="9343" y="-283"/>
         </scene>
         <!--Med Details View Controller-->
         <scene sceneID="y85-MX-I5h">
@@ -164,15 +167,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUo-0u-BNG">
-                                <rect key="frame" x="22" y="127" width="51" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="back"/>
-                                <connections>
-                                    <segue destination="fa2-55-QhE" kind="show" id="oHJ-Ra-lvC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AFA-Ox-LYU"/>
@@ -184,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pr-hr-TFf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10932" y="880"/>
+            <point key="canvasLocation" x="11065" y="233"/>
         </scene>
         <!--Start-->
         <scene sceneID="k8v-9q-dkG">
@@ -814,35 +808,16 @@
             </objects>
             <point key="canvasLocation" x="6781.6000000000004" y="-485.46798029556652"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="k7X-8J-BmQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BAa-8l-cpc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XJ6-Sd-yWh">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Hx6-9b-q4u" kind="relationship" relationship="rootViewController" id="BtW-cL-9bN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="boi-q2-GGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="10932" y="159.60591133004928"/>
-        </scene>
     </scenes>
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="Logos" width="709" height="696"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n7a-Jc-2Vy"/>
         <segue reference="lG2-lD-zYb"/>
         <segue reference="AVr-z7-xdC"/>
-        <segue reference="Ucg-Nn-3Uq"/>
-        <segue reference="GFu-Z9-wLc"/>
-        <segue reference="oHJ-Ra-lvC"/>
+        <segue reference="Tuo-27-eKB"/>
+        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="eNl-LO-Xoj"/>
     </inferredMetricsTieBreakers>
 </document>

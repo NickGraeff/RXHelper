@@ -14,9 +14,12 @@ class rxListPetsTableViewController: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListPets", ofType: "json")!)! as Data)
     var filteredRxList = [JSON]()
-    //let data = rxlist[indexPath.row]
+    
     
     override func viewDidLoad() {
+        
+        
+        self.tableView.backgroundColor = UIColor.lightGray
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
@@ -26,10 +29,9 @@ class rxListPetsTableViewController: UITableViewController {
         
     }
     
-    /* override func didReceiveMemoryWarning() {
-     super.didReceiveMemoryWarning()
-     // Dispose of any resources that can be recreated.
-     }*/
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +53,7 @@ class rxListPetsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rxCel", for: indexPath)
         
-        var data: JSON //THIS WILL BE MY CANDY variable
+        var data: JSON
         
         if isFiltering(){//searchController.isActive && searchController.searchBar.text != "" {
             data = filteredRxList[indexPath.row]
@@ -72,7 +74,6 @@ class rxListPetsTableViewController: UITableViewController {
     
     func filteredContentForSearchText(searchText: String){
         
-        
         filteredRxList = rxlist.array!.filter { country in
             return country["term"].stringValue.localizedLowercase.contains(searchText.localizedLowercase)
         }
@@ -81,18 +82,7 @@ class rxListPetsTableViewController: UITableViewController {
         
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "medDetailsViewController") as? medDetailsViewController
-        //var data: JSON
-        let data = rxlist[indexPath.row]
-        let countryName = data["term"].stringValue
-        vc?.name = countryName
-        self.navigationController?.pushViewController(vc!, animated: true)
-        //if tableView == self.searchDisplayController?.searchResultsTableView{
-            //self.performSegue(withIdentifier: "showDetail", sender: self)
-        //}
-        
-    }*/
+  
     
     func searchBarIsEmpty() -> Bool{
         return searchController.searchBar.text?.isEmpty ?? true
@@ -121,17 +111,15 @@ class rxListPetsTableViewController: UITableViewController {
                     
                 }
               
-                let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
+                //let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
+                let controller = segue.destination as? medDetailsViewController
                 let final = data["term"].stringValue
-                controller.name = final //countryName
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                controller?.name = final //countryName
+                controller?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller?.navigationItem.leftItemsSupplementBackButton = true
             }
         }
    }
-    
-
-    
     
 }
 
