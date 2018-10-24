@@ -13,6 +13,8 @@ class PrescriptionViewController: UIViewController, UITextFieldDelegate, UIImage
 
     // Mark: Properties
     @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet weak var nameField: UITextField!
+    
     var prescription: Prescription?
     
     override func viewDidLoad() {
@@ -20,6 +22,7 @@ class PrescriptionViewController: UIViewController, UITextFieldDelegate, UIImage
         
         if let prescription = prescription {
             navigationItem.title = prescription.name
+            nameField.text = prescription.name
             //etcetcetc (name, image, etc)
         }
     }
@@ -49,7 +52,7 @@ class PrescriptionViewController: UIViewController, UITextFieldDelegate, UIImage
             return
         }
         
-        prescription = Prescription(name: "sameolshit")
+        prescription = Prescription(name: nameField.text ?? "Unknown")
     }
 
 }

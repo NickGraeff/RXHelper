@@ -9,6 +9,19 @@
 import UIKit
 import FirebaseAuth
 
+func getUserDisplayName() -> String {
+    let user = Auth.auth().currentUser
+    if user != nil {
+        if user?.displayName != nil {
+            return (user?.displayName!)!
+        }
+        else{
+            return("")
+        }
+    }
+    return ("Error: no user logged in")
+}
+
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
@@ -24,17 +37,5 @@ class WelcomeViewController: UIViewController {
     }
     
 
-    func getUserDisplayName() -> String {
-        let user = Auth.auth().currentUser
-        if user != nil {
-            if user?.displayName != nil {
-                return (user?.displayName!)!
-            }
-            else{
-                return("")
-            }
-        }
-        return ("Error: no user logged in")
-    }
 
 }
