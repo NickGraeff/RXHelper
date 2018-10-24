@@ -17,6 +17,7 @@ class rxListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         
+        //searchController.isActive = true
         
         self.tableView.backgroundColor = UIColor.lightGray
         super.viewDidLoad()
@@ -27,6 +28,26 @@ class rxListTableViewController: UITableViewController {
         tableView.setContentOffset(CGPoint(x: 0, y: searchController.searchBar.frame.size.height), animated: false)
         
     }
+    
+    //override func viewWillAppear(_ animated: Bool) {
+      //  super.viewWillAppear(animated)
+        //    navigationItem.hidesSearchBarWhenScrolling = false
+    //}
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        searchController.isActive = true
+            navigationItem.hidesSearchBarWhenScrolling = true
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
@@ -60,19 +81,27 @@ class rxListTableViewController: UITableViewController {
         
         if searchController.isActive && searchController.searchBar.text != "" {
             data = filteredRxList[indexPath.row]
+            let countryName = data["term"].stringValue
+            //let countryCapital = data[" "].stringValue
+            
+            cell.textLabel?.text = countryName
+            //cell.detailTextLabel?.text = countryCapital
         }else{
             data = rxlist[indexPath.row]
+            tableView.reloadData()
         }
         // Configure the cell...
         //print(data[][])
-        let countryName = data["term"].stringValue
-        let countryCapital = data[" "].stringValue
+        //let countryName = data["term"].stringValue
+       // let countryCapital = data[" "].stringValue
         
-        cell.textLabel?.text = countryName
-        cell.detailTextLabel?.text = countryCapital
+        //cell.textLabel?.text = countryName
+        //cell.detailTextLabel?.text = countryCapital
         
         return cell
     }
+
+    
     
     func filteredContentForSearchText(searchText: String){
         filteredRxList = rxlist.array!.filter { country in
@@ -128,9 +157,6 @@ class rxListTableViewController: UITableViewController {
             }
         }
     }
-    
-    
-    
     
 }
 

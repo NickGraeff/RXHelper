@@ -17,8 +17,7 @@ class rxListPetsTableViewController: UITableViewController {
     
     
     override func viewDidLoad() {
-        
-        
+    
         self.tableView.backgroundColor = UIColor.lightGray
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
@@ -28,6 +27,14 @@ class rxListPetsTableViewController: UITableViewController {
         tableView.setContentOffset(CGPoint(x: 0, y: searchController.searchBar.frame.size.height), animated: false)
         
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        searchController.isActive = true
+        navigationItem.hidesSearchBarWhenScrolling = true
+    }
+    
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
@@ -44,10 +51,9 @@ class rxListPetsTableViewController: UITableViewController {
         if isFiltering(){//searchController.isActive && searchController.searchBar.text != ""{
             return filteredRxList.count
         }
+        //tableView.isHidden = true
         return rxlist.count
     }
-    
-    
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,16 +63,28 @@ class rxListPetsTableViewController: UITableViewController {
         
         if isFiltering(){//searchController.isActive && searchController.searchBar.text != "" {
             data = filteredRxList[indexPath.row]
+            let countryName = data["term"].stringValue
+            //let countryCapital = data[" "].stringValue
+            
+            cell.textLabel?.text = countryName
+            //tableView.reloadData()
+            //cell.detailTextLabel?.text = countryCapital
+            
         }else{
             data = rxlist[indexPath.row]
+            tableView.reloadData()
+            //let countryName = data["term"].stringValue
         }
+        
+        //tableView.reloadData()
+        
         // Configure the cell...
         //print(data[][])
-        let countryName = data["term"].stringValue
-        let countryCapital = data[" "].stringValue
+        //let countryName = data["term"].stringValue
+        //let countryCapital = data[" "].stringValue
         
-        cell.textLabel?.text = countryName
-        cell.detailTextLabel?.text = countryCapital
+        //cell.textLabel?.text = countryName
+        //cell.detailTextLabel?.text = countryCapital
         
         return cell
     }
@@ -127,7 +145,6 @@ extension rxListPetsTableViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         filteredContentForSearchText(searchText: searchController.searchBar.text!)
     }
-
 }
 
 
