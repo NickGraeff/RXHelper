@@ -53,33 +53,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="civ-zm-FdK">
-                                <rect key="frame" x="136" y="414" width="102" height="119"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="civ-zm-FdK">
+                                <rect key="frame" x="16" y="434" width="343" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Pets"/>
+                                <state key="normal" image="Pets01"/>
                                 <connections>
                                     <segue destination="fa2-55-QhE" kind="show" id="Bjl-q1-gfU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-JH-8q1">
-                                <rect key="frame" x="97" y="214" width="181" height="147"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HG-JH-8q1">
+                                <rect key="frame" x="0.0" y="244" width="375" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Humans"/>
+                                <state key="normal" image="People01"/>
                                 <connections>
                                     <segue destination="gWq-1G-1lx" kind="show" id="oA9-JE-rx2"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iO3-M6-RKl"/>
                     </view>
                     <navigationItem key="navigationItem" id="PTo-y2-9aE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NT-7j-hR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7778" y="231"/>
+            <point key="canvasLocation" x="7776.8000000000002" y="230.54187192118226"/>
         </scene>
         <!--Rx List Pets Table View Controller-->
         <scene sceneID="TZe-km-VzD">
@@ -812,12 +810,14 @@
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="Logos" width="709" height="696"/>
+        <image name="People01" width="414" height="110"/>
+        <image name="Pets01" width="422" height="106"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lG2-lD-zYb"/>
         <segue reference="AVr-z7-xdC"/>
         <segue reference="Tuo-27-eKB"/>
         <segue reference="KIV-Q3-MVh"/>
-        <segue reference="eNl-LO-Xoj"/>
+        <segue reference="wqp-w4-L3D"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,7 +12,7 @@ import SwiftyJSON
 class rxListPetsTableViewController: UITableViewController {
     
     let searchController = UISearchController(searchResultsController: nil)
-    let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListPets", ofType: "json")!)! as Data)
+    let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListPet01", ofType: "json")!)! as Data)
     var filteredRxList = [JSON]()
     
     
@@ -100,8 +100,6 @@ class rxListPetsTableViewController: UITableViewController {
         
     }
     
-  
-    
     func searchBarIsEmpty() -> Bool{
         return searchController.searchBar.text?.isEmpty ?? true
         
@@ -128,7 +126,6 @@ class rxListPetsTableViewController: UITableViewController {
                     data = rxlist[indexPath.row]
                     
                 }
-              
                 //let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
                 let controller = segue.destination as? medDetailsViewController
                 let final = data["term"].stringValue

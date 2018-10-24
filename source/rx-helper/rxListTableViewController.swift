@@ -29,10 +29,10 @@ class rxListTableViewController: UITableViewController {
         
     }
     
-    //override func viewWillAppear(_ animated: Bool) {
-      //  super.viewWillAppear(animated)
-        //    navigationItem.hidesSearchBarWhenScrolling = false
-    //}
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+            navigationItem.hidesSearchBarWhenScrolling = false
+    }
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -40,12 +40,6 @@ class rxListTableViewController: UITableViewController {
         searchController.isActive = true
             navigationItem.hidesSearchBarWhenScrolling = true
     }
-    
-    
-    
-    
-    
-    
     
     
     
@@ -73,6 +67,24 @@ class rxListTableViewController: UITableViewController {
         return rxlist.count
     }
     
+    
+    /*override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x:0, y:0, width:tableView.frame.size.width, height:18))
+        let label = UILabel(frame: CGRect(x:10, y:5, width:tableView.frame.size.width, height:18))
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.text = "                        SEARCH FOR RX MEDICINE \n ddddddddddddd"
+        label.text = "**********************************************"
+        //label.text = "**********************************************"
+        view.addSubview(label);
+        view.backgroundColor = UIColor.blue;
+        return view
+    }*/
+    
+    
+    
+   /* override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100;
+    }*/
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rxCell", for: indexPath)
@@ -109,16 +121,6 @@ class rxListTableViewController: UITableViewController {
         }
         tableView.reloadData()
     }
-    
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "medDetailsViewController") as? medDetailsViewController
-        var data: JSON
-        data = rxlist[indexPath.row]
-        let countryName = data["term"].stringValue
-        vc?.name = countryName
-        self.navigationController?.pushViewController(vc!, animated: true)
-    }*/
-    
     
     func searchBarIsEmpty() -> Bool{
         return searchController.searchBar.text?.isEmpty ?? true
