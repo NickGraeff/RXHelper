@@ -8,6 +8,8 @@
 
 import UIKit
 import os.log
+import FirebaseAuth
+import FirebaseDatabase
 
 class PrescriptionTableViewController: UITableViewController {
 
@@ -21,13 +23,9 @@ class PrescriptionTableViewController: UITableViewController {
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
         
-        // Load any saved meals, otherwise load sample data.
-        if let savedPrescriptions = loadPrescriptions() {
-            prescriptions += savedPrescriptions
-        } else {
-            // Load the sample data
-            loadSamplePrescriptions()
-        }
+        // Load any saved prescriptions, otherwise load sample data.
+        loadPrescriptions()
+        
     }
     
     
@@ -66,8 +64,8 @@ class PrescriptionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            deletePrescription(name: prescriptions[indexPath.row].name)
             prescriptions.remove(at: indexPath.row)
-            savePrescriptions()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -117,7 +115,7 @@ class PrescriptionTableViewController: UITableViewController {
      }
     
     // MARK: Actions
-    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+    @IBAction func unwindToPrescriptionList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? PrescriptionViewController, let prescription = sourceViewController.prescription {
             
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
@@ -138,32 +136,75 @@ class PrescriptionTableViewController: UITableViewController {
     
     // MARK: Private Methods
     private func loadSamplePrescriptions() {
-        guard let prescription1 = Prescription(name: "hello") else {
+        guard let prescription1 = Prescription(name: "SamplePrescription1") else {
             fatalError("Unable to instantiate prescription1")
         }
         
-        guard let prescription2 = Prescription(name: "brother") else {
+        guard let prescription2 = Prescription(name: "SamplePrescription2" ) else {
             fatalError("Unable to instantiate prescription2")
         }
         
-        guard let prescription3 = Prescription(name: "itfitmany") else {
+        guard let prescription3 = Prescription(name: "SamplePrescription3") else {
             fatalError("Unable to instantiate prescription3")
         }
         
         self.prescriptions += [prescription1, prescription2, prescription3]
+        
+        savePrescriptionsToFirebase()
+    }
+    
+    private func deletePrescription(name: String) {
+        let ref = Database.database().reference()
+        let ref2 = ref.child("users/\(getUserDisplayName())/prescriptions/\(name)")
+        ref2.removeValue()
     }
     
     private func savePrescriptions() {
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(prescriptions, toFile: Prescription.ArchiveURL.path)
+        /* let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(prescriptions, toFile: Prescription.ArchiveURL.path + getUserDisplayName())
         if isSuccessfulSave {
-            os_log("Meals successfully saved.", log: OSLog.default, type: .debug)
+            os_log("Prescriptions successfully saved.", log: OSLog.default, type: .debug)
         } else {
-            os_log("Failed to save meals...", log: OSLog.default, type: .error)
+            os_log("Failed to save prescriptions...", log: OSLog.default, type: .error)
+        } */
+        
+        savePrescriptionsToFirebase()
+    }
+    
+    private func savePrescriptionsToFirebase() {
+        let ref = Database.database().reference()
+        
+        for prescription in self.prescriptions {
+            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
+            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
         }
     }
     
-    private func loadPrescriptions() -> [Prescription]?  {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: Prescription.ArchiveURL.path) as? [Prescription]
+    private func getPrescriptionsFromFirebase() {
+        
+        let ref = Database.database().reference()
+        ref.child("users/\(getUserDisplayName())/prescriptions").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            for child in snapshot.children {
+                let prescription = child as! DataSnapshot
+                if let dict = prescription.value as? [String: Any] {
+                    let name = dict[Prescription.PropertyKey.name] as! String
+                    self.prescriptions.append(Prescription(name: name)! as Prescription)
+                }
+            }
+            
+            if self.prescriptions.isEmpty {
+                self.loadSamplePrescriptions()
+            }
+            
+            self.tableView.reloadData()
+        })
+    }
+    
+    private func loadPrescriptions() {
+        
+        // Try loading prescriptions locally, else try firebase
+        /* return */ /* NSKeyedUnarchiver.unarchiveObject(withFile: Prescription.ArchiveURL.path + getUserDisplayName()) as? [Prescription] ?? */ getPrescriptionsFromFirebase()
+        
     }
 
 }

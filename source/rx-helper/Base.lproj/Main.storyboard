@@ -643,6 +643,22 @@
                     <view key="view" contentMode="scaleToFill" id="Gce-7q-QgW">
                         <rect key="frame" x="0.0" y="0.0" width="343" height="524"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5bP-iP-T0C">
+                                <rect key="frame" x="151" y="143" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-lt-1Zy">
+                                <rect key="frame" x="44" y="145" width="43" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bUS-Q9-c2Q"/>
                     </view>
@@ -654,11 +670,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="6Ic-Yn-0gO">
                             <connections>
-                                <segue destination="yoT-An-1iS" kind="unwind" unwindAction="unwindToMealListWithSender:" id="oe8-xA-NXF"/>
+                                <segue destination="yoT-An-1iS" kind="unwind" unwindAction="unwindToPrescriptionListWithSender:" id="oe8-xA-NXF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="nameField" destination="5bP-iP-T0C" id="w6Z-Q9-SjV"/>
                         <outlet property="saveButton" destination="6Ic-Yn-0gO" id="ldE-z3-w7E"/>
                     </connections>
                 </viewController>
@@ -806,9 +823,8 @@
         <image name="Logos" width="709" height="696"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n7a-Jc-2Vy"/>
         <segue reference="lG2-lD-zYb"/>
-        <segue reference="AVr-z7-xdC"/>
+        <segue reference="vEi-Y5-Y2Q"/>
         <segue reference="Ucg-Nn-3Uq"/>
         <segue reference="GFu-Z9-wLc"/>
     </inferredMetricsTieBreakers>

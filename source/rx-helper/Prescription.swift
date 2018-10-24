@@ -13,6 +13,7 @@ class Prescription: NSObject, NSCoding {
     
     // MARK: Properties
     var name: String
+    var dosage: Int?
     var datePrescribed: String?
     var expirationDate: String?
     var photo: UIImage?
@@ -20,6 +21,7 @@ class Prescription: NSObject, NSCoding {
     var nextTimeToBeTaken: String?
     struct PropertyKey {
         static let name = "name"
+        static let dosage = "dosage"
         static let datePrescribed = "datePrescribed"
         static let expirationDate = "expirationDate"
         static let photo = "photo"
@@ -32,7 +34,7 @@ class Prescription: NSObject, NSCoding {
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("prescriptions")
     
     // MARK: Initialization
-    init?(name: String, datePrescribed: String? = nil, expirationDate: String? = nil, photo: UIImage? = nil, lastTaken: String? = nil, nextTimeToBeTaken: String? = nil) {
+    init?(name: String, dosage: Int? = nil, datePrescribed: String? = nil, expirationDate: String? = nil, photo: UIImage? = nil, lastTaken: String? = nil, nextTimeToBeTaken: String? = nil) {
         
         // Initialization should fail if there is no name
         if name.isEmpty {
@@ -41,6 +43,7 @@ class Prescription: NSObject, NSCoding {
         
         // Initialize stored properties
         self.name = name
+        self.dosage = dosage
         self.datePrescribed = datePrescribed
         self.expirationDate = expirationDate
         self.photo = photo
@@ -66,6 +69,7 @@ class Prescription: NSObject, NSCoding {
         }
         
         
+        let dosage = aDecoder.decodeInteger(forKey: PropertyKey.dosage)
         let datePrescribed = aDecoder.decodeObject(forKey: PropertyKey.datePrescribed) as? String
         let expirationDate = aDecoder.decodeObject(forKey: PropertyKey.expirationDate) as? String
         let photo = aDecoder.decodeObject(forKey: PropertyKey.photo) as? UIImage
@@ -73,7 +77,7 @@ class Prescription: NSObject, NSCoding {
         let nextTimeToBeTaken = aDecoder.decodeObject(forKey: PropertyKey.nextTimeToBeTaken) as? String
         
         // Must call designated initializer.
-        self.init(name: name, datePrescribed: datePrescribed, expirationDate: expirationDate, photo: photo, lastTaken: lastTaken, nextTimeToBeTaken: nextTimeToBeTaken)
+        self.init(name: name, dosage: dosage, datePrescribed: datePrescribed, expirationDate: expirationDate, photo: photo, lastTaken: lastTaken, nextTimeToBeTaken: nextTimeToBeTaken)
         
     }
 }
