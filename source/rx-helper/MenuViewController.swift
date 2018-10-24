@@ -8,25 +8,49 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 protocol SlideMenuDelegate {
     func slideMenuItemSelectedAtIndex(_ index: Int32)
 }
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    let users = ["Juan Brena","Nick Graeff","Ajanae Williams","Alexis Acosta","Jean-Paul Castro","Eduardo Meza","Blossom Hamika"]
+
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        print(users.count)
+        return (users.count + 1)
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
-        
-        return cell
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
+        //cell.textLabel?.text = "hello"
+        if (indexPath.item < users.count){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
+                cell.textLabel?.text = users[indexPath.row]
+
+            let imageName = UIImage(named: users[indexPath.row])
+            cell.imageView?.image = imageName
+
+            return cell
+        }
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
+            cell.textLabel?.text = "Add user +"
+            
+            let imageName = UIImage(named: "Add user +++")
+            cell.imageView?.image = imageName
+            
+            return cell
+        }
     }
     
 
     @IBAction func logoutButton(_ sender: Any) {
-        let alert = UIAlertController(title: "Log out of " + getUserDisplayName() + "?", message: nil, preferredStyle: .alert)
+        let baseVC = BaseViewController()
+        let alert = UIAlertController(title: "Log out of " + baseVC.getUserDisplayName() + "?", message: nil, preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Log out", style: .default, handler: logoutHandler))
@@ -65,19 +89,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         })
     }
 
-    func getUserDisplayName() -> String {
-        let user = Auth.auth().currentUser
-        if user != nil {
-            if user?.displayName != nil {
-                return (user?.displayName!)!
-            }
-            else{
-                return("")
-            }
-        }
-        return ("Error: no user logged in")
-    }
-
     func logoutHandler(alert: UIAlertAction) {
         do {
             try Auth.auth().signOut()
@@ -90,4 +101,10 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         let initial = storyboard.instantiateInitialViewController()
         UIApplication.shared.keyWindow?.rootViewController = initial
     }
+    
+    func createUserToFirebase(name: String){
+        let ref = Database.database().reference()
+        ref.child("\name")
+    }
+
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class BaseViewController: UIViewController, SlideMenuDelegate {
     
@@ -124,5 +125,21 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
             menuVC.view.frame=CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height);
             sender.isEnabled = true
             }, completion:nil)
+    }
+    
+    //This function will return the name of the user that is logged in
+    //We will need to modify this to change in case the person decides
+    //to change profile
+    func getUserDisplayName() -> String {
+        let user = Auth.auth().currentUser
+        if user != nil {
+            if user?.displayName != nil {
+                return (user?.displayName!)!
+            }
+            else{
+                return("")
+            }
+        }
+        return ("Error: no user logged in")
     }
 }
