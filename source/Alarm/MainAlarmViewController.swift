@@ -25,11 +25,12 @@ class MainAlarmViewController: UITableViewController{
         alarmModel = Alarms()
         tableView.reloadData()
         //dynamically append the edit button
+        self.navigationItem.leftItemsSupplementBackButton = true
         if alarmModel.count != 0 {
-            self.navigationItem.leftBarButtonItem = editButtonItem
+            //self.navigationItem.leftBarButtonItem = nil
         }
         else {
-            self.navigationItem.leftBarButtonItem = nil
+            //self.navigationItem.leftBarButtonItem = nil
         }
     }
     
@@ -134,7 +135,7 @@ class MainAlarmViewController: UITableViewController{
                 }
             }
             if alarmModel.count == 0 {
-                self.navigationItem.leftBarButtonItem = nil
+                //self.navigationItem.leftBarButtonItem = nil
             }
             
             // Delete the row from the data source
@@ -161,6 +162,10 @@ class MainAlarmViewController: UITableViewController{
     
     @IBAction func unwindFromAddEditAlarmView(_ segue: UIStoryboardSegue) {
         isEditing = false
+    }
+    
+    @IBAction func DoneAlarm(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     public func changeSwitchButtonState(index: Int) {

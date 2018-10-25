@@ -665,7 +665,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HPf-K9-LdH" kind="show" id="dy6-1e-qoA"/>
+                                    <segue destination="HPf-K9-LdH" kind="presentation" id="wuY-pb-1Sd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -841,7 +841,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUw-K1-lrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8798" y="1371"/>
+            <point key="canvasLocation" x="8633" y="1371"/>
         </scene>
         <!--Alarm-->
         <scene sceneID="CkB-10-ubT">
@@ -886,6 +886,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Alarm" id="7ih-D1-5zm">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="done" id="XqB-cN-X50">
+                            <connections>
+                                <action selector="DoneAlarm:" destination="aEw-Qr-mtV" id="5a6-3C-Egq"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="vyB-Ob-iZe">
                             <connections>
                                 <segue destination="ABu-a9-Ioh" kind="presentation" identifier="addSegue" id="wVb-yh-vxO"/>
