@@ -97,6 +97,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Hx6-9b-q4u" kind="show" identifier="moreInfo" id="Qer-xG-F1o"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -125,6 +128,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Hx6-9b-q4u" kind="show" identifier="moreinfo" id="aBW-2D-me5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -827,5 +833,6 @@
         <segue reference="vEi-Y5-Y2Q"/>
         <segue reference="Ucg-Nn-3Uq"/>
         <segue reference="GFu-Z9-wLc"/>
+        <segue reference="aBW-2D-me5"/>
     </inferredMetricsTieBreakers>
 </document>
