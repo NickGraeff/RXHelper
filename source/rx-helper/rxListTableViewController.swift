@@ -16,6 +16,10 @@ class rxListTableViewController: UITableViewController {
     var filteredRxList = [JSON]()
     
     override func viewDidLoad() {
+        
+        //searchController.isActive = true
+        
+        self.tableView.backgroundColor = UIColor.lightGray
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
@@ -23,6 +27,24 @@ class rxListTableViewController: UITableViewController {
         tableView.tableHeaderView = searchController.searchBar
         tableView.setContentOffset(CGPoint(x: 0, y: searchController.searchBar.frame.size.height), animated: false)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+            navigationItem.hidesSearchBarWhenScrolling = false
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        searchController.isActive = true
+            navigationItem.hidesSearchBarWhenScrolling = true
+    }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
     }
     /*override func didReceiveMemoryWarning() {
      super.didReceiveMemoryWarning()
@@ -39,12 +61,30 @@ class rxListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if searchController.isActive && searchController.searchBar.text != ""{
+        if isFiltering(){//searchController.isActive && searchController.searchBar.text != ""{
             return filteredRxList.count
         }
         return rxlist.count
     }
     
+    
+    /*override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x:0, y:0, width:tableView.frame.size.width, height:18))
+        let label = UILabel(frame: CGRect(x:10, y:5, width:tableView.frame.size.width, height:18))
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.text = "                        SEARCH FOR RX MEDICINE \n ddddddddddddd"
+        label.text = "**********************************************"
+        //label.text = "**********************************************"
+        view.addSubview(label);
+        view.backgroundColor = UIColor.blue;
+        return view
+    }*/
+    
+    
+    
+   /* override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100;
+    }*/
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rxCell", for: indexPath)
@@ -53,19 +93,27 @@ class rxListTableViewController: UITableViewController {
         
         if searchController.isActive && searchController.searchBar.text != "" {
             data = filteredRxList[indexPath.row]
+            let countryName = data["term"].stringValue
+            //let countryCapital = data[" "].stringValue
+            
+            cell.textLabel?.text = countryName
+            //cell.detailTextLabel?.text = countryCapital
         }else{
             data = rxlist[indexPath.row]
+            tableView.reloadData()
         }
         // Configure the cell...
         //print(data[][])
-        let countryName = data["term"].stringValue
-        let countryCapital = data[" "].stringValue
+        //let countryName = data["term"].stringValue
+       // let countryCapital = data[" "].stringValue
         
-        cell.textLabel?.text = countryName
-        cell.detailTextLabel?.text = countryCapital
+        //cell.textLabel?.text = countryName
+        //cell.detailTextLabel?.text = countryCapital
         
         return cell
     }
+
+    
     
     func filteredContentForSearchText(searchText: String){
         filteredRxList = rxlist.array!.filter { country in
@@ -74,15 +122,43 @@ class rxListTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "medDetailsViewController") as? medDetailsViewController
-        var data: JSON
-        data = rxlist[indexPath.row]
-        let countryName = data["term"].stringValue
-        vc?.name = countryName
-        self.navigationController?.pushViewController(vc!, animated: true)
+    func searchBarIsEmpty() -> Bool{
+        return searchController.searchBar.text?.isEmpty ?? true
+        
     }
     
+    
+    func isFiltering() -> Bool{
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moreinfo"{
+            //if var selectedRowIndex = self.tableView.indexPathForSelectedRow()
+            //let mapViewController = segue.destination as! medDetailsViewController
+            if let indexPath = tableView.indexPathForSelectedRow{
+                //let candy = rxlist[indexPath.row]/////////////
+                // let countryName = candy["term"].stringValue
+                //controller.name = countryName
+                
+                let data: JSON
+                if isFiltering(){
+                    data = filteredRxList[indexPath.row]
+                    
+                }else{
+                    data = rxlist[indexPath.row]
+                    
+                }
+                
+                //let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
+                let controller = segue.destination as? medDetailsViewController
+                let final = data["term"].stringValue
+                controller?.name = final //countryName
+                controller?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller?.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
+    }
     
 }
 

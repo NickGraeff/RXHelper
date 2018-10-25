@@ -1,91 +1,91 @@
 [ 
     {
-      "term": "Ibuprofen",
+      "term": "acepromazine",
       "count": 493
     },
     {
-      "term": "Gabapentin",
+      "term": "alprazolam",
+      "count": 486
+    },
+    {
+      "term": "altrenogest",
       "count": 267
     },
     {
-      "term": "Amoxicillin",
+      "term": "amantadine",
       "count": 203
     },
     {
-      "term": "Hand Sanitizer",
+      "term": "aminophylline",
+      "count": 187
+    },
+    {
+      "term": "amitraz",
       "count": 175
     },
     {
-      "term": "Salicylic Acid",
+      "term": "amitriptyline",
       "count": 165
     },
     {
-      "term": "Hydrochlorothiazide",
+      "term": "amlodipine",
       "count": 157
     },
     {
-      "term": "Naproxen",
+      "term": "amoxicillin",
       "count": 153
     },
     {
-      "term": "Omeprazole",
+      "term": "amprolium",
       "count": 152
     },
     {
-      "term": "Atenolol",
-      "count": 144
+      "term": "benazepril", 
+      "count": 145
     },
     {
-      "term": "Levetiracetam",
-      "count": 144
+      "term": "bethanechol",
+      "count": 180
     },
     {
-      "term": "Prednisone",
-      "count": 144
+      "term": "bupivacaine",
+      "count": 147
     },
     {
-      "term": "Lisinopril",
-      "count": 143
+      "term": "buprenorphine", 
+      "count": 148
     },
     {
-      "term": "Metronidazole",
-      "count": 140
+      "term": "butorphanol", 
+      "count": 149
     },
     {
-      "term": "Allergy Relief",
-      "count": 137
+      "term": "carprofen",
+      "count": 150 
     },
     {
-      "term": "Cephalexin",
-      "count": 136
+      "term": "cefovecin",
+      "count": 151
     },
     {
-      "term": "Doxycycline Hyclate",
-      "count": 134
+      "term": "cefpodoxime", 
+      "count": 152
     },
     {
-      "term": "Naproxen Sodium",
-      "count": 134
+      "term": "cephalexin",
+      "count": 153
     },
     {
-      "term": "Metoprolol Tartrate",
-      "count": 133
+      "term": "ceftiofur",
+      "count": 154
     },
     {
-      "term": "Ranitidine",
-      "count": 133
+      "term": "chloramphenicol",
+      "count": 155
     },
     {
-      "term": "Levofloxacin",
-      "count": 132
-    },
-    {
-      "term": "Lorazepam",
-      "count": 132
-    },
-    {
-      "term": "Fluoxetine",
-      "count": 129
+      "term": "cimetidine", 
+      "count": 156
     },
     {
       "term": "Losartan Potassium",
@@ -436,10 +436,6 @@
       "count": 59
     },
     {
-      "term": "Instant Hand Sanitizer",
-      "count": 59
-    },
-    {
       "term": "Metaxalone",
       "count": 59
     },
@@ -625,23 +621,11 @@
       "count": 44
     },
     {
-      "term": "Phenazopyridine Hydrochloride",
-      "count": 44
-    },
-    {
-      "term": "Hand Wash",
-      "count": 43
-    },
-    {
       "term": "Metoprolol Succinate",
       "count": 43
     },
     {
       "term": "Metoprolol succinate",
-      "count": 43
-    },
-    {
-      "term": "Pain Relief Extra Strength",
       "count": 43
     },
     {
@@ -687,10 +671,6 @@
     {
       "term": "meloxicam",
       "count": 40
-    },
-    {
-      "term": "Advanced Hand Sanitizer",
-      "count": 39
     },
     {
       "term": "Isoniazid",
@@ -825,10 +805,6 @@
       "count": 33
     },
     {
-      "term": "Childrens Ibuprofen",
-      "count": 33
-    },
-    {
       "term": "Milk of Magnesia",
       "count": 33
     },
@@ -842,10 +818,6 @@
     },
     {
       "term": "All Day Pain Relief",
-      "count": 32
-    },
-    {
-      "term": "Childrens Allergy Relief",
       "count": 32
     },
     {
@@ -878,10 +850,6 @@
     },
     {
       "term": "Cefazolin",
-      "count": 30
-    },
-    {
-      "term": "Childrens Allergy",
       "count": 30
     },
     {
@@ -922,10 +890,6 @@
     },
     {
       "term": "Bumetanide",
-      "count": 29
-    },
-    {
-      "term": "ESZOPICLONE",
       "count": 29
     },
     {
@@ -1006,10 +970,6 @@
     },
     {
       "term": "Sucralfate",
-      "count": 27
-    },
-    {
-      "term": "instant hand sanitizer",
       "count": 27
     },
     {
@@ -1281,10 +1241,6 @@
       "count": 21
     },
     {
-      "term": "Childrens Pain Relief",
-      "count": 21
-    },
-    {
       "term": "Ciclopirox",
       "count": 21
     },
@@ -1409,10 +1365,6 @@
       "count": 19
     },
     {
-      "term": "Antiseptic Skin Cleanser",
-      "count": 19
-    },
-    {
       "term": "Atropine Sulfate",
       "count": 19
     },
@@ -1434,10 +1386,6 @@
     },
     {
       "term": "Fluoxetine Hydrochloride",
-      "count": 19
-    },
-    {
-      "term": "Hand wash",
       "count": 19
     },
     {
@@ -1485,14 +1433,6 @@
       "count": 18
     },
     {
-      "term": "Childrens Acetaminophen",
-      "count": 18
-    },
-    {
-      "term": "Cough DM",
-      "count": 18
-    },
-    {
       "term": "Diclofenac Potassium",
       "count": 18
     },
@@ -1505,10 +1445,6 @@
       "count": 18
     },
     {
-      "term": "Kids Relief",
-      "count": 18
-    },
-    {
       "term": "Lactulose",
       "count": 18
     },
@@ -1518,10 +1454,6 @@
     },
     {
       "term": "Liothyronine Sodium",
-      "count": 18
-    },
-    {
-      "term": "Miconazole 7",
       "count": 18
     },
     {
@@ -1542,10 +1474,6 @@
     },
     {
       "term": "Oxaprozin",
-      "count": 18
-    },
-    {
-      "term": "Pain Relief PM",
       "count": 18
     },
     {
@@ -1575,10 +1503,6 @@
     {
       "term": "azithromycin monohydrate",
       "count": 18
-    },
-    {
-      "term": "Anti-Bacterial Hand Gel",
-      "count": 17
     },
     {
       "term": "Cefuroxime Axetil",
@@ -1713,14 +1637,6 @@
       "count": 16
     },
     {
-      "term": "HYDROCORTISONE",
-      "count": 16
-    },
-    {
-      "term": "Nitrofurantion Macrocrystals",
-      "count": 16
-    },
-    {
       "term": "Nitroglycerin",
       "count": 16
     },
@@ -1745,14 +1661,6 @@
       "count": 16
     },
     {
-      "term": "Regular Strength Pain Relief",
-      "count": 16
-    },
-    {
-      "term": "SILICEA",
-      "count": 16
-    },
-    {
       "term": "Sevelamer Carbonate",
       "count": 16
     },
@@ -1766,10 +1674,6 @@
     },
     {
       "term": "Tretinoin",
-      "count": 16
-    },
-    {
-      "term": "Viagra",
       "count": 16
     },
     {
@@ -1787,14 +1691,6 @@
     {
       "term": "Zolmitriptan",
       "count": 16
-    },
-    {
-      "term": "Bupropion hydrochloride",
-      "count": 15
-    },
-    {
-      "term": "Childrens Loratadine",
-      "count": 15
     },
     {
       "term": "Chlorzoxazone",
@@ -1821,23 +1717,11 @@
       "count": 15
     },
     {
-      "term": "Fluphenazine Hydrochloride",
-      "count": 15
-    },
-    {
       "term": "Guanfacine",
       "count": 15
     },
     {
       "term": "Indapamide",
-      "count": 15
-    },
-    {
-      "term": "Irinotecan Hydrochloride",
-      "count": 15
-    },
-    {
-      "term": "Isopropyl Rubbing Alcohol",
       "count": 15
     },
     {
@@ -1862,14 +1746,6 @@
     },
     {
       "term": "Minoxidil",
-      "count": 15
-    },
-    {
-      "term": "Nasal",
-      "count": 15
-    },
-    {
-      "term": "Nicardipine Hydrochloride",
       "count": 15
     },
     {
@@ -1921,10 +1797,6 @@
       "count": 15
     },
     {
-      "term": "Allergy Multi-Symptom",
-      "count": 14
-    },
-    {
       "term": "Azathioprine",
       "count": 14
     },
@@ -1945,10 +1817,6 @@
       "count": 14
     },
     {
-      "term": "Chlorpromazine Hydrochloride",
-      "count": 14
-    },
-    {
       "term": "Clindamycin",
       "count": 14
     },
@@ -1965,10 +1833,6 @@
       "count": 14
     },
     {
-      "term": "Doxorubicin Hydrochloride",
-      "count": 14
-    },
-    {
       "term": "Famciclovir",
       "count": 14
     },
@@ -1978,10 +1842,6 @@
     },
     {
       "term": "Flumazenil",
-      "count": 14
-    },
-    {
-      "term": "Loratadine Allergy Relief",
       "count": 14
     },
     {
@@ -2002,10 +1862,6 @@
     },
     {
       "term": "Phenytoin",
-      "count": 14
-    },
-    {
-      "term": "Pseudoephedrine Hydrochloride",
       "count": 14
     },
     {
@@ -2045,10 +1901,6 @@
       "count": 14
     },
     {
-      "term": "loperamide hydrochloride",
-      "count": 14
-    },
-    {
       "term": "topiramate",
       "count": 14
     },
@@ -2058,10 +1910,6 @@
     },
     {
       "term": "Arnica Plus",
-      "count": 13
-    },
-    {
-      "term": "Azelastine Hydrochloride",
       "count": 13
     },
     {
@@ -2077,15 +1925,7 @@
       "count": 13
     },
     {
-      "term": "Clorazepate Dipotassium",
-      "count": 13
-    },
-    {
       "term": "Desonide",
-      "count": 13
-    },
-    {
-      "term": "Dry Scalp Care",
       "count": 13
     },
     {
@@ -2145,20 +1985,12 @@
       "count": 13
     },
     {
-      "term": "Wet Wipes",
-      "count": 13
-    },
-    {
       "term": "levofloxacin",
       "count": 13
     },
     {
       "term": "pain relief",
       "count": 13
-    },
-    {
-      "term": "Antibacterial Hand",
-      "count": 12
     },
     {
       "term": "Anticavity Rinse",
@@ -2189,14 +2021,6 @@
       "count": 12
     },
     {
-      "term": "Demeclocycline Hydrochloride",
-      "count": 12
-    },
-    {
-      "term": "Dial Antibacterial Bar",
-      "count": 12
-    },
-    {
       "term": "Esmolol Hydrochloride",
       "count": 12
     },
@@ -2206,10 +2030,6 @@
     },
     {
       "term": "Granisetron Hydrochloride",
-      "count": 12
-    },
-    {
-      "term": "Hydrocortisone Maximum Strength",
       "count": 12
     },
     {
@@ -2238,10 +2058,6 @@
     },
     {
       "term": "Moxifloxacin",
-      "count": 12
-    },
-    {
-      "term": "Nitrofurantoin Macrocrystals",
       "count": 12
     },
     {
@@ -2341,19 +2157,7 @@
       "count": 11
     },
     {
-      "term": "Cough Relief",
-      "count": 11
-    },
-    {
       "term": "Depo-Medrol",
-      "count": 11
-    },
-    {
-      "term": "Dexmedetomidine Hydrochloride",
-      "count": 11
-    },
-    {
-      "term": "Diarrhea",
       "count": 11
     },
     {
@@ -2377,10 +2181,6 @@
       "count": 11
     },
     {
-      "term": "Gelato Topical Anesthetic",
-      "count": 11
-    },
-    {
       "term": "General Protection",
       "count": 11
     },
@@ -2394,10 +2194,6 @@
     },
     {
       "term": "Halobetasol Propionate",
-      "count": 11
-    },
-    {
-      "term": "Infants Ibuprofen",
       "count": 11
     },
     {
@@ -2465,10 +2261,6 @@
       "count": 11
     },
     {
-      "term": "Senna-Lax",
-      "count": 11
-    },
-    {
       "term": "Sleep Aid NightTime",
       "count": 11
     },
@@ -2478,14 +2270,6 @@
     },
     {
       "term": "Temozolomide",
-      "count": 11
-    },
-    {
-      "term": "Ultra Strength Gas Relief",
-      "count": 11
-    },
-    {
-      "term": "Vaporizing Chest Rub",
       "count": 11
     },
     {
@@ -2525,20 +2309,12 @@
       "count": 11
     },
     {
-      "term": "ropinirole hydrochloride",
-      "count": 11
-    },
-    {
       "term": "triple antibiotic",
       "count": 11
     },
     {
       "term": "zaleplon",
       "count": 11
-    },
-    {
-      "term": "Acne Treatment",
-      "count": 10
     },
     {
       "term": "Adapalene",
@@ -2634,10 +2410,6 @@
     },
     {
       "term": "Healing",
-      "count": 10
-    },
-    {
-      "term": "Hydromorphone HCl",
       "count": 10
     },
     {
@@ -2801,4 +2573,4 @@
       "count": 9
     }
 ]
- 
+    
