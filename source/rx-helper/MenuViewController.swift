@@ -15,17 +15,24 @@ protocol SlideMenuDelegate {
 }
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        sideMenuTable.delegate = self
+        sideMenuTable.dataSource = self
+    }
     var users = ["Juan Brena","Nick Graeff","Ajanae Williams","Alexis Acosta","Jean-Paul Castro","Eduardo Meza","Blossom Hamika"]
 
 
     @IBOutlet weak var sideMenuTable: UITableView!
+    
+    //create the number of cells for the table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(users.count)
         return (users.count + 1)
     }
 
+    //create table view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if (indexPath.item < users.count){
@@ -65,12 +72,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     var btnMenu: UIButton!
     var delegate: SlideMenuDelegate?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        sideMenuTable.delegate = self
-        sideMenuTable.dataSource = self
-    }
 
     @IBOutlet weak var btnCloseMenuOverlay: UIButton!
 
@@ -95,6 +96,51 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         })
     }
 
+    //TODO!!
+    func addUserToFirebase(name: String){
+//        let ref = Database.database().reference()
+//        ref.child("\name")
+        users.append(name)
+    }
+
+    //TODO!!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toHome" {
+
+            //let menuVC = segue.destination as! HomeViewController
+            //let indexPath = sender as! IndexPath
+        }
+    }
+    
+    // method to run when table view cell is tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //print("You tapped cell number \(indexPath.row).")
+        if (indexPath.row == users.count){
+            print("To Add User VC")
+            self.performSegue(withIdentifier: "toAddUser", sender: nil)
+        }
+    }
+
+    // method to handle row deletion
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+        if (indexPath.row != users.count) {
+            if editingStyle == .delete {
+            
+                //remove the item from the data model
+                users.remove(at: indexPath.row)
+
+                //delete the table view row
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+            else if editingStyle == .insert{
+                //Not used in our example, but if you were adding a new row, this is where you would do it
+            }
+        }
+    }
+    
+    //logout function handler
     func logoutHandler(alert: UIAlertAction) {
         do {
             try Auth.auth().signOut()
@@ -107,34 +153,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         let initial = storyboard.instantiateInitialViewController()
         UIApplication.shared.keyWindow?.rootViewController = initial
     }
-    
-    //TODO!!
-    func createUserToFirebase(name: String){
-        let ref = Database.database().reference()
-        ref.child("\name")
-    }
 
-    //TODO!!
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toHome" {
 
-            //let menuVC = segue.destination as! HomeViewController
-            //let indexPath = sender as! IndexPath
-        }
-    }
-
-    // method to handle row deletion
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-
-            //remove the item from the data model
-            users.remove(at: indexPath.row)
-
-            //delete the table view row
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-        else if editingStyle == .insert{
-            //Not used in our example, but if you were adding a new row, this is where you would do it
-        }
-    }
 }

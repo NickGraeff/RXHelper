@@ -713,6 +713,57 @@
             </objects>
             <point key="canvasLocation" x="5674" y="231"/>
         </scene>
+        <!--AddUserViewController-->
+        <scene sceneID="Ina-hH-u40">
+            <objects>
+                <viewController storyboardIdentifier="AddUserViewController" title="AddUserViewController" id="5tR-Fi-dIB" customClass="AddUserViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="10B-Sv-kFB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please inserts new users name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdw-mz-yQD">
+                                <rect key="frame" x="69" y="234" width="237" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5Y-Lv-NYv">
+                                <rect key="frame" x="69" y="280" width="237" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" textContentType="name"/>
+                                <connections>
+                                    <action selector="addUser:" destination="5tR-Fi-dIB" eventType="editingDidEnd" id="Xzh-KQ-stN"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtD-hg-a23">
+                                <rect key="frame" x="164" y="362" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addNewUser:" destination="5tR-Fi-dIB" eventType="touchUpInside" id="WYV-aL-koR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w5Y-Lv-NYv" firstAttribute="leading" secondItem="tdw-mz-yQD" secondAttribute="leading" id="KbZ-xD-Qts"/>
+                            <constraint firstItem="tdw-mz-yQD" firstAttribute="leading" secondItem="fvX-nn-K8v" secondAttribute="leading" constant="69" id="han-1G-D55"/>
+                            <constraint firstItem="tdw-mz-yQD" firstAttribute="top" secondItem="fvX-nn-K8v" secondAttribute="top" constant="190" id="kO2-3g-6GG"/>
+                            <constraint firstItem="fvX-nn-K8v" firstAttribute="trailing" secondItem="tdw-mz-yQD" secondAttribute="trailing" constant="69" id="md0-VM-Tw9"/>
+                            <constraint firstItem="w5Y-Lv-NYv" firstAttribute="top" secondItem="tdw-mz-yQD" secondAttribute="bottom" constant="25" id="pqj-Ms-Fj0"/>
+                            <constraint firstItem="w5Y-Lv-NYv" firstAttribute="trailing" secondItem="tdw-mz-yQD" secondAttribute="trailing" id="qZa-ov-eRN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fvX-nn-K8v"/>
+                    </view>
+                    <connections>
+                        <outlet property="newUser" destination="w5Y-Lv-NYv" id="4gW-5j-DBV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nd1-HW-z9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5672.8000000000002" y="-562.3152709359606"/>
+        </scene>
         <!--MenuViewController-->
         <scene sceneID="sZh-4R-N7k">
             <objects>
@@ -827,11 +878,12 @@
                     <connections>
                         <outlet property="btnCloseMenuOverlay" destination="cgp-gZ-uYK" id="nPC-NM-JKU"/>
                         <outlet property="sideMenuTable" destination="Cr5-L1-ntP" id="ObU-ZY-bb0"/>
+                        <segue destination="5tR-Fi-dIB" kind="show" identifier="toAddUser" id="YeC-Vb-snv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UJ-UX-mAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6781.6000000000004" y="-485.46798029556652"/>
+            <point key="canvasLocation" x="6756" y="-562"/>
         </scene>
     </scenes>
     <resources>
@@ -843,6 +895,7 @@
         <segue reference="AVr-z7-xdC"/>
         <segue reference="Tuo-27-eKB"/>
         <segue reference="KIV-Q3-MVh"/>
+        <segue reference="aBW-2D-me5"/>
         <segue reference="2L3-3n-56N"/>
     </inferredMetricsTieBreakers>
 </document>
