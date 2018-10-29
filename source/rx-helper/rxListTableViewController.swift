@@ -17,8 +17,6 @@ class rxListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         
-        //searchController.isActive = true
-        
         self.tableView.backgroundColor = UIColor.lightGray
         super.viewDidLoad()
         searchController.searchResultsUpdater = self
@@ -42,9 +40,9 @@ class rxListTableViewController: UITableViewController {
     }
     
     
-    
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
+        
     }
     /*override func didReceiveMemoryWarning() {
      super.didReceiveMemoryWarning()
@@ -61,30 +59,13 @@ class rxListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if isFiltering(){//searchController.isActive && searchController.searchBar.text != ""{
+        if isFiltering(){
             return filteredRxList.count
         }
         return rxlist.count
     }
     
     
-    /*override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x:0, y:0, width:tableView.frame.size.width, height:18))
-        let label = UILabel(frame: CGRect(x:10, y:5, width:tableView.frame.size.width, height:18))
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.text = "                        SEARCH FOR RX MEDICINE \n ddddddddddddd"
-        label.text = "**********************************************"
-        //label.text = "**********************************************"
-        view.addSubview(label);
-        view.backgroundColor = UIColor.blue;
-        return view
-    }*/
-    
-    
-    
-   /* override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100;
-    }*/
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rxCell", for: indexPath)
@@ -94,26 +75,15 @@ class rxListTableViewController: UITableViewController {
         if searchController.isActive && searchController.searchBar.text != "" {
             data = filteredRxList[indexPath.row]
             let countryName = data["term"].stringValue
-            //let countryCapital = data[" "].stringValue
             
             cell.textLabel?.text = countryName
-            //cell.detailTextLabel?.text = countryCapital
         }else{
             data = rxlist[indexPath.row]
             tableView.reloadData()
         }
-        // Configure the cell...
-        //print(data[][])
-        //let countryName = data["term"].stringValue
-       // let countryCapital = data[" "].stringValue
-        
-        //cell.textLabel?.text = countryName
-        //cell.detailTextLabel?.text = countryCapital
         
         return cell
     }
-
-    
     
     func filteredContentForSearchText(searchText: String){
         filteredRxList = rxlist.array!.filter { country in
@@ -134,12 +104,7 @@ class rxListTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "moreinfo"{
-            //if var selectedRowIndex = self.tableView.indexPathForSelectedRow()
-            //let mapViewController = segue.destination as! medDetailsViewController
             if let indexPath = tableView.indexPathForSelectedRow{
-                //let candy = rxlist[indexPath.row]/////////////
-                // let countryName = candy["term"].stringValue
-                //controller.name = countryName
                 
                 let data: JSON
                 if isFiltering(){
@@ -149,11 +114,9 @@ class rxListTableViewController: UITableViewController {
                     data = rxlist[indexPath.row]
                     
                 }
-                
-                //let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
                 let controller = segue.destination as? medDetailsViewController
                 let final = data["term"].stringValue
-                controller?.name = final //countryName
+                controller?.name = final
                 controller?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller?.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -165,5 +128,6 @@ class rxListTableViewController: UITableViewController {
 extension rxListTableViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
         filteredContentForSearchText(searchText: searchController.searchBar.text!)
+        searchController.searchResultsController?.view.isHidden = false;
     }
 }

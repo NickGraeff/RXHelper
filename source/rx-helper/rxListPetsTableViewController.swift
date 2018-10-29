@@ -38,7 +38,12 @@ class rxListPetsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
+        
     }
+    
+    //override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+      //  doSomethingWithItem(indexPath.row)
+    //}
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,7 +59,6 @@ class rxListPetsTableViewController: UITableViewController {
         //tableView.isHidden = true
         return rxlist.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rxCel", for: indexPath)
@@ -128,6 +132,7 @@ class rxListPetsTableViewController: UITableViewController {
                 }
                 //let controller = (segue.destination as! UINavigationController).topViewController as! medDetailsViewController
                 let controller = segue.destination as? medDetailsViewController
+                controller?.name2 = searchController.searchBar.text!
                 let final = data["term"].stringValue
                 controller?.name = final //countryName
                 controller?.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
@@ -140,7 +145,7 @@ class rxListPetsTableViewController: UITableViewController {
 
 extension rxListPetsTableViewController: UISearchResultsUpdating{
     func updateSearchResults(for searchController: UISearchController) {
-        filteredContentForSearchText(searchText: searchController.searchBar.text!)
+    filteredContentForSearchText(searchText: searchController.searchBar.text!)
     }
 }
 
