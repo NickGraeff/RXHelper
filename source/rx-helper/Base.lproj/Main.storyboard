@@ -75,7 +75,9 @@
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iO3-M6-RKl"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="PTo-y2-9aE"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1NT-7j-hR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -769,6 +771,10 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="menuLabel" destination="v2g-U6-Gdg" id="1Ks-fA-FCS"/>
+                                                    <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="2L3-3n-56N"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -820,6 +826,7 @@
                     </view>
                     <connections>
                         <outlet property="btnCloseMenuOverlay" destination="cgp-gZ-uYK" id="nPC-NM-JKU"/>
+                        <outlet property="sideMenuTable" destination="Cr5-L1-ntP" id="ObU-ZY-bb0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UJ-UX-mAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -832,8 +839,10 @@
         <image name="Logos" width="709" height="696"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ucg-Nn-3Uq"/>
-        <segue reference="GFu-Z9-wLc"/>
-        <segue reference="aBW-2D-me5"/>
+        <segue reference="wLF-tO-C8c"/>
+        <segue reference="AVr-z7-xdC"/>
+        <segue reference="Tuo-27-eKB"/>
+        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="2L3-3n-56N"/>
     </inferredMetricsTieBreakers>
 </document>

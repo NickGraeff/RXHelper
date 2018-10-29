@@ -16,17 +16,18 @@ protocol SlideMenuDelegate {
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let users = ["Juan Brena","Nick Graeff","Ajanae Williams","Alexis Acosta","Jean-Paul Castro","Eduardo Meza","Blossom Hamika"]
+
+    var users = ["Juan Brena","Nick Graeff","Ajanae Williams","Alexis Acosta","Jean-Paul Castro","Eduardo Meza","Blossom Hamika"]
 
 
+    @IBOutlet weak var sideMenuTable: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(users.count)
         return (users.count + 1)
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell") as! MenuTableViewCell
-        //cell.textLabel?.text = "hello"
+        
         if (indexPath.item < users.count){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
                 cell.textLabel?.text = users[indexPath.row]
@@ -40,11 +41,15 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             cell.textLabel?.text = "Add user +"
             
-            let imageName = UIImage(named: "Add user +++")
+            let imageName = UIImage(named: "Add user +")
             cell.imageView?.image = imageName
             
             return cell
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 35
     }
     
 
@@ -63,7 +68,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        sideMenuTable.delegate = self
+        sideMenuTable.dataSource = self
     }
 
     @IBOutlet weak var btnCloseMenuOverlay: UIButton!
@@ -102,9 +108,33 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         UIApplication.shared.keyWindow?.rootViewController = initial
     }
     
+    //TODO!!
     func createUserToFirebase(name: String){
         let ref = Database.database().reference()
         ref.child("\name")
     }
 
+    //TODO!!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toHome" {
+
+            //let menuVC = segue.destination as! HomeViewController
+            //let indexPath = sender as! IndexPath
+        }
+    }
+
+    // method to handle row deletion
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+
+            //remove the item from the data model
+            users.remove(at: indexPath.row)
+
+            //delete the table view row
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        else if editingStyle == .insert{
+            //Not used in our example, but if you were adding a new row, this is where you would do it
+        }
+    }
 }
