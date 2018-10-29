@@ -15,12 +15,13 @@ class RxListPetsViewController: UIViewController, UITableViewDataSource, UITable
     
     //@IBOutlet weak var tblView: UITableView!
     
-    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tblView: UITableView!
     
     
     
     let searchController = UISearchController(searchResultsController: nil)
-    let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxList01", ofType: "json")!)! as Data)
+    let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListPet01", ofType: "json")!)! as Data)
     var filteredRxList = [JSON]()
     
     var searching = false
@@ -46,7 +47,7 @@ class RxListPetsViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell01")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell02")
         
         var data: JSON
         
