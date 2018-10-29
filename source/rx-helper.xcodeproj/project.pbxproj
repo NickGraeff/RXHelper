@@ -12,6 +12,26 @@
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
 		38CBB483217192B900F7CE05 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47F217192B900F7CE05 /* Prescription.swift */; };
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AE0ADE572187AD1C00A94894 /* AlarmAddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE3F2187AD1C00A94894 /* AlarmAddEditViewController.swift */; };
+		AE0ADE582187AD1C00A94894 /* tickle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE0ADE402187AD1C00A94894 /* tickle.mp3 */; };
+		AE0ADE592187AD1C00A94894 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE412187AD1C00A94894 /* UIWindow+Extension.swift */; };
+		AE0ADE5A2187AD1C00A94894 /* AlarmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE422187AD1C00A94894 /* AlarmModel.swift */; };
+		AE0ADE5B2187AD1C00A94894 /* WeekdaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE432187AD1C00A94894 /* WeekdaysViewController.swift */; };
+		AE0ADE5C2187AD1C00A94894 /* SegueInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE442187AD1C00A94894 /* SegueInfo.swift */; };
+		AE0ADE5D2187AD1C00A94894 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE0ADE452187AD1C00A94894 /* LaunchScreen.xib */; };
+		AE0ADE5F2187AD1C00A94894 /* AlarmApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE492187AD1C00A94894 /* AlarmApplicationDelegate.swift */; };
+		AE0ADE602187AD1C00A94894 /* AlarmSchedulerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE4A2187AD1C00A94894 /* AlarmSchedulerDelegate.swift */; };
+		AE0ADE612187AD1C00A94894 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE4B2187AD1C00A94894 /* MediaViewController.swift */; };
+		AE0ADE622187AD1C00A94894 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0ADE4C2187AD1C00A94894 /* Images.xcassets */; };
+		AE0ADE632187AD1C00A94894 /* PropertyReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE4D2187AD1C00A94894 /* PropertyReflectable.swift */; };
+		AE0ADE642187AD1C00A94894 /* MainAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE4E2187AD1C00A94894 /* MainAlarmViewController.swift */; };
+		AE0ADE652187AD1C00A94894 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE4F2187AD1C00A94894 /* Scheduler.swift */; };
+		AE0ADE662187AD1C00A94894 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE502187AD1C00A94894 /* AppDelegate.swift */; };
+		AE0ADE672187AD1C00A94894 /* bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE0ADE512187AD1C00A94894 /* bell.mp3 */; };
+		AE0ADE682187AD1C00A94894 /* LabelEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE522187AD1C00A94894 /* LabelEditViewController.swift */; };
+		AE0ADE692187AD1C00A94894 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE532187AD1C00A94894 /* Persistable.swift */; };
+		AE0ADE6A2187AD1C00A94894 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE542187AD1C00A94894 /* NotificationName+Extension.swift */; };
+		AE0ADE6C2187AD1C00A94894 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE562187AD1C00A94894 /* Identifier.swift */; };
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
 		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
 		B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */; };
@@ -23,7 +43,6 @@
 		B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCA292217C7536000A441A /* MenuTableViewCell.swift */; };
 		C601CE642181343200984684 /* rxList01.json in Resources */ = {isa = PBXBuildFile; fileRef = C601CE632181343100984684 /* rxList01.json */; };
 		C601CE662181344300984684 /* rxListPet01.json in Resources */ = {isa = PBXBuildFile; fileRef = C601CE652181344300984684 /* rxListPet01.json */; };
-		C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61566C42150DF6E0031A3D4 /* AppDelegate.swift */; };
 		C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566C82150DF6E0031A3D4 /* Main.storyboard */; };
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
 		C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */; };
@@ -40,6 +59,26 @@
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		38CBB47F217192B900F7CE05 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0ADE3F2187AD1C00A94894 /* AlarmAddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmAddEditViewController.swift; sourceTree = "<group>"; };
+		AE0ADE402187AD1C00A94894 /* tickle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tickle.mp3; sourceTree = "<group>"; };
+		AE0ADE412187AD1C00A94894 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		AE0ADE422187AD1C00A94894 /* AlarmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmModel.swift; sourceTree = "<group>"; };
+		AE0ADE432187AD1C00A94894 /* WeekdaysViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekdaysViewController.swift; sourceTree = "<group>"; };
+		AE0ADE442187AD1C00A94894 /* SegueInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueInfo.swift; sourceTree = "<group>"; };
+		AE0ADE462187AD1C00A94894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AE0ADE492187AD1C00A94894 /* AlarmApplicationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmApplicationDelegate.swift; sourceTree = "<group>"; };
+		AE0ADE4A2187AD1C00A94894 /* AlarmSchedulerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSchedulerDelegate.swift; sourceTree = "<group>"; };
+		AE0ADE4B2187AD1C00A94894 /* MediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		AE0ADE4C2187AD1C00A94894 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE0ADE4D2187AD1C00A94894 /* PropertyReflectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyReflectable.swift; sourceTree = "<group>"; };
+		AE0ADE4E2187AD1C00A94894 /* MainAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAlarmViewController.swift; sourceTree = "<group>"; };
+		AE0ADE4F2187AD1C00A94894 /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		AE0ADE502187AD1C00A94894 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Alarm/AppDelegate.swift; sourceTree = "<group>"; };
+		AE0ADE512187AD1C00A94894 /* bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bell.mp3; sourceTree = "<group>"; };
+		AE0ADE522187AD1C00A94894 /* LabelEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelEditViewController.swift; sourceTree = "<group>"; };
+		AE0ADE532187AD1C00A94894 /* Persistable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistable.swift; sourceTree = "<group>"; };
+		AE0ADE542187AD1C00A94894 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
+		AE0ADE562187AD1C00A94894 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
@@ -53,7 +92,6 @@
 		C601CE632181343100984684 /* rxList01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxList01.json; sourceTree = "<group>"; };
 		C601CE652181344300984684 /* rxListPet01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListPet01.json; sourceTree = "<group>"; };
 		C61566C12150DF6E0031A3D4 /* rx-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C61566C42150DF6E0031A3D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C61566C92150DF6E0031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C61566CB2150DF730031A3D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61566CE2150DF730031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,9 +134,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE0ADE3E2187AD1C00A94894 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				AE0ADE3F2187AD1C00A94894 /* AlarmAddEditViewController.swift */,
+				AE0ADE402187AD1C00A94894 /* tickle.mp3 */,
+				AE0ADE412187AD1C00A94894 /* UIWindow+Extension.swift */,
+				AE0ADE422187AD1C00A94894 /* AlarmModel.swift */,
+				AE0ADE432187AD1C00A94894 /* WeekdaysViewController.swift */,
+				AE0ADE442187AD1C00A94894 /* SegueInfo.swift */,
+				AE0ADE452187AD1C00A94894 /* LaunchScreen.xib */,
+				AE0ADE492187AD1C00A94894 /* AlarmApplicationDelegate.swift */,
+				AE0ADE4A2187AD1C00A94894 /* AlarmSchedulerDelegate.swift */,
+				AE0ADE4B2187AD1C00A94894 /* MediaViewController.swift */,
+				AE0ADE4C2187AD1C00A94894 /* Images.xcassets */,
+				AE0ADE4D2187AD1C00A94894 /* PropertyReflectable.swift */,
+				AE0ADE4E2187AD1C00A94894 /* MainAlarmViewController.swift */,
+				AE0ADE4F2187AD1C00A94894 /* Scheduler.swift */,
+				AE0ADE512187AD1C00A94894 /* bell.mp3 */,
+				AE0ADE522187AD1C00A94894 /* LabelEditViewController.swift */,
+				AE0ADE532187AD1C00A94894 /* Persistable.swift */,
+				AE0ADE542187AD1C00A94894 /* NotificationName+Extension.swift */,
+				AE0ADE562187AD1C00A94894 /* Identifier.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
 		C61566B82150DF6E0031A3D4 = {
 			isa = PBXGroup;
 			children = (
+				AE0ADE3E2187AD1C00A94894 /* Alarm */,
 				C61566C32150DF6E0031A3D4 /* rx-helper */,
 				C61566C22150DF6E0031A3D4 /* Products */,
 				2D1F168636DC060040326C19 /* Pods */,
@@ -117,6 +182,7 @@
 		C61566C32150DF6E0031A3D4 /* rx-helper */ = {
 			isa = PBXGroup;
 			children = (
+				AE0ADE502187AD1C00A94894 /* AppDelegate.swift */,
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
@@ -137,7 +203,6 @@
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,
 				38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
-				C61566C42150DF6E0031A3D4 /* AppDelegate.swift */,
 				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
@@ -215,8 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C601CE662181344300984684 /* rxListPet01.json in Resources */,
+				AE0ADE622187AD1C00A94894 /* Images.xcassets in Resources */,
 				C601CE642181343200984684 /* rxList01.json in Resources */,
+				AE0ADE582187AD1C00A94894 /* tickle.mp3 in Resources */,
 				C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */,
+				AE0ADE672187AD1C00A94894 /* bell.mp3 in Resources */,
+				AE0ADE5D2187AD1C00A94894 /* LaunchScreen.xib in Resources */,
 				C6D7000E2150F27D000FCB96 /* GoogleService-Info.plist in Resources */,
 				C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */,
 				C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */,
@@ -296,21 +365,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */,
+				AE0ADE592187AD1C00A94894 /* UIWindow+Extension.swift in Sources */,
+				AE0ADE602187AD1C00A94894 /* AlarmSchedulerDelegate.swift in Sources */,
+				AE0ADE5A2187AD1C00A94894 /* AlarmModel.swift in Sources */,
 				B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */,
+				AE0ADE612187AD1C00A94894 /* MediaViewController.swift in Sources */,
 				B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */,
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
+				AE0ADE652187AD1C00A94894 /* Scheduler.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
+				AE0ADE692187AD1C00A94894 /* Persistable.swift in Sources */,
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
+				AE0ADE5C2187AD1C00A94894 /* SegueInfo.swift in Sources */,
+				AE0ADE632187AD1C00A94894 /* PropertyReflectable.swift in Sources */,
+				AE0ADE6C2187AD1C00A94894 /* Identifier.swift in Sources */,
 				C67DCCEF21870C7400AE0404 /* RxListPetsViewController.swift in Sources */,
+				AE0ADE5B2187AD1C00A94894 /* WeekdaysViewController.swift in Sources */,
 				C682FCAF21741090000403A8 /* MedChoiceViewController.swift in Sources */,
+				AE0ADE6A2187AD1C00A94894 /* NotificationName+Extension.swift in Sources */,
+				AE0ADE572187AD1C00A94894 /* AlarmAddEditViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
+				AE0ADE662187AD1C00A94894 /* AppDelegate.swift in Sources */,
+				AE0ADE682187AD1C00A94894 /* LabelEditViewController.swift in Sources */,
 				B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */,
 				C67DCCED218647DA00AE0404 /* RxMedDetailsViewController.swift in Sources */,
-				C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */,
 				38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */,
+				AE0ADE642187AD1C00A94894 /* MainAlarmViewController.swift in Sources */,
 				38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */,
 				C67DCCEB218591D100AE0404 /* RxlistViewController.swift in Sources */,
 				B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */,
+				AE0ADE5F2187AD1C00A94894 /* AlarmApplicationDelegate.swift in Sources */,
 				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
 				38CBB483217192B900F7CE05 /* Prescription.swift in Sources */,
 			);
@@ -319,6 +403,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		AE0ADE452187AD1C00A94894 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0ADE462187AD1C00A94894 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		C61566C82150DF6E0031A3D4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
