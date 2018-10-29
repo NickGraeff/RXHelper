@@ -15,6 +15,7 @@
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
 		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
 		B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */; };
+		B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */; };
 		B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA52168A49D00572C17 /* HomeViewController.swift */; };
 		B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5C2172D20C00795C7E /* StartViewController.swift */; };
 		B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */; };
@@ -43,6 +44,7 @@
 		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
 		B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		B5F6EBA52168A49D00572C17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5FB1D5C2172D20C00795C7E /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
 				C67DCCEE21870C7400AE0404 /* RxListPetsViewController.swift */,
+				B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */,
 				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
 				B503FDA5217C0E0B005E13CD /* BaseViewController.swift */,
 				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */,
+				B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */,
 				B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */,
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
