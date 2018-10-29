@@ -28,10 +28,10 @@
 		C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566C82150DF6E0031A3D4 /* Main.storyboard */; };
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
 		C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */; };
-		C682FCAD21740E4D000403A8 /* rxListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682FCAC21740E4D000403A8 /* rxListTableViewController.swift */; };
+		C67DCCEB218591D100AE0404 /* RxlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DCCEA218591D100AE0404 /* RxlistViewController.swift */; };
+		C67DCCED218647DA00AE0404 /* RxMedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DCCEC218647DA00AE0404 /* RxMedDetailsViewController.swift */; };
+		C67DCCEF21870C7400AE0404 /* RxListPetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DCCEE21870C7400AE0404 /* RxListPetsViewController.swift */; };
 		C682FCAF21741090000403A8 /* MedChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682FCAE21741090000403A8 /* MedChoiceViewController.swift */; };
-		C682FCB121741172000403A8 /* rxListPetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682FCB021741172000403A8 /* rxListPetsTableViewController.swift */; };
-		C682FCB521741850000403A8 /* medDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C682FCB421741850000403A8 /* medDetailsViewController.swift */; };
 		C6D7000E2150F27D000FCB96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -60,10 +60,10 @@
 		C61566CB2150DF730031A3D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61566CE2150DF730031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61566D02150DF730031A3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C682FCAC21740E4D000403A8 /* rxListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rxListTableViewController.swift; sourceTree = "<group>"; };
+		C67DCCEA218591D100AE0404 /* RxlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxlistViewController.swift; sourceTree = "<group>"; };
+		C67DCCEC218647DA00AE0404 /* RxMedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMedDetailsViewController.swift; sourceTree = "<group>"; };
+		C67DCCEE21870C7400AE0404 /* RxListPetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxListPetsViewController.swift; sourceTree = "<group>"; };
 		C682FCAE21741090000403A8 /* MedChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedChoiceViewController.swift; sourceTree = "<group>"; };
-		C682FCB021741172000403A8 /* rxListPetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rxListPetsTableViewController.swift; sourceTree = "<group>"; };
-		C682FCB421741850000403A8 /* medDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medDetailsViewController.swift; sourceTree = "<group>"; };
 		C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D562F00EDC09CE018A1166F7 /* Pods-rx-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.release.xcconfig"; sourceTree = "<group>"; };
 		D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +130,9 @@
 				B546B27D217EDDE200D615B4 /* AddUserTableViewCell.swift */,
 				C682FCB021741172000403A8 /* rxListPetsTableViewController.swift */,
 				C682FCAC21740E4D000403A8 /* rxListTableViewController.swift */,
+				C67DCCEE21870C7400AE0404 /* RxListPetsViewController.swift */,
+				C67DCCEC218647DA00AE0404 /* RxMedDetailsViewController.swift */,
+				C67DCCEA218591D100AE0404 /* RxlistViewController.swift */,
 				C601CE632181343100984684 /* rxList01.json */,
 				C601CE652181344300984684 /* rxListPet01.json */,
 				C682FCAE21741090000403A8 /* MedChoiceViewController.swift */,
@@ -300,20 +303,27 @@
 			files = (
 				B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */,
 				B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */,
+<<<<<<< HEAD
 				C682FCAD21740E4D000403A8 /* rxListTableViewController.swift in Sources */,
 				B58B0F532186CD1C0032AAD9 /* AddUserViewController.swift in Sources */,
+=======
+>>>>>>> master
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
+				C67DCCEF21870C7400AE0404 /* RxListPetsViewController.swift in Sources */,
 				C682FCAF21741090000403A8 /* MedChoiceViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
-				C682FCB521741850000403A8 /* medDetailsViewController.swift in Sources */,
 				B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */,
+<<<<<<< HEAD
 				B546B27E217EDDE200D615B4 /* AddUserTableViewCell.swift in Sources */,
+=======
+				C67DCCED218647DA00AE0404 /* RxMedDetailsViewController.swift in Sources */,
+>>>>>>> master
 				C61566C52150DF6E0031A3D4 /* AppDelegate.swift in Sources */,
 				38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */,
 				38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */,
-				C682FCB121741172000403A8 /* rxListPetsTableViewController.swift in Sources */,
+				C67DCCEB218591D100AE0404 /* RxlistViewController.swift in Sources */,
 				B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */,
 				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
 				38CBB483217192B900F7CE05 /* Prescription.swift in Sources */,

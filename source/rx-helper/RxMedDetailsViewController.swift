@@ -1,20 +1,37 @@
 //
-//  medDetailsViewController.swift
+//  RxMedDetailsViewController.swift
 //  rx-helper
 //
-//  Created by Work-Account on 10/14/18.
+//  Created by Work-Account on 10/28/18.
 //  Copyright © 2018 cs477Team. All rights reserved.
 //
 
 import UIKit
 
-class medDetailsViewController: UIViewController {
+class RxMedDetailsViewController: UIViewController {
 
-    @IBOutlet weak var lbl: UILabel!
+    @IBOutlet weak var lbl01: UILabel!
+    
     var name = ""
+    var name2 = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl.text = "\(name) "
+        
+        if name != "" {
+            lbl01.text = "\(name)"
+        }
+        else{
+            lbl01.text = name2
+        }
+        
+        
+        //lbl01.text = "\(name)"
+        //lbl01.text = name2
+        
+        //print(name)
+        //print(name2)
         // Do any additional setup after loading the view.
     }
     
