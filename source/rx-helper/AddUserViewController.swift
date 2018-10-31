@@ -24,8 +24,16 @@ class AddUserViewController: UIViewController {
         }
         //else add new member to firebase
         else {
-            let ref = Database.database().reference()
-            ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+//            let ref = Database.database().reference()
+//            ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+            var ref: DatabaseReference!
+            ref = Database.database().reference()
+
+            let members = ref.child("users").child(getUsersUid()).child("members").child("member" + String(memberCount))
+
+            members.setValue("\(newUsersName.text!)")
+            memberCount += 1
+
         }
 
         self.performSegue(withIdentifier: "toHome", sender: nil)

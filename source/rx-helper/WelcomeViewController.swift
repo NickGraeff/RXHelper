@@ -22,6 +22,22 @@ func getUserDisplayName() -> String {
     return ("Error: no user logged in")
 }
 
+//get users
+func getUsersUid() -> String {
+
+    if (Auth.auth().currentUser != nil ){
+        print("users id: " + (Auth.auth().currentUser?.uid)!)
+        return (Auth.auth().currentUser?.uid)!
+    }
+    else {
+        return "Error: no user logged in"
+    }
+}
+
+var prescriptionCount = 0
+
+var memberCount = 0
+
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!

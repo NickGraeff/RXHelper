@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
     @IBOutlet var signUpView: UIView!
@@ -78,6 +79,12 @@ class SignUpViewController: UIViewController {
 
                 if error == nil {
                     //creation of account successful
+                    //insert user to firebase
+                    var ref: DatabaseReference!
+                    ref = Database.database().reference()
+
+                    ref.child("users").child(getUsersUid()).setValue(["name": "\(self.name.text!)"])
+
                     //insert name of user
                     let user = Auth.auth().currentUser
                     if let user = user {
