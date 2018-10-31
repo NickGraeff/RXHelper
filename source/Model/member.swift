@@ -11,4 +11,5 @@ import UIKit
 class member: NSObject {
     var name: String?
     var prescriptions = [Prescription]()
+    var key: String?
 }

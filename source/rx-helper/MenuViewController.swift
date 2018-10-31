@@ -24,7 +24,7 @@ func fetchMembers() {
 
             let mem = member()
             mem.name = dictionary["name"] as? String
-
+            mem.key = snapshot.key
             members.append(mem)
 
 //            DispatchQueue.main.async {
@@ -32,6 +32,11 @@ func fetchMembers() {
 //            }
         }
     }, withCancel: nil)
+}
+
+func deleteMember(member: member) {
+    let ref = Database.database().reference()
+    ref.child("users").child("\(getUsersUid())").child("members").child("\(member.key! as String)").removeValue()
 }
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -92,6 +97,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             if editingStyle == .delete {
 
                 //remove the item from the data model
+                deleteMember(member: members[indexPath.row])
+
+                //remove from members array
                 members.remove(at: indexPath.row)
 
                 //delete the table view row
