@@ -15,9 +15,18 @@ class AddUserViewController: UIViewController {
     @IBAction func addNewUserButton(_ sender: Any) {
         users.append(newUsersName.text!)
         //insert new user beneath getDisplayName()
-
-        let ref = Database.database().reference()
-        ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+        //make sure new users name is not empty
+        if newUsersName.text?.isEmpty == true {
+            let alertController = UIAlertController(title: "Name is empty", message: "Please type in a valid name", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        //else add new member to firebase
+        else {
+            let ref = Database.database().reference()
+            ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+        }
 
         self.performSegue(withIdentifier: "toHome", sender: nil)
     }
