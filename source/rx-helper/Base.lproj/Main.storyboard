@@ -868,6 +868,7 @@
                     </view>
                     <connections>
                         <outlet property="newUsersName" destination="yAb-j4-ieX" id="9ew-lS-7LE"/>
+                        <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="ZaM-cr-wzR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2f-cv-SJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1392,6 +1393,6 @@
         <segue reference="Ucg-Nn-3Uq"/>
         <segue reference="GFu-Z9-wLc"/>
         <segue reference="gwg-49-PeR"/>
-        <segue reference="vkh-CW-d9B"/>
+        <segue reference="ZaM-cr-wzR"/>
     </inferredMetricsTieBreakers>
 </document>

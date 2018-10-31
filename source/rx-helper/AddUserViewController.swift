@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class AddUserViewController: UIViewController {
 
     @IBOutlet weak var newUsersName: UITextField!
     @IBAction func addNewUserButton(_ sender: Any) {
+        users.append(newUsersName.text!)
+        //insert new user beneath getDisplayName()
+
+        let ref = Database.database().reference()
+        ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+
+        self.performSegue(withIdentifier: "toHome", sender: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
