@@ -11,6 +11,37 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 
+func getUserDisplayName() -> String {
+    let user = Auth.auth().currentUser
+    if user != nil {
+        if user?.displayName != nil {
+            return (user?.displayName!)!
+        }
+        else{
+            return("")
+        }
+    }
+    return ("Error: no user logged in")
+}
+
+//get users
+func getUsersUid() -> String {
+
+    if (Auth.auth().currentUser != nil ){
+        print("users id: " + (Auth.auth().currentUser?.uid)!)
+        return (Auth.auth().currentUser?.uid)!
+    }
+    else {
+        return "Error: no user logged in"
+    }
+}
+
+//number of prescriptions
+var prescriptionCount = 0
+
+//number of members
+var memberCount = 0
+
 class HomeViewController: BaseViewController {
 
     @IBOutlet weak var HomeNavBar: UINavigationItem!
@@ -30,22 +61,6 @@ class HomeViewController: BaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    //This function will return the name of the user that is logged in
-    //We will need to modify this to change in case the person decides
-    //to change profile
-    func getUserDisplayName() -> String {
-        let user = Auth.auth().currentUser
-        if user != nil {
-            if user?.displayName != nil {
-                return (user?.displayName!)!
-            }
-            else{
-                return("")
-            }
-        }
-        return ("Error: no user logged in")
     }
 
 }

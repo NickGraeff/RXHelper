@@ -9,37 +9,6 @@
 import UIKit
 import FirebaseAuth
 
-func getUserDisplayName() -> String {
-    let user = Auth.auth().currentUser
-    if user != nil {
-        if user?.displayName != nil {
-            return (user?.displayName!)!
-        }
-        else{
-            return("")
-        }
-    }
-    return ("Error: no user logged in")
-}
-
-//get users
-func getUsersUid() -> String {
-
-    if (Auth.auth().currentUser != nil ){
-        print("users id: " + (Auth.auth().currentUser?.uid)!)
-        return (Auth.auth().currentUser?.uid)!
-    }
-    else {
-        return "Error: no user logged in"
-    }
-}
-
-//number of prescriptions
-var prescriptionCount = 0
-
-//number of members
-var memberCount = 0
-
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
