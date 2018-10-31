@@ -34,8 +34,10 @@ func getUsersUid() -> String {
     }
 }
 
+//number of prescriptions
 var prescriptionCount = 0
 
+//number of members
 var memberCount = 0
 
 class WelcomeViewController: UIViewController {

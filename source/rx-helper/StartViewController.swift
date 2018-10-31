@@ -14,8 +14,10 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "toHome", sender: self)
+        Auth.auth().addStateDidChangeListener { auth, user in
+            if user != nil{
+                self.performSegue(withIdentifier: "toHome", sender: nil)
+            }
         }
         // Do any additional setup after loading the view.
         self.startView.layer.borderWidth = 9
