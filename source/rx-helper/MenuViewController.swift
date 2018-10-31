@@ -111,6 +111,17 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
+    // method to disable cell editing for "Add user" row
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+
+        if (indexPath.row == members.count){
+            return false
+        }
+        else {
+            return true
+        }
+    }
+
     @IBAction func logoutButton(_ sender: Any) {
         let alert = UIAlertController(title: "Log out of " + getUserDisplayName() + "?", message: nil, preferredStyle: .alert)
 
