@@ -13,7 +13,6 @@ class AddUserViewController: UIViewController {
 
     @IBOutlet weak var newUsersName: UITextField!
     @IBAction func addNewUserButton(_ sender: Any) {
-        users.append(newUsersName.text!)
         //insert new user beneath getDisplayName()
         //make sure new users name is not empty
         if newUsersName.text?.isEmpty == true {
@@ -26,13 +25,14 @@ class AddUserViewController: UIViewController {
         else {
 //            let ref = Database.database().reference()
 //            ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+
             var ref: DatabaseReference!
             ref = Database.database().reference()
 
-            let members = ref.child("users").child(getUsersUid()).child("members").child("member" + String(memberCount))
-
+            //This will add member0, member1
+            //let members = ref.child("users").child(getUsersUid()).child("members").child("member" + String(memberCount))
+            let members = ref.child("users").child(getUsersUid()).child("members").childByAutoId().child("name")
             members.setValue("\(newUsersName.text!)")
-            memberCount += 1
 
         }
 

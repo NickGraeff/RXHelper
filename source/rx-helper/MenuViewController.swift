@@ -10,52 +10,72 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-var users = ["Juan Brena","Nick Graeff","Ajanae Williams","Alexis Acosta","Jean-Paul Castro","Eduardo Meza","Blossom Hamika"]
-
 protocol SlideMenuDelegate {
     func slideMenuItemSelectedAtIndex(_ index: Int32)
 }
 
+//users list
+var members = [member]()
+
+func fetchMembers() {
+    Database.database().reference().child("users/\(getUsersUid())/members").observe(.childAdded, with: { (snapshot) in
+
+        if let dictionary = snapshot.value as? [String: AnyObject] {
+
+            let mem = member()
+            mem.name = dictionary["name"] as? String
+
+            members.append(mem)
+
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+        }
+    }, withCancel: nil)
+}
+
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-    }
 
+
+    }
 
     //setting the number of cells in the table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (users.count + 1)
+        return (members.count + 1)
     }
-    
+
     //setting the text for each cell in the table View
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        if (indexPath.item < users.count){
+        if (indexPath.item < members.count){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
-            cell.textLabel?.text = users[indexPath.row]
-            
+            let member = members[indexPath.row]
+            cell.textLabel?.text = member.name
+
             return cell
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             cell.textLabel?.text = "Add user +"
-            
+
             return cell
         }
     }
-    
+
     //setting the size of the cells in the table View
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 35
     }
-    
+
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("You tapped cell number \(indexPath.row).")
-        if (indexPath.row == users.count){
+        if (indexPath.row == members.count){
             print("To Add User VC")
             self.performSegue(withIdentifier: "toAddUser", sender: nil)
         }
@@ -64,16 +84,16 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.performSegue(withIdentifier: "toHome", sender: nil)
         }
     }
-    
+
     // method to handle row deletion
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if (indexPath.row != users.count) {
+
+        if (indexPath.row != members.count) {
             if editingStyle == .delete {
-                
+
                 //remove the item from the data model
-                users.remove(at: indexPath.row)
-                
+                members.remove(at: indexPath.row)
+
                 //delete the table view row
                 tableView.deleteRows(at: [indexPath], with: .fade)
             }
@@ -91,7 +111,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         self.present(alert, animated: true)
     }
-    
+
     var btnMenu: UIButton!
     var delegate: SlideMenuDelegate?
 

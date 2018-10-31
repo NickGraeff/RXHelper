@@ -42,6 +42,8 @@ var prescriptionCount = 0
 //number of members
 var memberCount = 0
 
+var fetchMem = 1
+
 class HomeViewController: BaseViewController {
 
     @IBOutlet weak var HomeNavBar: UINavigationItem!
@@ -54,6 +56,10 @@ class HomeViewController: BaseViewController {
         // Do any additional setup after loading the view
         addSlideMenuButton()
         self.HomeNavBar.title = getUserDisplayName()
+        if (fetchMem == 1){
+            fetchMembers()
+            fetchMem = 0
+        }
     }
 
 

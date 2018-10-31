@@ -981,13 +981,14 @@
                     </view>
                     <connections>
                         <outlet property="btnCloseMenuOverlay" destination="cgp-gZ-uYK" id="nPC-NM-JKU"/>
+                        <outlet property="tableView" destination="Cr5-L1-ntP" id="RSY-NP-8te"/>
                         <segue destination="e08-HQ-S2O" kind="show" identifier="toAddUser" id="Snu-xe-rHo"/>
                         <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="vkh-CW-d9B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UJ-UX-mAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6729" y="-522"/>
+            <point key="canvasLocation" x="6728.8000000000002" y="-522.41379310344826"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wei-cN-5WF">
@@ -1387,13 +1388,12 @@
         <image name="Pets01" width="202.55999755859375" height="50.880001068115234"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n7a-Jc-2Vy"/>
         <segue reference="VzQ-0r-ZMp"/>
         <segue reference="lG2-lD-zYb"/>
         <segue reference="vEi-Y5-Y2Q"/>
         <segue reference="Ucg-Nn-3Uq"/>
         <segue reference="GFu-Z9-wLc"/>
         <segue reference="gwg-49-PeR"/>
-        <segue reference="ZaM-cr-wzR"/>
+        <segue reference="vkh-CW-d9B"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -171,12 +171,12 @@ class PrescriptionTableViewController: UITableViewController {
     }
     
     private func savePrescriptionsToFirebase() {
-        let ref = Database.database().reference()
-        
-        for prescription in self.prescriptions {
-            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
-            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
-        }
+//        let ref = Database.database().reference()
+//
+//        for prescription in self.prescriptions {
+//            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
+//            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+//        }
     }
     
     private func getPrescriptionsFromFirebase() {
