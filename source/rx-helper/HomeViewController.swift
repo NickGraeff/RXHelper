@@ -36,9 +36,7 @@ func getUsersUid() -> String {
 }
 
 //selected user uid
-var selectedUserUid: String? = nil
-
-
+var selectedUserUid: String? = owner?.name ?? nil
 
 var fetchMem = 1
 
@@ -54,6 +52,19 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view
         addSlideMenuButton()
+        if selectedUserUid == owner!.key {
+            self.HomeNavBar.title = owner!.name
+        } else {
+            for member in owner!.members {
+                if member.key == selectedUserUid {
+                    self.HomeNavBar.title = member.name
+                    break
+                }
+            }
+        }
+        if self.HomeNavBar.title == nil {
+            self.HomeNavBar.title = getUserDisplayName()
+        }
     }
     
     func getSelectedUserName() {

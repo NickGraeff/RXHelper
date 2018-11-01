@@ -10,6 +10,9 @@ import UIKit
 
 class Owner: NSObject {
     var name: String?
+    var email: String? = ""
+    var pharmacyName: String? = ""
+    var pharmacyPhoneNumber: String? = ""
     var key: String?
     var members = [Member]()
     var prescriptions = [Prescription]()

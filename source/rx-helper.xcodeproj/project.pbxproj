@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		384B6575218B0F0A00A92ECB /* SupportPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */; };
 		38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */; };
 		38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */; };
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportPageViewController.swift; sourceTree = "<group>"; };
 		38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				B5FB1D602172F90500795C7E /* SignUpViewController.swift */,
 				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,
+				384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */,
 				38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
 				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
@@ -389,6 +392,7 @@
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
 				AE0ADE652187AD1C00A94894 /* Scheduler.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
+				384B6575218B0F0A00A92ECB /* SupportPageViewController.swift in Sources */,
 				AE0ADE692187AD1C00A94894 /* Persistable.swift in Sources */,
 				B546A8E8218A3428008097F1 /* Owner.swift in Sources */,
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,

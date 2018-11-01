@@ -16,12 +16,16 @@ class PrescriptionTableViewController: UITableViewController {
     // Mark: Properties
     var prescriptions = [Prescription]()
     let cellIdentifier = "PrescriptionTableViewCellIdentifier"
+    let cellSpacingHeight: CGFloat = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
+        self.tableView.separatorStyle = .none
+        self.tableView.layer.cornerRadius = 4;
+
         
         // Load any saved prescriptions, otherwise load sample data.
         loadPrescriptions()
@@ -38,6 +42,18 @@ class PrescriptionTableViewController: UITableViewController {
         return prescriptions.count
     }
     
+    // Set the spacing between sections
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
+    
+    // Make the background color show through
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.white
+        return headerView
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PrescriptionTableViewCell else {
@@ -47,10 +63,23 @@ class PrescriptionTableViewController: UITableViewController {
         // Fetches the appropriate prescription for the data source layout
         let prescription = prescriptions[indexPath.row]
         
+        
         cell.nameLabel.text = prescription.name
         cell.prescriptionImageView.image = prescription.photo
         cell.nextDueLabel.text = prescription.nextTimeToBeTaken
         
+        cell.contentView.backgroundColor = UIColor.clear
+        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
+        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
+        whiteRoundedView.layer.masksToBounds = false
+        whiteRoundedView.layer.cornerRadius = 3.0
+        whiteRoundedView.layer.shadowOpacity = 0.5
+        cell.contentView.addSubview(whiteRoundedView)
+        cell.contentView.sendSubviewToBack(whiteRoundedView)
+        
+        cell.backgroundColor = UIColor.white
+        cell.contentView.layer.cornerRadius = 50
+        cell.contentView.clipsToBounds = true
         return cell
     }
 
@@ -172,32 +201,75 @@ class PrescriptionTableViewController: UITableViewController {
     
     private func savePrescriptionsToFirebase() {
 //        let ref = Database.database().reference()
-//
-//        for prescription in self.prescriptions {
-//            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
-//            ref.child("users/\(getUserDisplayName())/prescriptions/\(prescription.name)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+//        
+//        if owner!.key == selectedUserUid {
+//            for prescription in self.prescriptions {
+//                if prescription.key != nil {
+//                    ref.child("users/\(getUsersUid())/prescriptions/\(prescription.key)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
+//                    ref.child("users/\(getUsersUid())/prescriptions/\(prescription.key)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+//                } else {
+//                    let newRef = ref.child("users/\(getUsersUid())/prescriptions").childByAutoId()
+//                    newRef.setValue("\(Prescription.PropertyKey.name)/\(prescription.name)")
+//                    newRef.setValue("\(Prescription.PropertyKey.dosage)/\(prescription.dosage)")
+//                    
+//                }
+//            }
+//        } else {
+//            var selectedMember: Member? = nil
+//            for member in owner!.members {
+//                if selectedUserUid == member.key {
+//                    selectedMember = member
+//                    break
+//                }
+//            }
+//            
+//            for prescription in self.prescriptions {
+//                if prescription.key != nil {
+//                    ref.child("users/\(getUsersUid())/members/\(selectedMember!.key)/prescriptions/\(prescription.key)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
+//                    ref.child("users/\(getUsersUid())/members/\(selectedMember!.key)/prescriptions/\(prescription.key)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+//                } else {
+//                    let newRef = ref.child("users/\(getUsersUid())/members/\(selectedMember!.key)/prescriptions").childByAutoId()
+//                    newRef.setValue("\(Prescription.PropertyKey.name)/\(prescription.name)")
+//                    newRef.setValue("\(Prescription.PropertyKey.dosage)/\(prescription.dosage)")
+//                    prescription.key = newRef.key
+//                }
+//            }
 //        }
     }
     
     private func getPrescriptionsFromFirebase() {
-        
-        let ref = Database.database().reference()
-        ref.child("users/\(getUserDisplayName())/prescriptions").observeSingleEvent(of: .value, with: { (snapshot) in
-            
-            for child in snapshot.children {
-                let prescription = child as! DataSnapshot
-                if let dict = prescription.value as? [String: Any] {
-                    let name = dict[Prescription.PropertyKey.name] as! String
-                    self.prescriptions.append(Prescription(name: name)! as Prescription)
-                }
-            }
-            
-            if self.prescriptions.isEmpty {
-                self.loadSamplePrescriptions()
-            }
-            
-            self.tableView.reloadData()
-        })
+//        let ref = Database.database().reference()
+//
+//        if owner!.key == selectedUserUid {
+//            for prescription in self.prescriptions {
+//                if prescription.key != nil {
+//                    ref.child("users/\(getUsersUid())/prescriptions/\(prescription.key)/\(Prescription.PropertyKey.name)").setValue(prescription.name)
+//                    ref.child("users/\(getUsersUid())/prescriptions/\(prescription.key)/\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+//                } else {
+//                    let newRef = ref.child("users/\(getUsersUid())/prescriptions").childByAutoId()
+//                    newRef.setValue("\(Prescription.PropertyKey.name)/\(prescription.name)")
+//                    newRef.setValue("\(Prescription.PropertyKey.dosage)/\(prescription.dosage)")
+//
+//                }
+//            }
+//        }
+//
+//        ref.child("users/\(getUsersUid())/prescriptions").observeSingleEvent(of: .value, with: { (snapshot) in
+//
+//            for child in snapshot.children {
+//                let prescription = child as! DataSnapshot
+//                if let dict = prescription.value as? [String: Any] {
+//                    let name = dict[Prescription.PropertyKey.name] as! String
+//                    self.prescriptions.append(Prescription(name: name)! as Prescription)
+//                }
+//            }
+//
+//            if self.prescriptions.isEmpty {
+//                self.loadSamplePrescriptions()
+//            }
+//
+//            self.tableView.reloadData()
+//        })
     }
     
     private func loadPrescriptions() {

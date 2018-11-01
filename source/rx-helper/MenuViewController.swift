@@ -46,7 +46,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.tableView.reloadData()
                 
                 selectedUserUid = owner!.key
-                print(snapshot)
+                
                 //            DispatchQueue.main.async {
                 //                self.tableView.reloadData()
                 //            }
@@ -56,7 +56,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     //setting the number of cells in the table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (owner!.members.count + 1)
+        return (owner!.members.count + 2)
     }
 
     //setting the text for each cell in the table View
@@ -68,9 +68,9 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             return cell
         }
-        else if (indexPath.item < owner!.members.count){
+        else if (indexPath.item < owner!.members.count+1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
-            let member = owner!.members[indexPath.row]
+            let member = owner!.members[indexPath.row-1]
             cell.textLabel?.text = member.name
 
             return cell
@@ -102,7 +102,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("You tapped cell number \(indexPath.row).")
-        if (indexPath.row == owner!.members.count){
+        if (indexPath.row == owner!.members.count+1){
             print("To Add User VC")
             self.performSegue(withIdentifier: "toAddUser", sender: nil)
         }
@@ -114,7 +114,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                 selectedUserUid = owner!.members[indexPath.row-1].key!
             }
             print("Selected User UID: \(selectedUserUid)")
-            self.performSegue(withIdentifier: "toHome", sender: nil)
+            self.performSegue(withIdentifier: "toHomeFromMenu", sender: nil)
         }
     }
 
@@ -148,10 +148,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         else {
             return true
         }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
     }
 
     @IBAction func logoutButton(_ sender: Any) {

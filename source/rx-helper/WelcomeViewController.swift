@@ -18,11 +18,9 @@ class WelcomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         welcomeLabel.text = "Welcome " + getUserDisplayName()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+        DispatchQueue.main.asyncAfter(deadline: .now() + .5){
             self.performSegue(withIdentifier: "toHome", sender: self)
         }
     }
     
-
-
 }
