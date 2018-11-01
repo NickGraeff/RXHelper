@@ -34,7 +34,8 @@
 		AE0ADE6C2187AD1C00A94894 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0ADE562187AD1C00A94894 /* Identifier.swift */; };
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
 		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
-		B546A8E6218971AA008097F1 /* member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E5218971AA008097F1 /* member.swift */; };
+		B546A8E6218971AA008097F1 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E5218971AA008097F1 /* Member.swift */; };
+		B546A8E8218A3428008097F1 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E7218A3428008097F1 /* Owner.swift */; };
 		B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */; };
 		B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */; };
 		B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA52168A49D00572C17 /* HomeViewController.swift */; };
@@ -82,7 +83,8 @@
 		AE0ADE562187AD1C00A94894 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		B546A8E5218971AA008097F1 /* member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = member.swift; sourceTree = "<group>"; };
+		B546A8E5218971AA008097F1 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		B546A8E7218A3428008097F1 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
 		B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +167,9 @@
 		B546A8E021896D44008097F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B546A8E5218971AA008097F1 /* member.swift */,
+				B546A8E5218971AA008097F1 /* Member.swift */,
+				38CBB47F217192B900F7CE05 /* Prescription.swift */,
+				B546A8E7218A3428008097F1 /* Owner.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,24 +197,23 @@
 		C61566C32150DF6E0031A3D4 /* rx-helper */ = {
 			isa = PBXGroup;
 			children = (
+				B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */,
+				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
+				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
+				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
+				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
 				AE0ADE502187AD1C00A94894 /* AppDelegate.swift */,
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
-				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
 				C67DCCEE21870C7400AE0404 /* RxListPetsViewController.swift */,
-				B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */,
-				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
 				B503FDA5217C0E0B005E13CD /* BaseViewController.swift */,
-				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
 				C67DCCEC218647DA00AE0404 /* RxMedDetailsViewController.swift */,
 				C67DCCEA218591D100AE0404 /* RxlistViewController.swift */,
 				C601CE632181343100984684 /* rxList01.json */,
 				C601CE652181344300984684 /* rxListPet01.json */,
 				C682FCAE21741090000403A8 /* MedChoiceViewController.swift */,
 				B5FB1D602172F90500795C7E /* SignUpViewController.swift */,
-				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
 				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
-				38CBB47F217192B900F7CE05 /* Prescription.swift */,
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,
 				38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
@@ -380,13 +383,14 @@
 				AE0ADE602187AD1C00A94894 /* AlarmSchedulerDelegate.swift in Sources */,
 				AE0ADE5A2187AD1C00A94894 /* AlarmModel.swift in Sources */,
 				B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */,
-				B546A8E6218971AA008097F1 /* member.swift in Sources */,
+				B546A8E6218971AA008097F1 /* Member.swift in Sources */,
 				AE0ADE612187AD1C00A94894 /* MediaViewController.swift in Sources */,
 				B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */,
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
 				AE0ADE652187AD1C00A94894 /* Scheduler.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
 				AE0ADE692187AD1C00A94894 /* Persistable.swift in Sources */,
+				B546A8E8218A3428008097F1 /* Owner.swift in Sources */,
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				AE0ADE5C2187AD1C00A94894 /* SegueInfo.swift in Sources */,
 				AE0ADE632187AD1C00A94894 /* PropertyReflectable.swift in Sources */,

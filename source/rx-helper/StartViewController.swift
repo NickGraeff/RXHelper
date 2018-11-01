@@ -14,11 +14,11 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Auth.auth().addStateDidChangeListener { auth, user in
-            if user != nil{
-                self.performSegue(withIdentifier: "toHome", sender: nil)
-            }
-        }
+//        Auth.auth().addStateDidChangeListener { auth, user in
+//            if user != nil{
+//                self.performSegue(withIdentifier: "toHome", sender: nil)
+//            }
+//        }
         // Do any additional setup after loading the view.
         self.startView.layer.borderWidth = 9
         self.startView.layer.cornerRadius = 35

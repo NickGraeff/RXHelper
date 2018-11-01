@@ -8,7 +8,7 @@
 
 import UIKit
 
-class member: NSObject {
+class Member: NSObject {
     var name: String?
     var prescriptions = [Prescription]()
     var key: String?

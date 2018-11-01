@@ -14,11 +14,14 @@ class Prescription: NSObject, NSCoding {
     // MARK: Properties
     var name: String
     var dosage: Int?
+    var amount: String?
     var datePrescribed: String?
     var expirationDate: String?
     var photo: UIImage?
     var lastTaken: String?
     var nextTimeToBeTaken: String?
+    var key: String?
+    
     struct PropertyKey {
         static let name = "name"
         static let dosage = "dosage"

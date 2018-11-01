@@ -100,6 +100,9 @@ class SignUpViewController: UIViewController {
                                 self.present(alertController, animated: true, completion: nil)
                             }
                             else {
+                                
+                                owner = Owner()
+                                
                                 //change request works
                                 self.performSegue(withIdentifier: "toWelcome", sender: self)
                             }

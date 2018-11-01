@@ -24,11 +24,10 @@ func getUserDisplayName() -> String {
     return ("Error: no user logged in")
 }
 
-//get users
+//get ownsers UID
 func getUsersUid() -> String {
 
     if (Auth.auth().currentUser != nil ){
-        print("users id: " + (Auth.auth().currentUser?.uid)!)
         return (Auth.auth().currentUser?.uid)!
     }
     else {
@@ -36,11 +35,10 @@ func getUsersUid() -> String {
     }
 }
 
-//number of prescriptions
-var prescriptionCount = 0
+//selected user uid
+var selectedUserUid: String? = nil
 
-//number of members
-var memberCount = 0
+
 
 var fetchMem = 1
 
@@ -49,21 +47,30 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var HomeNavBar: UINavigationItem!
 
     @IBAction func addButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "toMedChoice", sender: nil)
+        self.performSegue(withIdentifier: "toNewPrescription", sender: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
         addSlideMenuButton()
-        self.HomeNavBar.title = getUserDisplayName()
-        if (fetchMem == 1){
-            fetchMembers()
-            fetchMem = 0
-        }
     }
-
-
-
+    
+    func getSelectedUserName() {
+        var sName : String?
+        Database.database().reference().child("users/\(getUsersUid())/members/\(selectedUserUid)").observe(.value, with: { (snapshot) in
+            
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                
+                sName = dictionary["name"] as? String
+                print(sName ?? "error")
+                
+                self.HomeNavBar.title = sName ?? "error"
+            }
+            
+        }, withCancel: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

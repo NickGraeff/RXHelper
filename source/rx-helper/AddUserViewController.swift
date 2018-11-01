@@ -29,10 +29,9 @@ class AddUserViewController: UIViewController {
             var ref: DatabaseReference!
             ref = Database.database().reference()
 
-            //This will add member0, member1
-            //let members = ref.child("users").child(getUsersUid()).child("members").child("member" + String(memberCount))
             let members = ref.child("users").child(getUsersUid()).child("members").childByAutoId().child("name")
             members.setValue("\(newUsersName.text!)")
+            //members.setValue("\(newUsersName.text!)")
 
         }
 
