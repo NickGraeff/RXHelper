@@ -35,9 +35,6 @@ func getUsersUid() -> String {
     }
 }
 
-//selected user uid
-var selectedUserUid: String? = owner?.name ?? nil
-
 var fetchMem = 1
 
 class HomeViewController: BaseViewController {
@@ -69,7 +66,7 @@ class HomeViewController: BaseViewController {
     
     func getSelectedUserName() {
         var sName : String?
-        Database.database().reference().child("users/\(getUsersUid())/members/\(selectedUserUid)").observe(.value, with: { (snapshot) in
+        Database.database().reference().child("users/\(getUsersUid())/members/\(selectedUserUid!)").observeSingleEvent(of:.value, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 
@@ -79,7 +76,7 @@ class HomeViewController: BaseViewController {
                 self.HomeNavBar.title = sName ?? "error"
             }
             
-        }, withCancel: nil)
+        })
     }
     
     override func didReceiveMemoryWarning() {

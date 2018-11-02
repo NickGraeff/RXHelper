@@ -25,25 +25,50 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
         if !nameField.text!.isEmpty {
             ref.child("users/\(getUsersUid())/name").setValue(nameField.text)
             owner!.name = nameField.text!
+            let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+            changeRequest?.displayName = nameField.text!
+            changeRequest?.commitChanges { (error) in
+                // ...
+            }
         }
         if !emailField.text!.isEmpty {
-            Auth.auth().currentUser!.updateEmail(to: emailField.text!)
+            Auth.auth().currentUser?.updateEmail(to: emailField.text!) { (error) in
+                // ...
+            }
+            owner?.email = emailField.text!
         }
         if !pharmacyName.text!.isEmpty {
             ref.child("users/\(getUsersUid())/pharmacyName").setValue(pharmacyName.text)
+            owner?.pharmacyName = pharmacyName.text
         }
         if !pharmacyPhoneNumber.text!.isEmpty {
             ref.child("users/\(getUsersUid())/pharmacyPhoneNumber").setValue(pharmacyPhoneNumber.text)
+            owner?.pharmacyPhoneNumber = pharmacyPhoneNumber.text
         }
     }
     
     @IBAction func deleteMyAccount(_ sender: Any) {
-        print("literally anything")
+        
+        let alert = UIAlertController(title: "Are you sure you want to delete your account?", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Delete", style: .default, handler: deleteAccountHandler))
+        
+        self.present(alert, animated: true)
+    }
+    
+    func deleteAccountHandler(alert: UIAlertAction) {
         let ref = Database.database().reference()
         let ref2 = ref.child("users/\(getUsersUid())")
         ref2.removeValue() // delete the user's data
-        print(getUsersUid() + " has been deleted")
         Auth.auth().currentUser!.delete() // delete the user
+        
+        do {
+            try Auth.auth().signOut()
+        }
+        catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+
         self.performSegue(withIdentifier: "toVeryFirstPage", sender: nil)
     }
     

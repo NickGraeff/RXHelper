@@ -25,12 +25,16 @@ class AddUserViewController: UIViewController {
         else {
 //            let ref = Database.database().reference()
 //            ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
-
+            
             var ref: DatabaseReference!
             ref = Database.database().reference()
 
-            let members = ref.child("users").child(getUsersUid()).child("members").childByAutoId().child("name")
-            members.setValue("\(newUsersName.text!)")
+            let newref = ref.child("users").child(getUsersUid()).child("members").childByAutoId()
+            newref.child("name").setValue("\(newUsersName.text!)")
+            let memExample = Member()
+            memExample.name = newUsersName.text!
+            memExample.key = newref.key
+            owner!.members.append(memExample)
             //members.setValue("\(newUsersName.text!)")
 
         }

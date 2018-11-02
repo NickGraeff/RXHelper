@@ -33,6 +33,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         if let prescription = prescription {
             navigationItem.title = prescription.name
             nameField.text = prescription.name
+            if prescription.dosage != nil {
+                dosageField.text = String(prescription.dosage!)
+            } else {
+                dosageField.text = ""
+            }
             //etcetcetc (name, image, etc)
             
         }
@@ -117,7 +122,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         var data: JSON
         
-        if searching && nameField.text! != "" {
+        if searching && nameField.text! != "" && nameField.text != (self.prescription?.name ?? ""){
             data = filteredRxList[indexPath.row]
             let countryName = data["term"].stringValue
             cell?.textLabel?.text = countryName
@@ -173,7 +178,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             return
         }
         
-        prescription = Prescription(name: nameField.text ?? "Unknown", dosage: Int(dosageField.text ?? "0"))
+        prescription = Prescription(name: nameField.text ?? "Unknown", key: prescription?.key, dosage: Int(dosageField.text ?? "0"))
     }
 
 }

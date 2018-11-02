@@ -10,9 +10,6 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-//owner!
-var owner: Owner? = nil
-
 protocol SlideMenuDelegate {
     func slideMenuItemSelectedAtIndex(_ index: Int32)
 }
@@ -27,31 +24,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        fetchOwner()
-        fetchMembers()
 
-    }
-
-    func fetchMembers() {
-        owner!.members.removeAll()
-        Database.database().reference().child("users/\(getUsersUid())/members").observe(.childAdded, with: { (snapshot) in
-            
-            if let dictionary = snapshot.value as? [String: AnyObject] {
-                
-                let mem = Member()
-                mem.name = dictionary["name"] as? String
-                mem.key = snapshot.key
-                owner!.members.append(mem)
-                self.tableView.reloadData()
-                
-                selectedUserUid = owner!.key
-                
-                //            DispatchQueue.main.async {
-                //                self.tableView.reloadData()
-                //            }
-            }
-        }, withCancel: nil)
     }
 
     //setting the number of cells in the table View
@@ -82,17 +55,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             return cell
         }
     }
-    
-    
-    func fetchOwner() {
-        Database.database().reference().child("users/\(getUsersUid())").observe(.value, with: { (snapshot) in
-            
-            if let dictionary = snapshot.value as? [String: AnyObject] {
-                owner!.key = getUsersUid()
-                owner!.name = dictionary["name"] as? String
-            }
-        }, withCancel: nil)
-    }
 
     //setting the size of the cells in the table View
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -121,17 +83,24 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to handle row deletion
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
-        if (indexPath.row != owner!.members.count) {
+        if (indexPath.row != owner!.members.count+1) {
             if editingStyle == .delete {
 
                 //remove the item from the data model
-                deleteMember(member: owner!.members[indexPath.row])
+                deleteMember(member: owner!.members[indexPath.row-1])
 
+                
+                if selectedUserUid == owner!.members[indexPath.row-1].key {
+                    selectedUserUid = owner!.key
+                }
+                
                 //remove from members array
-                owner!.members.remove(at: indexPath.row)
+                owner!.members.remove(at: indexPath.row-1)
+                
 
                 //delete the table view row
                 tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.reloadData()
             }
             else if editingStyle == .insert{
                 //Not used in our example, but if you were adding a new row, this is where you would do it
@@ -142,7 +111,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to disable cell editing for "Add user" row
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
 
-        if (indexPath.row == owner!.members.count || indexPath.row == 0){
+        if (indexPath.row == owner!.members.count+1 || indexPath.row == 0){
             return false
         }
         else {
@@ -155,8 +124,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Log out", style: .default, handler: logoutHandler))
-
-        owner = nil
+        
         self.present(alert, animated: true)
     }
 
@@ -187,6 +155,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
     func logoutHandler(alert: UIAlertAction) {
+        owner = nil
+        selectedUserUid = nil
         do {
             try Auth.auth().signOut()
         }

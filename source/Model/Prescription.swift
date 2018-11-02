@@ -37,7 +37,7 @@ class Prescription: NSObject, NSCoding {
     static let ArchiveURL = DocumentsDirectory.appendingPathComponent("prescriptions")
     
     // MARK: Initialization
-    init?(name: String, dosage: Int? = nil, datePrescribed: String? = nil, expirationDate: String? = nil, photo: UIImage? = nil, lastTaken: String? = nil, nextTimeToBeTaken: String? = nil) {
+    init?(name: String, key: String? = nil, dosage: Int? = nil, datePrescribed: String? = nil, expirationDate: String? = nil, photo: UIImage? = nil, lastTaken: String? = nil, nextTimeToBeTaken: String? = nil) {
         
         // Initialization should fail if there is no name
         if name.isEmpty {
@@ -46,6 +46,7 @@ class Prescription: NSObject, NSCoding {
         
         // Initialize stored properties
         self.name = name
+        self.key = key
         self.dosage = dosage
         self.datePrescribed = datePrescribed
         self.expirationDate = expirationDate
