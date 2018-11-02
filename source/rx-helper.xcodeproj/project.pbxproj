@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		384B6575218B0F0A00A92ECB /* SupportPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */; };
+		384B6577218C58E600A92ECB /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B6576218C58E600A92ECB /* TutorialViewController.swift */; };
+		384B657B218C5B2E00A92ECB /* TOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B657A218C5B2E00A92ECB /* TOSViewController.swift */; };
+		384B657D218C603900A92ECB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B657C218C603900A92ECB /* AboutViewController.swift */; };
+		384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B6580218C60E000A92ECB /* FAQViewController.swift */; };
+		384B6583218C689800A92ECB /* ReportIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B6582218C689800A92ECB /* ReportIssuesViewController.swift */; };
 		38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */; };
 		38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */; };
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
@@ -54,6 +59,11 @@
 
 /* Begin PBXFileReference section */
 		384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportPageViewController.swift; sourceTree = "<group>"; };
+		384B6576218C58E600A92ECB /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		384B657A218C5B2E00A92ECB /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
+		384B657C218C603900A92ECB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		384B6580218C60E000A92ECB /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		384B6582218C689800A92ECB /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportIssuesViewController.swift; path = "/Users/nicksnacs/School/RxHelper/source/rx-helper/ReportIssuesViewController.swift"; sourceTree = "<absolute>"; };
 		38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +208,7 @@
 				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
 				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
 				384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */,
+				384B657A218C5B2E00A92ECB /* TOSViewController.swift */,
 				AE0ADE502187AD1C00A94894 /* AppDelegate.swift */,
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
@@ -209,6 +220,10 @@
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
 				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
+				384B6576218C58E600A92ECB /* TutorialViewController.swift */,
+				384B657C218C603900A92ECB /* AboutViewController.swift */,
+				384B6580218C60E000A92ECB /* FAQViewController.swift */,
+				384B6582218C689800A92ECB /* ReportIssuesViewController.swift */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
 				C61566D02150DF730031A3D4 /* Info.plist */,
@@ -372,6 +387,8 @@
 				B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */,
 				AE0ADE592187AD1C00A94894 /* UIWindow+Extension.swift in Sources */,
 				AE0ADE602187AD1C00A94894 /* AlarmSchedulerDelegate.swift in Sources */,
+				384B6583218C689800A92ECB /* ReportIssuesViewController.swift in Sources */,
+				384B657D218C603900A92ECB /* AboutViewController.swift in Sources */,
 				AE0ADE5A2187AD1C00A94894 /* AlarmModel.swift in Sources */,
 				B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */,
 				B546A8E6218971AA008097F1 /* Member.swift in Sources */,
@@ -388,6 +405,7 @@
 				AE0ADE632187AD1C00A94894 /* PropertyReflectable.swift in Sources */,
 				AE0ADE6C2187AD1C00A94894 /* Identifier.swift in Sources */,
 				AE0ADE5B2187AD1C00A94894 /* WeekdaysViewController.swift in Sources */,
+				384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */,
 				AE0ADE6A2187AD1C00A94894 /* NotificationName+Extension.swift in Sources */,
 				AE0ADE572187AD1C00A94894 /* AlarmAddEditViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
@@ -399,7 +417,9 @@
 				38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */,
 				B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */,
 				AE0ADE5F2187AD1C00A94894 /* AlarmApplicationDelegate.swift in Sources */,
+				384B657B218C5B2E00A92ECB /* TOSViewController.swift in Sources */,
 				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
+				384B6577218C58E600A92ECB /* TutorialViewController.swift in Sources */,
 				38CBB483217192B900F7CE05 /* Prescription.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,13 +574,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5K8K34A9U;
+				DEVELOPMENT_TEAM = U7FJVM9L6M;
 				INFOPLIST_FILE = "rx-helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cs477420.rx-helper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs47769420.rx-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,13 +593,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5K8K34A9U;
+				DEVELOPMENT_TEAM = U7FJVM9L6M;
 				INFOPLIST_FILE = "rx-helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cs477420.rx-helper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs47769420.rx-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -13,6 +13,8 @@ import SwiftyJSON
 class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // Mark: Properties
+    @IBOutlet weak var photoButton: UIButton!
+    @IBOutlet weak var alarmButton: UIButton!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var tableView: UITableView!

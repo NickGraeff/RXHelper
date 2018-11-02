@@ -58,7 +58,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var passwordConfirm: UITextField!
-
+    @IBOutlet weak var pharmacy: UITextField!
+    @IBOutlet weak var pharmacyPhoneNumber: UITextField!
+    
     @IBAction func signUpAction(_ sender: Any) {
 
         if password.text?.isEmpty == true {
@@ -84,6 +86,8 @@ class SignUpViewController: UIViewController {
                     ref = Database.database().reference()
 
                     ref.child("users").child(getUsersUid()).setValue(["name": "\(self.name.text!)"])
+                    ref.child("users").child(getUsersUid()).setValue(["pharmacyName": "\(self.pharmacy.text!)"])
+                    ref.child("users").child(getUsersUid()).setValue(["pharmacyPhoneNumber": "\(self.pharmacyPhoneNumber.text!)"])
 
                     //insert name of user
                     let user = Auth.auth().currentUser
@@ -100,11 +104,8 @@ class SignUpViewController: UIViewController {
                                 self.present(alertController, animated: true, completion: nil)
                             }
                             else {
-                                
-                                owner = Owner()
-                                
                                 //change request works
-                                self.performSegue(withIdentifier: "toWelcome", sender: self)
+                                self.performSegue(withIdentifier: "toTOS", sender: self)
                             }
                         }
                     }

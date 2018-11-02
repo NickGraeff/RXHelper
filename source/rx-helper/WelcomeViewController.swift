@@ -41,6 +41,9 @@ func fetchOwner() {
         if let dictionary = snapshot.value as? [String: AnyObject] {
             owner!.key = getUsersUid()
             owner!.name = dictionary["name"] as? String
+            owner!.email = Auth.auth().currentUser?.email
+            owner!.pharmacyName = dictionary["pharmacyName"] as? String
+            owner!.pharmacyPhoneNumber = dictionary["pharmacyPhoneNumber"] as? String
             selectedUserUid = owner!.key
         }
     })
