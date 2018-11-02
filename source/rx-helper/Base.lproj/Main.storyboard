@@ -788,13 +788,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Report Issues"/>
                                 <connections>
-                                    <segue destination="KnT-DZ-yIV" kind="show" id="feS-XX-9zh"/>
+                                    <segue destination="nAi-9c-wXv" kind="show" id="4nr-le-32G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyy-vw-4cx">
                                 <rect key="frame" x="157" y="517" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="FAQ"/>
+                                <connections>
+                                    <segue destination="KnT-DZ-yIV" kind="show" id="Kpl-fP-tcg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1498,7 +1501,7 @@
         <segue reference="lG2-lD-zYb"/>
         <segue reference="C60-Ki-geU"/>
         <segue reference="Tuo-27-eKB"/>
-        <segue reference="GFu-Z9-wLc"/>
+        <segue reference="PnF-Z9-q2T"/>
         <segue reference="ZaM-cr-wzR"/>
     </inferredMetricsTieBreakers>
 </document>
