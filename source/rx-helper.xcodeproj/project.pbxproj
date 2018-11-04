@@ -63,7 +63,7 @@
 		384B657A218C5B2E00A92ECB /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
 		384B657C218C603900A92ECB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		384B6580218C60E000A92ECB /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
-		384B6582218C689800A92ECB /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportIssuesViewController.swift; path = "/Users/nicksnacs/School/RxHelper/source/rx-helper/ReportIssuesViewController.swift"; sourceTree = "<absolute>"; };
+		384B6582218C689800A92ECB /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportIssuesViewController.swift; path = "/Users/work-account/Clout/rxhelper/source/rx-helper/ReportIssuesViewController.swift"; sourceTree = "<absolute>"; };
 		38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -224,9 +224,9 @@
 				384B657C218C603900A92ECB /* AboutViewController.swift */,
 				384B6580218C60E000A92ECB /* FAQViewController.swift */,
 				384B6582218C689800A92ECB /* ReportIssuesViewController.swift */,
+				C61566D02150DF730031A3D4 /* Info.plist */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
-				C61566D02150DF730031A3D4 /* Info.plist */,
 				C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */,
 			);
 			path = "rx-helper";
