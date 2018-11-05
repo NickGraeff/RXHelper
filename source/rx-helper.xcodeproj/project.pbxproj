@@ -20,6 +20,7 @@
 		AE9532912190191A00121834 /* ReportIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9532902190191A00121834 /* ReportIssuesViewController.swift */; };
 		AE9532932190192900121834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9532922190192900121834 /* AppDelegate.swift */; };
 		AE95329721902E6100121834 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE95329621902E6000121834 /* AlertViewController.swift */; };
+		AE953299219031D800121834 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE953298219031D800121834 /* Alert.swift */; };
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
 		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
 		B546A8E6218971AA008097F1 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E5218971AA008097F1 /* Member.swift */; };
@@ -53,6 +54,7 @@
 		AE9532902190191A00121834 /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportIssuesViewController.swift; sourceTree = "<group>"; };
 		AE9532922190192900121834 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../../../../Desktop/AppDelegate.swift; sourceTree = "<group>"; };
 		AE95329621902E6000121834 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = "/Users/JPCastro96/Documents/School/2018-2019/Fall/CS472/rxhelper/source/rx-helper/AlertViewController.swift"; sourceTree = "<absolute>"; };
+		AE953298219031D800121834 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B546A8E5218971AA008097F1 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
@@ -110,8 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				B546A8E5218971AA008097F1 /* Member.swift */,
-				38CBB47F217192B900F7CE05 /* Prescription.swift */,
 				B546A8E7218A3428008097F1 /* Owner.swift */,
+				AE953298219031D800121834 /* Alert.swift */,
+				38CBB47F217192B900F7CE05 /* Prescription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,34 +141,34 @@
 		C61566C32150DF6E0031A3D4 /* rx-helper */ = {
 			isa = PBXGroup;
 			children = (
-				AE95329621902E6000121834 /* AlertViewController.swift */,
-				B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */,
-				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
-				38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */,
-				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
-				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
-				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
-				384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */,
-				384B657A218C5B2E00A92ECB /* TOSViewController.swift */,
-				AE9532922190192900121834 /* AppDelegate.swift */,
-				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
+				AE9532922190192900121834 /* AppDelegate.swift */,
+				384B657C218C603900A92ECB /* AboutViewController.swift */,
+				B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */,
+				AE95329621902E6000121834 /* AlertViewController.swift */,
 				B503FDA5217C0E0B005E13CD /* BaseViewController.swift */,
-				C601CE632181343100984684 /* rxList01.json */,
-				C601CE652181344300984684 /* rxListPet01.json */,
-				B5FB1D602172F90500795C7E /* SignUpViewController.swift */,
-				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
+				384B6580218C60E000A92ECB /* FAQViewController.swift */,
+				B5F6EBA52168A49D00572C17 /* HomeViewController.swift */,
+				B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */,
+				B5FCA292217C7536000A441A /* MenuTableViewCell.swift */,
+				B503FDA3217C08CF005E13CD /* MenuViewController.swift */,
+				38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */,
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
-				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
-				384B6576218C58E600A92ECB /* TutorialViewController.swift */,
-				384B657C218C603900A92ECB /* AboutViewController.swift */,
-				384B6580218C60E000A92ECB /* FAQViewController.swift */,
 				AE9532902190191A00121834 /* ReportIssuesViewController.swift */,
+				B5FB1D602172F90500795C7E /* SignUpViewController.swift */,
+				384B6574218B0F0A00A92ECB /* SupportPageViewController.swift */,
+				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
+				384B657A218C5B2E00A92ECB /* TOSViewController.swift */,
+				384B6576218C58E600A92ECB /* TutorialViewController.swift */,
+				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
 				C61566D02150DF730031A3D4 /* Info.plist */,
 				C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */,
+				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
+				C601CE632181343100984684 /* rxList01.json */,
+				C601CE652181344300984684 /* rxListPet01.json */,
 			);
 			path = "rx-helper";
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				B546A8E6218971AA008097F1 /* Member.swift in Sources */,
 				B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */,
 				38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */,
+				AE953299219031D800121834 /* Alert.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
 				384B6575218B0F0A00A92ECB /* SupportPageViewController.swift in Sources */,
 				B546A8E8218A3428008097F1 /* Owner.swift in Sources */,

@@ -14,7 +14,7 @@ class AlertViewController: UIViewController {
     
     @IBAction func schedule(_ sender: Any) {
         let center = UNUserNotificationCenter.current()
-        center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in}
+        center.requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (didAllow, error) in})
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
