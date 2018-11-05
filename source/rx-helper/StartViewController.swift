@@ -18,6 +18,7 @@ class StartViewController: UIViewController {
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (didAllow, error) in})
         
+        
 //        Auth.auth().addStateDidChangeListener { auth, user in
 //            if user != nil{
 //                self.performSegue(withIdentifier: "toHome", sender: nil)
