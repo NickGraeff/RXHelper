@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 import Firebase
 import FirebaseAuth
 
@@ -14,6 +15,9 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (didAllow, error) in})
+        
 //        Auth.auth().addStateDidChangeListener { auth, user in
 //            if user != nil{
 //                self.performSegue(withIdentifier: "toHome", sender: nil)

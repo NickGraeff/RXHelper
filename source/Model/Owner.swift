@@ -16,5 +16,4 @@ class Owner: NSObject {
     var key: String?
     var members = [Member]()
     var prescriptions = [Prescription]()
-
 }
