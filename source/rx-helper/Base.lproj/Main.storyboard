@@ -500,7 +500,7 @@
                                     <outlet property="nameLabel" destination="Iyj-0A-Aoh" id="cGR-uy-cig"/>
                                     <outlet property="nextDueLabel" destination="TWr-AT-KHM" id="0h0-He-PJU"/>
                                     <outlet property="prescriptionImageView" destination="MKB-zc-Ur2" id="gpO-Nn-eRF"/>
-                                    <segue destination="8Qu-XB-Ay6" kind="show" id="mM9-76-twj"/>
+                                    <segue destination="oPS-gF-Kkf" kind="show" identifier="ShowDetail" id="g9g-aY-nnD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -544,7 +544,7 @@
             <objects>
                 <viewController id="oPS-gF-Kkf" customClass="PrescriptionViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gce-7q-QgW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prescription Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usU-XW-qeO">
@@ -635,7 +635,7 @@
             <objects>
                 <viewController id="Wue-YL-SVf" customClass="AlertViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdv-SW-ghN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx9-h5-dJU">
@@ -1371,8 +1371,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lG2-lD-zYb"/>
-        <segue reference="C60-Ki-geU"/>
-        <segue reference="e2j-Bg-nbX"/>
+        <segue reference="g9g-aY-nnD"/>
         <segue reference="Tuo-27-eKB"/>
         <segue reference="GFu-Z9-wLc"/>
         <segue reference="ZaM-cr-wzR"/>
