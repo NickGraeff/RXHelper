@@ -19,6 +19,7 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     @IBOutlet weak var hours: UITextField!
     @IBOutlet weak var minutes: UITextField!
+    @IBOutlet weak var timePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,8 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     @IBAction func schedule(_ sender: Any) {
         setAlarm()
+        
+        //timePicker.
     }
     
     func makeAlarmCategories() {

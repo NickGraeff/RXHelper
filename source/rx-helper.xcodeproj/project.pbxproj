@@ -17,8 +17,8 @@
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
 		38CBB483217192B900F7CE05 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47F217192B900F7CE05 /* Prescription.swift */; };
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AE888FD02190D42E00845BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE888FCF2190D42D00845BA1 /* AppDelegate.swift */; };
 		AE9532912190191A00121834 /* ReportIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9532902190191A00121834 /* ReportIssuesViewController.swift */; };
-		AE9532932190192900121834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9532922190192900121834 /* AppDelegate.swift */; };
 		AE95329721902E6100121834 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE95329621902E6000121834 /* AlertViewController.swift */; };
 		AE953299219031D800121834 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE953298219031D800121834 /* Alert.swift */; };
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
@@ -51,8 +51,8 @@
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		38CBB47F217192B900F7CE05 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
+		AE888FCF2190D42D00845BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9532902190191A00121834 /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportIssuesViewController.swift; sourceTree = "<group>"; };
-		AE9532922190192900121834 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../../../../Desktop/AppDelegate.swift; sourceTree = "<group>"; };
 		AE95329621902E6000121834 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = "/Users/JPCastro96/Documents/School/2018-2019/Fall/CS472/rxhelper/source/rx-helper/AlertViewController.swift"; sourceTree = "<absolute>"; };
 		AE953298219031D800121834 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
-				AE9532922190192900121834 /* AppDelegate.swift */,
+				AE888FCF2190D42D00845BA1 /* AppDelegate.swift */,
 				384B657C218C603900A92ECB /* AboutViewController.swift */,
 				B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */,
 				AE95329621902E6000121834 /* AlertViewController.swift */,
@@ -334,6 +334,7 @@
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
+				AE888FD02190D42E00845BA1 /* AppDelegate.swift in Sources */,
 				B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */,
 				38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */,
 				38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */,
@@ -344,7 +345,6 @@
 				AE9532912190191A00121834 /* ReportIssuesViewController.swift in Sources */,
 				384B6577218C58E600A92ECB /* TutorialViewController.swift in Sources */,
 				38CBB483217192B900F7CE05 /* Prescription.swift in Sources */,
-				AE9532932190192900121834 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
