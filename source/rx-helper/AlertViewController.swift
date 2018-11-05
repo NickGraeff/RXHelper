@@ -12,26 +12,42 @@ import UserNotifications
 //var alert: Alert?
 
 var badge = 0
+
+
+
 class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
+    
+    @IBOutlet weak var hours: UITextField!
+    @IBOutlet weak var minutes: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         UNUserNotificationCenter.current().delegate = self
+        hours.delegate = self as? UITextFieldDelegate
+        minutes.delegate = self as? UITextFieldDelegate
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        // Dismiss keyboard when you tap outside the number pad
+        hours.resignFirstResponder()
+        minutes.resignFirstResponder()
     }
     
     @IBAction func schedule(_ sender: Any) {
         setAlarm()
     }
     
-    func setAlarm () {
-        let center = UNUserNotificationCenter.current()
-        
+    func makeAlarmCategories() {
         let takeAction = UNNotificationAction(identifier: "takeAction", title: "Take", options: [])
         let snoozeAction = UNNotificationAction(identifier: "snoozeAction", title: "Snooze", options: [])
         let category = UNNotificationCategory(identifier: "RxHelperCategory",
                                               actions: [takeAction,snoozeAction], intentIdentifiers: [], options: [])
-        
-        center.setNotificationCategories([category])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+    }
+    
+    func setAlarm () {
+        makeAlarmCategories()
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
@@ -41,30 +57,25 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         content.badge = badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
         
-        /*
-         var dateComponents = DateComponents()
-         dateComponents.hour = 10
-         dateComponents.minute = 03
-         
-         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-         */
         
-        // Switch 5 to 900 to snooze
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+         // Actual alarm setter
+        var dateComponents = DateComponents()
+        dateComponents.hour = Int(hours.text!)
+        dateComponents.minute = Int(minutes.text!)
+         
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        
+        // 5 second tester
+        
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        center.add(request)
+        UNUserNotificationCenter.current().add(request)
     }
     
     func pressedSnooze () {
-        let center = UNUserNotificationCenter.current()
-        
-        let takeAction = UNNotificationAction(identifier: "takeAction", title: "Take", options: [])
-        let snoozeAction = UNNotificationAction(identifier: "snoozeAction", title: "Snooze", options: [])
-        let category = UNNotificationCategory(identifier: "RxHelperCategory",
-                                              actions: [takeAction,snoozeAction], intentIdentifiers: [], options: [])
-        
-        center.setNotificationCategories([category])
+        makeAlarmCategories()
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
@@ -78,7 +89,7 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        center.add(request)
+        UNUserNotificationCenter.current().add(request)
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {

@@ -7,10 +7,10 @@
 //
 
 import UIKit
-/*
+
 class Alert: NSObject {
     var name: String?
-    var minute: Int
-    var hour: Int
+    var minute: Int?
+    var hour: Int?
 }
-*/
+
