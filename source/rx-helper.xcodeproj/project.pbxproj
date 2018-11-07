@@ -17,12 +17,12 @@
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
 		38CBB483217192B900F7CE05 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47F217192B900F7CE05 /* Prescription.swift */; };
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		AE166096219372820032C180 /* rxList.json in Resources */ = {isa = PBXBuildFile; fileRef = AE166094219372810032C180 /* rxList.json */; };
 		AE166097219372820032C180 /* rxListMed.json in Resources */ = {isa = PBXBuildFile; fileRef = AE166095219372820032C180 /* rxListMed.json */; };
 		AE888FD02190D42E00845BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE888FCF2190D42D00845BA1 /* AppDelegate.swift */; };
 		AE9532912190191A00121834 /* ReportIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9532902190191A00121834 /* ReportIssuesViewController.swift */; };
 		AE95329721902E6100121834 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE95329621902E6000121834 /* AlertViewController.swift */; };
 		AE953299219031D800121834 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE953298219031D800121834 /* Alert.swift */; };
+		AEB4EBAB21937BE4003C3DD7 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4EBAA21937BE4003C3DD7 /* WebViewController.swift */; };
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
 		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
 		B546A8E6218971AA008097F1 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E5218971AA008097F1 /* Member.swift */; };
@@ -51,12 +51,12 @@
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		38CBB47F217192B900F7CE05 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
-		AE166094219372810032C180 /* rxList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxList.json; sourceTree = "<group>"; };
 		AE166095219372820032C180 /* rxListMed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListMed.json; sourceTree = "<group>"; };
 		AE888FCF2190D42D00845BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9532902190191A00121834 /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportIssuesViewController.swift; sourceTree = "<group>"; };
 		AE95329621902E6000121834 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = "/Users/JPCastro96/Documents/School/2018-2019/Fall/CS472/rxhelper/source/rx-helper/AlertViewController.swift"; sourceTree = "<absolute>"; };
 		AE953298219031D800121834 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		AEB4EBAA21937BE4003C3DD7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B546A8E5218971AA008097F1 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
@@ -161,12 +161,12 @@
 				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
 				384B657A218C5B2E00A92ECB /* TOSViewController.swift */,
 				384B6576218C58E600A92ECB /* TutorialViewController.swift */,
+				AEB4EBAA21937BE4003C3DD7 /* WebViewController.swift */,
 				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
 				C61566CB2150DF730031A3D4 /* Assets.xcassets */,
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
 				C61566D02150DF730031A3D4 /* Info.plist */,
 				C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */,
-				AE166094219372810032C180 /* rxList.json */,
 				AE166095219372820032C180 /* rxListMed.json */,
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 			);
@@ -243,7 +243,6 @@
 				AE166097219372820032C180 /* rxListMed.json in Resources */,
 				C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */,
 				C6D7000E2150F27D000FCB96 /* GoogleService-Info.plist in Resources */,
-				AE166096219372820032C180 /* rxList.json in Resources */,
 				C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */,
 				C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */,
 			);
@@ -334,6 +333,7 @@
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
+				AEB4EBAB21937BE4003C3DD7 /* WebViewController.swift in Sources */,
 				AE888FD02190D42E00845BA1 /* AppDelegate.swift in Sources */,
 				B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */,
 				38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */,
@@ -490,7 +490,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U7FJVM9L6M;
+				DEVELOPMENT_TEAM = M43GRM5WU6;
 				INFOPLIST_FILE = "rx-helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,7 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U7FJVM9L6M;
+				DEVELOPMENT_TEAM = M43GRM5WU6;
 				INFOPLIST_FILE = "rx-helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

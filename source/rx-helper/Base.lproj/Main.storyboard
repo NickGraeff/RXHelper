@@ -455,7 +455,7 @@
             <objects>
                 <tableViewController id="Nm7-Sk-fax" customClass="PrescriptionTableViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IOZ-rn-Gge">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -544,7 +544,7 @@
             <objects>
                 <viewController id="oPS-gF-Kkf" customClass="PrescriptionViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gce-7q-QgW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prescription Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usU-XW-qeO">
@@ -602,6 +602,14 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEX-fg-hkt">
+                                <rect key="frame" x="245" y="279" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medicine Info"/>
+                                <connections>
+                                    <segue destination="Kvm-99-pR1" kind="show" id="tkN-be-QKx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bUS-Q9-c2Q"/>
@@ -635,7 +643,7 @@
             <objects>
                 <viewController id="Wue-YL-SVf" customClass="AlertViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gdv-SW-ghN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hx9-h5-dJU">
@@ -697,7 +705,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OWd-r4-meo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9076" y="1336.6995073891626"/>
+            <point key="canvasLocation" x="9130" y="2000"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9v4-rb-yaH">
@@ -1364,14 +1372,77 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
             </objects>
             <point key="canvasLocation" x="11042" y="-866"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="3RR-E2-ygU">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="a1w-N4-fdN" customClass="WebViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a1j-av-9Ge">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV4-c7-sd8">
+                                <rect key="frame" x="0.0" y="170" width="369" height="726"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkM-nl-ZTU">
+                                <rect key="frame" x="0.0" y="106" width="125" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="rx-helper" image="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Nm7-Sk-fax" kind="show" id="Z7a-g9-6gi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="l6f-FL-CDi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RmC-Hh-HOq"/>
+                    <connections>
+                        <outlet property="backButton" destination="UkM-nl-ZTU" id="Jrl-aI-8wA"/>
+                        <outlet property="web" destination="SV4-c7-sd8" id="3vw-XC-4fR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sCx-2u-h9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10134" y="1253"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aIu-SJ-Uu9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kvm-99-pR1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wyj-n1-MGB">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a1w-N4-fdN" kind="relationship" relationship="rootViewController" id="A4e-vs-N3g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWW-p2-7VA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9335" y="1254"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Cancel" width="37.5" height="37.5"/>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="Logos" width="709" height="696"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="tkN-be-QKx"/>
         <segue reference="lG2-lD-zYb"/>
         <segue reference="g9g-aY-nnD"/>
+        <segue reference="Z7a-g9-6gi"/>
         <segue reference="Tuo-27-eKB"/>
         <segue reference="GFu-Z9-wLc"/>
         <segue reference="ZaM-cr-wzR"/>

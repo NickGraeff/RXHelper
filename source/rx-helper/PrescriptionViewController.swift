@@ -50,10 +50,12 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             
         }
         
+        /*
         if prescription?.name == nil {
             //medInfoPressed.isHidden = true
             webInfo.isHidden = true
         }
+         */
         
         
         
