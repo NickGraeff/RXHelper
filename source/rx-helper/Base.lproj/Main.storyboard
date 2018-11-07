@@ -655,37 +655,7 @@
                                     <action selector="schedule:" destination="Wue-YL-SVf" eventType="touchUpInside" id="lMa-IQ-SKx"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="HH" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDw-He-x7l">
-                                <rect key="frame" x="16" y="182" width="139" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RmZ-VK-Zcn">
-                                <rect key="frame" x="212" y="182" width="147" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYB-hC-kkL">
-                                <rect key="frame" x="62" y="153" width="46" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVl-Dc-HCT">
-                                <rect key="frame" x="255" y="152" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="T90-CU-0b8">
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="T90-CU-0b8">
                                 <rect key="frame" x="0.0" y="325" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="563139926.87946498">
@@ -698,8 +668,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="oqr-On-vLq"/>
                     <connections>
-                        <outlet property="hours" destination="GDw-He-x7l" id="t49-2G-hS9"/>
-                        <outlet property="minutes" destination="RmZ-VK-Zcn" id="HKN-VP-L7c"/>
                         <outlet property="timePicker" destination="T90-CU-0b8" id="FHk-UV-Kwd"/>
                     </connections>
                 </viewController>
@@ -1439,7 +1407,6 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
         <image name="Logos" width="709" height="696"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tkN-be-QKx"/>
         <segue reference="lG2-lD-zYb"/>
         <segue reference="g9g-aY-nnD"/>
         <segue reference="Z7a-g9-6gi"/>

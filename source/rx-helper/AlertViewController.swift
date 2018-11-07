@@ -17,22 +17,22 @@ var badge = 0
 
 class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
     
-    @IBOutlet weak var hours: UITextField!
-    @IBOutlet weak var minutes: UITextField!
+    //@IBOutlet weak var hours: UITextField!
+    //@IBOutlet weak var minutes: UITextField!
     @IBOutlet weak var timePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UNUserNotificationCenter.current().delegate = self
-        hours.delegate = self as? UITextFieldDelegate
-        minutes.delegate = self as? UITextFieldDelegate
+        //hours.delegate = self as? UITextFieldDelegate
+        //minutes.delegate = self as? UITextFieldDelegate
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // Dismiss keyboard when you tap outside the number pad
-        hours.resignFirstResponder()
-        minutes.resignFirstResponder()
+        //hours.resignFirstResponder()
+        //minutes.resignFirstResponder()
     }
     
     @IBAction func schedule(_ sender: Any) {
@@ -61,17 +61,16 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         content.categoryIdentifier = "RxHelperCategory"
         
         
-         // Actual alarm setter
+        // Actual alarm setter
+        let date = timePicker.date
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let hours = components.hour!
+        let minutes = components.minute!
         var dateComponents = DateComponents()
-        dateComponents.hour = Int(hours.text!)
-        dateComponents.minute = Int(minutes.text!)
+        dateComponents.hour = hours
+        dateComponents.minute = minutes
          
         let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        
-        
-        // 5 second tester
-        
-        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request)
