@@ -36,8 +36,12 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
     
     @IBAction func schedule(_ sender: Any) {
-        setAlarm()
+        let date = timePicker.date
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let hours = components.hour!
+        let minutes = components.minute!
         
+        setAlarm(hours, minutes)
         //timePicker.
     }
     
@@ -49,7 +53,7 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         UNUserNotificationCenter.current().setNotificationCategories([category])
     }
     
-    func setAlarm () {
+    func setAlarm (_ hours: Int, _ minutes: Int) {
         makeAlarmCategories()
         
         let content = UNMutableNotificationContent()
@@ -60,12 +64,7 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         content.badge = badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
         
-        
         // Actual alarm setter
-        let date = timePicker.date
-        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
-        let hours = components.hour!
-        let minutes = components.minute!
         var dateComponents = DateComponents()
         dateComponents.hour = hours
         dateComponents.minute = minutes
