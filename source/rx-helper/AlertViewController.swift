@@ -41,6 +41,8 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         let hours = components.hour!
         let minutes = components.minute!
         
+        //store hours and minutes into database
+        
         setAlarm(hours, minutes)
         //timePicker.
     }
