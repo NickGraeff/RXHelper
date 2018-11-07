@@ -49,8 +49,8 @@
 		B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */; };
 		B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D602172F90500795C7E /* SignUpViewController.swift */; };
 		B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCA292217C7536000A441A /* MenuTableViewCell.swift */; };
-		C601CE642181343200984684 /* rxList01.json in Resources */ = {isa = PBXBuildFile; fileRef = C601CE632181343100984684 /* rxList01.json */; };
-		C601CE662181344300984684 /* rxListPet01.json in Resources */ = {isa = PBXBuildFile; fileRef = C601CE652181344300984684 /* rxListPet01.json */; };
+		C601015B21914EDA0090C02C /* rxListMed.json in Resources */ = {isa = PBXBuildFile; fileRef = C601015A21914EDA0090C02C /* rxListMed.json */; };
+		C601015D219170100090C02C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C601015C219170100090C02C /* WebViewController.swift */; };
 		C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566C82150DF6E0031A3D4 /* Main.storyboard */; };
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
 		C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */; };
@@ -101,8 +101,8 @@
 		B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5FB1D602172F90500795C7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5FCA292217C7536000A441A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		C601CE632181343100984684 /* rxList01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxList01.json; sourceTree = "<group>"; };
-		C601CE652181344300984684 /* rxListPet01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListPet01.json; sourceTree = "<group>"; };
+		C601015A21914EDA0090C02C /* rxListMed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListMed.json; sourceTree = "<group>"; };
+		C601015C219170100090C02C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C61566C12150DF6E0031A3D4 /* rx-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61566C92150DF6E0031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C61566CB2150DF730031A3D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -212,10 +212,10 @@
 				AE0ADE502187AD1C00A94894 /* AppDelegate.swift */,
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
 				C61566C82150DF6E0031A3D4 /* Main.storyboard */,
+				C601015C219170100090C02C /* WebViewController.swift */,
 				B503FDA5217C0E0B005E13CD /* BaseViewController.swift */,
-				C601CE632181343100984684 /* rxList01.json */,
-				C601CE652181344300984684 /* rxListPet01.json */,
 				B5FB1D602172F90500795C7E /* SignUpViewController.swift */,
+				C601015A21914EDA0090C02C /* rxListMed.json */,
 				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
 				38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */,
 				38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */,
@@ -299,9 +299,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C601CE662181344300984684 /* rxListPet01.json in Resources */,
+				C601015B21914EDA0090C02C /* rxListMed.json in Resources */,
 				AE0ADE622187AD1C00A94894 /* Images.xcassets in Resources */,
-				C601CE642181343200984684 /* rxList01.json in Resources */,
 				AE0ADE582187AD1C00A94894 /* tickle.mp3 in Resources */,
 				C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */,
 				AE0ADE672187AD1C00A94894 /* bell.mp3 in Resources */,
@@ -403,6 +402,7 @@
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				AE0ADE5C2187AD1C00A94894 /* SegueInfo.swift in Sources */,
 				AE0ADE632187AD1C00A94894 /* PropertyReflectable.swift in Sources */,
+				C601015D219170100090C02C /* WebViewController.swift in Sources */,
 				AE0ADE6C2187AD1C00A94894 /* Identifier.swift in Sources */,
 				AE0ADE5B2187AD1C00A94894 /* WeekdaysViewController.swift in Sources */,
 				384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */,
