@@ -22,12 +22,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var dosageField: UITextField!
     
     
-    @IBOutlet weak var medinfoPressed: UIButton!
-    
-    @IBOutlet weak var webinfoPressed: UIButton!
-    
-    @IBOutlet weak var web: UIButton!
-    
+    @IBOutlet weak var webInfo: UIButton!
     
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
@@ -56,8 +51,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         if prescription?.name == nil {
-            medinfoPressed.isHidden = true
-            webinfoPressed.isHidden = true
+            //medInfoPressed.isHidden = true
+            webInfo.isHidden = true
         }
         
         
@@ -213,33 +208,6 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         prescription = Prescription(name: nameField.text ?? "Unknown", key: prescription?.key, dosage: Int(dosageField.text ?? "0"))
         
         
-        
     }
-    
-    
-    
-    @IBAction func medinforPressed(_ sender: Any) {
-        let name = prescription?.name
-        
-        if (name != nil){
-            let med = prescription!.name
-            UIApplication.shared.open(URL(string: "https://www.rxlist.com/\(med)-drug.htm")! as URL, options: [:], completionHandler: nil)
-            
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    @IBAction func webinforPressed(_ sender: Any) {
-        
-       
-    }
-    
-    
 
 }

@@ -13,13 +13,13 @@ class WebViewController: UIViewController {
 
     
     var myString = String()
-    
     @IBOutlet var web: WKWebView!
-    
     @IBOutlet weak var backButton: UIButton!
     
+    //@IBOutlet weak var backButton: UIButton!
     
-    @IBOutlet weak var label: UILabel!
+    
+    //@IBOutlet weak var label: UILabel!
     
     
     override func viewDidLoad() {
@@ -31,7 +31,6 @@ class WebViewController: UIViewController {
            // let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm")
             //let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm#description")
             let url = URL(string: "https://www.rxlist.com/\(myString)-drug/patient-images-side-effects.htm#whatis")
-        
             let request = URLRequest(url: url!)
             web.load(request)
 
