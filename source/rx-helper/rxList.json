@@ -1,0 +1,902 @@
+[
+ {
+   "term": "Paxil"
+ },
+ {
+   "term": "Lexapro"
+ },
+ {
+   "term": "Hydrocodone"
+ },
+ {
+   "term": "Xanax"
+ },
+ {
+   "term": "Tramadol"
+ },
+ {
+   "term": "Vicodin"
+ },
+ {
+   "term": "Lyrica"
+ },
+ {
+   "term": "Oxycodone"
+ },
+ {
+   "term": "Lisinopril"
+ },
+ {
+   "term": "Cymbalta"
+ },
+ {
+   "term": "Lipitor"
+ },
+ {
+   "term": "Percocet"
+ },
+ {
+   "term": "Zoloft"
+ },
+ {
+   "term": "Metformin"
+ },
+ {
+   "term": "Effexor"
+ },
+ {
+   "term": "Ambien"
+ },
+ {
+   "term": "Prednisone"
+ },
+ {
+   "term": "Atenolol"
+ },
+ {
+   "term": "Wellbutrin"
+ },
+ {
+   "term": "Morphine"
+ },
+ {
+   "term": "Naproxen"
+ },
+ {
+   "term": "Phentermine"
+ },
+ {
+   "term": "Tylenol"
+ },
+ {
+   "term": "Aspirin"
+ },
+ {
+   "term": "Norvasc"
+ },
+ {
+   "term": "Toprol"
+ },
+ {
+   "term": "Darvocet"
+ },
+ {
+   "term": "Nexium"
+ },
+ {
+   "term": "Soma"
+ },
+ {
+   "term": "Diovan"
+ },
+ {
+   "term": "Seroquel"
+ },
+ {
+   "term": "Albuterol"
+ },
+ {
+   "term": "Neurontin"
+ },
+ {
+   "term": "Adderall"
+ },
+ {
+   "term": "Protonix"
+ },
+ {
+   "term": "Ultram"
+ },
+ {
+   "term": "Zocor"
+ },
+ {
+   "term": "Ativan"
+ },
+ {
+   "term": "Metoprolol"
+ },
+ {
+   "term": "Levaquin"
+ },
+ {
+   "term": "Valium"
+ },
+ {
+   "term": "Viagra"
+ },
+ {
+   "term": "Prozac"
+ },
+ {
+   "term": "Alprazolam"
+ },
+ {
+   "term": "Cipro"
+ },
+ {
+   "term": "Oxycontin"
+ },
+ {
+   "term": "Gabapentin"
+ },
+ {
+   "term": "Lortab"
+ },
+ {
+   "term": "Clonazepam"
+ },
+ {
+   "term": "Celexa"
+ },
+ {
+   "term": "Synthroid"
+ },
+ {
+   "term": "Plavix"
+ },
+ {
+   "term": "Cyclobenzaprine"
+ },
+ {
+   "term": "Prevacid"
+ },
+ {
+   "term": "Celebrex"
+ },
+ {
+   "term": "Vytorin"
+ },
+ {
+   "term": "Lasix"
+ },
+ {
+   "term": "Lorazepam"
+ },
+ {
+   "term": "Amoxicillin"
+ },
+ {
+   "term": "Trazodone"
+ },
+ {
+   "term": "Zyrtec"
+ },
+ {
+   "term": "Klonopin"
+ },
+ {
+   "term": "Depakote"
+ },
+ {
+   "term": "Clonidine"
+ },
+ {
+   "term": "Codeine"
+ },
+ {
+   "term": "Lamictal"
+ },
+ {
+   "term": "Methadone"
+ },
+ {
+   "term": "Flexeril"
+ },
+ {
+   "term": "Topamax"
+ },
+ {
+   "term": "Diclofenac"
+ },
+ {
+   "term": "Promethazine"
+ },
+ {
+   "term": "Mobic"
+ },
+ {
+   "term": "Doxycycline"
+ },
+ {
+   "term": "Augmentin"
+ },
+ {
+   "term": "Cephalexin"
+ },
+ {
+   "term": "Bactrim"
+ },
+ {
+   "term": "Hydrochlorothiazide"
+ },
+ {
+   "term": "Advair"
+ },
+ {
+   "term": "Ibuprofen"
+ },
+ {
+   "term": "Omeprazole"
+ },
+ {
+   "term": "Furosemide"
+ },
+ {
+   "term": "Zetia"
+ },
+ {
+   "term": "Diazepam"
+ },
+ {
+   "term": "Fentanyl"
+ },
+ {
+   "term": "Risperdal"
+ },
+ {
+   "term": "Abilify"
+ },
+ {
+   "term": "Skelaxin"
+ },
+ {
+   "term": "Elavil"
+ },
+ {
+   "term": "Amitriptyline"
+ },
+ {
+   "term": "Coumadin"
+ },
+ {
+   "term": "Flomax"
+ },
+ {
+   "term": "Prilosec"
+ },
+ {
+   "term": "Allegra"
+ },
+ {
+   "term": "Clindamycin"
+ },
+ {
+   "term": "Insulin"
+ },
+ {
+   "term": "Lunesta"
+ },
+ {
+   "term": "Fosamax"
+ },
+ {
+   "term": "Zyprexa"
+ },
+ {
+   "term": "Citalopram"
+ },
+ {
+   "term": "Ranitidine"
+ },
+ {
+   "term": "Fluoxetine"
+ },
+ {
+   "term": "Hydroxyzine"
+ },
+ {
+   "term": "Actos"
+ },
+ {
+   "term": "Metronidazole"
+ },
+ {
+   "term": "Altace"
+ },
+ {
+   "term": "Crestor"
+ },
+ {
+   "term": "Coreg"
+ },
+ {
+   "term": "Digoxin"
+ },
+ {
+   "term": "Phenergan"
+ },
+ {
+   "term": "Benicar"
+ },
+ {
+   "term": "Verapamil"
+ },
+ {
+   "term": "Acetaminophen"
+ },
+ {
+   "term": "Lithium"
+ },
+ {
+   "term": "Zithromax"
+ },
+ {
+   "term": "Dilantin"
+ },
+ {
+   "term": "Tricor"
+ },
+ {
+   "term": "Lotrel"
+ },
+ {
+   "term": "Potassium"
+ },
+ {
+   "term": "Norco"
+ },
+ {
+   "term": "Keflex"
+ },
+ {
+   "term": "Flagyl"
+ },
+ {
+   "term": "Avandia"
+ },
+ {
+   "term": "Ritalin"
+ },
+ {
+   "term": "Ciprofloxacin"
+ },
+ {
+   "term": "Inderal"
+ },
+ {
+   "term": "Trazadone"
+ },
+ {
+   "term": "Biaxin"
+ },
+ {
+   "term": "Singulair"
+ },
+ {
+   "term": "Aciphex"
+ },
+ {
+   "term": "Enalapril"
+ },
+ {
+   "term": "Zantac"
+ },
+ {
+   "term": "Ultracet"
+ },
+ {
+   "term": "Tamiflu"
+ },
+ {
+   "term": "Diltiazem"
+ },
+ {
+   "term": "Warfarin"
+ },
+ {
+   "term": "Baclofen"
+ },
+ {
+   "term": "Lidocaine"
+ },
+ {
+   "term": "Lovastatin"
+ },
+ {
+   "term": "Carisoprodol"
+ },
+ {
+   "term": "Provigil"
+ },
+ {
+   "term": "Ortho Evra"
+ },
+ {
+   "term": "Medrol"
+ },
+ {
+   "term": "Penicillin"
+ },
+ {
+   "term": "Benadryl"
+ },
+ {
+   "term": "Reglan"
+ },
+ {
+   "term": "Remeron"
+ },
+ {
+   "term": "Propoxyphene"
+ },
+ {
+   "term": "Concerta"
+ },
+ {
+   "term": "Cozaar"
+ },
+ {
+   "term": "Hctz"
+ },
+ {
+   "term": "Premarin"
+ },
+ {
+   "term": "Levothyroxine"
+ },
+ {
+   "term": "Methotrexate"
+ },
+ {
+   "term": "Buspar"
+ },
+ {
+   "term": "Glucophage"
+ },
+ {
+   "term": "Glyburide"
+ },
+ {
+   "term": "Paroxetine"
+ },
+ {
+   "term": "Avelox"
+ },
+ {
+   "term": "Valtrex"
+ },
+ {
+   "term": "Calcium"
+ },
+ {
+   "term": "Allopurinol"
+ },
+ {
+   "term": "Avapro"
+ },
+ {
+   "term": "Erythromycin"
+ },
+ {
+   "term": "Dilaudid"
+ },
+ {
+   "term": "Aricept"
+ },
+ {
+   "term": "Claritin"
+ },
+ {
+   "term": "Imitrex"
+ },
+ {
+   "term": "Simvastatin"
+ },
+ {
+   "term": "Estradiol"
+ },
+ {
+   "term": "Triamcinolone"
+ },
+ {
+   "term": "Namenda"
+ },
+ {
+   "term": "Meclizine"
+ },
+ {
+   "term": "Lopressor"
+ },
+ {
+   "term": "Glipizide"
+ },
+ {
+   "term": "Cialis"
+ },
+ {
+   "term": "Acyclovir"
+ },
+ {
+   "term": "Azithromycin"
+ },
+ {
+   "term": "Actonel"
+ },
+ {
+   "term": "Etodolac"
+ },
+ {
+   "term": "Robaxin"
+ },
+ {
+   "term": "Lovenox"
+ },
+ {
+   "term": "Trileptal"
+ },
+ {
+   "term": "Atarax"
+ },
+ {
+   "term": "Geodon"
+ },
+ {
+   "term": "Propranolol"
+ },
+ {
+   "term": "Temazepam"
+ },
+ {
+   "term": "Zofran"
+ },
+ {
+   "term": "Bupropion"
+ },
+ {
+   "term": "Naprosyn"
+ },
+ {
+   "term": "Detrol"
+ },
+ {
+   "term": "Flonase"
+ },
+ {
+   "term": "Voltaren"
+ },
+ {
+   "term": "Cardizem"
+ },
+ {
+   "term": "Amiodarone"
+ },
+ {
+   "term": "Diflucan"
+ },
+ {
+   "term": "Isosorbide"
+ },
+ {
+   "term": "Byetta"
+ },
+ {
+   "term": "Zanaflex"
+ },
+ {
+   "term": "Heparin"
+ },
+ {
+   "term": "Nabumetone"
+ },
+ {
+   "term": "Nystatin"
+ },
+ {
+   "term": "Toradol"
+ },
+ {
+   "term": "Loratadine"
+ },
+ {
+   "term": "Levoxyl"
+ },
+ {
+   "term": "Magnesium"
+ },
+ {
+   "term": "Demerol"
+ },
+ {
+   "term": "Vancomycin"
+ },
+ {
+   "term": "Motrin"
+ },
+ {
+   "term": "Tegretol"
+ },
+ {
+   "term": "Requip"
+ },
+ {
+   "term": "Pravachol"
+ },
+ {
+   "term": "Evista"
+ },
+ {
+   "term": "Boniva"
+ },
+ {
+   "term": "Haldol"
+ },
+ {
+   "term": "Nifedipine"
+ },
+ {
+   "term": "Keppra"
+ },
+ {
+   "term": "Metoclopramide"
+ },
+ {
+   "term": "Spironolactone"
+ },
+ {
+   "term": "Lantus"
+ },
+ {
+   "term": "Methocarbamol"
+ },
+ {
+   "term": "Indomethacin"
+ },
+ {
+   "term": "Quinine"
+ },
+ {
+   "term": "Rozerem"
+ },
+ {
+   "term": "Tizanidine"
+ },
+ {
+   "term": "Lanoxin"
+ },
+ {
+   "term": "Apap"
+ },
+ {
+   "term": "Decadron"
+ },
+ {
+   "term": "Omnicef"
+ },
+ {
+   "term": "Triamterene"
+ },
+ {
+   "term": "Strattera"
+ },
+ {
+   "term": "Atropine"
+ },
+ {
+   "term": "Fioricet"
+ },
+ {
+   "term": "Relafen"
+ },
+ {
+   "term": "Compazine"
+ },
+ {
+   "term": "Restoril"
+ },
+ {
+   "term": "Endocet"
+ },
+ {
+   "term": "Spiriva"
+ },
+ {
+   "term": "Dexamethasone"
+ },
+ {
+   "term": "Zelnorm"
+ },
+ {
+   "term": "Vioxx"
+ },
+ {
+   "term": "Hydrocortisone"
+ },
+ {
+   "term": "Niaspan"
+ },
+ {
+   "term": "Mirtazapine"
+ },
+ {
+   "term": "Nasonex"
+ },
+ {
+   "term": "Hyzaar"
+ },
+ {
+   "term": "Tetracycline"
+ },
+ {
+   "term": "Terazosin"
+ },
+ {
+   "term": "Provera"
+ },
+ {
+   "term": "Avalide"
+ },
+ {
+   "term": "Lodine"
+ },
+ {
+   "term": "Aldactone"
+ },
+ {
+   "term": "Fluconazole"
+ },
+ {
+   "term": "Lupron"
+ },
+ {
+   "term": "Diphenhydramine"
+ },
+ {
+   "term": "Septra"
+ },
+ {
+   "term": "Thyroid"
+ },
+ {
+   "term": "Methylprednisolone"
+ },
+ {
+   "term": "Fexofenadine"
+ },
+ {
+   "term": "Amlodipine"
+ },
+ {
+   "term": "Ditropan"
+ },
+ {
+   "term": "Famotidine"
+ },
+ {
+   "term": "Accupril"
+ },
+ {
+   "term": "Amaryl"
+ },
+ {
+   "term": "Atrovent"
+ },
+ {
+   "term": "Phenytoin"
+ },
+ {
+   "term": "Colchicine"
+ },
+ {
+   "term": "Vasotec"
+ },
+ {
+   "term": "Atacand"
+ },
+ {
+   "term": "Yasmin"
+ },
+ {
+   "term": "Proscar"
+ },
+ {
+   "term": "Flovent"
+ },
+ {
+   "term": "Caduet"
+ },
+ {
+   "term": "Lupron"
+ },
+ {
+   "term": "Pepcid"
+ },
+ {
+   "term": "Captopril"
+ },
+ {
+   "term": "Doxepin"
+ },
+ {
+   "term": "Macrobid"
+ },
+ {
+   "term": "Entex"
+ },
+ {
+   "term": "Lamisil"
+ },
+ {
+   "term": "Prednisolone"
+ },
+ {
+   "term": "Piroxicam"
+ },
+ {
+   "term": "Sinemet"
+ },
+ {
+   "term": "Bentyl"
+ },
+ {
+   "term": "Dopamine"
+ },
+ {
+   "term": "Lidoderm"
+ },
+ {
+   "term": "Zestril"
+ },
+ {
+   "term": "Imdur"
+ },
+ {
+   "term": "Clarinex"
+ },
+ {
+   "term": "Butalbital"
+ },
+ {
+   "term": "Combivent"
+ },
+ {
+   "term": "Levitra"
+ },
+ {
+   "term": "Ampicillin"
+ },
+ {
+   "term": "Versed"
+ },
+ {
+   "term": "Duragesic"
+ },
+ {
+   "term": "Bextra"
+ },
+ {
+   "term": "Cardura"
+ },
+ {
+   "term": "Hydralazine"
+ },
+ {
+   "term": "Pseudoephedrine"
+ },
+ {
+   "term": "Enebrel"
+ },
+ {
+   "term": "Indocin"
+ }
+]

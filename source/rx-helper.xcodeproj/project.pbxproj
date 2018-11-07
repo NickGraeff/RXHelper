@@ -17,6 +17,8 @@
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
 		38CBB483217192B900F7CE05 /* Prescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47F217192B900F7CE05 /* Prescription.swift */; };
 		7B719BC4D7C32F2AB8AAA775 /* Pods_rx_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AE166096219372820032C180 /* rxList.json in Resources */ = {isa = PBXBuildFile; fileRef = AE166094219372810032C180 /* rxList.json */; };
+		AE166097219372820032C180 /* rxListMed.json in Resources */ = {isa = PBXBuildFile; fileRef = AE166095219372820032C180 /* rxListMed.json */; };
 		AE888FD02190D42E00845BA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE888FCF2190D42D00845BA1 /* AppDelegate.swift */; };
 		AE9532912190191A00121834 /* ReportIssuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9532902190191A00121834 /* ReportIssuesViewController.swift */; };
 		AE95329721902E6100121834 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE95329621902E6000121834 /* AlertViewController.swift */; };
@@ -32,8 +34,6 @@
 		B5FB1D5F2172F8F300795C7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */; };
 		B5FB1D612172F90500795C7E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB1D602172F90500795C7E /* SignUpViewController.swift */; };
 		B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FCA292217C7536000A441A /* MenuTableViewCell.swift */; };
-		C601CE642181343200984684 /* rxList01.json in Resources */ = {isa = PBXBuildFile; fileRef = C601CE632181343100984684 /* rxList01.json */; };
-		C601CE662181344300984684 /* rxListPet01.json in Resources */ = {isa = PBXBuildFile; fileRef = C601CE652181344300984684 /* rxListPet01.json */; };
 		C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566C82150DF6E0031A3D4 /* Main.storyboard */; };
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
 		C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */; };
@@ -51,6 +51,8 @@
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		38CBB47F217192B900F7CE05 /* Prescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prescription.swift; sourceTree = "<group>"; };
 		54B301DEAC5B6042F9159804 /* Pods-rx-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.debug.xcconfig"; sourceTree = "<group>"; };
+		AE166094219372810032C180 /* rxList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxList.json; sourceTree = "<group>"; };
+		AE166095219372820032C180 /* rxListMed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListMed.json; sourceTree = "<group>"; };
 		AE888FCF2190D42D00845BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9532902190191A00121834 /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportIssuesViewController.swift; sourceTree = "<group>"; };
 		AE95329621902E6000121834 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = "/Users/JPCastro96/Documents/School/2018-2019/Fall/CS472/rxhelper/source/rx-helper/AlertViewController.swift"; sourceTree = "<absolute>"; };
@@ -67,8 +69,6 @@
 		B5FB1D5E2172F8F200795C7E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B5FB1D602172F90500795C7E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B5FCA292217C7536000A441A /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		C601CE632181343100984684 /* rxList01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxList01.json; sourceTree = "<group>"; };
-		C601CE652181344300984684 /* rxListPet01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListPet01.json; sourceTree = "<group>"; };
 		C61566C12150DF6E0031A3D4 /* rx-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61566C92150DF6E0031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C61566CB2150DF730031A3D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,9 +166,9 @@
 				C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */,
 				C61566D02150DF730031A3D4 /* Info.plist */,
 				C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */,
+				AE166094219372810032C180 /* rxList.json */,
+				AE166095219372820032C180 /* rxListMed.json */,
 				B55ED52F215C4B320087D341 /* rx-helper.entitlements */,
-				C601CE632181343100984684 /* rxList01.json */,
-				C601CE652181344300984684 /* rxListPet01.json */,
 			);
 			path = "rx-helper";
 			sourceTree = "<group>";
@@ -240,10 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C601CE662181344300984684 /* rxListPet01.json in Resources */,
-				C601CE642181343200984684 /* rxList01.json in Resources */,
+				AE166097219372820032C180 /* rxListMed.json in Resources */,
 				C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */,
 				C6D7000E2150F27D000FCB96 /* GoogleService-Info.plist in Resources */,
+				AE166096219372820032C180 /* rxList.json in Resources */,
 				C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */,
 				C61566CA2150DF6E0031A3D4 /* Main.storyboard in Resources */,
 			);

@@ -10,6 +10,7 @@ import UIKit
 import os.log
 import SwiftyJSON
 
+
 class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // Mark: Properties
@@ -20,8 +21,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dosageField: UITextField!
     
+    
+    @IBOutlet weak var webInfo: UIButton!
+    
     let searchController = UISearchController(searchResultsController: nil)
-    let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxList01", ofType: "json")!)! as Data)
+    let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
     var filteredRxList = [JSON]()
     
     var searching = false
@@ -31,6 +35,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         if let prescription = prescription {
             navigationItem.title = prescription.name
@@ -43,6 +49,13 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             //etcetcetc (name, image, etc)
             
         }
+        
+        if prescription?.name == nil {
+            //medInfoPressed.isHidden = true
+            webInfo.isHidden = true
+        }
+        
+        
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -173,6 +186,18 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
+        let medname = prescription?.name
+
+        if segue.identifier == "segue01"{
+            if medname != nil{
+            
+                
+                let svc = segue.destination as? UINavigationController
+                let WebController: WebViewController = svc?.topViewController as! WebViewController
+                //var WebController = segue.destination as! WebViewController
+                WebController.myString = prescription!.name
+            }
+        }
         
         // Configure the destination view controller only when the save button is pressed.
         guard let button = sender as? UIBarButtonItem, button === saveButton else {
@@ -181,6 +206,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         prescription = Prescription(name: nameField.text ?? "Unknown", key: prescription?.key, dosage: Int(dosageField.text ?? "0"))
+        
+        
     }
 
 }
