@@ -36,14 +36,14 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (indexPath.item == 0) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
-            let member = owner!
-            cell.textLabel?.text = member.name
-            
+            //let member = owner!
+            //cell.textLabel?.text = member.name
+            cell.textLabel?.text = owner!.name
             return cell
         }
-        else if (indexPath.item < owner!.members.count+1){
+        else if (indexPath.item < owner!.members.count + 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
-            let member = owner!.members[indexPath.row-1]
+            let member = owner!.members[indexPath.row - 1]
             cell.textLabel?.text = member.name
 
             return cell
@@ -75,7 +75,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             } else {
                 selectedUserUid = owner!.members[indexPath.row-1].key!
             }
-            print("Selected User UID: \(selectedUserUid)")
+            print("Selected User UID: \(selectedUserUid ?? "")")
             self.performSegue(withIdentifier: "toHomeFromMenu", sender: nil)
         }
     }

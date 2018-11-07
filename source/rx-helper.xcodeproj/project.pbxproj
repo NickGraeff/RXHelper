@@ -54,7 +54,7 @@
 		AE166095219372820032C180 /* rxListMed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rxListMed.json; sourceTree = "<group>"; };
 		AE888FCF2190D42D00845BA1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE9532902190191A00121834 /* ReportIssuesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportIssuesViewController.swift; sourceTree = "<group>"; };
-		AE95329621902E6000121834 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = "/Users/JPCastro96/Documents/School/2018-2019/Fall/CS472/rxhelper/source/rx-helper/AlertViewController.swift"; sourceTree = "<absolute>"; };
+		AE95329621902E6000121834 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		AE953298219031D800121834 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		AEB4EBAA21937BE4003C3DD7 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };

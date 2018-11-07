@@ -85,10 +85,9 @@ class SignUpViewController: UIViewController {
                     var ref: DatabaseReference!
                     ref = Database.database().reference()
 
-                    ref.child("users").child(getUsersUid()).setValue(["name": "\(self.name.text!)"])
-                    ref.child("users").child(getUsersUid()).setValue(["pharmacyName": "\(self.pharmacy.text!)"])
-                    ref.child("users").child(getUsersUid()).setValue(["pharmacyPhoneNumber": "\(self.pharmacyPhoneNumber.text!)"])
+                    let info = ["name": "\(self.name.text!)", "pharmacyName":"\(self.pharmacy.text!)","pharmacyPhoneNumber":"\(self.pharmacyPhoneNumber.text!)"]
 
+                    ref.child("users").child(getUsersUid()).setValue(info)
                     //insert name of user
                     let user = Auth.auth().currentUser
                     if let user = user {
