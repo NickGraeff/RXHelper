@@ -22,8 +22,8 @@ class LoginViewController: UIViewController {
 
         self.hideKeyboardWhenTappedAround()
 
-        email.delegate = self
-        password.delegate = self
+        self.email.delegate = self
+        self.password.delegate = self
     }
     
     @IBAction func backButton(_ sender: Any) {
@@ -57,8 +57,11 @@ extension LoginViewController: UITextFieldDelegate {
         switch textField {
         case email:
             password.becomeFirstResponder()
-        default:
+        case password:
             password.resignFirstResponder()
+            loginAction((Any).self)
+        default:
+            self.hideKeyboardWhenTappedAround()
         }
 
         return true

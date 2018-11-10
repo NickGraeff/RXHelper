@@ -25,12 +25,12 @@ class SignUpViewController: UIViewController {
         self.password.setBottomBorder()
         self.passwordConfirm.setBottomBorder()
 
-        email.delegate = self
-        name.delegate = self
-        pharmacy.delegate = self
-        pharmacyPhoneNumber.delegate = self
-        password.delegate = self
-        passwordConfirm.delegate = self
+        self.email.delegate = self
+        self.name.delegate = self
+        self.pharmacy.delegate = self
+        self.pharmacyPhoneNumber.delegate = self
+        self.password.delegate = self
+        self.passwordConfirm.delegate = self
     }
 
     @IBAction func backButton(_ sender: Any) {
@@ -46,7 +46,21 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUpAction(_ sender: Any) {
 
-        if password.text?.isEmpty == true {
+        if email.text?.isEmpty == true {
+            let alertController = UIAlertController(title: "Email is empty", message: "Please type a valid email", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
+        else if name.text?.isEmpty == true {
+            let alertController = UIAlertController(title: "Name is empty", message: "Please type in a name", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+
+        else if password.text?.isEmpty == true {
             let alertController = UIAlertController(title: "Password is empty", message: "Please type in a password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
@@ -54,7 +68,7 @@ class SignUpViewController: UIViewController {
         }
 
         else if password.text != passwordConfirm.text {
-            let alertController = UIAlertController(title: "Password Incorrect", message: "Please re-type password", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Passwords do not match", message: "Please re-type password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
@@ -101,7 +115,6 @@ class SignUpViewController: UIViewController {
             }
         }
     }
-    
 }
 
 extension UIViewController {
@@ -128,8 +141,11 @@ extension SignUpViewController: UITextFieldDelegate {
             password.becomeFirstResponder()
         case password:
             passwordConfirm.becomeFirstResponder()
-        default:
+        case passwordConfirm:
             passwordConfirm.resignFirstResponder()
+            signUpAction((Any).self)
+        default:
+            self.hideKeyboardWhenTappedAround()
         }
 
         return true
