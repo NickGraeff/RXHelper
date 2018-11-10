@@ -33,6 +33,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    @IBAction func forgotPassword(_ sender: Any) {
+    }
     @IBAction func loginAction(_ sender: Any) {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!)
         { (user, error) in

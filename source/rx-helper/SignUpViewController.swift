@@ -15,45 +15,28 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //signUp View
-//        self.signUpView.layer.borderWidth = 9
-//        self.signUpView.layer.cornerRadius = 35
-//        self.signUpView.clipsToBounds = true
-//        self.signUpView.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-//        self.signUpView.backgroundColor = UIColor(red:0.87, green:0.92, blue:0.97, alpha:1.0)
-        
-        //email textfield
-        self.email.layer.borderWidth = 1
-        self.email.layer.cornerRadius = 5
-        self.email.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        
-        //name textfield
-        self.name.layer.borderWidth = 1
-        self.name.layer.cornerRadius = 5
-        self.name.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        
-        //password textfield
-        self.password.layer.borderWidth = 1
-        self.password.layer.cornerRadius = 5
-        self.password.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        
-        //passwordConfirm textfield
-        self.passwordConfirm.layer.borderWidth = 1
-        self.passwordConfirm.layer.cornerRadius = 5
-        self.passwordConfirm.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
 
         self.hideKeyboardWhenTappedAround()
 
+        self.email.setBottomBorder()
+        self.name.setBottomBorder()
+        self.pharmacy.setBottomBorder()
+        self.pharmacyPhoneNumber.setBottomBorder()
+        self.password.setBottomBorder()
+        self.passwordConfirm.setBottomBorder()
+
         email.delegate = self
         name.delegate = self
+        pharmacy.delegate = self
+        pharmacyPhoneNumber.delegate = self
         password.delegate = self
         passwordConfirm.delegate = self
     }
-    
+
     @IBAction func backButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toStart", sender: self)
     }
-    
+
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -138,6 +121,10 @@ extension SignUpViewController: UITextFieldDelegate {
         case email:
             name.becomeFirstResponder()
         case name:
+            pharmacy.becomeFirstResponder()
+        case pharmacy:
+            pharmacyPhoneNumber.becomeFirstResponder()
+        case pharmacyPhoneNumber:
             password.becomeFirstResponder()
         case password:
             passwordConfirm.becomeFirstResponder()
