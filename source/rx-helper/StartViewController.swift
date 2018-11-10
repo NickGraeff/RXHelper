@@ -18,32 +18,17 @@ class StartViewController: UIViewController {
         
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (didAllow, error) in})
         
-        
+        //If a user is still logged in go straight to Home View Controller
 //        Auth.auth().addStateDidChangeListener { auth, user in
 //            if user != nil{
 //                self.performSegue(withIdentifier: "toHome", sender: nil)
 //            }
 //        }
-        // Do any additional setup after loading the view.
-        self.startView.layer.borderWidth = 9
-        self.startView.layer.cornerRadius = 35
-        self.startView.clipsToBounds = true
-        self.startView.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        self.startView.backgroundColor = UIColor(red:0.87, green:0.92, blue:0.97, alpha:1.0)
+        //Login Button text
+        self.loginButton.setTitle("Login", for: UIControl.State.normal)
 
-        //Login Button
-        self.loginButton.backgroundColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0)
-        self.loginButton.layer.cornerRadius = 5
-        self.loginButton.layer.borderWidth = 1
-        self.loginButton.setTitle("Log in using an existing account", for: UIControl.State.normal)
-        self.loginButton.layer.borderColor = UIColor.black.cgColor
-
-        //SignUp Button
-        self.signUpButton.backgroundColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0)
-        self.signUpButton.layer.cornerRadius = 5
-        self.signUpButton.layer.borderWidth = 1
-        self.signUpButton.setTitle("Create a new Rx Helper account", for: UIControl.State.normal)
-        self.signUpButton.layer.borderColor = UIColor.black.cgColor
+        //SignUp Button text
+        self.signUpButton.setTitle("Sign up", for: UIControl.State.normal)
     }
 
     @IBOutlet var startView: UIView!

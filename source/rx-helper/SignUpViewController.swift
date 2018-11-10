@@ -16,11 +16,11 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //signUp View
-        self.signUpView.layer.borderWidth = 9
-        self.signUpView.layer.cornerRadius = 35
-        self.signUpView.clipsToBounds = true
-        self.signUpView.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        self.signUpView.backgroundColor = UIColor(red:0.87, green:0.92, blue:0.97, alpha:1.0)
+//        self.signUpView.layer.borderWidth = 9
+//        self.signUpView.layer.cornerRadius = 35
+//        self.signUpView.clipsToBounds = true
+//        self.signUpView.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
+//        self.signUpView.backgroundColor = UIColor(red:0.87, green:0.92, blue:0.97, alpha:1.0)
         
         //email textfield
         self.email.layer.borderWidth = 1

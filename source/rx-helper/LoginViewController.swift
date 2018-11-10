@@ -15,22 +15,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Login View
-        self.loginView.layer.borderWidth = 9
-        self.loginView.layer.cornerRadius = 35
-        self.loginView.clipsToBounds = true
-        self.loginView.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        self.loginView.backgroundColor = UIColor(red:0.87, green:0.92, blue:0.97, alpha:1.0)
-        
         //email textfield
-        self.email.layer.borderWidth = 1
-        self.email.layer.cornerRadius = 5
-        self.email.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
-        
+        self.email.setBottomBorder()
+        self.password.setBottomBorder()
         //password textfield
-        self.password.layer.borderWidth = 1
-        self.password.layer.cornerRadius = 5
-        self.password.layer.borderColor = UIColor(red:0.35, green:0.60, blue:0.83, alpha:1.0).cgColor
 
         self.hideKeyboardWhenTappedAround()
 
@@ -72,5 +60,15 @@ extension LoginViewController: UITextFieldDelegate {
         }
 
         return true
+    }
+}
+
+extension UITextField {
+    func setBottomBorder(){
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(origin: CGPoint(x: 0, y:self.frame.height - 1), size: CGSize(width: self.frame.width, height:  1))
+        bottomLine.backgroundColor = UIColor.gray.cgColor
+        self.borderStyle = UITextField.BorderStyle.none
+        self.layer.addSublayer(bottomLine)
     }
 }
