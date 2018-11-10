@@ -331,7 +331,7 @@ class PrescriptionTableViewController: UITableViewController {
                     }
                 }
                 if owner!.prescriptions.isEmpty {
-                    self.loadSamplePrescriptions()
+                    //self.loadSamplePrescriptions()
                 }
                 
                 self.tableView.reloadData()

@@ -25,14 +25,7 @@ class AlertViewController: UIViewController, UNUserNotificationCenterDelegate {
         super.viewDidLoad()
         
         UNUserNotificationCenter.current().delegate = self
-        //hours.delegate = self as? UITextFieldDelegate
-        //minutes.delegate = self as? UITextFieldDelegate
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // Dismiss keyboard when you tap outside the number pad
-        //hours.resignFirstResponder()
-        //minutes.resignFirstResponder()
+
     }
     
     @IBAction func schedule(_ sender: Any) {

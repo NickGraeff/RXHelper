@@ -39,14 +39,14 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             //let member = owner!
             //cell.textLabel?.text = member.name
             cell.textLabel?.text = owner!.name
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 17.0)
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 17.0)
             return cell
         }
         else if (indexPath.item < owner!.members.count + 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             let member = owner!.members[indexPath.row - 1]
             cell.textLabel?.text = member.name
-            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 17.0)
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 17.0)
 
             return cell
         }

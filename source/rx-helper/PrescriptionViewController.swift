@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import UserNotifications
 import os.log
 import SwiftyJSON
 
 
-class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UNUserNotificationCenterDelegate {
 
     // Mark: Properties
     @IBOutlet weak var photoButton: UIButton!
@@ -20,9 +21,10 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dosageField: UITextField!
-    
-    
     @IBOutlet weak var webInfo: UIButton!
+    @IBOutlet weak var timePicker: UIDatePicker!
+    var badge = 0
+    
     
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
@@ -35,6 +37,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UNUserNotificationCenter.current().delegate = self
         
         self.nameField.setBottomBorder()
         self.dosageField.setBottomBorder()
@@ -74,6 +77,80 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     // If user changes text, hide the tableView
     @IBAction func textFieldChanged(_ sender: AnyObject) {
         tableView.isHidden = true
+    }
+    
+    
+    @IBAction func schedule(_ sender: Any) {
+        let date = timePicker.date
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let hours = components.hour!
+        let minutes = components.minute!
+        
+        //store hours and minutes into database
+        
+        setAlarm(hours, minutes)
+        //timePicker.
+    }
+    
+    func setAlarm (_ hours: Int, _ minutes: Int) {
+        makeAlarmCategories()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Rx Helper"
+        content.body = "Time to take your medicine!"
+        content.sound = UNNotificationSound.default
+        badge += 1
+        content.badge = badge as NSNumber
+        content.categoryIdentifier = "RxHelperCategory"
+        
+        // Actual alarm setter
+        var dateComponents = DateComponents()
+        dateComponents.hour = hours
+        dateComponents.minute = minutes
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    func makeAlarmCategories() {
+        let takeAction = UNNotificationAction(identifier: "takeAction", title: "Take", options: [])
+        let snoozeAction = UNNotificationAction(identifier: "snoozeAction", title: "Snooze", options: [])
+        let category = UNNotificationCategory(identifier: "RxHelperCategory",
+                                              actions: [takeAction,snoozeAction], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+    }
+    
+    func pressedSnooze () {
+        makeAlarmCategories()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Rx Helper"
+        content.body = "Time to take your medicine!"
+        content.sound = UNNotificationSound.default
+        badge += 1
+        content.badge = badge as NSNumber
+        content.categoryIdentifier = "RxHelperCategory"
+        
+        // Snoozes for 15 minutes, switch 5 to 900
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.actionIdentifier == "takeAction" {
+            print ("Take medicine")
+            // Subtract from quantity of medicine
+            // Perform check for refill
+        }
+        else if response.actionIdentifier == "snoozeAction" {
+            pressedSnooze()
+        }
+        
+        completionHandler()
     }
     
     // Manage keyboard and tableView visibility
