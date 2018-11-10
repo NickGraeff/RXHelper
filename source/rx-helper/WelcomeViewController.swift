@@ -57,11 +57,12 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        welcomeLabel.textColor = UIColor.gray
         welcomeLabel.text = "Welcome " + getUserDisplayName()
         owner = Owner()
         fetchOwner()
         fetchMembers()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
             self.performSegue(withIdentifier: "toHome", sender: self)
         }
     }

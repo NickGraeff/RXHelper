@@ -71,30 +71,84 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
 
         self.performSegue(withIdentifier: "toVeryFirstPage", sender: nil)
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+
+    @IBAction func reportIssue(_ sender: Any) {
+        let subject = "RxHelper Issue"
+        let body = "Hi, I have an issue"
+        let coded = "mailto:rxheler18@gmail.com?subject=\(subject)&body=\(body)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+
+        if let emailURL:NSURL = NSURL(string: coded!)
+        {
+            if UIApplication.shared.canOpenURL(emailURL as URL)
+            {
+                UIApplication.shared.open(emailURL as URL, options: [:], completionHandler: { (sucess) in /**/ })
+            }
+        }
+    }
+
+    @IBAction func logoutAction(_ sender: Any) {
+        let alert = UIAlertController(title: "Log out of " + getUserDisplayName() + "?", message: nil, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Log out", style: .default, handler: logoutHandler))
+        
+        self.present(alert, animated: true)
     }
     
+    func logoutHandler(alert: UIAlertAction) {
+        owner = nil
+        selectedUserUid = nil
+        do {
+            try Auth.auth().signOut()
+        }
+        catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let initial = storyboard.instantiateInitialViewController()
+        UIApplication.shared.keyWindow?.rootViewController = initial
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        nameField.text = owner!.name
-        emailField.text = owner!.email
-        pharmacyName.text = owner!.pharmacyName
-        pharmacyPhoneNumber.text = owner!.pharmacyPhoneNumber
-    }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        self.nameField.setBottomBorder()
+        self.emailField.setBottomBorder()
+        self.pharmacyName.setBottomBorder()
+        self.pharmacyPhoneNumber.setBottomBorder()
 
+        self.nameField.text = owner!.name
+        self.emailField.text = owner!.email
+        self.pharmacyName.text = owner!.pharmacyName
+        self.pharmacyPhoneNumber.text = owner!.pharmacyPhoneNumber
+
+        self.nameField.delegate = self
+        self.emailField.delegate = self
+        self.pharmacyName.delegate = self
+        self.pharmacyPhoneNumber.delegate = self
+
+        self.hideKeyboardWhenTappedAround()
+    }
+}
+
+extension SupportPageViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+        switch textField {
+        case nameField:
+            emailField.becomeFirstResponder()
+        case emailField:
+            pharmacyName.becomeFirstResponder()
+        case pharmacyName:
+            pharmacyPhoneNumber.becomeFirstResponder()
+        case pharmacyPhoneNumber:
+            pharmacyPhoneNumber.resignFirstResponder()
+            saveChanges((Any).self)
+        default:
+            self.hideKeyboardWhenTappedAround()
+        }
+        return true
+    }
 }

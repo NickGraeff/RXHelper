@@ -35,8 +35,6 @@ func getUsersUid() -> String {
     }
 }
 
-var fetchMem = 1
-
 class HomeViewController: BaseViewController {
 
     @IBOutlet weak var HomeNavBar: UINavigationItem!
@@ -48,6 +46,7 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
+
         addSlideMenuButton()
         if selectedUserUid == owner!.key {
             self.HomeNavBar.title = owner!.name
@@ -62,6 +61,9 @@ class HomeViewController: BaseViewController {
         if self.HomeNavBar.title == nil {
             self.HomeNavBar.title = getUserDisplayName()
         }
+        //TO FIX
+        //self.navigationController?.navigationBar.prefersLargeTitles = true
+        //self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
     
     func getSelectedUserName() {

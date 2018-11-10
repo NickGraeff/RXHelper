@@ -39,18 +39,21 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             //let member = owner!
             //cell.textLabel?.text = member.name
             cell.textLabel?.text = owner!.name
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 17.0)
             return cell
         }
         else if (indexPath.item < owner!.members.count + 1){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             let member = owner!.members[indexPath.row - 1]
             cell.textLabel?.text = member.name
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 17.0)
 
             return cell
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             cell.textLabel?.text = "Add user +"
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 13.5)
 
             return cell
         }
@@ -119,15 +122,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
-    @IBAction func logoutButton(_ sender: Any) {
-        let alert = UIAlertController(title: "Log out of " + getUserDisplayName() + "?", message: nil, preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        alert.addAction(UIAlertAction(title: "Log out", style: .default, handler: logoutHandler))
-        
-        self.present(alert, animated: true)
-    }
-
     var btnMenu: UIButton!
     var delegate: SlideMenuDelegate?
 
@@ -154,18 +148,4 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
 
-    func logoutHandler(alert: UIAlertAction) {
-        owner = nil
-        selectedUserUid = nil
-        do {
-            try Auth.auth().signOut()
-        }
-        catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
-
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initial = storyboard.instantiateInitialViewController()
-        UIApplication.shared.keyWindow?.rootViewController = initial
-    }
 }
