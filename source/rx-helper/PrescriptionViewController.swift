@@ -36,7 +36,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.nameField.setBottomBorder()
+        self.dosageField.setBottomBorder()
         
         if let prescription = prescription {
             navigationItem.title = prescription.name

@@ -16,7 +16,7 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound], completionHandler: { (didAllow, error) in})
+        
         
         //If a user is still logged in go straight to Home View Controller
 //        Auth.auth().addStateDidChangeListener { auth, user in
