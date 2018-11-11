@@ -1234,7 +1234,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-Wg-QDp">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-Wg-QDp">
                                 <rect key="frame" x="16" y="65" width="343" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -1402,7 +1402,7 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
         <segue reference="C60-Ki-geU"/>
         <segue reference="wX5-J8-azK"/>
         <segue reference="Tuo-27-eKB"/>
-        <segue reference="GFu-Z9-wLc"/>
+        <segue reference="YJK-qj-6TA"/>
         <segue reference="vkh-CW-d9B"/>
     </inferredMetricsTieBreakers>
 </document>

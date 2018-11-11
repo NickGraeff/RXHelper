@@ -53,7 +53,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             cell.textLabel?.text = "Add user +"
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 13.5)
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 13.5)
+            cell.textLabel?.textColor = UIColor(red:0.36, green:0.60, blue:0.81, alpha:1.0)
 
             return cell
         }
