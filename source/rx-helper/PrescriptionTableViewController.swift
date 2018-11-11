@@ -317,7 +317,11 @@ class PrescriptionTableViewController: UITableViewController {
     private func getPrescriptionsFromFirebase() {
         let ref = Database.database().reference()
 
+        print(owner!.key!)
         
+        if owner!.key == nil {
+            print("error")
+        }
 
         if owner!.key == selectedUserUid {
             ref.child("users/\(getUsersUid())/prescriptions").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -369,7 +373,8 @@ class PrescriptionTableViewController: UITableViewController {
     private func loadPrescriptions() {
         
         // Try loading prescriptions locally, else try firebase
-        /* return */ /* NSKeyedUnarchiver.unarchiveObject(withFile: Prescription.ArchiveURL.path + getUserDisplayName()) as? [Prescription] ?? */ getPrescriptionsFromFirebase()
+        /* return */ /* NSKeyedUnarchiver.unarchiveObject(withFile: Prescription.ArchiveURL.path + getUserDisplayName()) as? [Prescription] ?? */
+        getPrescriptionsFromFirebase()
         
     }
 

@@ -7,61 +7,25 @@
 //
 
 import UIKit
-import FirebaseAuth
-import FirebaseDatabase
-
-//owner!
-var owner: Owner?
-
-
-//selected user uid
-var selectedUserUid: String?
-
-func fetchMembers() {
-    owner!.members.removeAll()
-    Database.database().reference().child("users/\(getUsersUid())/members").observeSingleEvent(of: .value, with: { (snapshot) in
-        
-        for child in snapshot.children {
-            
-            let mem = child as! DataSnapshot
-            if let dict = mem.value as? [String: Any] {
-                let memexample = Member()
-                memexample.name = dict["name"] as? String
-                memexample.key = mem.key
-                owner!.members.append(memexample)
-            }
-        }
-    })
-}
-
-
-func fetchOwner() {
-    Database.database().reference().child("users/\(getUsersUid())").observeSingleEvent(of: .value, with: { (snapshot) in
-        
-        if let dictionary = snapshot.value as? [String: AnyObject] {
-            owner!.key = getUsersUid()
-            owner!.name = dictionary["name"] as? String
-            owner!.email = Auth.auth().currentUser?.email
-            owner!.pharmacyName = dictionary["pharmacyName"] as? String
-            owner!.pharmacyPhoneNumber = dictionary["pharmacyPhoneNumber"] as? String
-            selectedUserUid = owner!.key
-        }
-    })
-}
 
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        welcomeLabel.textColor = UIColor.gray
-        welcomeLabel.text = "Welcome " + getUserDisplayName()
-        owner = Owner()
+        //Pull owners information from database
         fetchOwner()
+        //Pull owners members from database
         fetchMembers()
+
+        //Color of Welcome text
+        welcomeLabel.textColor = UIColor.gray
+
+        //Text for the Welcome text
+        welcomeLabel.text = "Welcome " + getUserDisplayName()
+
+        //Show Welcome VC for x seconds then segue to HomeVC
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
             self.performSegue(withIdentifier: "toHome", sender: self)
         }
