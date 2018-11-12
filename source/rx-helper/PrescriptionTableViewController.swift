@@ -22,7 +22,7 @@ class PrescriptionTableViewController: UITableViewController {
         
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
-        self.tableView.separatorStyle = .none
+        //self.tableView.separatorStyle = .none
         self.tableView.layer.cornerRadius = 4;
 
         
@@ -58,7 +58,7 @@ class PrescriptionTableViewController: UITableViewController {
     // Make the background color show through
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = UIColor.white
+        //headerView.backgroundColor = UIColor.white
         return headerView
     }
     
@@ -83,21 +83,21 @@ class PrescriptionTableViewController: UITableViewController {
         
         
         cell.nameLabel.text = prescription!.name
-        cell.prescriptionImageView.image = prescription!.photo
+        //cell.prescriptionImageView.image = prescription!.photo
         cell.nextDueLabel.text = prescription!.nextTimeToBeTaken
         
-        cell.contentView.backgroundColor = UIColor.clear
-        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
-        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
-        whiteRoundedView.layer.masksToBounds = false
-        whiteRoundedView.layer.cornerRadius = 3.0
-        whiteRoundedView.layer.shadowOpacity = 0.5
-        cell.contentView.addSubview(whiteRoundedView)
-        cell.contentView.sendSubviewToBack(whiteRoundedView)
-        
-        cell.backgroundColor = UIColor.white
-        cell.contentView.layer.cornerRadius = 50
-        cell.contentView.clipsToBounds = true
+//        cell.contentView.backgroundColor = UIColor.clear
+//        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
+//        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
+//        whiteRoundedView.layer.masksToBounds = false
+//        whiteRoundedView.layer.cornerRadius = 3.0
+//        //whiteRoundedView.layer.shadowOpacity = 0.5
+//        cell.contentView.addSubview(whiteRoundedView)
+//        cell.contentView.sendSubviewToBack(whiteRoundedView)
+
+//        cell.backgroundColor = UIColor.white
+//        cell.contentView.layer.cornerRadius = 50
+//        cell.contentView.clipsToBounds = true
         return cell
     }
 
@@ -313,7 +313,7 @@ class PrescriptionTableViewController: UITableViewController {
             }
         }
     }
-    
+
     private func getPrescriptionsFromFirebase() {
         let ref = Database.database().reference()
 
@@ -334,8 +334,12 @@ class PrescriptionTableViewController: UITableViewController {
                 }
                 if owner!.prescriptions.isEmpty {
                     //self.loadSamplePrescriptions()
+                    //If owners has no prescriptions then a text view
+                    //should appear and show a message saying
+                    //"Tap on + to add a medicine"
+                    self.tableView.isHidden = true
                 }
-                
+
                 self.tableView.reloadData()
             })
         } else {
@@ -347,8 +351,9 @@ class PrescriptionTableViewController: UITableViewController {
                 }
             }
             selectedMember!.prescriptions.removeAll()
-            ref.child("users/\(getUsersUid())/members/\(selectedUserUid)/prescriptions").observeSingleEvent(of: .value, with: { (snapshot) in
-                
+
+            ref.child("users/\(getUsersUid())/members/\(selectedUserUid!)/prescriptions").observeSingleEvent(of: .value, with: { (snapshot) in
+
                 for child in snapshot.children {
                     let prescription = child as! DataSnapshot
                     if let dict = prescription.value as? [String: Any] {
@@ -358,22 +363,23 @@ class PrescriptionTableViewController: UITableViewController {
                     }
                 }
                 if selectedMember!.prescriptions.isEmpty {
-                    self.loadSamplePrescriptions()
+                    //If owners has no prescriptions then a text view
+                    //should appear and show a message saying
+                    //"Tap on + to add a medicine"
+                    //self.loadSamplePrescriptions()
+                    self.tableView.isHidden = true
                 }
                 
                 self.tableView.reloadData()
             })
         }
-
-       
     }
-    
+
     private func loadPrescriptions() {
-        
+
         // Try loading prescriptions locally, else try firebase
         /* return */ /* NSKeyedUnarchiver.unarchiveObject(withFile: Prescription.ArchiveURL.path + getUserDisplayName()) as? [Prescription] ?? */
         getPrescriptionsFromFirebase()
-        
-    }
 
+    }
 }
