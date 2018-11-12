@@ -19,19 +19,20 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var alarmButton: UIButton!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var dosageField: UITextField!
     @IBOutlet weak var webInfo: UIButton!
     @IBOutlet weak var timePicker: UIDatePicker!
-    var badge = 0
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var alertTable: UITableView!
     
+    var badge = 0
+    var alertArray = [String]()
     
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
     var filteredRxList = [JSON]()
     
     var searching = false
-    
     
     var prescription: Prescription?
     
@@ -61,13 +62,14 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         }
          */
         
-        
+        nameField.delegate = self
         
         tableView.delegate = self
         tableView.dataSource = self
-        nameField.delegate = self
-        
         tableView.isHidden = true
+        
+        alertTable.delegate = self
+        alertTable.dataSource = self
         
         // Manage tableView visibility via TouchDown in textField
         nameField.addTarget(self, action: #selector(textFieldActive), for: UIControl.Event.touchDown)
@@ -86,7 +88,33 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         let hours = components.hour!
         let minutes = components.minute!
         
-        //store hours and minutes into database
+        // Makes time variable equivalent to time chosen from clock
+        let time = "\(hours):\(minutes)"
+        
+        // Takes time in HH:MM format
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "HH:mm"
+        
+        // Converts it to HH:MM AM/PM format
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm a"
+        
+        // Does conversion
+        let formattedTime: Date? = dateFormatterGet.date(from: time)
+        
+        // Stores hours and minutes into array/table
+        alertArray.append(dateFormatter.string(from:formattedTime!))
+    
+        let indexPath = IndexPath(row: alertArray.count - 1, section: 0)
+        
+        alertTable.beginUpdates()
+        alertTable.insertRows(at: [indexPath], with: .automatic)
+        alertTable.endUpdates()
+        
+        alertTable.reloadData()
+        
+        
+        // Store time into database
         
         setAlarm(hours, minutes)
         //timePicker.
@@ -199,50 +227,85 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         return true
     }
     
+    
+    
+    
+    
+    
+    
+    //TABLE STUFF
+    
     // MARK: UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if searching{//searchController.isActive && searchController.searchBar.text != ""{
-            return filteredRxList.count
+        if tableView == alertTable {
+            return alertArray.count
         }
-        return rxlist.count
+            
+        else if tableView == tableView {
+            if searching{//searchController.isActive && searchController.searchBar.text != ""{
+                return filteredRxList.count
+            }
+            return rxlist.count
+        }
+        
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell02")
-        
-        var data: JSON
-        
-        if searching && nameField.text! != "" && nameField.text != (self.prescription?.name ?? ""){
-            data = filteredRxList[indexPath.row]
-            let countryName = data["term"].stringValue
-            cell?.textLabel?.text = countryName
+        if tableView == alertTable {
+            let alertTime = alertArray[indexPath.row]
             
-        } else{
-            data = rxlist[indexPath.row]
-            let countryName = data["term"].stringValue
-            cell?.textLabel?.text = countryName
-            tableView.reloadData()
+            let cell = UITableViewCell()
+            cell.textLabel?.text = alertTime
+            cell.textLabel?.textAlignment = .center
+            return cell
         }
-        return cell!
+            
+        else if tableView == tableView {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell02")
+        
+            var data: JSON
+        
+            if searching && nameField.text! != "" && nameField.text != (self.prescription?.name ?? ""){
+                data = filteredRxList[indexPath.row]
+                let countryName = data["term"].stringValue
+                cell?.textLabel?.text = countryName
+                
+            } else{
+                data = rxlist[indexPath.row]
+                let countryName = data["term"].stringValue
+                cell?.textLabel?.text = countryName
+                tableView.reloadData()
+            }
+            return cell!
+            
+        }
+        return UITableViewCell()
     }
     
     
     // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Row selected, so set textField to relevant value, hide tableView
-        // endEditing can trigger some other action according to requirements
-        if searching {
-            nameField.text = filteredRxList[indexPath.row]["term"].stringValue
-        } else {
-            nameField.text = rxlist[indexPath.row]["term"].stringValue
+        if tableView == alertTable {
+            
         }
-        tableView.isHidden = true
-        nameField.endEditing(true)
+        
+        else if tableView == tableView {
+            // Row selected, so set textField to relevant value, hide tableView
+            // endEditing can trigger some other action according to requirements
+            if searching {
+                nameField.text = filteredRxList[indexPath.row]["term"].stringValue
+            } else {
+                nameField.text = rxlist[indexPath.row]["term"].stringValue
+            }
+            tableView.isHidden = true
+            nameField.endEditing(true)
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
