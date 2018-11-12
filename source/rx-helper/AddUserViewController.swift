@@ -44,6 +44,8 @@ class AddUserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.newUsersName.setBottomBorder()
+
         // Do any additional setup after loading the view.
     }
     
