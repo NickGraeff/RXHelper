@@ -350,7 +350,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         prescription = Prescription(name: nameField.text ?? "Unknown", key: prescription?.key, dosage: Int(dosageField.text ?? "0"))
         
-        
+        self.tableView.reloadData()
     }
 
 }
