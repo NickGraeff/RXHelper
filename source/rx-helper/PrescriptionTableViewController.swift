@@ -317,8 +317,6 @@ class PrescriptionTableViewController: UITableViewController {
     private func getPrescriptionsFromFirebase() {
         let ref = Database.database().reference()
 
-        print(owner!.key!)
-        
         if owner!.key == nil {
             print("error")
         }

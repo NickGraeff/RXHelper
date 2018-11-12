@@ -64,7 +64,12 @@ class StartViewController: UIViewController {
         //If a user is still logged in go straight to Home View Controller
         Auth.auth().addStateDidChangeListener { auth, user in
             if user != nil{
-                self.performSegue(withIdentifier: "toHome", sender: nil)
+
+                //This pause if put to let fetchOwner() and fetchMembers() finish loading
+                //and not cause a nil unwrapped
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+                    self.performSegue(withIdentifier: "toHome", sender: self)
+                }
             }
         }
 
