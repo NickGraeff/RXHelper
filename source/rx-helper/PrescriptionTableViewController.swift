@@ -85,8 +85,14 @@ class PrescriptionTableViewController: UITableViewController {
         cell.nameLabel.text = prescription!.name
         //cell.prescriptionImageView.image = prescription!.photo
         cell.nextDueLabel.text = prescription!.nextTimeToBeTaken
-        cell.dosageLabel.text = String(prescription!.dosage!)
         
+        //TO FIX
+        if prescription!.dosage == nil {
+            cell.dosageLabel.text = "need to fix"
+        }
+        else {
+            cell.dosageLabel.text = String(prescription!.dosage!)
+        }
 //        cell.contentView.backgroundColor = UIColor.clear
 //        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
 //        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
