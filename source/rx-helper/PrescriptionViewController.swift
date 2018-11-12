@@ -85,6 +85,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func schedule(_ sender: Any) {
         let date = timePicker.date
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let name = self.prescription!.name
         let hours = components.hour!
         let minutes = components.minute!
         
@@ -113,19 +114,18 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         alertTable.reloadData()
         
-        
         // Store time into database
         
-        setAlarm(hours, minutes)
+        setAlarm(name, hours, minutes)
         //timePicker.
     }
     
-    func setAlarm (_ hours: Int, _ minutes: Int) {
+    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int) {
         makeAlarmCategories()
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
-        content.body = "Time to take your medicine!"
+        content.body = "Time to take your \(name)!"
         content.sound = UNNotificationSound.default
         badge += 1
         content.badge = badge as NSNumber
@@ -155,7 +155,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
-        content.body = "Time to take your medicine!"
+        content.body = "Time to take your \(self.prescription!.name)!"
         content.sound = UNNotificationSound.default
         badge += 1
         content.badge = badge as NSNumber

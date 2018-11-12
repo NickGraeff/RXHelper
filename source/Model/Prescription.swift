@@ -21,7 +21,7 @@ class Prescription: NSObject, NSCoding {
     var lastTaken: String?
     var nextTimeToBeTaken: String?
     var key: String?
-    var alerts = [Alert]()
+    var alerts = [String]()
     
     struct PropertyKey {
         static let name = "name"
