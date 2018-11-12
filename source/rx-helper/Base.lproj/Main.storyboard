@@ -488,6 +488,7 @@
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="dosageLabel" destination="6Y6-l5-TPZ" id="JfW-e7-vt0"/>
                                     <outlet property="nameLabel" destination="Iyj-0A-Aoh" id="cGR-uy-cig"/>
                                     <outlet property="nextDueLabel" destination="TWr-AT-KHM" id="0h0-He-PJU"/>
                                     <segue destination="oPS-gF-Kkf" kind="show" identifier="ShowDetail" id="g9g-aY-nnD"/>
