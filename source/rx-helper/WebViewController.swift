@@ -18,6 +18,7 @@ class WebViewController: UIViewController {
     
     //@IBOutlet weak var backButton: UIButton!
     
+    @IBOutlet weak var close: UIBarButtonItem!
     
     //@IBOutlet weak var label: UILabel!
     

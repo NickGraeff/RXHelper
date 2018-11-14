@@ -14,17 +14,18 @@ import SwiftyJSON
 
 class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UNUserNotificationCenterDelegate {
 
+    
+    
     // Mark: Properties
     @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var alarmButton: UIButton!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dosageField: UITextField!
-    @IBOutlet weak var webInfo: UIButton!
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertTable: UITableView!
-    
+    @IBOutlet weak var webInfo: UIButton!
     var badge = 0
     var alertArray = [String]()
     
@@ -37,6 +38,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     var prescription: Prescription?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         UNUserNotificationCenter.current().delegate = self
         
@@ -55,13 +57,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             
         }
         
-        /*
         if prescription?.name == nil {
-            //medInfoPressed.isHidden = true
             webInfo.isHidden = true
         }
-         */
         
+
         nameField.delegate = self
         
         tableView.delegate = self
@@ -227,12 +227,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         return true
     }
     
-    
-    
-    
-    
-    
-    
+
     //TABLE STUFF
     
     // MARK: UITableViewDataSource
@@ -335,9 +330,9 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             if medname != nil{
             
                 
-                let svc = segue.destination as? UINavigationController
-                let WebController: WebViewController = svc?.topViewController as! WebViewController
-                //var WebController = segue.destination as! WebViewController
+                //let svc = segue.destination as? UINavigationController
+                //let WebController: WebViewController = svc?.topViewController as! WebViewController
+                var WebController = segue.destination as! WebViewController
                 WebController.myString = prescription!.name
             }
         }
