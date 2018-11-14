@@ -9,7 +9,12 @@
 import UIKit
 
 class Member: NSObject {
-    var name: String?
+    var name: String
     var prescriptions = [Prescription]()
-    var key: String?
+    var key: String
+    
+    override init() {
+        self.name = ""
+        self.key = ""
+    }
 }

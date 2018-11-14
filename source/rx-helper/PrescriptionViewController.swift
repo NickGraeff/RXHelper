@@ -26,7 +26,6 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var alertTable: UITableView!
     
     var badge = 0
-    var alertArray = [String]()
     
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
@@ -53,7 +52,10 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             }
             //etcetcetc (name, image, etc)
             
+        } else {
+            prescription = Prescription()
         }
+        
         
         /*
         if prescription?.name == nil {
@@ -85,7 +87,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func schedule(_ sender: Any) {
         let date = timePicker.date
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
-        let name = self.prescription!.name
+        let name = nameField.text!
         let hours = components.hour!
         let minutes = components.minute!
         
@@ -102,11 +104,14 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         // Does conversion
         let formattedTime: Date? = dateFormatterGet.date(from: time)
+        dateFormatter.string(from:formattedTime!)
         
         // Stores hours and minutes into array/table
-        alertArray.append(dateFormatter.string(from:formattedTime!))
+        let alert = Alert()
+        alert.alertValue = dateFormatter.string(from:formattedTime!)
+        prescription!.alerts.append(alert)
     
-        let indexPath = IndexPath(row: alertArray.count - 1, section: 0)
+        let indexPath = IndexPath(row: prescription!.alerts.count - 1, section: 0)
         
         alertTable.beginUpdates()
         alertTable.insertRows(at: [indexPath], with: .automatic)
@@ -155,7 +160,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
-        content.body = "Time to take your \(self.prescription!.name)!"
+        content.body = "Time to take your \(nameField.text!)!"
         content.sound = UNNotificationSound.default
         badge += 1
         content.badge = badge as NSNumber
@@ -242,7 +247,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == alertTable {
-            return alertArray.count
+            return prescription!.alerts.count
         }
             
         else if tableView == tableView {
@@ -257,10 +262,10 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == alertTable {
-            let alertTime = alertArray[indexPath.row]
+            let alertTime = prescription!.alerts[indexPath.row]
             
             let cell = UITableViewCell()
-            cell.textLabel?.text = alertTime
+            cell.textLabel?.text = alertTime.alertValue
             cell.textLabel?.textAlignment = .center
             return cell
         }
@@ -338,7 +343,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
                 let svc = segue.destination as? UINavigationController
                 let WebController: WebViewController = svc?.topViewController as! WebViewController
                 //var WebController = segue.destination as! WebViewController
-                WebController.myString = prescription!.name
+                WebController.myString = prescription!.name!
             }
         }
         
@@ -348,7 +353,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             return
         }
         
-        prescription = Prescription(name: nameField.text ?? "Unknown", key: prescription?.key, dosage: Int(dosageField.text ?? "0"))
+        prescription!.name = nameField.text!
+        prescription!.dosage = Int(dosageField.text!)
         
         self.tableView.reloadData()
     }

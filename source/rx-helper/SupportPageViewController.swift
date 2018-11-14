@@ -20,11 +20,12 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
     @IBAction func saveChanges(_ sender: Any) {
         
         let ref = Database.database().reference()
+        let owner = MainUser.getInstance()
         
         // TODO: There is literally no verification here, it just does it, fix plz
         if !nameField.text!.isEmpty {
-            ref.child("users/\(getUsersUid())/name").setValue(nameField.text)
-            owner!.name = nameField.text!
+            ref.child("users/\(owner.primaryUser.key)/name").setValue(nameField.text)
+            owner.primaryUser.name = nameField.text!
             let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
             changeRequest?.displayName = nameField.text!
             changeRequest?.commitChanges { (error) in
@@ -35,15 +36,15 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
             Auth.auth().currentUser?.updateEmail(to: emailField.text!) { (error) in
                 // ...
             }
-            owner?.email = emailField.text!
+            owner.email = emailField.text!
         }
         if !pharmacyName.text!.isEmpty {
-            ref.child("users/\(getUsersUid())/pharmacyName").setValue(pharmacyName.text)
-            owner?.pharmacyName = pharmacyName.text
+            ref.child("users/\(owner.primaryUser.key)/pharmacyName").setValue(pharmacyName.text)
+            owner.pharmacyName = pharmacyName.text!
         }
         if !pharmacyPhoneNumber.text!.isEmpty {
             ref.child("users/\(getUsersUid())/pharmacyPhoneNumber").setValue(pharmacyPhoneNumber.text)
-            owner?.pharmacyPhoneNumber = pharmacyPhoneNumber.text
+            owner.pharmacyPhoneNumber = pharmacyPhoneNumber.text!
         }
     }
     
@@ -96,8 +97,7 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
     }
     
     func logoutHandler(alert: UIAlertAction) {
-        owner = nil
-        selectedUserUid = nil
+        MainUser.deleteOnlyInstance()
         do {
             try Auth.auth().signOut()
         }
@@ -113,16 +113,18 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let owner = MainUser.getInstance()
 
         self.nameField.setBottomBorder()
         self.emailField.setBottomBorder()
         self.pharmacyName.setBottomBorder()
         self.pharmacyPhoneNumber.setBottomBorder()
 
-        self.nameField.text = owner!.name
-        self.emailField.text = owner!.email
-        self.pharmacyName.text = owner!.pharmacyName
-        self.pharmacyPhoneNumber.text = owner!.pharmacyPhoneNumber
+        self.nameField.text = owner.primaryUser.name
+        self.emailField.text = owner.email
+        self.pharmacyName.text = owner.pharmacyName
+        self.pharmacyPhoneNumber.text = owner.pharmacyPhoneNumber
 
         self.nameField.delegate = self
         self.emailField.delegate = self

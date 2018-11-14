@@ -39,7 +39,6 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!)
         { (user, error) in
             if error == nil {
-                owner = Owner()
                 self.performSegue(withIdentifier: "toWelcome", sender: self)
             }
             else {
