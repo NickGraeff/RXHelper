@@ -15,8 +15,9 @@ protocol SlideMenuDelegate {
 }
 
 func deleteMember(member: Member) {
+    let owner = MainUser.getInstance()
     let ref = Database.database().reference()
-    ref.child("users").child("\(getUsersUid())").child("members").child("\(member.key! as String)").removeValue()
+    ref.child("users").child("\(owner.primaryUser.key)").child("members").child("\(member.key)").removeValue()
 }
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -29,27 +30,24 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     //setting the number of cells in the table View
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (owner!.members.count + 2)
+        let owner = MainUser.getInstance()
+        return (owner.members.count + 1)
     }
 
     //setting the text for each cell in the table View
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if (indexPath.item == 0) {
+        let owner = MainUser.getInstance()
+        
+        // Selected a user
+        if (indexPath.row < owner.members.count){
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
-            //let member = owner!
-            //cell.textLabel?.text = member.name
-            cell.textLabel?.text = owner!.name
-            cell.textLabel?.font = UIFont.systemFont(ofSize: 17.0)
-            return cell
-        }
-        else if (indexPath.item < owner!.members.count + 1){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
-            let member = owner!.members[indexPath.row - 1]
+            let member = owner.members[indexPath.row]
             cell.textLabel?.text = member.name
             cell.textLabel?.font = UIFont.systemFont(ofSize: 17.0)
 
             return cell
         }
+        // Selected "add user"
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "MenuTableViewCell", for: indexPath)
             cell.textLabel?.text = "Add User +"
@@ -67,19 +65,17 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //print("You tapped cell number \(indexPath.row).")
-        if (indexPath.row == owner!.members.count+1){
+        let owner = MainUser.getInstance()
+        
+        // Selected add user
+        if (indexPath.row == owner.members.count){
             print("To Add User VC")
             self.performSegue(withIdentifier: "toAddUser", sender: nil)
         }
         else{
             print("To Home VC")
-            if (indexPath.row == 0) {
-                selectedUserUid = owner!.key!
-            } else {
-                selectedUserUid = owner!.members[indexPath.row-1].key!
-            }
-            print("Selected User UID: \(selectedUserUid ?? "")")
+            owner.currentUser = owner.members[indexPath.row]
+            print("Selected User UID: \(owner.currentUser.key)")
             self.performSegue(withIdentifier: "toHomeFromMenu", sender: nil)
         }
     }
@@ -87,19 +83,20 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to handle row deletion
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 
-        if (indexPath.row != owner!.members.count+1) {
+        let owner = MainUser.getInstance()
+        if (indexPath.row != owner.members.count) {
             if editingStyle == .delete {
 
                 //remove the item from the data model
-                deleteMember(member: owner!.members[indexPath.row-1])
+                deleteMember(member: owner.members[indexPath.row])
 
                 
-                if selectedUserUid == owner!.members[indexPath.row-1].key {
-                    selectedUserUid = owner!.key
+                if owner.currentUser == owner.members[indexPath.row] {
+                    owner.currentUser = owner.primaryUser
                 }
                 
                 //remove from members array
-                owner!.members.remove(at: indexPath.row-1)
+                owner.members.remove(at: indexPath.row)
                 
 
                 //delete the table view row
@@ -115,7 +112,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to disable cell editing for "Add user" row
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
 
-        if (indexPath.row == owner!.members.count+1 || indexPath.row == 0){
+        let owner = MainUser.getInstance()
+        if (indexPath.row == owner.members.count || indexPath.row == 0){
             return false
         }
         else {

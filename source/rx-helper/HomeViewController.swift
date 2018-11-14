@@ -37,8 +37,9 @@ func getUsersUid() -> String {
 }
 
 class HomeViewController: BaseViewController {
-
+    
     @IBOutlet weak var HomeNavBar: UINavigationItem!
+    var reloadTableViewController = false
 
     @IBAction func addButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toNewPrescription", sender: nil)
@@ -51,16 +52,9 @@ class HomeViewController: BaseViewController {
         // Do any additional setup after loading the view
 
         addSlideMenuButton()
-        if selectedUserUid == owner!.key {
-            self.HomeNavBar.title = owner!.name
-        } else {
-            for member in owner!.members {
-                if member.key == selectedUserUid {
-                    self.HomeNavBar.title = member.name
-                    break
-                }
-            }
-        }
+        let owner = MainUser.getInstance()
+        self.HomeNavBar.title = owner.currentUser.name
+        
         if self.HomeNavBar.title == nil {
             self.HomeNavBar.title = getUserDisplayName()
         }
@@ -71,7 +65,8 @@ class HomeViewController: BaseViewController {
     
     func getSelectedUserName() {
         var sName : String?
-        Database.database().reference().child("users/\(getUsersUid())/members/\(selectedUserUid!)").observeSingleEvent(of:.value, with: { (snapshot) in
+        let owner = MainUser.getInstance()
+        Database.database().reference().child("users/\(owner.primaryUser.key)/members/\(owner.currentUser.key)").observeSingleEvent(of:.value, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
                 

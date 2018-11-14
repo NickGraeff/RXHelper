@@ -7,6 +7,43 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
+
+func fetchMainUsersInfo() {
+    
+    let owner = MainUser.getInstance()
+    
+    owner.email = Auth.auth().currentUser?.email ?? "No Email provided"
+    Database.database().reference().child("users/\(getUsersUid())").observeSingleEvent(of: .value, with: { (snapshot1) in
+        
+        for temp1 in snapshot1.children {
+            if let snapshot2 = temp1 as? DataSnapshot {
+                for child in snapshot2.children {
+                    if let memberSnap = child as? DataSnapshot {
+                        if let dictionary1 = memberSnap.value as? [String: AnyObject] {
+                            if dictionary1["key"] as! String == getUsersUid() {
+                                owner.primaryUser.name = dictionary1["name"] as! String
+                                owner.primaryUser.key = dictionary1["key"] as! String
+                            } else {
+                                let member = Member()
+                                member.name = dictionary1["name"] as! String
+                                member.key = dictionary1["key"] as! String
+                                owner.members.append(member)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        if let dictionary2 = snapshot1.value as? [String: AnyObject] {
+            
+            owner.pharmacyName = dictionary2["pharmacyName"] as! String
+            owner.pharmacyPhoneNumber = dictionary2["pharmacyPhoneNumber"] as! String
+        }
+    })
+}
 
 class WelcomeViewController: UIViewController {
 
@@ -14,10 +51,9 @@ class WelcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //Pull owners information from database
-        fetchOwner()
-        //Pull owners members from database
-        fetchMembers()
+        fetchMainUsersInfo()
 
         //Color of Welcome text
         welcomeLabel.textColor = UIColor.gray

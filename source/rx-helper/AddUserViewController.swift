@@ -23,18 +23,19 @@ class AddUserViewController: UIViewController {
         }
         //else add new member to firebase
         else {
-//            let ref = Database.database().reference()
-//            ref.child("users/\(getUserDisplayName())/members/\(newUsersName.text!)/prescriptions/name").setValue("blank")
+            
+            let owner = MainUser.getInstance()
             
             var ref: DatabaseReference!
             ref = Database.database().reference()
 
-            let newref = ref.child("users").child(getUsersUid()).child("members").childByAutoId()
+            let newref = ref.child("users").child(owner.primaryUser.key).child("members").childByAutoId()
             newref.child("name").setValue("\(newUsersName.text!)")
+            newref.child("key").setValue(newref.key!)
             let memExample = Member()
             memExample.name = newUsersName.text!
-            memExample.key = newref.key
-            owner!.members.append(memExample)
+            memExample.key = newref.key!
+            owner.members.append(memExample)
             //members.setValue("\(newUsersName.text!)")
 
         }

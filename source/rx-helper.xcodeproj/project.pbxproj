@@ -12,6 +12,7 @@
 		384B657B218C5B2E00A92ECB /* TOSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B657A218C5B2E00A92ECB /* TOSViewController.swift */; };
 		384B657D218C603900A92ECB /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B657C218C603900A92ECB /* AboutViewController.swift */; };
 		384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384B6580218C60E000A92ECB /* FAQViewController.swift */; };
+		385664F1219A4AFF00D5F311 /* MainUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385664F0219A4AFF00D5F311 /* MainUser.swift */; };
 		38CBB480217192B900F7CE05 /* PrescriptionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */; };
 		38CBB481217192B900F7CE05 /* PrescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */; };
 		38CBB482217192B900F7CE05 /* PrescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */; };
@@ -24,7 +25,6 @@
 		B503FDA4217C08CF005E13CD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA3217C08CF005E13CD /* MenuViewController.swift */; };
 		B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B503FDA5217C0E0B005E13CD /* BaseViewController.swift */; };
 		B546A8E6218971AA008097F1 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E5218971AA008097F1 /* Member.swift */; };
-		B546A8E8218A3428008097F1 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546A8E7218A3428008097F1 /* Owner.swift */; };
 		B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */; };
 		B5A6CD8E2187A8D40080C8DA /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */; };
 		B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F6EBA52168A49D00572C17 /* HomeViewController.swift */; };
@@ -45,6 +45,7 @@
 		384B657A218C5B2E00A92ECB /* TOSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TOSViewController.swift; sourceTree = "<group>"; };
 		384B657C218C603900A92ECB /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		384B6580218C60E000A92ECB /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		385664F0219A4AFF00D5F311 /* MainUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainUser.swift; sourceTree = "<group>"; };
 		38CBB47C217192B900F7CE05 /* PrescriptionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewController.swift; sourceTree = "<group>"; };
 		38CBB47D217192B900F7CE05 /* PrescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionViewController.swift; sourceTree = "<group>"; };
 		38CBB47E217192B900F7CE05 /* PrescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		B503FDA3217C08CF005E13CD /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B503FDA5217C0E0B005E13CD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B546A8E5218971AA008097F1 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		B546A8E7218A3428008097F1 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		B55ED52F215C4B320087D341 /* rx-helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "rx-helper.entitlements"; sourceTree = "<group>"; };
 		B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B5A6CD8D2187A8D40080C8DA /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 		B546A8E021896D44008097F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				385664F0219A4AFF00D5F311 /* MainUser.swift */,
 				B546A8E5218971AA008097F1 /* Member.swift */,
-				B546A8E7218A3428008097F1 /* Owner.swift */,
 				AE953298219031D800121834 /* Alert.swift */,
 				38CBB47F217192B900F7CE05 /* Prescription.swift */,
 			);
@@ -326,7 +326,6 @@
 				AE953299219031D800121834 /* Alert.swift in Sources */,
 				B5FB1D5D2172D20C00795C7E /* StartViewController.swift in Sources */,
 				384B6575218B0F0A00A92ECB /* SupportPageViewController.swift in Sources */,
-				B546A8E8218A3428008097F1 /* Owner.swift in Sources */,
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
@@ -339,6 +338,7 @@
 				B503FDA6217C0E0B005E13CD /* BaseViewController.swift in Sources */,
 				384B657B218C5B2E00A92ECB /* TOSViewController.swift in Sources */,
 				B5F6EBA62168A49D00572C17 /* HomeViewController.swift in Sources */,
+				385664F1219A4AFF00D5F311 /* MainUser.swift in Sources */,
 				384B6577218C58E600A92ECB /* TutorialViewController.swift in Sources */,
 				38CBB483217192B900F7CE05 /* Prescription.swift in Sources */,
 			);
