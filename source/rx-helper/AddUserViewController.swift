@@ -37,6 +37,7 @@ class AddUserViewController: UIViewController {
             memExample.key = newref.key!
             owner.members.append(memExample)
             //members.setValue("\(newUsersName.text!)")
+            owner.currentUser = memExample
 
         }
 
