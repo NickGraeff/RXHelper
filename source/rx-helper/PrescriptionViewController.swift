@@ -10,7 +10,7 @@ import UIKit
 import UserNotifications
 import os.log
 import SwiftyJSON
-
+import FirebaseDatabase
 
 class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -109,8 +109,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         // Stores hours and minutes into array/table
         let alert = Alert()
         alert.alertValue = dateFormatter.string(from:formattedTime!)
-        alert.hours = minutes
-        alert.minutes = hours
+        alert.hours = hours
+        alert.minutes = minutes
         tempAlerts!.append(alert)
 
         let indexPath = IndexPath(row: prescription!.alerts.count + tempAlerts!.count - 1, section: 0)
@@ -238,7 +238,33 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         }
         return UITableViewCell()
     }
-
+    
+    func deleteAlert(key: String?) {
+        if key != nil && prescription!.key != nil {
+            
+            let owner = MainUser.getInstance()
+            
+            let ref = Database.database().reference()
+            var ref2: DatabaseReference
+            
+            ref2 = ref.child("users/\(owner.primaryUser.key)/members/\(owner.currentUser.key)/prescriptions/\(prescription!.key!)/alerts/\(key!)")
+            
+            ref2.removeValue()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            
+            deleteAlert(key: prescription!.alerts[indexPath.row].key)
+            prescription!.alerts.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }
+    }
 
     // MARK: UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

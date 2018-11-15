@@ -287,11 +287,8 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                 tableView.reloadRows(at: [newIndexPath], with: .none)
             }
             
-            for alarm in prescription.alerts {
-                let vectorThing = alarm.alertValue?.components(separatedBy: ":")
-                let hours = vectorThing?[0]
-                let minutes = vectorThing?[1].components(separatedBy: " ")[0]
-                setAlarm(prescription.name!, Int(hours!)!, Int(minutes!)!)
+            for alert in prescription.alerts {
+                setAlarm(prescription.name!, alert.hours!, alert.minutes!)
             }
             
             // Save Prescriptions
@@ -305,7 +302,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         let owner = MainUser.getInstance()
         
         let content = UNMutableNotificationContent()
-        content.title = "Rx Helper"
+        content.title = "RxHelper"
         content.body = "Time to take your \(name)!"
         content.sound = UNNotificationSound.default
         owner.badge += 1
