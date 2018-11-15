@@ -28,7 +28,7 @@ func getUserDisplayName() -> String {
 //get ownsers UID
 func getUsersUid() -> String {
 
-    if (Auth.auth().currentUser != nil ){
+    if (Auth.auth().currentUser != nil ) {
         return (Auth.auth().currentUser?.uid)!
     }
     else {
@@ -39,7 +39,30 @@ func getUsersUid() -> String {
 class HomeViewController: BaseViewController {
     
     @IBOutlet weak var HomeNavBar: UINavigationItem!
+    
+    var referenceToTableViewController: PrescriptionTableViewController?
+    
     var reloadTableViewController = false
+    
+    @IBAction func allTabPressed(_ sender: Any) {
+        referenceToTableViewController?.kindOfTableSelected = PrescriptionTableViewController.allSelected
+        referenceToTableViewController?.tableView.reloadData()
+    }
+    @IBAction func upcomingTabPressed(_ sender: Any) {
+        referenceToTableViewController?.kindOfTableSelected = PrescriptionTableViewController.upcomingSelected
+        referenceToTableViewController?.tableView.reloadData()
+    }
+    @IBAction func takenTodayPressed(_ sender: Any) {
+        referenceToTableViewController?.kindOfTableSelected = PrescriptionTableViewController.takenTodaySelected
+        referenceToTableViewController?.tableView.reloadData()
+    }
+    @IBAction func missedPressed(_ sender: Any) {
+        referenceToTableViewController?.kindOfTableSelected = PrescriptionTableViewController.missedSelected
+        referenceToTableViewController?.tableView.reloadData()
+    }
+    
+    
+    @IBOutlet weak var tabToolbar: UIToolbar!
 
     @IBAction func addButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toNewPrescription", sender: nil)
@@ -77,6 +100,14 @@ class HomeViewController: BaseViewController {
             }
             
         })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EmbeddedTableView" {
+            if let tableViewReference = segue.destination as? PrescriptionTableViewController {
+                referenceToTableViewController = tableViewReference
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

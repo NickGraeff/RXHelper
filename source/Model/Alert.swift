@@ -10,7 +10,11 @@ import UIKit
 
 class Alert: NSObject {
     var alertValue: String? = nil
+    var hours: Int? = nil
+    var minutes: Int? = nil
     var key: String? = nil
+    var skipped: Bool = false
+    var taken: Bool = false
     
     struct PropertyKey {
         static let alertValue = "alertValue"

@@ -23,4 +23,40 @@ class Prescription {
         static let dosage = "dosage"
         static let alerts = "alerts"
     }
+    
+    func getUpcomingAlerts() -> [Alert] {
+        let date = NSDate() as Date
+        let components = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let hours = components.hour!
+        let minutes = components.minute!
+        
+        var upcomingAlerts = [Alert]()
+        for alert in alerts {
+            if alert.hours! > hours && alert.minutes! > minutes {
+                upcomingAlerts.append(alert)
+            }
+        }
+        return upcomingAlerts
+    }
+    
+    func getSkippedAlerts() -> [Alert] {
+        var skippedAlerts = [Alert]()
+        for alert in alerts {
+            if alert.skipped {
+                skippedAlerts.append(alert)
+            }
+        }
+        return skippedAlerts
+    }
+    
+    func getTakenAlerts() -> [Alert] {
+        var takenAlerts = [Alert]()
+        for alert in alerts {
+            if alert.taken {
+                takenAlerts.append(alert)
+            }
+        }
+        return takenAlerts
+    }
 }
+
