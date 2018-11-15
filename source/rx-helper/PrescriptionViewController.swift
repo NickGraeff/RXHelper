@@ -75,6 +75,10 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         // Manage tableView visibility via TouchDown in textField
         nameField.addTarget(self, action: #selector(textFieldActive), for: UIControl.Event.touchDown)
         nameField.addTarget(self, action: #selector(textFieldDidChange(_:)), for:UIControl.Event.editingChanged)
+
+        nameField.setBottomBorder()
+        dosageField.setBottomBorder()
+        self.hideKeyboardWhenTappedAround()
     }
 
     // If user changes text, hide the tableView
@@ -227,7 +231,15 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+
+        switch textField {
+        case nameField:
+            dosageField.becomeFirstResponder()
+        case dosageField:
+            dosageField.resignFirstResponder()
+        default:
+            self.hideKeyboardWhenTappedAround()
+        }
         return true
     }
 
@@ -336,7 +348,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
                 //let svc = segue.destination as? UINavigationController
                 //let WebController: WebViewController = svc?.topViewController as! WebViewController
-                var WebController = segue.destination as! WebViewController
+                let WebController = segue.destination as! WebViewController
                 WebController.myString = prescription!.name!
             }
         }
