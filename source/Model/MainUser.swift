@@ -17,6 +17,7 @@ class MainUser {
     var primaryUser: Member
     var currentUser: Member
     var members: [Member] = [Member]()
+    var badge: Int = 0
     
     // Default constructor, not allowed to be accessed outside of the class
     // Singleton classes should only ever be instantiated once, which is what this is

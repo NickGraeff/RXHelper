@@ -10,17 +10,47 @@ import UIKit
 import os.log
 import FirebaseAuth
 import FirebaseDatabase
+import UserNotifications
 
-class PrescriptionTableViewController: UITableViewController {
+class PrescriptionTableViewController: UITableViewController, UNUserNotificationCenterDelegate {
 
     // Mark: Properties
     let cellIdentifier = "PrescriptionTableViewCellIdentifier"
     let cellSpacingHeight: CGFloat = 5
+
     var tapToAddMedFromSegueThing: UILabel?
 
+    static let allSelected = 1
+    static let upcomingSelected = 2
+    static let takenTodaySelected = 3
+    static let missedSelected = 4
+    
+    var kindOfTableSelected: Int?
+    
+    
+    @objc func setKindOfTable(sender: UIBarButtonItem?) {
+        switch sender?.title {
+            case "All":
+                kindOfTableSelected = PrescriptionTableViewController.allSelected
+            case "Upcoming":
+                kindOfTableSelected = PrescriptionTableViewController.upcomingSelected
+            case "Taken Today":
+                kindOfTableSelected = PrescriptionTableViewController.takenTodaySelected
+            case "Missed":
+                kindOfTableSelected = PrescriptionTableViewController.missedSelected
+            default:
+                fatalError("Invalid button pressed")
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        kindOfTableSelected = PrescriptionTableViewController.allSelected
+        
+        UNUserNotificationCenter.current().delegate = self
+        
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
         //self.tableView.separatorStyle = .none
@@ -41,6 +71,7 @@ class PrescriptionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         let owner = MainUser.getInstance()
+        
         if owner.currentUser.prescriptions.count == 0 {
             self.tapToAddMedFromSegueThing?.isHidden = false
             self.tableView.isHidden = true
@@ -48,7 +79,37 @@ class PrescriptionTableViewController: UITableViewController {
             self.tapToAddMedFromSegueThing?.isHidden = true
             self.tableView.isHidden = false
         }
-        return owner.currentUser.prescriptions.count
+        
+        var count = 0
+        switch kindOfTableSelected {
+        case PrescriptionTableViewController.allSelected:
+            count = owner.currentUser.prescriptions.count
+        case PrescriptionTableViewController.upcomingSelected:
+            for prescription in owner.currentUser.prescriptions {
+                if prescription.getUpcomingAlerts().count > 0 {
+                    count += 1
+                }
+            }
+            
+        case PrescriptionTableViewController.takenTodaySelected:
+            for prescription in owner.currentUser.prescriptions {
+                if prescription.getTakenAlerts().count > 0 {
+                    count += 1
+                }
+            }
+            
+        case PrescriptionTableViewController.missedSelected:
+            for prescription in owner.currentUser.prescriptions {
+                if prescription.getSkippedAlerts().count > 0 {
+                    count += 1
+                }
+            }
+            
+        default:
+            fatalError("Invalid tab selected")
+        }
+        
+        return count
     }
 
     // Set the spacing between sections
@@ -71,19 +132,64 @@ class PrescriptionTableViewController: UITableViewController {
 
         // Fetches the appropriate prescription for the data source layout
         let owner = MainUser.getInstance()
-        let prescription: Prescription = owner.currentUser.prescriptions[indexPath.row]
-
-        cell.nameLabel.text = prescription.name
+        
+        //let prescription: Prescription = owner.currentUser.prescriptions[indexPath.row]
+        var prescriptionToReturn: Prescription? = nil
+        var count = 0
+        switch kindOfTableSelected {
+            
+            // All prescriptions
+            case PrescriptionTableViewController.allSelected:
+                prescriptionToReturn = owner.currentUser.prescriptions[indexPath.row]
+            
+            // All upcoming prescriptions
+            case PrescriptionTableViewController.upcomingSelected:
+                for prescription in owner.currentUser.prescriptions {
+                    if prescription.getUpcomingAlerts().count > 0 {
+                        if count == indexPath.row {
+                            prescriptionToReturn = prescription
+                        }
+                        count += 1
+                    }
+                }
+            
+            // All prescriptions taken today
+            case PrescriptionTableViewController.takenTodaySelected:
+                for prescription in owner.currentUser.prescriptions {
+                    if prescription.getTakenAlerts().count > 0 {
+                        if count == indexPath.row {
+                            prescriptionToReturn = prescription
+                        }
+                        count += 1
+                    }
+                }
+            
+            // All upcoming prescriptions
+            case PrescriptionTableViewController.missedSelected:
+                for prescription in owner.currentUser.prescriptions {
+                    if prescription.getSkippedAlerts().count > 0 {
+                        if count == indexPath.row {
+                            prescriptionToReturn = prescription
+                        }
+                        count += 1
+                    }
+                }
+            
+            default:
+                fatalError("Invalid tab selected")
+        }
+        
+        cell.nameLabel.text = prescriptionToReturn!.name
         //cell.prescriptionImageView.image = prescription!.photo
-
-        if prescription.alerts.count > 0 {
-            cell.nextDueLabel.text = prescription.alerts[0].alertValue
+        
+        if prescriptionToReturn!.alerts.count > 0 {
+            cell.nextDueLabel.text = prescriptionToReturn!.alerts[0].alertValue
         } else {
             cell.nextDueLabel.text = "Never"
         }
 
         //TO FIX
-        cell.dosageLabel.text = String(prescription.dosage ?? 0)
+        cell.dosageLabel.text = String(prescriptionToReturn!.dosage ?? 0)
 //        cell.contentView.backgroundColor = UIColor.clear
 //        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
 //        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
@@ -181,9 +287,81 @@ class PrescriptionTableViewController: UITableViewController {
                 tableView.reloadRows(at: [newIndexPath], with: .none)
             }
             
+            for alarm in prescription.alerts {
+                let vectorThing = alarm.alertValue?.components(separatedBy: ":")
+                let hours = vectorThing?[0]
+                let minutes = vectorThing?[1].components(separatedBy: " ")[0]
+                setAlarm(prescription.name!, Int(hours!)!, Int(minutes!)!)
+            }
+            
             // Save Prescriptions
             savePrescriptions()
         }
+    }
+    
+    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int) {
+        makeAlarmCategories()
+        
+        let owner = MainUser.getInstance()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Rx Helper"
+        content.body = "Time to take your \(name)!"
+        content.sound = UNNotificationSound.default
+        owner.badge += 1
+        content.badge = owner.badge as NSNumber
+        content.categoryIdentifier = "RxHelperCategory"
+        
+        // Actual alarm setter
+        var dateComponents = DateComponents()
+        dateComponents.hour = hours
+        dateComponents.minute = minutes
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    func makeAlarmCategories() {
+        let takeAction = UNNotificationAction(identifier: "takeAction", title: "Take", options: [])
+        let snoozeAction = UNNotificationAction(identifier: "snoozeAction", title: "Snooze", options: [])
+        let category = UNNotificationCategory(identifier: "RxHelperCategory",
+                                              actions: [takeAction,snoozeAction], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+    }
+    
+    func pressedSnooze () {
+        makeAlarmCategories()
+        
+        let owner = MainUser.getInstance()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Rx Helper"
+        content.body = "Time to take your medicine!"
+        content.sound = UNNotificationSound.default
+        owner.badge += 1
+        content.badge = owner.badge as NSNumber
+        content.categoryIdentifier = "RxHelperCategory"
+        
+        // Snoozes for 15 minutes, switch 5 to 900
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.actionIdentifier == "takeAction" {
+            print ("Take medicine")
+            // Subtract from quantity of medicine
+            // Perform check for refill
+        }
+        else if response.actionIdentifier == "snoozeAction" {
+            pressedSnooze()
+        }
+        
+        completionHandler()
     }
     
     // MARK: Private Methods
@@ -284,6 +462,11 @@ class PrescriptionTableViewController: UITableViewController {
                                 let alert = Alert()
                                 alert.alertValue = dict[Alert.PropertyKey.alertValue] as? String
                                 alert.key = alertSnapshot.key
+                                
+                                var vectorthing1 = alert.alertValue?.components(separatedBy: ":")
+                                var vectorthing2 = vectorthing1![1].components(separatedBy: " ")
+                                alert.hours = Int(vectorthing1![0])! - 1 + (vectorthing2[1] == "PM" ? 13 : 0)
+                                alert.minutes = Int(vectorthing2[0])
                                 prescription.alerts.append(alert)
                             }
                         }

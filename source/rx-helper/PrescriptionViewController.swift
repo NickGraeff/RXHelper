@@ -12,13 +12,11 @@ import os.log
 import SwiftyJSON
 
 
-class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UNUserNotificationCenterDelegate {
+class PrescriptionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
 
 
     // Mark: Properties
-    @IBOutlet weak var photoButton: UIButton!
-    @IBOutlet weak var alarmButton: UIButton!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dosageField: UITextField!
@@ -26,7 +24,6 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertTable: UITableView!
     @IBOutlet weak var webInfo: UIButton!
-    var badge = 0
 
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
@@ -35,11 +32,12 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     var searching = false
 
     var prescription: Prescription?
+    var tempAlerts: [Alert]?
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
-        UNUserNotificationCenter.current().delegate = self
+        tempAlerts = [Alert]()
 
         self.nameField.setBottomBorder()
         self.dosageField.setBottomBorder()
@@ -90,7 +88,6 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func schedule(_ sender: Any) {
         let date = timePicker.date
         let components = Calendar.current.dateComponents([.hour, .minute], from: date)
-        let name = nameField.text!
         let hours = components.hour!
         let minutes = components.minute!
 
@@ -112,9 +109,11 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         // Stores hours and minutes into array/table
         let alert = Alert()
         alert.alertValue = dateFormatter.string(from:formattedTime!)
-        prescription!.alerts.append(alert)
+        alert.hours = minutes
+        alert.minutes = hours
+        tempAlerts!.append(alert)
 
-        let indexPath = IndexPath(row: prescription!.alerts.count - 1, section: 0)
+        let indexPath = IndexPath(row: prescription!.alerts.count + tempAlerts!.count - 1, section: 0)
 
         alertTable.beginUpdates()
         alertTable.insertRows(at: [indexPath], with: .automatic)
@@ -123,70 +122,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         alertTable.reloadData()
 
         // Store time into database
-
-        setAlarm(name, hours, minutes)
         //timePicker.
-    }
-
-    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int) {
-        makeAlarmCategories()
-
-        let content = UNMutableNotificationContent()
-        content.title = "Rx Helper"
-        content.body = "Time to take your \(name)!"
-        content.sound = UNNotificationSound.default
-        badge += 1
-        content.badge = badge as NSNumber
-        content.categoryIdentifier = "RxHelperCategory"
-
-        // Actual alarm setter
-        var dateComponents = DateComponents()
-        dateComponents.hour = hours
-        dateComponents.minute = minutes
-
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request)
-    }
-
-    func makeAlarmCategories() {
-        let takeAction = UNNotificationAction(identifier: "takeAction", title: "Take", options: [])
-        let snoozeAction = UNNotificationAction(identifier: "snoozeAction", title: "Snooze", options: [])
-        let category = UNNotificationCategory(identifier: "RxHelperCategory",
-                                              actions: [takeAction,snoozeAction], intentIdentifiers: [], options: [])
-        UNUserNotificationCenter.current().setNotificationCategories([category])
-    }
-
-    func pressedSnooze () {
-        makeAlarmCategories()
-
-        let content = UNMutableNotificationContent()
-        content.title = "Rx Helper"
-        content.body = "Time to take your \(nameField.text!)!"
-        content.sound = UNNotificationSound.default
-        badge += 1
-        content.badge = badge as NSNumber
-        content.categoryIdentifier = "RxHelperCategory"
-
-        // Snoozes for 15 minutes, switch 5 to 900
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request)
-    }
-
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        if response.actionIdentifier == "takeAction" {
-            print ("Take medicine")
-            // Subtract from quantity of medicine
-            // Perform check for refill
-        }
-        else if response.actionIdentifier == "snoozeAction" {
-            pressedSnooze()
-        }
-
-        completionHandler()
     }
 
     // Manage keyboard and tableView visibility
@@ -253,7 +189,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == alertTable {
-            return prescription!.alerts.count
+            return prescription!.alerts.count + tempAlerts!.count
         }
 
         else if tableView == tableView {
@@ -268,7 +204,12 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if tableView == alertTable {
-            let alertTime = prescription!.alerts[indexPath.row]
+            var alertTime: Alert
+            if indexPath.row < prescription!.alerts.count {
+                alertTime = prescription!.alerts[indexPath.row]
+            } else {
+                alertTime = tempAlerts![indexPath.row - prescription!.alerts.count]
+            }
 
             let cell = UITableViewCell()
             cell.textLabel?.text = alertTime.alertValue
@@ -361,6 +302,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         prescription!.name = nameField.text!
         prescription!.dosage = Int(dosageField.text!)
+        prescription!.alerts += tempAlerts!
 
         self.tableView.reloadData()
     }

@@ -30,13 +30,29 @@
                                 <rect key="frame" x="0.0" y="734" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="All" id="93m-iR-tNy"/>
+                                    <barButtonItem title="All" id="93m-iR-tNy">
+                                        <connections>
+                                            <action selector="allTabPressed:" destination="qie-E2-2wT" id="fey-5w-gRg"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="duH-dN-XH9"/>
-                                    <barButtonItem title="Upcoming" id="yQz-KW-BOd"/>
+                                    <barButtonItem title="Upcoming" id="yQz-KW-BOd">
+                                        <connections>
+                                            <action selector="upcomingTabPressed:" destination="qie-E2-2wT" id="VI2-Nc-Bic"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ILc-9Q-fhA"/>
-                                    <barButtonItem title="Taken Today" id="W45-Tu-TyH"/>
+                                    <barButtonItem title="Taken Today" id="W45-Tu-TyH">
+                                        <connections>
+                                            <action selector="takenTodayPressed:" destination="qie-E2-2wT" id="asU-nR-YBG"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="yC0-y6-HRK"/>
-                                    <barButtonItem title="Missed" id="RZw-af-Fd9"/>
+                                    <barButtonItem title="Missed" id="RZw-af-Fd9">
+                                        <connections>
+                                            <action selector="missedPressed:" destination="qie-E2-2wT" id="gHn-Om-hfM"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap + to add medicine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-65-i21">
@@ -60,6 +76,7 @@
                     <connections>
                         <outlet property="HomeNavBar" destination="9WK-WX-aff" id="Mzo-WS-NO2"/>
                         <outlet property="tapToAddMed" destination="Hvt-65-i21" id="us8-jd-vS8"/>
+                        <outlet property="tabToolbar" destination="hgh-PS-gO3" id="tdz-XL-7Jw"/>
                         <segue destination="oPS-gF-Kkf" kind="show" identifier="toNewPrescription" id="C60-Ki-geU"/>
                     </connections>
                 </viewController>
