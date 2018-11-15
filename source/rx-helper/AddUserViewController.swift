@@ -47,6 +47,7 @@ class AddUserViewController: UIViewController {
         super.viewDidLoad()
 
         self.newUsersName.setBottomBorder()
+        self.newUsersName.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -62,4 +63,12 @@ class AddUserViewController: UIViewController {
     }
     */
 
+}
+
+extension AddUserViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        newUsersName.resignFirstResponder()
+        addNewUserButton((Any).self)
+        return true
+    }
 }
