@@ -25,6 +25,13 @@ class StartViewController: UIViewController {
         self.signUpButton.setTitle("Sign up", for: UIControl.State.normal)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        //auto login
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "toWelcome", sender: self)
+        }
+    }
+
     @IBOutlet var startView: UIView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!

@@ -130,7 +130,7 @@
                         <outlet property="startView" destination="oAr-mq-JRB" id="09W-Zh-dt8"/>
                         <segue destination="gSy-3D-Jez" kind="show" identifier="toLogin" id="Fyw-oe-9Li"/>
                         <segue destination="GJz-be-AOe" kind="show" identifier="toSignUp" id="n7a-Jc-2Vy"/>
-                        <segue destination="4BM-6P-dgj" kind="show" identifier="toHome" id="lG2-lD-zYb"/>
+                        <segue destination="fog-eU-5dq" kind="show" identifier="toWelcome" id="SRL-wu-cp2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7p-13-Xki" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1418,9 +1418,8 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
         <image name="rxpill" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lG2-lD-zYb"/>
         <segue reference="C60-Ki-geU"/>
-        <segue reference="baA-6e-Ir6"/>
+        <segue reference="SRL-wu-cp2"/>
         <segue reference="YJK-qj-6TA"/>
         <segue reference="ZaM-cr-wzR"/>
     </inferredMetricsTieBreakers>
