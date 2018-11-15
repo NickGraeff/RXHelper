@@ -16,19 +16,20 @@ class PrescriptionTableViewController: UITableViewController {
     // Mark: Properties
     let cellIdentifier = "PrescriptionTableViewCellIdentifier"
     let cellSpacingHeight: CGFloat = 5
-    
+    var tapToAddMedFromSegueThing: UILabel?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Use the edit button item provided by the table view controller.
         navigationItem.leftBarButtonItem = editButtonItem
         //self.tableView.separatorStyle = .none
         self.tableView.layer.cornerRadius = 4;
         self.tableView.reloadData()
-        
+
         // Load any saved prescriptions, otherwise load sample data.
         loadPrescriptions()
-        
+
     }
     
     
@@ -36,44 +37,51 @@ class PrescriptionTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+
         let owner = MainUser.getInstance()
+        if owner.currentUser.prescriptions.count == 0 {
+            self.tapToAddMedFromSegueThing?.isHidden = false
+            self.tableView.isHidden = true
+        } else {
+            self.tapToAddMedFromSegueThing?.isHidden = true
+            self.tableView.isHidden = false
+        }
         return owner.currentUser.prescriptions.count
     }
-    
+
     // Set the spacing between sections
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return cellSpacingHeight
     }
-    
+
     // Make the background color show through
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         //headerView.backgroundColor = UIColor.white
         return headerView
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PrescriptionTableViewCell else {
             fatalError("The dequeued cell is not an instance of PrescriptionTableViewCell")
         }
-        
+
         // Fetches the appropriate prescription for the data source layout
         let owner = MainUser.getInstance()
         let prescription: Prescription = owner.currentUser.prescriptions[indexPath.row]
-        
+
         cell.nameLabel.text = prescription.name
         //cell.prescriptionImageView.image = prescription!.photo
-        
+
         if prescription.alerts.count > 0 {
             cell.nextDueLabel.text = prescription.alerts[0].alertValue
         } else {
             cell.nextDueLabel.text = "Never"
         }
-        
+
         //TO FIX
         cell.dosageLabel.text = String(prescription.dosage ?? 0)
 //        cell.contentView.backgroundColor = UIColor.clear
@@ -290,11 +298,12 @@ class PrescriptionTableViewController: UITableViewController {
                 //"Tap on + to add a medicine"
                 //self.loadSamplePrescriptions()
                 self.tableView.isHidden = true
+
             }
-            
+
             self.tableView.reloadData()
         })
-    
+
     }
 
     private func loadPrescriptions() {

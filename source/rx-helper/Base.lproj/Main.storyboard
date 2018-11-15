@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
-                                    <segue destination="Nm7-Sk-fax" kind="embed" id="wX5-J8-azK"/>
+                                    <segue destination="Nm7-Sk-fax" kind="embed" identifier="EmbeddedTableView" id="wX5-J8-azK"/>
                                 </connections>
                             </containerView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-PS-gO3">
@@ -39,6 +39,13 @@
                                     <barButtonItem title="Missed" id="RZw-af-Fd9"/>
                                 </items>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap + to add medicine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-65-i21">
+                                <rect key="frame" x="36" y="300" width="302" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="0ZH-v6-Ril"/>
@@ -52,6 +59,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="HomeNavBar" destination="9WK-WX-aff" id="Mzo-WS-NO2"/>
+                        <outlet property="tapToAddMed" destination="Hvt-65-i21" id="us8-jd-vS8"/>
                         <segue destination="oPS-gF-Kkf" kind="show" identifier="toNewPrescription" id="C60-Ki-geU"/>
                     </connections>
                 </viewController>
@@ -553,7 +561,7 @@
             <objects>
                 <viewController id="oPS-gF-Kkf" customClass="PrescriptionViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gce-7q-QgW" customClass="GradientView" customModule="rx_helper" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Prescription Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usU-XW-qeO">
@@ -1377,7 +1385,7 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
             <objects>
                 <viewController storyboardIdentifier="WebViewController" id="a1w-N4-fdN" customClass="WebViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1j-av-9Ge">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV4-c7-sd8">
@@ -1411,7 +1419,7 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lG2-lD-zYb"/>
-        <segue reference="g9g-aY-nnD"/>
+        <segue reference="C60-Ki-geU"/>
         <segue reference="baA-6e-Ir6"/>
         <segue reference="YJK-qj-6TA"/>
         <segue reference="ZaM-cr-wzR"/>

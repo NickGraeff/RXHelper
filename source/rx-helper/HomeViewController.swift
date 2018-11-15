@@ -45,6 +45,8 @@ class HomeViewController: BaseViewController {
         self.performSegue(withIdentifier: "toNewPrescription", sender: nil)
     }
     
+    @IBOutlet weak var tapToAddMed: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,29 +58,18 @@ class HomeViewController: BaseViewController {
         self.HomeNavBar.title = owner.currentUser.name
         
         if self.HomeNavBar.title == nil {
-            self.HomeNavBar.title = getUserDisplayName()
+            self.HomeNavBar.title = owner.currentUser.name
         }
-        //TO FIX
-        //self.navigationController?.navigationBar.prefersLargeTitles = true
-        //self.navigationController?.navigationItem.largeTitleDisplayMode = .always
     }
     
-    func getSelectedUserName() {
-        var sName : String?
-        let owner = MainUser.getInstance()
-        Database.database().reference().child("users/\(owner.primaryUser.key)/members/\(owner.currentUser.key)").observeSingleEvent(of:.value, with: { (snapshot) in
-            
-            if let dictionary = snapshot.value as? [String: AnyObject] {
-                
-                sName = dictionary["name"] as? String
-                print(sName ?? "error")
-                
-                self.HomeNavBar.title = sName ?? "error"
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if segue.identifier == "EmbeddedTableView" {
+            if let tableViewThing = segue.destination as? PrescriptionTableViewController {
+                tableViewThing.tapToAddMedFromSegueThing = self.tapToAddMed
             }
-            
-        })
+        }
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
