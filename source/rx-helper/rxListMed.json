@@ -1,902 +1,9566 @@
 [
  {
-   "term": "paxil"
- },
- {
-   "term": "lexapro"
- },
- {
-   "term": "hydrocodone"
- },
- {
-   "term": "xanax"
- },
- {
-   "term": "tramadol"
- },
- {
-   "term": "vicodin"
- },
- {
-   "term": "lyrica"
- },
- {
-   "term": "oxycodone"
- },
- {
-   "term": "lisinopril"
- },
- {
-   "term": "cymbalta"
- },
- {
-   "term": "lipitor"
- },
- {
-   "term": "percocet"
- },
- {
-   "term": "zoloft"
- },
- {
-   "term": "metformin"
- },
- {
-   "term": "effexor"
- },
- {
-   "term": "ambien"
- },
- {
-   "term": "prednisone"
- },
- {
-   "term": "atenolol"
- },
- {
-   "term": "wellbutrin"
- },
- {
-   "term": "morphine"
- },
- {
-   "term": "naproxen"
- },
- {
-   "term": "phentermine"
- },
- {
-   "term": "tylenol"
+   "term": "ibuprofen"
  },
  {
    "term": "aspirin"
  },
  {
-   "term": "norvasc"
+   "term": "a-methapred"
  },
  {
-   "term": "toprol"
+   "term": "acam2000"
  },
  {
-   "term": "darvocet"
+   "term": "ascor"
  },
  {
-   "term": "nexium"
- },
- {
-   "term": "soma"
- },
- {
-   "term": "diovan"
- },
- {
-   "term": "seroquel"
- },
- {
-   "term": "albuterol"
- },
- {
-   "term": "neurontin"
- },
- {
-   "term": "adderall"
- },
- {
-   "term": "protonix"
- },
- {
-   "term": "ultram"
- },
- {
-   "term": "zocor"
- },
- {
-   "term": "ativan"
- },
- {
-   "term": "metoprolol"
- },
- {
-   "term": "levaquin"
- },
- {
-   "term": "valium"
- },
- {
-   "term": "viagra"
- },
- {
-   "term": "prozac"
- },
- {
-   "term": "alprazolam"
- },
- {
-   "term": "cipro"
- },
- {
-   "term": "oxycontin"
- },
- {
-   "term": "gabapentin"
- },
- {
-   "term": "lortab"
- },
- {
-   "term": "clonazepam"
- },
- {
-   "term": "celexa"
- },
- {
-   "term": "synthroid"
- },
- {
-   "term": "plavix"
- },
- {
-   "term": "cyclobenzaprine"
- },
- {
-   "term": "prevacid"
- },
- {
-   "term": "celebrex"
- },
- {
-   "term": "vytorin"
- },
- {
-   "term": "lasix"
- },
- {
-   "term": "lorazepam"
- },
- {
-   "term": "amoxicillin"
- },
- {
-   "term": "trazodone"
- },
- {
-   "term": "zyrtec"
- },
- {
-   "term": "klonopin"
- },
- {
-   "term": "depakote"
- },
- {
-   "term": "clonidine"
- },
- {
-   "term": "codeine"
- },
- {
-   "term": "lamictal"
- },
- {
-   "term": "methadone"
- },
- {
-   "term": "flexeril"
- },
- {
-   "term": "topamax"
- },
- {
-   "term": "diclofenac"
- },
- {
-   "term": "promethazine"
- },
- {
-   "term": "mobic"
- },
- {
-   "term": "doxycycline"
- },
- {
-   "term": "augmentin"
- },
- {
-   "term": "cephalexin"
- },
- {
-   "term": "bactrim"
- },
- {
-   "term": "hydrochlorothiazide"
- },
- {
-   "term": "advair"
- },
- {
-   "term": "ibuprofen"
- },
- {
-   "term": "omeprazole"
- },
- {
-   "term": "furosemide"
- },
- {
-   "term": "zetia"
- },
- {
-   "term": "diazepam"
- },
- {
-   "term": "fentanyl"
- },
- {
-   "term": "risperdal"
+   "term": "abelcet"
  },
  {
    "term": "abilify"
  },
  {
-   "term": "skelaxin"
+   "term": "abilify maintena"
  },
  {
-   "term": "elavil"
+   "term": "abilify mycite"
  },
  {
-   "term": "amitriptyline"
+   "term": "ablavar"
  },
  {
-   "term": "coumadin"
+   "term": "abraxane"
  },
  {
-   "term": "flomax"
+   "term": "absorica"
  },
  {
-   "term": "prilosec"
+   "term": "abstral"
  },
  {
-   "term": "allegra"
+   "term": "accolate"
  },
  {
-   "term": "clindamycin"
+   "term": "accretropin"
  },
  {
-   "term": "insulin"
- },
- {
-   "term": "lunesta"
- },
- {
-   "term": "fosamax"
- },
- {
-   "term": "zyprexa"
- },
- {
-   "term": "citalopram"
- },
- {
-   "term": "ranitidine"
- },
- {
-   "term": "fluoxetine"
- },
- {
-   "term": "hydroxyzine"
- },
- {
-   "term": "actos"
- },
- {
-   "term": "metronidazole"
- },
- {
-   "term": "altace"
- },
- {
-   "term": "crestor"
- },
- {
-   "term": "coreg"
- },
- {
-   "term": "digoxin"
- },
- {
-   "term": "phenergan"
- },
- {
-   "term": "benicar"
- },
- {
-   "term": "verapamil"
- },
- {
-   "term": "acetaminophen"
- },
- {
-   "term": "lithium"
- },
- {
-   "term": "zithromax"
- },
- {
-   "term": "dilantin"
- },
- {
-   "term": "tricor"
- },
- {
-   "term": "lotrel"
- },
- {
-   "term": "potassium"
- },
- {
-   "term": "norco"
- },
- {
-   "term": "keflex"
- },
- {
-   "term": "flagyl"
- },
- {
-   "term": "avandia"
- },
- {
-   "term": "ritalin"
- },
- {
-   "term": "ciprofloxacin"
- },
- {
-   "term": "inderal"
- },
- {
-   "term": "trazadone"
- },
- {
-   "term": "biaxin"
- },
- {
-   "term": "singulair"
- },
- {
-   "term": "aciphex"
- },
- {
-   "term": "enalapril"
- },
- {
-   "term": "zantac"
- },
- {
-   "term": "ultracet"
- },
- {
-   "term": "tamiflu"
- },
- {
-   "term": "diltiazem"
- },
- {
-   "term": "warfarin"
- },
- {
-   "term": "baclofen"
- },
- {
-   "term": "lidocaine"
- },
- {
-   "term": "lovastatin"
- },
- {
-   "term": "carisoprodol"
- },
- {
-   "term": "provigil"
- },
- {
-   "term": "ortho evra"
- },
- {
-   "term": "medrol"
- },
- {
-   "term": "penicillin"
- },
- {
-   "term": "benadryl"
- },
- {
-   "term": "reglan"
- },
- {
-   "term": "remeron"
- },
- {
-   "term": "propoxyphene"
- },
- {
-   "term": "concerta"
- },
- {
-   "term": "cozaar"
- },
- {
-   "term": "hctz"
- },
- {
-   "term": "premarin"
- },
- {
-   "term": "levothyroxine"
- },
- {
-   "term": "methotrexate"
- },
- {
-   "term": "buspar"
- },
- {
-   "term": "glucophage"
- },
- {
-   "term": "glyburide"
- },
- {
-   "term": "paroxetine"
- },
- {
-   "term": "avelox"
- },
- {
-   "term": "valtrex"
- },
- {
-   "term": "calcium"
- },
- {
-   "term": "allopurinol"
- },
- {
-   "term": "avapro"
- },
- {
-   "term": "erythromycin"
- },
- {
-   "term": "dilaudid"
- },
- {
-   "term": "aricept"
- },
- {
-   "term": "claritin"
- },
- {
-   "term": "imitrex"
- },
- {
-   "term": "simvastatin"
- },
- {
-   "term": "estradiol"
- },
- {
-   "term": "triamcinolone"
- },
- {
-   "term": "namenda"
- },
- {
-   "term": "meclizine"
- },
- {
-   "term": "lopressor"
- },
- {
-   "term": "glipizide"
- },
- {
-   "term": "cialis"
- },
- {
-   "term": "acyclovir"
- },
- {
-   "term": "azithromycin"
- },
- {
-   "term": "actonel"
- },
- {
-   "term": "etodolac"
- },
- {
-   "term": "robaxin"
- },
- {
-   "term": "lovenox"
- },
- {
-   "term": "trileptal"
- },
- {
-   "term": "atarax"
- },
- {
-   "term": "geodon"
- },
- {
-   "term": "propranolol"
- },
- {
-   "term": "temazepam"
- },
- {
-   "term": "zofran"
- },
- {
-   "term": "bupropion"
- },
- {
-   "term": "naprosyn"
- },
- {
-   "term": "detrol"
- },
- {
-   "term": "flonase"
- },
- {
-   "term": "voltaren"
- },
- {
-   "term": "cardizem"
- },
- {
-   "term": "amiodarone"
- },
- {
-   "term": "diflucan"
- },
- {
-   "term": "isosorbide"
- },
- {
-   "term": "byetta"
- },
- {
-   "term": "zanaflex"
- },
- {
-   "term": "heparin"
- },
- {
-   "term": "nabumetone"
- },
- {
-   "term": "nystatin"
- },
- {
-   "term": "toradol"
- },
- {
-   "term": "loratadine"
- },
- {
-   "term": "levoxyl"
- },
- {
-   "term": "magnesium"
- },
- {
-   "term": "demerol"
- },
- {
-   "term": "vancomycin"
- },
- {
-   "term": "motrin"
- },
- {
-   "term": "tegretol"
- },
- {
-   "term": "requip"
- },
- {
-   "term": "pravachol"
- },
- {
-   "term": "evista"
- },
- {
-   "term": "boniva"
- },
- {
-   "term": "haldol"
- },
- {
-   "term": "nifedipine"
- },
- {
-   "term": "keppra"
- },
- {
-   "term": "metoclopramide"
- },
- {
-   "term": "spironolactone"
- },
- {
-   "term": "lantus"
- },
- {
-   "term": "methocarbamol"
- },
- {
-   "term": "indomethacin"
- },
- {
-   "term": "quinine"
- },
- {
-   "term": "rozerem"
- },
- {
-   "term": "tizanidine"
- },
- {
-   "term": "lanoxin"
- },
- {
-   "term": "apap"
- },
- {
-   "term": "decadron"
- },
- {
-   "term": "omnicef"
- },
- {
-   "term": "triamterene"
- },
- {
-   "term": "strattera"
- },
- {
-   "term": "atropine"
- },
- {
-   "term": "fioricet"
- },
- {
-   "term": "relafen"
- },
- {
-   "term": "compazine"
- },
- {
-   "term": "restoril"
- },
- {
-   "term": "endocet"
- },
- {
-   "term": "spiriva"
- },
- {
-   "term": "dexamethasone"
- },
- {
-   "term": "zelnorm"
- },
- {
-   "term": "vioxx"
- },
- {
-   "term": "hydrocortisone"
- },
- {
-   "term": "niaspan"
- },
- {
-   "term": "mirtazapine"
- },
- {
-   "term": "nasonex"
- },
- {
-   "term": "hyzaar"
- },
- {
-   "term": "tetracycline"
- },
- {
-   "term": "terazosin"
- },
- {
-   "term": "provera"
- },
- {
-   "term": "avalide"
- },
- {
-   "term": "lodine"
- },
- {
-   "term": "aldactone"
- },
- {
-   "term": "fluconazole"
- },
- {
-   "term": "lupron"
- },
- {
-   "term": "diphenhydramine"
- },
- {
-   "term": "septra"
- },
- {
-   "term": "thyroid"
- },
- {
-   "term": "methylprednisolone"
- },
- {
-   "term": "fexofenadine"
- },
- {
-   "term": "amlodipine"
- },
- {
-   "term": "ditropan"
- },
- {
-   "term": "famotidine"
+   "term": "accuneb"
  },
  {
    "term": "accupril"
  },
  {
-   "term": "amaryl"
+   "term": "accuretic"
  },
  {
-   "term": "atrovent"
+   "term": "accutane"
  },
  {
-   "term": "phenytoin"
+   "term": "accuzyme"
  },
  {
-   "term": "colchicine"
+   "term": "aceon"
  },
  {
-   "term": "vasotec"
+   "term": "acetadote"
+ },
+ {
+   "term": "acetazolamide injection"
+ },
+ {
+   "term": "acetic acid"
+ },
+ {
+   "term": "aci-jel"
+ },
+ {
+   "term": "acidul"
+ },
+ {
+   "term": "aciphex"
+ },
+ {
+   "term": "aciphex sprinkle"
+ },
+ {
+   "term": "aclovate"
+ },
+ {
+   "term": "acthib"
+ },
+ {
+   "term": "actemra"
+ },
+ {
+   "term": "acthrel"
+ },
+ {
+   "term": "acticin"
+ },
+ {
+   "term": "acticlate"
+ },
+ {
+   "term": "actigall"
+ },
+ {
+   "term": "actimmune"
+ },
+ {
+   "term": "actiq"
+ },
+ {
+   "term": "actisite"
+ },
+ {
+   "term": "activase"
+ },
+ {
+   "term": "activella"
+ },
+ {
+   "term": "actonel"
+ },
+ {
+   "term": "actonel with calcium"
+ },
+ {
+   "term": "actos"
+ },
+ {
+   "term": "acular"
+ },
+ {
+   "term": "acular ls"
+ },
+ {
+   "term": "acuvail"
+ },
+ {
+   "term": "adacel"
+ },
+ {
+   "term": "adagen"
+ },
+ {
+   "term": "adasuve"
+ },
+ {
+   "term": "adcetris"
+ },
+ {
+   "term": "adcirca"
+ },
+ {
+   "term": "adderall"
+ },
+ {
+   "term": "addyi"
+ },
+ {
+   "term": "adempas"
+ },
+ {
+   "term": "adenoscan"
+ },
+ {
+   "term": "adenovirus"
+ },
+ {
+   "term": "adipex-p"
+ },
+ {
+   "term": "adlyxin"
+ },
+ {
+   "term": "admelog"
+ },
+ {
+   "term": "adoxa"
+ },
+ {
+   "term": "adreview"
+ },
+ {
+   "term": "adrenaclick"
+ },
+ {
+   "term": "adrenalin"
+ },
+ {
+   "term": "adriamycin pfs"
+ },
+ {
+   "term": "advair diskus"
+ },
+ {
+   "term": "advair hfa"
+ },
+ {
+   "term": "advate"
+ },
+ {
+   "term": "advicor"
+ },
+ {
+   "term": "adynovate"
+ },
+ {
+   "term": "adzenys er"
+ },
+ {
+   "term": "adzenys xr-odt"
+ },
+ {
+   "term": "aerospan hfa"
+ },
+ {
+   "term": "afeditab cr"
+ },
+ {
+   "term": "afinitor"
+ },
+ {
+   "term": "afinitor disperz"
+ },
+ {
+   "term": "afirmelle"
+ },
+ {
+   "term": "afluria"
+ },
+ {
+   "term": "afrezza"
+ },
+ {
+   "term": "afstyla"
+ },
+ {
+   "term": "afterpill"
+ },
+ {
+   "term": "aftera"
+ },
+ {
+   "term": "agenerase oral solution"
+ },
+ {
+   "term": "aggrastat"
+ },
+ {
+   "term": "aggrenox"
+ },
+ {
+   "term": "agriflu"
+ },
+ {
+   "term": "agrylin"
+ },
+ {
+   "term": "aimovig"
+ },
+ {
+   "term": "ajovy"
+ },
+ {
+   "term": "ak-fluor"
+ },
+ {
+   "term": "akineton"
+ },
+ {
+   "term": "akovaz"
+ },
+ {
+   "term": "akten"
+ },
+ {
+   "term": "aktipak"
+ },
+ {
+   "term": "akynzeo"
+ },
+ {
+   "term": "alamast"
+ },
+ {
+   "term": "albenza"
+ },
+ {
+   "term": "albuminar"
+ },
+ {
+   "term": "albuterol sulfate"
+ },
+ {
+   "term": "alcaine"
+ },
+ {
+   "term": "aldactazide"
+ },
+ {
+   "term": "aldactone"
+ },
+ {
+   "term": "aldara"
+ },
+ {
+   "term": "aldomet"
+ },
+ {
+   "term": "aldoril"
+ },
+ {
+   "term": "alecensa"
+ },
+ {
+   "term": "alesse"
+ },
+ {
+   "term": "alfenta"
+ },
+ {
+   "term": "alimta"
+ },
+ {
+   "term": "alinia"
+ },
+ {
+   "term": "aliqopa"
+ },
+ {
+   "term": "alkeran"
+ },
+ {
+   "term": "alkeran injection"
+ },
+ {
+   "term": "allegra"
+ },
+ {
+   "term": "allegra-d"
+ },
+ {
+   "term": "allegra-d 24 hour"
+ },
+ {
+   "term": "allernaze"
+ },
+ {
+   "term": "alli"
+ },
+ {
+   "term": "allocord"
+ },
+ {
+   "term": "allzital"
+ },
+ {
+   "term": "alocril"
+ },
+ {
+   "term": "alomide"
+ },
+ {
+   "term": "aloprim"
+ },
+ {
+   "term": "alora"
+ },
+ {
+   "term": "aloxi"
+ },
+ {
+   "term": "aloxi capsules"
+ },
+ {
+   "term": "alphagan-p"
+ },
+ {
+   "term": "alphanate"
+ },
+ {
+   "term": "alprolix"
+ },
+ {
+   "term": "alrex"
+ },
+ {
+   "term": "alsuma"
+ },
+ {
+   "term": "altabax"
+ },
+ {
+   "term": "altace"
+ },
+ {
+   "term": "altace capsules"
+ },
+ {
+   "term": "altocor"
+ },
+ {
+   "term": "altoprev"
+ },
+ {
+   "term": "altreno"
+ },
+ {
+   "term": "alunbrig"
+ },
+ {
+   "term": "alupent"
+ },
+ {
+   "term": "alvesco"
+ },
+ {
+   "term": "amabelz"
+ },
+ {
+   "term": "ambien"
+ },
+ {
+   "term": "ambien cr"
+ },
+ {
+   "term": "ambisome"
+ },
+ {
+   "term": "amcinonide lotion"
+ },
+ {
+   "term": "ameluz"
+ },
+ {
+   "term": "amerge"
+ },
+ {
+   "term": "amevive"
+ },
+ {
+   "term": "amicar"
+ },
+ {
+   "term": "amidate"
+ },
+ {
+   "term": "amikin"
+ },
+ {
+   "term": "amiloride hydrochloride"
+ },
+ {
+   "term": "aminohippurate"
+ },
+ {
+   "term": "aminosyn electrolytes"
+ },
+ {
+   "term": "aminosyn sulfite free"
+ },
+ {
+   "term": "amiodarone hcl injection"
+ },
+ {
+   "term": "amitiza"
+ },
+ {
+   "term": "amjevita"
+ },
+ {
+   "term": "amlobenz"
+ },
+ {
+   "term": "ammonul"
+ },
+ {
+   "term": "amoxapine"
+ },
+ {
+   "term": "amphadase"
+ },
+ {
+   "term": "ampyra"
+ },
+ {
+   "term": "amrix"
+ },
+ {
+   "term": "amturnide"
+ },
+ {
+   "term": "amyl nitrite"
+ },
+ {
+   "term": "amytal sodium"
+ },
+ {
+   "term": "amyvid"
+ },
+ {
+   "term": "ana-kit"
+ },
+ {
+   "term": "anadrol-50"
+ },
+ {
+   "term": "anafranil"
+ },
+ {
+   "term": "analpram hc"
+ },
+ {
+   "term": "anascorp"
+ },
+ {
+   "term": "ancobon"
+ },
+ {
+   "term": "andexxa"
+ },
+ {
+   "term": "androgel"
+ },
+ {
+   "term": "androderm"
+ },
+ {
+   "term": "androxy"
+ },
+ {
+   "term": "anectine"
+ },
+ {
+   "term": "angeliq"
+ },
+ {
+   "term": "angiomax"
+ },
+ {
+   "term": "annovera"
+ },
+ {
+   "term": "anoro ellipta"
+ },
+ {
+   "term": "ansaid"
+ },
+ {
+   "term": "antabuse"
+ },
+ {
+   "term": "antara"
+ },
+ {
+   "term": "anthim"
+ },
+ {
+   "term": "antivert"
+ },
+ {
+   "term": "antizol"
+ },
+ {
+   "term": "anturane"
+ },
+ {
+   "term": "anturol"
+ },
+ {
+   "term": "anusol hc"
+ },
+ {
+   "term": "anusol rectal"
+ },
+ {
+   "term": "anzemet injection"
+ },
+ {
+   "term": "apadaz"
+ },
+ {
+   "term": "apexicon e"
+ },
+ {
+   "term": "aphthasol"
+ },
+ {
+   "term": "apidra"
+ },
+ {
+   "term": "aplenzin"
+ },
+ {
+   "term": "apokyn"
+ },
+ {
+   "term": "apresazide"
+ },
+ {
+   "term": "apresoline"
+ },
+ {
+   "term": "apri"
+ },
+ {
+   "term": "apriso"
+ },
+ {
+   "term": "aptensio xr"
+ },
+ {
+   "term": "aptiom"
+ },
+ {
+   "term": "aptivus"
+ },
+ {
+   "term": "aquamephyton"
+ },
+ {
+   "term": "arakoda"
+ },
+ {
+   "term": "aralast np"
+ },
+ {
+   "term": "aralen"
+ },
+ {
+   "term": "aramine"
+ },
+ {
+   "term": "aranesp"
+ },
+ {
+   "term": "arava"
+ },
+ {
+   "term": "arcalyst"
+ },
+ {
+   "term": "arcapta neohaler"
+ },
+ {
+   "term": "aredia"
+ },
+ {
+   "term": "arestin"
+ },
+ {
+   "term": "argatroban"
+ },
+ {
+   "term": "aricept"
+ },
+ {
+   "term": "aridol"
+ },
+ {
+   "term": "arikayce"
+ },
+ {
+   "term": "arimidex"
+ },
+ {
+   "term": "aripiprazole oral solution"
+ },
+ {
+   "term": "aripiprazole tablets"
+ },
+ {
+   "term": "aristada"
+ },
+ {
+   "term": "aristada initio"
+ },
+ {
+   "term": "aristocort"
+ },
+ {
+   "term": "arixtra"
+ },
+ {
+   "term": "armonair respiclick"
+ },
+ {
+   "term": "armour thyroid"
+ },
+ {
+   "term": "arnuity ellipta"
+ },
+ {
+   "term": "aromasin"
+ },
+ {
+   "term": "arranon"
+ },
+ {
+   "term": "artane"
+ },
+ {
+   "term": "arthrotec"
+ },
+ {
+   "term": "arymo er"
+ },
+ {
+   "term": "arzerra"
+ },
+ {
+   "term": "asacol"
+ },
+ {
+   "term": "asacol hd"
+ },
+ {
+   "term": "asclera"
+ },
+ {
+   "term": "ascomp with codeine"
+ },
+ {
+   "term": "asmanex twisthaler"
+ },
+ {
+   "term": "astagraf xl"
+ },
+ {
+   "term": "astelin"
+ },
+ {
+   "term": "astepro"
  },
  {
    "term": "atacand"
  },
  {
-   "term": "yasmin"
+   "term": "atacand hct"
  },
  {
-   "term": "proscar"
+   "term": "atarax"
  },
  {
-   "term": "flovent"
+   "term": "atelvia"
+ },
+ {
+   "term": "atgam"
+ },
+ {
+   "term": "athentia next"
+ },
+ {
+   "term": "ativan"
+ },
+ {
+   "term": "ativan injection"
+ },
+ {
+   "term": "atracurium besylate injection"
+ },
+ {
+   "term": "atralin"
+ },
+ {
+   "term": "atridox"
+ },
+ {
+   "term": "atripla"
+ },
+ {
+   "term": "atropen"
+ },
+ {
+   "term": "atropine"
+ },
+ {
+   "term": "atrovent hfa"
+ },
+ {
+   "term": "atrovent nasal spray"
+ },
+ {
+   "term": "atryn"
+ },
+ {
+   "term": "attenuvax"
+ },
+ {
+   "term": "aubagio"
+ },
+ {
+   "term": "augmentin"
+ },
+ {
+   "term": "augmentin chewable tablets"
+ },
+ {
+   "term": "augmentin es"
+ },
+ {
+   "term": "augmentin xr"
+ },
+ {
+   "term": "auralgan"
+ },
+ {
+   "term": "auryxia"
+ },
+ {
+   "term": "austedo"
+ },
+ {
+   "term": "autoplex-t"
+ },
+ {
+   "term": "auvi-q"
+ },
+ {
+   "term": "avagard foam"
+ },
+ {
+   "term": "avagard lotion"
+ },
+ {
+   "term": "avage"
+ },
+ {
+   "term": "avalide"
+ },
+ {
+   "term": "avandamet"
+ },
+ {
+   "term": "avandaryl"
+ },
+ {
+   "term": "avandia"
+ },
+ {
+   "term": "avapro"
+ },
+ {
+   "term": "avastin"
+ },
+ {
+   "term": "aveed"
+ },
+ {
+   "term": "avelox"
+ },
+ {
+   "term": "aviane"
+ },
+ {
+   "term": "avinza"
+ },
+ {
+   "term": "avita"
+ },
+ {
+   "term": "avodart"
+ },
+ {
+   "term": "avonex"
+ },
+ {
+   "term": "avycaz"
+ },
+ {
+   "term": "axert"
+ },
+ {
+   "term": "axid"
+ },
+ {
+   "term": "axiron"
+ },
+ {
+   "term": "axona"
+ },
+ {
+   "term": "axumin"
+ },
+ {
+   "term": "aygestin"
+ },
+ {
+   "term": "azactam injection"
+ },
+ {
+   "term": "azasan"
+ },
+ {
+   "term": "azasite"
+ },
+ {
+   "term": "azedra"
+ },
+ {
+   "term": "azelastine nasal spray"
+ },
+ {
+   "term": "azelex"
+ },
+ {
+   "term": "azilect"
+ },
+ {
+   "term": "azmacort"
+ },
+ {
+   "term": "azopt"
+ },
+ {
+   "term": "azor"
+ },
+ {
+   "term": "azulfidine en-tabs"
+ },
+ {
+   "term": "bavencio"
+ },
+ {
+   "term": "binosto"
+ },
+ {
+   "term": "biothrax"
+ },
+ {
+   "term": "bioclate"
+ },
+ {
+   "term": "brovana"
  },
  {
    "term": "caduet"
  },
  {
-   "term": "lupron"
+   "term": "calquence"
  },
  {
-   "term": "pepcid"
+   "term": "campath"
  },
  {
-   "term": "captopril"
+   "term": "campral"
  },
  {
-   "term": "doxepin"
+   "term": "carticel"
  },
  {
-   "term": "macrobid"
+   "term": "cathflo activase"
  },
  {
-   "term": "entex"
+   "term": "caverject"
  },
  {
-   "term": "lamisil"
+   "term": "caverject impulse"
  },
  {
-   "term": "prednisolone"
+   "term": "caverject powder"
  },
  {
-   "term": "piroxicam"
+   "term": "cayston"
  },
  {
-   "term": "sinemet"
+   "term": "center-al"
+ },
+ {
+   "term": "ceredase"
+ },
+ {
+   "term": "cetylev"
+ },
+ {
+   "term": "cinvanti"
+ },
+ {
+   "term": "clinimix e"
+ },
+ {
+   "term": "coartem"
+ },
+ {
+   "term": "concensi"
+ },
+ {
+   "term": "cordarone"
+ },
+ {
+   "term": "cordarone iv"
+ },
+ {
+   "term": "cyltezo"
+ },
+ {
+   "term": "cytadren"
+ },
+ {
+   "term": "dapsone"
+ },
+ {
+   "term": "diamox sequels"
+ },
+ {
+   "term": "differin cream"
+ },
+ {
+   "term": "doptelet"
+ },
+ {
+   "term": "duodote"
+ },
+ {
+   "term": "durlaza"
+ },
+ {
+   "term": "dyanavel xr"
+ },
+ {
+   "term": "dymista"
+ },
+ {
+   "term": "dysport"
+ },
+ {
+   "term": "edarbyclor"
+ },
+ {
+   "term": "edex"
+ },
+ {
+   "term": "elavil"
+ },
+ {
+   "term": "eliquis"
+ },
+ {
+   "term": "elspar"
+ },
+ {
+   "term": "epiduo forte"
+ },
+ {
+   "term": "epzicom"
+ },
+ {
+   "term": "eraxis"
+ },
+ {
+   "term": "erleada"
+ },
+ {
+   "term": "erwinaze"
+ },
+ {
+   "term": "ethyol"
+ },
+ {
+   "term": "evekeo"
+ },
+ {
+   "term": "evotaz"
+ },
+ {
+   "term": "exforge"
+ },
+ {
+   "term": "exforge hct"
+ },
+ {
+   "term": "eylea"
+ },
+ {
+   "term": "fabrazyme"
+ },
+ {
+   "term": "feiba"
+ },
+ {
+   "term": "feiba vh"
+ },
+ {
+   "term": "fosamax"
+ },
+ {
+   "term": "fosamax plus d"
+ },
+ {
+   "term": "fungizone"
+ },
+ {
+   "term": "gantrisin"
+ },
+ {
+   "term": "gelfilm"
+ },
+ {
+   "term": "gelfoam"
+ },
+ {
+   "term": "gelfoam compressed sponge"
+ },
+ {
+   "term": "gelfoam dental sponge"
+ },
+ {
+   "term": "gelfoam sponge"
+ },
+ {
+   "term": "giapreza"
+ },
+ {
+   "term": "gilotrif"
+ },
+ {
+   "term": "gocovri"
+ },
+ {
+   "term": "hepatamine"
+ },
+ {
+   "term": "hepsera"
+ },
+ {
+   "term": "hexalen"
+ },
+ {
+   "term": "humira"
+ },
+ {
+   "term": "hyrimoz"
+ },
+ {
+   "term": "imuran"
+ },
+ {
+   "term": "inlyta"
+ },
+ {
+   "term": "insect allergenic extracts"
+ },
+ {
+   "term": "iopidine eye"
+ },
+ {
+   "term": "kabiven"
+ },
+ {
+   "term": "kadcyla"
+ },
+ {
+   "term": "kazano"
+ },
+ {
+   "term": "kineret"
+ },
+ {
+   "term": "koate"
+ },
+ {
+   "term": "lac-hydrin cream"
+ },
+ {
+   "term": "lastacaft"
+ },
+ {
+   "term": "laviv"
+ },
+ {
+   "term": "lemtrada"
+ },
+ {
+   "term": "letairis"
+ },
+ {
+   "term": "levulan kerastick"
+ },
+ {
+   "term": "lipitor"
+ },
+ {
+   "term": "lithostat"
+ },
+ {
+   "term": "lotrel"
+ },
+ {
+   "term": "lotronex"
+ },
+ {
+   "term": "lumizyme"
+ },
+ {
+   "term": "malarone"
+ },
+ {
+   "term": "mepron"
+ },
+ {
+   "term": "midamor"
+ },
+ {
+   "term": "midrin"
+ },
+ {
+   "term": "miochol-e"
+ },
+ {
+   "term": "miradon"
+ },
+ {
+   "term": "moduretic"
+ },
+ {
+   "term": "monoclate-p"
+ },
+ {
+   "term": "moxatag"
+ },
+ {
+   "term": "muse"
+ },
+ {
+   "term": "myozyme"
+ },
+ {
+   "term": "mytelase"
+ },
+ {
+   "term": "nesina"
+ },
+ {
+   "term": "nexterone"
+ },
+ {
+   "term": "niravam"
+ },
+ {
+   "term": "norvasc"
+ },
+ {
+   "term": "nuvigil"
+ },
+ {
+   "term": "nuwiq"
+ },
+ {
+   "term": "ofirmev"
+ },
+ {
+   "term": "optivar"
+ },
+ {
+   "term": "orencia"
+ },
+ {
+   "term": "oseni"
+ },
+ {
+   "term": "osmolex er"
+ },
+ {
+   "term": "otezla"
+ },
+ {
+   "term": "pacerone"
+ },
+ {
+   "term": "panretin"
+ },
+ {
+   "term": "paregoric"
+ },
+ {
+   "term": "paser"
+ },
+ {
+   "term": "percodan"
+ },
+ {
+   "term": "perikabiven"
+ },
+ {
+   "term": "plenaxis"
+ },
+ {
+   "term": "praluent"
+ },
+ {
+   "term": "precose"
+ },
+ {
+   "term": "principen"
+ },
+ {
+   "term": "proair respiclick"
+ },
+ {
+   "term": "procalamine"
+ },
+ {
+   "term": "proleukin"
+ },
+ {
+   "term": "r-gene 10"
+ },
+ {
+   "term": "refacto"
+ },
+ {
+   "term": "reopro"
+ },
+ {
+   "term": "reyataz"
+ },
+ {
+   "term": "saphris"
+ },
+ {
+   "term": "sectral"
+ },
+ {
+   "term": "semprex d"
+ },
+ {
+   "term": "septocaine"
+ },
+ {
+   "term": "sitavig"
+ },
+ {
+   "term": "soriatane"
+ },
+ {
+   "term": "stendra"
+ },
+ {
+   "term": "strattera"
+ },
+ {
+   "term": "strensiq"
+ },
+ {
+   "term": "symmetrel"
+ },
+ {
+   "term": "synalgos dc"
+ },
+ {
+   "term": "tanzeum"
+ },
+ {
+   "term": "tecentriq"
+ },
+ {
+   "term": "tekamlo"
+ },
+ {
+   "term": "tekturna"
+ },
+ {
+   "term": "tekturna hct"
+ },
+ {
+   "term": "tenoretic"
+ },
+ {
+   "term": "thrombate"
+ },
+ {
+   "term": "tracrium"
+ },
+ {
+   "term": "trasylol"
+ },
+ {
+   "term": "trisenox"
+ },
+ {
+   "term": "triumeq"
+ },
+ {
+   "term": "trizivir"
+ },
+ {
+   "term": "trophamine"
+ },
+ {
+   "term": "tudorza pressair"
+ },
+ {
+   "term": "tylenol"
+ },
+ {
+   "term": "tylenol-codeine"
+ },
+ {
+   "term": "tymlos"
+ },
+ {
+   "term": "ultacan"
+ },
+ {
+   "term": "unasyn"
+ },
+ {
+   "term": "uroxatral"
+ },
+ {
+   "term": "valturna"
+ },
+ {
+   "term": "ventolin hfa"
+ },
+ {
+   "term": "ventolin solution"
+ },
+ {
+   "term": "ventolin syrup"
+ },
+ {
+   "term": "verzenio"
+ },
+ {
+   "term": "vidaza"
+ },
+ {
+   "term": "vospire er"
+ },
+ {
+   "term": "winstrol"
+ },
+ {
+   "term": "xanax"
+ },
+ {
+   "term": "xanax xr"
+ },
+ {
+   "term": "xerese"
+ },
+ {
+   "term": "xyntha"
+ },
+ {
+   "term": "yescarta"
+ },
+ {
+   "term": "yonsa"
+ },
+ {
+   "term": "yosprala"
+ },
+ {
+   "term": "ziagen"
+ },
+ {
+   "term": "zithranol shampoo"
+ },
+ {
+   "term": "zithromax"
+ },
+ {
+   "term": "zmax"
+ },
+ {
+   "term": "zovirax"
+ },
+ {
+   "term": "zovirax cream"
+ },
+ {
+   "term": "zovirax injection"
+ },
+ {
+   "term": "zovirax ointment"
+ },
+ {
+   "term": "zyloprim"
+ },
+ {
+   "term": "zytiga"
+ },
+ {
+   "term": "alfentanil"
+ },
+ {
+   "term": "alosetron hydrochloride"
+ },
+ {
+   "term": "americaine"
+ },
+ {
+   "term": "b12"
+ },
+ {
+   "term": "baciim"
+ },
+ {
+   "term": "bss plus 500"
+ },
+ {
+   "term": "babybig"
+ },
+ {
+   "term": "bacitracin"
+ },
+ {
+   "term": "baclofen"
+ },
+ {
+   "term": "baclofen injection"
+ },
+ {
+   "term": "bactrim"
+ },
+ {
+   "term": "bactroban cream"
+ },
+ {
+   "term": "bactroban nasal"
+ },
+ {
+   "term": "bal in oil ampules"
+ },
+ {
+   "term": "balcoltra"
+ },
+ {
+   "term": "balziva"
+ },
+ {
+   "term": "banzel"
+ },
+ {
+   "term": "basaglar"
+ },
+ {
+   "term": "baxdela"
+ },
+ {
+   "term": "bayhep b"
+ },
+ {
+   "term": "bayrab"
+ },
+ {
+   "term": "baytet"
+ },
+ {
+   "term": "baycol"
+ },
+ {
+   "term": "baygam"
+ },
+ {
+   "term": "bebulin vh"
+ },
+ {
+   "term": "beconase"
+ },
+ {
+   "term": "beconase-aq"
+ },
+ {
+   "term": "bekyree"
+ },
+ {
+   "term": "belbuca"
+ },
+ {
+   "term": "beleodaq"
+ },
+ {
+   "term": "belladonna and opium"
+ },
+ {
+   "term": "belsomra"
+ },
+ {
+   "term": "belviq"
+ },
+ {
+   "term": "belviq xr"
+ },
+ {
+   "term": "benadryl"
+ },
+ {
+   "term": "benadryl injection"
+ },
+ {
+   "term": "bendeka"
+ },
+ {
+   "term": "benefix"
+ },
+ {
+   "term": "benicar"
+ },
+ {
+   "term": "benicar hct"
+ },
+ {
+   "term": "benlysta"
  },
  {
    "term": "bentyl"
  },
  {
-   "term": "dopamine"
+   "term": "benzaclin"
  },
  {
-   "term": "lidoderm"
+   "term": "benzashave"
  },
  {
-   "term": "zestril"
+   "term": "benzagel"
  },
  {
-   "term": "imdur"
+   "term": "benzamycin"
  },
  {
-   "term": "clarinex"
+   "term": "benznidazole"
  },
  {
-   "term": "butalbital"
+   "term": "benzonatate"
  },
  {
-   "term": "combivent"
+   "term": "benztropine mesylate"
  },
  {
-   "term": "levitra"
+   "term": "bepreve"
  },
  {
-   "term": "ampicillin"
+   "term": "berinert"
  },
  {
-   "term": "versed"
+   "term": "besivance"
  },
  {
-   "term": "duragesic"
+   "term": "besponsa"
+ },
+ {
+   "term": "betagan"
+ },
+ {
+   "term": "betaseron"
+ },
+ {
+   "term": "betaxon"
+ },
+ {
+   "term": "bethkis"
+ },
+ {
+   "term": "betimol"
+ },
+ {
+   "term": "betoptic s"
+ },
+ {
+   "term": "bevespi aerosphere"
+ },
+ {
+   "term": "bevyxxa"
+ },
+ {
+   "term": "bexsero"
  },
  {
    "term": "bextra"
  },
  {
+   "term": "bexxar"
+ },
+ {
+   "term": "beyaz"
+ },
+ {
+   "term": "bicnu"
+ },
+ {
+   "term": "bidil"
+ },
+ {
+   "term": "biavax"
+ },
+ {
+   "term": "bicillin c-r tubex"
+ },
+ {
+   "term": "biferarx"
+ },
+ {
+   "term": "bijuva"
+ },
+ {
+   "term": "biktarvy"
+ },
+ {
+   "term": "biltricide"
+ },
+ {
+   "term": "bivigam"
+ },
+ {
+   "term": "black widow spider antivenin"
+ },
+ {
+   "term": "blenoxane"
+ },
+ {
+   "term": "blincyto"
+ },
+ {
+   "term": "bloxiverz"
+ },
+ {
+   "term": "boniva"
+ },
+ {
+   "term": "boniva injection"
+ },
+ {
+   "term": "bontril sr"
+ },
+ {
+   "term": "boostrix"
+ },
+ {
+   "term": "bosulif"
+ },
+ {
+   "term": "botox"
+ },
+ {
+   "term": "botox cosmetic"
+ },
+ {
+   "term": "braftovi"
+ },
+ {
+   "term": "bravelle"
+ },
+ {
+   "term": "breo ellipta"
+ },
+ {
+   "term": "bretylium"
+ },
+ {
+   "term": "brevicon"
+ },
+ {
+   "term": "brevital sodium"
+ },
+ {
+   "term": "brevoxyl gel"
+ },
+ {
+   "term": "bridion"
+ },
+ {
+   "term": "brilinta"
+ },
+ {
+   "term": "brineura"
+ },
+ {
+   "term": "brintellix"
+ },
+ {
+   "term": "brisdelle"
+ },
+ {
+   "term": "briviact"
+ },
+ {
+   "term": "bromsite"
+ },
+ {
+   "term": "bromday"
+ },
+ {
+   "term": "budeprion xl"
+ },
+ {
+   "term": "bumex"
+ },
+ {
+   "term": "bunavail"
+ },
+ {
+   "term": "bupap"
+ },
+ {
+   "term": "buphenyl"
+ },
+ {
+   "term": "buprenex"
+ },
+ {
+   "term": "buprenorphine and nalaxone"
+ },
+ {
+   "term": "buspar"
+ },
+ {
+   "term": "busulfex"
+ },
+ {
+   "term": "butisol"
+ },
+ {
+   "term": "butrans"
+ },
+ {
+   "term": "bydureon"
+ },
+ {
+   "term": "bydureon bcise"
+ },
+ {
+   "term": "byetta"
+ },
+ {
+   "term": "bystolic tablets"
+ },
+ {
+   "term": "byvalson"
+ },
+ {
+   "term": "casodex"
+ },
+ {
+   "term": "cassipa"
+ },
+ {
+   "term": "celestone soluspan"
+ },
+ {
+   "term": "cetacaine"
+ },
+ {
+   "term": "cogentin"
+ },
+ {
+   "term": "colazal"
+ },
+ {
+   "term": "combigan"
+ },
+ {
+   "term": "crysvita"
+ },
+ {
+   "term": "cycloset"
+ },
+ {
+   "term": "cystadane"
+ },
+ {
+   "term": "didrex"
+ },
+ {
+   "term": "dimetane"
+ },
+ {
+   "term": "diprolene af"
+ },
+ {
+   "term": "diprolene lotion"
+ },
+ {
+   "term": "diprolene ointment"
+ },
+ {
+   "term": "e-z-hd"
+ },
+ {
+   "term": "esgic"
+ },
+ {
+   "term": "exparel"
+ },
+ {
+   "term": "fasenra"
+ },
+ {
+   "term": "fioricet with codeine"
+ },
+ {
+   "term": "fiorinal with codeine"
+ },
+ {
+   "term": "forfivo xl"
+ },
+ {
+   "term": "gablofen"
+ },
+ {
+   "term": "giazo"
+ },
+ {
+   "term": "gynazole"
+ },
+ {
+   "term": "helidac"
+ },
+ {
+   "term": "kemstro"
+ },
+ {
+   "term": "kerlone"
+ },
+ {
+   "term": "latisse"
+ },
+ {
+   "term": "liquid e-z-paque"
+ },
+ {
+   "term": "lotensin"
+ },
+ {
+   "term": "lotensin hct"
+ },
+ {
+   "term": "lumigan"
+ },
+ {
+   "term": "luxiq"
+ },
+ {
+   "term": "marcaine"
+ },
+ {
+   "term": "mektovi"
+ },
+ {
+   "term": "mentax"
+ },
+ {
+   "term": "mirvaso"
+ },
+ {
+   "term": "mvasi"
+ },
+ {
+   "term": "myobloc"
+ },
+ {
+   "term": "navstel"
+ },
+ {
+   "term": "nulojix"
+ },
+ {
+   "term": "olumiant"
+ },
+ {
+   "term": "orbivan"
+ },
+ {
+   "term": "parlodel"
+ },
+ {
+   "term": "probuphine"
+ },
+ {
+   "term": "prolensa"
+ },
+ {
+   "term": "pulmicort flexhaler"
+ },
+ {
+   "term": "pulmicort respules"
+ },
+ {
+   "term": "pylera capsules"
+ },
+ {
+   "term": "qnasl"
+ },
+ {
+   "term": "qoliana"
+ },
+ {
+   "term": "qvar"
+ },
+ {
+   "term": "readi-cat 2"
+ },
+ {
+   "term": "regranex"
+ },
+ {
+   "term": "rexulti"
+ },
+ {
+   "term": "sensorcaine"
+ },
+ {
+   "term": "sernivo"
+ },
+ {
+   "term": "siliq"
+ },
+ {
+   "term": "simbrinza"
+ },
+ {
+   "term": "simulect"
+ },
+ {
+   "term": "sirturo"
+ },
+ {
+   "term": "stadol"
+ },
+ {
+   "term": "sublocade"
+ },
+ {
+   "term": "suboxone"
+ },
+ {
+   "term": "subutex"
+ },
+ {
+   "term": "survanta"
+ },
+ {
+   "term": "symbicort"
+ },
+ {
+   "term": "tagitol v"
+ },
+ {
+   "term": "targretin"
+ },
+ {
+   "term": "targretin gel"
+ },
+ {
+   "term": "tessalon"
+ },
+ {
+   "term": "tice"
+ },
+ {
+   "term": "tracleer"
+ },
+ {
+   "term": "treanda"
+ },
+ {
+   "term": "uceris"
+ },
+ {
+   "term": "ulesfia"
+ },
+ {
+   "term": "varibar honey"
+ },
+ {
+   "term": "varibar nectar"
+ },
+ {
+   "term": "vascor"
+ },
+ {
+   "term": "velcade"
+ },
+ {
+   "term": "victrelis"
+ },
+ {
+   "term": "wellbutrin"
+ },
+ {
+   "term": "wellbutrin sr"
+ },
+ {
+   "term": "wellbutrin xl"
+ },
+ {
+   "term": "xibrom"
+ },
+ {
+   "term": "xofluza"
+ },
+ {
+   "term": "zebeta"
+ },
+ {
+   "term": "ziac"
+ },
+ {
+   "term": "zinplava"
+ },
+ {
+   "term": "zonatuss"
+ },
+ {
+   "term": "zubsolv"
+ },
+ {
+   "term": "zyban"
+ },
+ {
+   "term": "cis-sulfur colloid"
+ },
+ {
+   "term": "cnj-016"
+ },
+ {
+   "term": "ca-dtpa"
+ },
+ {
+   "term": "cabometyx"
+ },
+ {
+   "term": "cafcit"
+ },
+ {
+   "term": "cafergot"
+ },
+ {
+   "term": "calan"
+ },
+ {
+   "term": "calan sr"
+ },
+ {
+   "term": "calciferol"
+ },
+ {
+   "term": "calcium chloride"
+ },
+ {
+   "term": "calcium disodium versenate"
+ },
+ {
+   "term": "calcium gluconate"
+ },
+ {
+   "term": "caldolor"
+ },
+ {
+   "term": "cambia"
+ },
+ {
+   "term": "canasa"
+ },
+ {
+   "term": "cancidas"
+ },
+ {
+   "term": "candin"
+ },
+ {
+   "term": "cantil"
+ },
+ {
+   "term": "capastat sulfate"
+ },
+ {
+   "term": "capex shampoo"
+ },
+ {
+   "term": "capoten"
+ },
+ {
+   "term": "capozide"
+ },
+ {
+   "term": "caprelsa"
+ },
+ {
+   "term": "carac"
+ },
+ {
+   "term": "carbaglu"
+ },
+ {
+   "term": "carbatrol"
+ },
+ {
+   "term": "carbocaine"
+ },
+ {
+   "term": "carboplatin"
+ },
+ {
+   "term": "cardiogen-82"
+ },
+ {
+   "term": "cardizem"
+ },
+ {
+   "term": "cardizem cd"
+ },
+ {
    "term": "cardura"
  },
  {
-   "term": "hydralazine"
+   "term": "cardura xl"
  },
  {
-   "term": "pseudoephedrine"
+   "term": "carimune"
  },
  {
-   "term": "enebrel"
+   "term": "carisoprodol and aspirin"
+ },
+ {
+   "term": "carmol hc"
+ },
+ {
+   "term": "carnexiv"
+ },
+ {
+   "term": "carnitor"
+ },
+ {
+   "term": "carnitor injection"
+ },
+ {
+   "term": "carospir"
+ },
+ {
+   "term": "casporyn"
+ },
+ {
+   "term": "cataflam"
+ },
+ {
+   "term": "catapres"
+ },
+ {
+   "term": "cedax"
+ },
+ {
+   "term": "ceenu"
+ },
+ {
+   "term": "cefaclor"
+ },
+ {
+   "term": "cefadroxil"
+ },
+ {
+   "term": "cefobid"
+ },
+ {
+   "term": "cefotan"
+ },
+ {
+   "term": "cefotaxime"
+ },
+ {
+   "term": "cefotetan"
+ },
+ {
+   "term": "ceftin"
+ },
+ {
+   "term": "ceftriaxone"
+ },
+ {
+   "term": "cefuroxime"
+ },
+ {
+   "term": "cefzil"
+ },
+ {
+   "term": "celebrex"
+ },
+ {
+   "term": "celexa"
+ },
+ {
+   "term": "cellcept"
+ },
+ {
+   "term": "celontin"
+ },
+ {
+   "term": "cenestin"
+ },
+ {
+   "term": "centany"
+ },
+ {
+   "term": "cephadyn"
+ },
+ {
+   "term": "ceprotin"
+ },
+ {
+   "term": "ceptaz"
+ },
+ {
+   "term": "cequa"
+ },
+ {
+   "term": "cerdelga"
+ },
+ {
+   "term": "cerebyx"
+ },
+ {
+   "term": "ceretec"
+ },
+ {
+   "term": "cerezyme"
+ },
+ {
+   "term": "cernevit"
+ },
+ {
+   "term": "certiva"
+ },
+ {
+   "term": "cerubidine"
+ },
+ {
+   "term": "cerumenex"
+ },
+ {
+   "term": "cervarix"
+ },
+ {
+   "term": "cervidil"
+ },
+ {
+   "term": "cesamet"
+ },
+ {
+   "term": "cetraxal"
+ },
+ {
+   "term": "cetrotide"
+ },
+ {
+   "term": "chantix"
+ },
+ {
+   "term": "chemet"
+ },
+ {
+   "term": "chenodal"
+ },
+ {
+   "term": "chirhostim"
+ },
+ {
+   "term": "chibroxin"
+ },
+ {
+   "term": "chlor-trimeton"
+ },
+ {
+   "term": "chloramphenicol sodium succinate"
+ },
+ {
+   "term": "chloromycetin"
+ },
+ {
+   "term": "chloroptic"
+ },
+ {
+   "term": "chlorzoxazone"
+ },
+ {
+   "term": "cholbam"
+ },
+ {
+   "term": "cholera vaccine"
+ },
+ {
+   "term": "cholografin meglumine"
+ },
+ {
+   "term": "cialis"
+ },
+ {
+   "term": "cidaleaze"
+ },
+ {
+   "term": "ciloxan ophthalmic ointment"
+ },
+ {
+   "term": "ciloxan ophthalmic solution"
+ },
+ {
+   "term": "cimduo"
+ },
+ {
+   "term": "cimzia"
+ },
+ {
+   "term": "cinobac"
+ },
+ {
+   "term": "cinqair"
+ },
+ {
+   "term": "cinryze"
+ },
+ {
+   "term": "cipro"
+ },
+ {
+   "term": "cipro hc otic"
+ },
+ {
+   "term": "cipro xr"
+ },
+ {
+   "term": "ciprodex"
+ },
+ {
+   "term": "cisplatin"
+ },
+ {
+   "term": "claforan"
+ },
+ {
+   "term": "clarinex"
+ },
+ {
+   "term": "clarinex-d 12hr"
+ },
+ {
+   "term": "clarinex-d 24hr"
+ },
+ {
+   "term": "claritin"
+ },
+ {
+   "term": "claritin d"
+ },
+ {
+   "term": "clemastine fumarate syrup"
+ },
+ {
+   "term": "clemastine fumarate tablets"
+ },
+ {
+   "term": "clenpiq"
+ },
+ {
+   "term": "cleocin hydrochloride"
+ },
+ {
+   "term": "cleocin t"
+ },
+ {
+   "term": "cleocin vaginal cream"
+ },
+ {
+   "term": "cleocin vaginal ovules"
+ },
+ {
+   "term": "clevecord"
+ },
+ {
+   "term": "cleviprex"
+ },
+ {
+   "term": "climara"
+ },
+ {
+   "term": "climara pro"
+ },
+ {
+   "term": "clindacin p"
+ },
+ {
+   "term": "clindamycin"
+ },
+ {
+   "term": "clindamycin phosphate topical solution"
+ },
+ {
+   "term": "clindesse"
+ },
+ {
+   "term": "clindets"
+ },
+ {
+   "term": "clinolipid"
+ },
+ {
+   "term": "clobevate"
+ },
+ {
+   "term": "clobex lotion"
+ },
+ {
+   "term": "clobex shampoo"
+ },
+ {
+   "term": "cloderm"
+ },
+ {
+   "term": "clolar"
+ },
+ {
+   "term": "clomid"
+ },
+ {
+   "term": "clorotekal"
+ },
+ {
+   "term": "clorpres"
+ },
+ {
+   "term": "clozaril"
+ },
+ {
+   "term": "colyte"
+ },
+ {
+   "term": "coagadex"
+ },
+ {
+   "term": "cocaine"
+ },
+ {
+   "term": "codeine phosphate"
+ },
+ {
+   "term": "cognex"
+ },
+ {
+   "term": "colchicine"
+ },
+ {
+   "term": "colcigel"
+ },
+ {
+   "term": "colcrys"
+ },
+ {
+   "term": "colestid"
+ },
+ {
+   "term": "coly-mycin s otic"
+ },
+ {
+   "term": "combipatch"
+ },
+ {
+   "term": "combivent"
+ },
+ {
+   "term": "combivent respimat"
+ },
+ {
+   "term": "combivir"
+ },
+ {
+   "term": "combunox"
+ },
+ {
+   "term": "cometriq"
+ },
+ {
+   "term": "compazine"
+ },
+ {
+   "term": "complera"
+ },
+ {
+   "term": "compro"
+ },
+ {
+   "term": "comtan"
+ },
+ {
+   "term": "comvax"
+ },
+ {
+   "term": "conzip"
+ },
+ {
+   "term": "concerta"
+ },
+ {
+   "term": "condylox topical"
+ },
+ {
+   "term": "conray"
+ },
+ {
+   "term": "constulose"
+ },
+ {
+   "term": "contrave"
+ },
+ {
+   "term": "copaxone"
+ },
+ {
+   "term": "copegus"
+ },
+ {
+   "term": "copiktra"
+ },
+ {
+   "term": "copper"
+ },
+ {
+   "term": "cordcyte"
+ },
+ {
+   "term": "cordran cream"
+ },
+ {
+   "term": "cordran lotion"
+ },
+ {
+   "term": "cordran tape"
+ },
+ {
+   "term": "coreg"
+ },
+ {
+   "term": "coreg cr"
+ },
+ {
+   "term": "corifact"
+ },
+ {
+   "term": "corlanor"
+ },
+ {
+   "term": "corlopam"
+ },
+ {
+   "term": "cormax ointment"
+ },
+ {
+   "term": "corphedra"
+ },
+ {
+   "term": "cortaid"
+ },
+ {
+   "term": "cortef"
+ },
+ {
+   "term": "cortenema"
+ },
+ {
+   "term": "cortisporin cream"
+ },
+ {
+   "term": "cortisporin ointment"
+ },
+ {
+   "term": "cortisporin ophthalmic ointment"
+ },
+ {
+   "term": "cortisporin ophthalmic suspension"
+ },
+ {
+   "term": "cortisporin otic solution"
+ },
+ {
+   "term": "cortisporin otic suspension"
+ },
+ {
+   "term": "cortone"
+ },
+ {
+   "term": "cortrosyn"
+ },
+ {
+   "term": "corvert"
+ },
+ {
+   "term": "corzide"
+ },
+ {
+   "term": "cosentyx"
+ },
+ {
+   "term": "cosmegen"
+ },
+ {
+   "term": "cosopt"
+ },
+ {
+   "term": "cotellic"
+ },
+ {
+   "term": "cotempla xr odt"
+ },
+ {
+   "term": "coumadin"
+ },
+ {
+   "term": "cozaar"
+ },
+ {
+   "term": "creon"
+ },
+ {
+   "term": "creon 10"
+ },
+ {
+   "term": "creon 20"
+ },
+ {
+   "term": "creon 5"
+ },
+ {
+   "term": "cresemba"
+ },
+ {
+   "term": "crestor"
+ },
+ {
+   "term": "crinone"
+ },
+ {
+   "term": "crixivan"
+ },
+ {
+   "term": "crofab"
+ },
+ {
+   "term": "crolom"
+ },
+ {
+   "term": "cryselle"
+ },
+ {
+   "term": "cubicin"
+ },
+ {
+   "term": "cubicin rf"
+ },
+ {
+   "term": "cuprimine"
+ },
+ {
+   "term": "curosurf"
+ },
+ {
+   "term": "cutivate lotion"
+ },
+ {
+   "term": "cutivate ointment"
+ },
+ {
+   "term": "cuvposa"
+ },
+ {
+   "term": "cyanocobalamin"
+ },
+ {
+   "term": "cyanokit"
+ },
+ {
+   "term": "cyclessa"
+ },
+ {
+   "term": "cyclogyl"
+ },
+ {
+   "term": "cyclomydril"
+ },
+ {
+   "term": "cyfolex"
+ },
+ {
+   "term": "cyklokapron"
+ },
+ {
+   "term": "cylert"
+ },
+ {
+   "term": "cymbalta"
+ },
+ {
+   "term": "cyproheptadine"
+ },
+ {
+   "term": "cyramza"
+ },
+ {
+   "term": "cystagon"
+ },
+ {
+   "term": "cystaran"
+ },
+ {
+   "term": "cystografin"
+ },
+ {
+   "term": "cysview"
+ },
+ {
+   "term": "cytarabine"
+ },
+ {
+   "term": "cytogam"
+ },
+ {
+   "term": "cytomel"
+ },
+ {
+   "term": "cytotec"
+ },
+ {
+   "term": "cytovene"
+ },
+ {
+   "term": "cytoxan"
+ },
+ {
+   "term": "depocyt"
+ },
+ {
+   "term": "diabinese"
+ },
+ {
+   "term": "diuril"
+ },
+ {
+   "term": "dostinex"
+ },
+ {
+   "term": "dovonex cream"
+ },
+ {
+   "term": "dovonex ointment"
+ },
+ {
+   "term": "dovonex scalp"
+ },
+ {
+   "term": "duavee"
+ },
+ {
+   "term": "duopa"
+ },
+ {
+   "term": "duraclon"
+ },
+ {
+   "term": "duricef"
+ },
+ {
+   "term": "enstilar"
+ },
+ {
+   "term": "epidiolex"
+ },
+ {
+   "term": "epitol"
+ },
+ {
+   "term": "equetro"
+ },
+ {
+   "term": "erbitux"
+ },
+ {
+   "term": "eurax"
+ },
+ {
+   "term": "evoclin"
+ },
+ {
+   "term": "evoxac"
+ },
+ {
+   "term": "fazaclo"
+ },
+ {
+   "term": "flexeril"
+ },
+ {
+   "term": "fortaz"
+ },
+ {
+   "term": "fulyzaq"
+ },
+ {
+   "term": "gel-one"
+ },
+ {
+   "term": "gengraf capsules"
+ },
+ {
+   "term": "gengraf oral solution"
+ },
+ {
+   "term": "geocillin"
+ },
+ {
+   "term": "gyne-lotrimin"
+ },
+ {
+   "term": "haegarda"
+ },
+ {
+   "term": "hemabate"
+ },
+ {
+   "term": "ilaris"
+ },
+ {
+   "term": "impoyz"
+ },
+ {
+   "term": "infanrix hexa"
+ },
+ {
+   "term": "infasurf"
+ },
+ {
+   "term": "intal nebulizer solution"
+ },
+ {
+   "term": "invokamet"
+ },
+ {
+   "term": "invokana"
+ },
+ {
+   "term": "jenloga"
+ },
+ {
+   "term": "jevtana"
+ },
+ {
+   "term": "kapvay"
+ },
+ {
+   "term": "karbinal er"
+ },
+ {
+   "term": "keflex"
+ },
+ {
+   "term": "kengreal"
+ },
+ {
+   "term": "klonopin"
+ },
+ {
+   "term": "kyprolis"
+ },
+ {
+   "term": "lacrisert"
+ },
+ {
+   "term": "lamprene"
+ },
+ {
+   "term": "leukeran"
+ },
+ {
+   "term": "leustatin"
+ },
+ {
+   "term": "librax"
+ },
+ {
+   "term": "librium"
+ },
+ {
+   "term": "libtayo"
+ },
+ {
+   "term": "limbitrol"
+ },
+ {
+   "term": "lodosyn"
+ },
+ {
+   "term": "loprox cream"
+ },
+ {
+   "term": "loprox lotion"
+ },
+ {
+   "term": "loprox shampoo"
+ },
+ {
+   "term": "lorzone"
+ },
+ {
+   "term": "lotrisone"
+ },
+ {
+   "term": "mandol"
+ },
+ {
+   "term": "maxipime"
+ },
+ {
+   "term": "mefoxin"
+ },
+ {
+   "term": "miacalcin"
+ },
+ {
+   "term": "miostat"
+ },
+ {
+   "term": "mitigare"
+ },
+ {
+   "term": "mycelex"
+ },
+ {
+   "term": "mytesi"
+ },
+ {
+   "term": "nasalcrom"
+ },
+ {
+   "term": "nascobal"
+ },
+ {
+   "term": "neoral"
+ },
+ {
+   "term": "nesacaine"
+ },
+ {
+   "term": "neuac"
+ },
+ {
+   "term": "nimbex"
+ },
+ {
+   "term": "noctec"
+ },
+ {
+   "term": "olux"
+ },
+ {
+   "term": "olux-e"
+ },
+ {
+   "term": "omnaris"
+ },
+ {
+   "term": "omnicef"
+ },
+ {
+   "term": "onexton"
+ },
+ {
+   "term": "onfi"
+ },
+ {
+   "term": "opticrom"
+ },
+ {
+   "term": "otiprio"
+ },
+ {
+   "term": "otovel"
+ },
+ {
+   "term": "ovidrel"
+ },
+ {
+   "term": "oxervate"
+ },
+ {
+   "term": "parafon forte"
+ },
+ {
+   "term": "paraplatin"
+ },
+ {
+   "term": "parcopa"
+ },
+ {
+   "term": "penlac"
+ },
+ {
+   "term": "peridex"
+ },
+ {
+   "term": "periochip"
+ },
+ {
+   "term": "phenergan-codeine"
+ },
+ {
+   "term": "phoslo"
+ },
+ {
+   "term": "phoslyra"
+ },
+ {
+   "term": "platinol"
+ },
+ {
+   "term": "platinol-aq"
+ },
+ {
+   "term": "plavix"
+ },
+ {
+   "term": "pletal"
+ },
+ {
+   "term": "pregnyl"
+ },
+ {
+   "term": "premarin"
+ },
+ {
+   "term": "premarin injection"
+ },
+ {
+   "term": "premarin vaginal cream"
+ },
+ {
+   "term": "prevalite"
+ },
+ {
+   "term": "procysbi"
+ },
+ {
+   "term": "proquin xr"
+ },
+ {
+   "term": "questran"
+ },
+ {
+   "term": "qutenza"
+ },
+ {
+   "term": "radiesse"
+ },
+ {
+   "term": "rayaldee"
+ },
+ {
+   "term": "renacidin"
+ },
+ {
+   "term": "restasis"
+ },
+ {
+   "term": "rocaltrol"
+ },
+ {
+   "term": "rocephin"
+ },
+ {
+   "term": "rondec"
+ },
+ {
+   "term": "ruconest"
+ },
+ {
+   "term": "rytary"
+ },
+ {
+   "term": "sandimmune"
+ },
+ {
+   "term": "santyl"
+ },
+ {
+   "term": "sensipar"
+ },
+ {
+   "term": "seromycin"
+ },
+ {
+   "term": "sinemet"
+ },
+ {
+   "term": "sinemet cr"
+ },
+ {
+   "term": "soma"
+ },
+ {
+   "term": "soma compound"
+ },
+ {
+   "term": "soma compound with codeine"
+ },
+ {
+   "term": "sorilux"
+ },
+ {
+   "term": "spectracef"
+ },
+ {
+   "term": "stalevo"
+ },
+ {
+   "term": "suprax"
+ },
+ {
+   "term": "sympazan"
+ },
+ {
+   "term": "taclonex"
+ },
+ {
+   "term": "taclonex scalp"
+ },
+ {
+   "term": "tagamet"
+ },
+ {
+   "term": "tazicef"
+ },
+ {
+   "term": "tegretol"
+ },
+ {
+   "term": "temovate"
+ },
+ {
+   "term": "temovate gel"
+ },
+ {
+   "term": "temovate scalp"
+ },
+ {
+   "term": "thalitone"
+ },
+ {
+   "term": "thorazine"
+ },
+ {
+   "term": "tranxene"
+ },
+ {
+   "term": "trilisate"
+ },
+ {
+   "term": "tuxarin-er"
+ },
+ {
+   "term": "tuzistra xr"
+ },
+ {
+   "term": "tybost"
+ },
+ {
+   "term": "vantin"
+ },
+ {
+   "term": "vaprisol"
+ },
+ {
+   "term": "vaxchora"
+ },
+ {
+   "term": "veltin"
+ },
+ {
+   "term": "versacloz"
+ },
+ {
+   "term": "vistide"
+ },
+ {
+   "term": "vraylar"
+ },
+ {
+   "term": "welchol"
+ },
+ {
+   "term": "xeloda"
+ },
+ {
+   "term": "xiaflex"
+ },
+ {
+   "term": "zerbaxa"
+ },
+ {
+   "term": "zerviate"
+ },
+ {
+   "term": "zetonna"
+ },
+ {
+   "term": "ziana gel"
+ },
+ {
+   "term": "zinacef"
+ },
+ {
+   "term": "zykadia"
+ },
+ {
+   "term": "zyrtec"
+ },
+ {
+   "term": "zyrtec-d"
+ },
+ {
+   "term": "amcinonide"
+ },
+ {
+   "term": "candesartan cilexetil hydrochlorothiazide"
+ },
+ {
+   "term": "cuvitru"
+ },
+ {
+   "term": "ddavp"
+ },
+ {
+   "term": "ddavp injection"
+ },
+ {
+   "term": "ddavp nasal spray"
+ },
+ {
+   "term": "ddavp rhinal tube"
+ },
+ {
+   "term": "dtp"
+ },
+ {
+   "term": "datscan"
+ },
+ {
+   "term": "dacogen"
+ },
+ {
+   "term": "daklinza"
+ },
+ {
+   "term": "daliresp"
+ },
+ {
+   "term": "dalmane"
+ },
+ {
+   "term": "dalvance"
+ },
+ {
+   "term": "danazol"
+ },
+ {
+   "term": "dantrium capsules"
+ },
+ {
+   "term": "daptacel"
+ },
+ {
+   "term": "daraprim"
+ },
+ {
+   "term": "darvocet-n"
+ },
+ {
+   "term": "darvon"
+ },
+ {
+   "term": "darvon compound"
+ },
+ {
+   "term": "darzalex"
+ },
+ {
+   "term": "daypro"
+ },
+ {
+   "term": "daytrana"
+ },
+ {
+   "term": "decadron"
+ },
+ {
+   "term": "decavac"
+ },
+ {
+   "term": "declomycin"
+ },
+ {
+   "term": "deconsal ct"
+ },
+ {
+   "term": "definity"
+ },
+ {
+   "term": "defitelio"
+ },
+ {
+   "term": "deflux"
+ },
+ {
+   "term": "dehydrated alcohol"
+ },
+ {
+   "term": "delatestryl"
+ },
+ {
+   "term": "delestrogen"
+ },
+ {
+   "term": "delstrigo"
+ },
+ {
+   "term": "deltasone"
+ },
+ {
+   "term": "delzicol"
+ },
+ {
+   "term": "demadex"
+ },
+ {
+   "term": "demerol"
+ },
+ {
+   "term": "demser"
+ },
+ {
+   "term": "demulen"
+ },
+ {
+   "term": "denavir"
+ },
+ {
+   "term": "depacon"
+ },
+ {
+   "term": "depakene"
+ },
+ {
+   "term": "depakote"
+ },
+ {
+   "term": "depakote er"
+ },
+ {
+   "term": "depakote sprinkle capsules"
+ },
+ {
+   "term": "depen"
+ },
+ {
+   "term": "deplin"
+ },
+ {
+   "term": "depo medrol"
+ },
+ {
+   "term": "depo-estradiol"
+ },
+ {
+   "term": "depo-provera"
+ },
+ {
+   "term": "depo-subq provera"
+ },
+ {
+   "term": "depo-testosterone"
+ },
+ {
+   "term": "depodur"
+ },
+ {
+   "term": "dermatop ointment"
+ },
+ {
+   "term": "desowen"
+ },
+ {
+   "term": "descovy"
+ },
+ {
+   "term": "desferal"
+ },
+ {
+   "term": "desogen"
+ },
+ {
+   "term": "desonate"
+ },
+ {
+   "term": "desoxyn"
+ },
+ {
+   "term": "desyrel"
+ },
+ {
+   "term": "detrol"
+ },
+ {
+   "term": "detrol la"
+ },
+ {
+   "term": "dexamethasone"
+ },
+ {
+   "term": "dexedrine spansule"
+ },
+ {
+   "term": "dexferrum"
+ },
+ {
+   "term": "dexycu"
+ },
+ {
+   "term": "dht"
+ },
+ {
+   "term": "diabeta"
+ },
+ {
+   "term": "diacomit"
+ },
+ {
+   "term": "dianeal low calcium"
+ },
+ {
+   "term": "diastat acudial"
+ },
+ {
+   "term": "diazepam"
+ },
+ {
+   "term": "diazepam intensol"
+ },
+ {
+   "term": "diazepam rectal gel"
+ },
+ {
+   "term": "dibenzyline"
+ },
+ {
+   "term": "diclegis"
+ },
+ {
+   "term": "didronel"
+ },
+ {
+   "term": "dienestrol"
+ },
+ {
+   "term": "dificid"
+ },
+ {
+   "term": "diflucan"
+ },
+ {
+   "term": "digifab"
+ },
+ {
+   "term": "digibind"
+ },
+ {
+   "term": "digitek"
+ },
+ {
+   "term": "dilacor xr"
+ },
+ {
+   "term": "dilantin"
+ },
+ {
+   "term": "dilantin 125"
+ },
+ {
+   "term": "dilantin kapseals"
+ },
+ {
+   "term": "dilatrate sr"
+ },
+ {
+   "term": "dilaudid"
+ },
+ {
+   "term": "dilaudid-hp"
+ },
+ {
+   "term": "diovan"
+ },
+ {
+   "term": "diovan hct"
+ },
+ {
+   "term": "dipentum"
+ },
+ {
+   "term": "dipyridamole injection"
+ },
+ {
+   "term": "disalcid"
+ },
+ {
+   "term": "ditropan"
+ },
+ {
+   "term": "ditropan xl"
+ },
+ {
+   "term": "diucardin"
+ },
+ {
+   "term": "divigel"
+ },
+ {
+   "term": "dobutamine"
+ },
+ {
+   "term": "docefrez"
+ },
+ {
+   "term": "dolobid"
+ },
+ {
+   "term": "dolophine"
+ },
+ {
+   "term": "donnatal tablets"
+ },
+ {
+   "term": "dopamine"
+ },
+ {
+   "term": "dopram"
+ },
+ {
+   "term": "doral"
+ },
+ {
+   "term": "doribax"
+ },
+ {
+   "term": "doryx"
+ },
+ {
+   "term": "dotarem"
+ },
+ {
+   "term": "doxil"
+ },
+ {
+   "term": "doxycycline hyclate"
+ },
+ {
+   "term": "drax exametazime"
+ },
+ {
+   "term": "draximage dtpa"
+ },
+ {
+   "term": "drisdol"
+ },
+ {
+   "term": "droxia"
+ },
+ {
+   "term": "dsuvia"
+ },
+ {
+   "term": "dtic-dome"
+ },
+ {
+   "term": "duagen"
+ },
+ {
+   "term": "duetact"
+ },
+ {
+   "term": "duexis"
+ },
+ {
+   "term": "dulera"
+ },
+ {
+   "term": "duoneb"
+ },
+ {
+   "term": "dupixent"
+ },
+ {
+   "term": "duragesic"
+ },
+ {
+   "term": "duramorph"
+ },
+ {
+   "term": "duranest"
+ },
+ {
+   "term": "durezol"
+ },
+ {
+   "term": "dutoprol"
+ },
+ {
+   "term": "dutrebis"
+ },
+ {
+   "term": "duzallo"
+ },
+ {
+   "term": "dyazide"
+ },
+ {
+   "term": "dyloject"
+ },
+ {
+   "term": "dynacirc"
+ },
+ {
+   "term": "dyrenium"
+ },
+ {
+   "term": "emflaza"
+ },
+ {
+   "term": "enablex"
+ },
+ {
+   "term": "enskyce"
+ },
+ {
+   "term": "exjade"
+ },
+ {
+   "term": "farxiga"
+ },
+ {
+   "term": "ferriprox"
+ },
+ {
+   "term": "firmagon"
+ },
+ {
+   "term": "flector patch"
+ },
+ {
+   "term": "florone"
+ },
+ {
+   "term": "focalin"
+ },
+ {
+   "term": "focalin xr"
+ },
+ {
+   "term": "fragmin"
+ },
+ {
+   "term": "greer mite extract"
+ },
+ {
+   "term": "hectorol"
+ },
+ {
+   "term": "hectorol injection"
+ },
+ {
+   "term": "hexadrol"
+ },
+ {
+   "term": "hibtiter"
+ },
+ {
+   "term": "humorsol"
+ },
+ {
+   "term": "imfinzi"
+ },
+ {
+   "term": "inapsine"
+ },
+ {
+   "term": "infanrix"
+ },
+ {
+   "term": "iprivask"
+ },
+ {
+   "term": "isibloom"
+ },
+ {
+   "term": "jadenu"
+ },
+ {
+   "term": "jalyn"
+ },
+ {
+   "term": "juluca"
+ },
+ {
+   "term": "kalliga"
+ },
+ {
+   "term": "kariva"
+ },
+ {
+   "term": "keveyis"
+ },
+ {
+   "term": "khedezla"
+ },
+ {
+   "term": "kimidess"
+ },
+ {
+   "term": "kinrix"
+ },
+ {
+   "term": "kybella"
+ },
+ {
+   "term": "lanoxin"
+ },
+ {
+   "term": "lo-zumandimine"
+ },
+ {
+   "term": "lokara"
+ },
+ {
+   "term": "lomotil"
+ },
+ {
+   "term": "lufyllin"
+ },
+ {
+   "term": "lymepak"
+ },
+ {
+   "term": "md-76r"
+ },
+ {
+   "term": "marinol"
+ },
+ {
+   "term": "maxidex ointment"
+ },
+ {
+   "term": "maxidex suspension"
+ },
+ {
+   "term": "migranal"
+ },
+ {
+   "term": "minirin"
+ },
+ {
+   "term": "mircette"
+ },
+ {
+   "term": "monodox"
+ },
+ {
+   "term": "motofen"
+ },
+ {
+   "term": "multaq"
+ },
+ {
+   "term": "nocdurna"
+ },
+ {
+   "term": "noctiva"
+ },
+ {
+   "term": "norpace"
+ },
+ {
+   "term": "norpramin"
+ },
+ {
+   "term": "northera"
+ },
+ {
+   "term": "nuromax"
+ },
+ {
+   "term": "odactra"
+ },
+ {
+   "term": "ontak"
+ },
+ {
+   "term": "oracea"
+ },
+ {
+   "term": "ortho-cept"
+ },
+ {
+   "term": "ozurdex"
+ },
+ {
+   "term": "pennsaid"
+ },
+ {
+   "term": "pediarix"
+ },
+ {
+   "term": "periostat"
+ },
+ {
+   "term": "persantine"
+ },
+ {
+   "term": "pimtrea"
+ },
+ {
+   "term": "polmon"
+ },
+ {
+   "term": "pradaxa"
+ },
+ {
+   "term": "precedex"
+ },
+ {
+   "term": "prepidil"
+ },
+ {
+   "term": "prezcobix"
+ },
+ {
+   "term": "prezista"
+ },
+ {
+   "term": "pristiq"
+ },
+ {
+   "term": "proglycem"
+ },
+ {
+   "term": "prolia"
+ },
+ {
+   "term": "propine"
+ },
+ {
+   "term": "propofol"
+ },
+ {
+   "term": "prostin e2"
+ },
+ {
+   "term": "psorcon e emollient cream"
+ },
+ {
+   "term": "pulmozyme"
+ },
+ {
+   "term": "qtern"
+ },
+ {
+   "term": "quadracel"
+ },
+ {
+   "term": "rescriptor"
+ },
+ {
+   "term": "ryanodex"
+ },
+ {
+   "term": "safyral"
+ },
+ {
+   "term": "silenor"
+ },
+ {
+   "term": "sinografin"
+ },
+ {
+   "term": "solaraze"
+ },
+ {
+   "term": "sprycel"
+ },
+ {
+   "term": "stimate"
+ },
+ {
+   "term": "suprane"
+ },
+ {
+   "term": "symtuza"
+ },
+ {
+   "term": "tafinlar"
+ },
+ {
+   "term": "taxotere"
+ },
+ {
+   "term": "tecfidera"
+ },
+ {
+   "term": "tenuate"
+ },
+ {
+   "term": "tiazac"
+ },
+ {
+   "term": "tikosyn"
+ },
+ {
+   "term": "tivicay"
+ },
+ {
+   "term": "topicort"
+ },
+ {
+   "term": "totect"
+ },
+ {
+   "term": "tripedia"
+ },
+ {
+   "term": "trulicity"
+ },
+ {
+   "term": "trusopt"
+ },
+ {
+   "term": "unituxin"
+ },
+ {
+   "term": "valium"
+ },
+ {
+   "term": "verdeso"
+ },
+ {
+   "term": "vibramycin"
+ },
+ {
+   "term": "videx"
+ },
+ {
+   "term": "videx ec"
+ },
+ {
+   "term": "viekira xr"
+ },
+ {
+   "term": "viorele"
+ },
+ {
+   "term": "vizimpro"
+ },
+ {
+   "term": "voltaren"
+ },
+ {
+   "term": "voltaren gel"
+ },
+ {
+   "term": "voltaren ophthalmic"
+ },
+ {
+   "term": "voltaren xr"
+ },
+ {
+   "term": "vyxeos"
+ },
+ {
+   "term": "xgeva"
+ },
+ {
+   "term": "xigduo xr"
+ },
+ {
+   "term": "xigris"
+ },
+ {
+   "term": "yasmin"
+ },
+ {
+   "term": "yaz"
+ },
+ {
+   "term": "zenapax"
+ },
+ {
+   "term": "zenzedi"
+ },
+ {
+   "term": "zinbryta"
+ },
+ {
+   "term": "zinecard"
+ },
+ {
+   "term": "zipsor"
+ },
+ {
+   "term": "zonalon"
+ },
+ {
+   "term": "zorvolex"
+ },
+ {
+   "term": "baraclude"
+ },
+ {
+   "term": "eemt"
+ },
+ {
+   "term": "econazole nitrate cream"
+ },
+ {
+   "term": "ecoza"
+ },
+ {
+   "term": "edarbi"
+ },
+ {
+   "term": "edecrin"
+ },
+ {
+   "term": "edluar"
+ },
+ {
+   "term": "edurant"
+ },
+ {
+   "term": "effexor"
+ },
+ {
+   "term": "effexor xr"
+ },
+ {
+   "term": "effient"
+ },
+ {
+   "term": "efudex"
+ },
+ {
+   "term": "egrifta"
+ },
+ {
+   "term": "elaprase"
+ },
+ {
+   "term": "eldepryl"
+ },
+ {
+   "term": "elelyso"
+ },
+ {
+   "term": "elepsia xr"
+ },
+ {
+   "term": "elestat"
+ },
+ {
+   "term": "elestrin"
+ },
+ {
+   "term": "elidel"
+ },
+ {
+   "term": "eligard"
+ },
+ {
+   "term": "elimite"
+ },
+ {
+   "term": "elitek"
+ },
+ {
+   "term": "elixophyllin"
+ },
+ {
+   "term": "ella"
+ },
+ {
+   "term": "ellence"
+ },
+ {
+   "term": "ellzia pak"
+ },
+ {
+   "term": "elmiron"
+ },
+ {
+   "term": "elocon"
+ },
+ {
+   "term": "elocon lotion"
+ },
+ {
+   "term": "elocon ointment"
+ },
+ {
+   "term": "eloctate"
+ },
+ {
+   "term": "eloxatin"
+ },
+ {
+   "term": "emadine"
+ },
+ {
+   "term": "embeda"
+ },
+ {
+   "term": "emcyt"
+ },
+ {
+   "term": "emend injection"
+ },
+ {
+   "term": "emgality"
+ },
+ {
+   "term": "emgel"
+ },
+ {
+   "term": "emla"
+ },
+ {
+   "term": "empliciti"
+ },
+ {
+   "term": "emsam"
+ },
+ {
+   "term": "emtriva"
+ },
+ {
+   "term": "emverm"
+ },
+ {
+   "term": "enbrel"
+ },
+ {
+   "term": "endari"
+ },
+ {
+   "term": "endocet"
+ },
+ {
+   "term": "endodan"
+ },
+ {
+   "term": "endometrin"
+ },
+ {
+   "term": "endrate"
+ },
+ {
+   "term": "engerix-b"
+ },
+ {
+   "term": "enjuvia"
+ },
+ {
+   "term": "enlon"
+ },
+ {
+   "term": "enlon plus"
+ },
+ {
+   "term": "entex la"
+ },
+ {
+   "term": "entex pse"
+ },
+ {
+   "term": "entresto"
+ },
+ {
+   "term": "entyvio"
+ },
+ {
+   "term": "eovist"
+ },
+ {
+   "term": "epaned"
+ },
+ {
+   "term": "epanova"
+ },
+ {
+   "term": "epclusa"
+ },
+ {
+   "term": "ephedrine"
+ },
+ {
+   "term": "epinastine hydrochloride"
+ },
+ {
+   "term": "epipen"
+ },
+ {
+   "term": "epivir"
+ },
+ {
+   "term": "epivir-hbv"
+ },
+ {
+   "term": "epogen"
+ },
+ {
+   "term": "equagesic"
+ },
+ {
+   "term": "erelzi"
+ },
+ {
+   "term": "ergomar"
+ },
+ {
+   "term": "erivedge"
+ },
+ {
+   "term": "errin"
+ },
+ {
+   "term": "ertaczo"
+ },
+ {
+   "term": "ery-tab"
+ },
+ {
+   "term": "eryped"
+ },
+ {
+   "term": "eryc"
+ },
+ {
+   "term": "erygel"
+ },
+ {
+   "term": "erythrocin lactobionate"
+ },
+ {
+   "term": "erythrocin stearate"
+ },
+ {
+   "term": "esbriet"
+ },
+ {
+   "term": "esclim"
+ },
+ {
+   "term": "eskalith"
+ },
+ {
+   "term": "eskata"
+ },
+ {
+   "term": "estrace"
+ },
+ {
+   "term": "estrace vaginal cream"
+ },
+ {
+   "term": "estraderm"
+ },
+ {
+   "term": "estragyn"
+ },
+ {
+   "term": "estrasorb"
+ },
+ {
+   "term": "estratest"
+ },
+ {
+   "term": "estring"
+ },
+ {
+   "term": "estrogel"
+ },
+ {
+   "term": "estrostep fe"
+ },
+ {
+   "term": "ethacrynic acid tablets"
+ },
+ {
+   "term": "ethamolin"
+ },
+ {
+   "term": "ethedent"
+ },
+ {
+   "term": "ethiodol"
+ },
+ {
+   "term": "ethrane"
+ },
+ {
+   "term": "ethyl chloride"
+ },
+ {
+   "term": "etifibatide injection"
+ },
+ {
+   "term": "etodolac xr"
+ },
+ {
+   "term": "etopophos"
+ },
+ {
+   "term": "etrafon"
+ },
+ {
+   "term": "euflexxa"
+ },
+ {
+   "term": "eulexin"
+ },
+ {
+   "term": "eurothyrox"
+ },
+ {
+   "term": "evamist"
+ },
+ {
+   "term": "evicel"
+ },
+ {
+   "term": "evista"
+ },
+ {
+   "term": "evomela"
+ },
+ {
+   "term": "evzio"
+ },
+ {
+   "term": "exalgo"
+ },
+ {
+   "term": "exelderm"
+ },
+ {
+   "term": "exelon"
+ },
+ {
+   "term": "exelon patch"
+ },
+ {
+   "term": "exondys 51"
+ },
+ {
+   "term": "extavia"
+ },
+ {
+   "term": "extina"
+ },
+ {
+   "term": "extraneal"
+ },
+ {
+   "term": "exubera"
+ },
+ {
+   "term": "femring"
+ },
+ {
+   "term": "femtrace"
+ },
+ {
+   "term": "flolan"
+ },
+ {
+   "term": "fuzeon"
+ },
+ {
+   "term": "genvoya"
+ },
+ {
+   "term": "glyxambi"
+ },
+ {
+   "term": "hemlibra"
+ },
+ {
+   "term": "idhifa"
+ },
+ {
+   "term": "ilotycin"
+ },
+ {
+   "term": "implanon"
+ },
+ {
+   "term": "imvexxy"
+ },
+ {
+   "term": "inspra"
+ },
+ {
+   "term": "integrilin"
+ },
+ {
+   "term": "intelence"
+ },
+ {
+   "term": "invanz"
+ },
+ {
+   "term": "jardiance"
+ },
+ {
+   "term": "jublia"
+ },
+ {
+   "term": "kalbitor"
+ },
+ {
+   "term": "lexapro"
+ },
+ {
+   "term": "lexxel"
+ },
+ {
+   "term": "lipiodol"
+ },
+ {
+   "term": "liptruzet"
+ },
+ {
+   "term": "lodine"
+ },
+ {
+   "term": "lovenox"
+ },
+ {
+   "term": "lunesta"
+ },
+ {
+   "term": "menest"
+ },
+ {
+   "term": "menostar"
+ },
+ {
+   "term": "mimvey"
+ },
+ {
+   "term": "minivelle"
+ },
+ {
+   "term": "myambutol"
+ },
+ {
+   "term": "natazia"
+ },
+ {
+   "term": "nephramine"
+ },
+ {
+   "term": "nexium"
+ },
+ {
+   "term": "nexplanon"
+ },
+ {
+   "term": "nuvaring"
+ },
+ {
+   "term": "odefsey"
+ },
+ {
+   "term": "ogen"
+ },
+ {
+   "term": "orenitram"
+ },
+ {
+   "term": "orilissa"
+ },
+ {
+   "term": "pce"
+ },
+ {
+   "term": "parsabiv"
+ },
+ {
+   "term": "pediazole"
+ },
+ {
+   "term": "peganone"
+ },
+ {
+   "term": "penetrex"
+ },
+ {
+   "term": "physiosol"
+ },
+ {
+   "term": "potiga"
+ },
+ {
+   "term": "prefest"
+ },
+ {
+   "term": "procrit"
+ },
+ {
+   "term": "promacta"
+ },
+ {
+   "term": "prosom"
+ },
+ {
+   "term": "radicava"
+ },
+ {
+   "term": "raptiva"
+ },
+ {
+   "term": "relpax"
+ },
+ {
+   "term": "repatha"
+ },
+ {
+   "term": "retacrit"
+ },
+ {
+   "term": "revcovi"
+ },
+ {
+   "term": "savaysa"
+ },
+ {
+   "term": "segluromet"
+ },
+ {
+   "term": "soliris"
+ },
+ {
+   "term": "spectazole"
+ },
+ {
+   "term": "staticin"
+ },
+ {
+   "term": "steglatro"
+ },
+ {
+   "term": "steglujan"
+ },
+ {
+   "term": "stribild"
+ },
+ {
+   "term": "sustiva"
+ },
+ {
+   "term": "symfi lo"
+ },
+ {
+   "term": "symjepi"
+ },
+ {
+   "term": "synjardy"
+ },
+ {
+   "term": "tarceva"
+ },
+ {
+   "term": "teveten"
+ },
+ {
+   "term": "teveten hct"
+ },
+ {
+   "term": "trecator"
+ },
+ {
+   "term": "truvada"
+ },
+ {
+   "term": "vagifem"
+ },
+ {
+   "term": "vaniqa"
+ },
+ {
+   "term": "vaseretic"
+ },
+ {
+   "term": "vasotec"
+ },
+ {
+   "term": "vepesid"
+ },
+ {
+   "term": "veletri"
+ },
+ {
+   "term": "viberzi"
+ },
+ {
+   "term": "vimizim"
+ },
+ {
+   "term": "vitekta"
+ },
+ {
+   "term": "vivelle-dot"
+ },
+ {
+   "term": "vytorin"
+ },
+ {
+   "term": "wigraine"
+ },
+ {
+   "term": "xerava"
+ },
+ {
+   "term": "xtandi"
+ },
+ {
+   "term": "zarontin"
+ },
+ {
+   "term": "zarontin oral solution"
+ },
+ {
+   "term": "zepatier"
+ },
+ {
+   "term": "zetia"
+ },
+ {
+   "term": "zortress"
+ },
+ {
+   "term": "zovia"
+ },
+ {
+   "term": "esomeprazole magnesium"
+ },
+ {
+   "term": "fml"
+ },
+ {
+   "term": "fabior"
+ },
+ {
+   "term": "factive"
+ },
+ {
+   "term": "factrel"
+ },
+ {
+   "term": "falmina"
+ },
+ {
+   "term": "famotidine injection"
+ },
+ {
+   "term": "famvir"
+ },
+ {
+   "term": "fanapt"
+ },
+ {
+   "term": "fansidar"
+ },
+ {
+   "term": "fareston"
+ },
+ {
+   "term": "farydak"
+ },
+ {
+   "term": "faslodex"
+ },
+ {
+   "term": "fastin"
+ },
+ {
+   "term": "feriva"
+ },
+ {
+   "term": "felbatol"
+ },
+ {
+   "term": "feldene"
+ },
+ {
+   "term": "femara"
+ },
+ {
+   "term": "femcon fe"
+ },
+ {
+   "term": "femhrt"
+ },
+ {
+   "term": "fenofibrate"
+ },
+ {
+   "term": "fenoglide"
+ },
+ {
+   "term": "fentanyl buccal"
+ },
+ {
+   "term": "fentanyl citrate injection"
+ },
+ {
+   "term": "fentanyl transdermal system"
+ },
+ {
+   "term": "fentora"
+ },
+ {
+   "term": "feraheme"
+ },
+ {
+   "term": "ferrlecit"
+ },
+ {
+   "term": "fertinex"
+ },
+ {
+   "term": "fetzima"
+ },
+ {
+   "term": "fiasp"
+ },
+ {
+   "term": "fibricor"
+ },
+ {
+   "term": "firazyr"
+ },
+ {
+   "term": "firvanq"
+ },
+ {
+   "term": "flagyl"
+ },
+ {
+   "term": "flagyl er"
+ },
+ {
+   "term": "flagyl injection"
+ },
+ {
+   "term": "flebogamma"
+ },
+ {
+   "term": "flo-pred"
+ },
+ {
+   "term": "flolipid"
+ },
+ {
+   "term": "flomax"
+ },
+ {
+   "term": "flonase"
+ },
+ {
+   "term": "florinef"
+ },
+ {
+   "term": "flovent"
+ },
+ {
+   "term": "flovent diskus"
+ },
+ {
+   "term": "flovent hfa"
+ },
+ {
+   "term": "flowtuss"
+ },
+ {
+   "term": "floxin"
+ },
+ {
+   "term": "floxin otic"
+ },
+ {
+   "term": "floxin otic singles"
+ },
+ {
+   "term": "floxuridine"
+ },
+ {
+   "term": "flumist"
+ },
+ {
+   "term": "flumist 2018-2019 formula"
+ },
+ {
+   "term": "fluad"
+ },
+ {
+   "term": "fluarix"
+ },
+ {
+   "term": "flublok"
+ },
+ {
+   "term": "flucelvax"
+ },
+ {
+   "term": "fluconazole injection"
+ },
+ {
+   "term": "fludara"
+ },
+ {
+   "term": "fludarabine phosphate injection"
+ },
+ {
+   "term": "fludrocortisone"
+ },
+ {
+   "term": "flulaval"
+ },
+ {
+   "term": "flumadine"
+ },
+ {
+   "term": "flunisolide nasal solution"
+ },
+ {
+   "term": "fluorescite"
+ },
+ {
+   "term": "fluoroplex"
+ },
+ {
+   "term": "fluorouracil cream"
+ },
+ {
+   "term": "fluress"
+ },
+ {
+   "term": "fluvirin"
+ },
+ {
+   "term": "fluzone"
+ },
+ {
+   "term": "folivane"
+ },
+ {
+   "term": "follistim aq cartridge"
+ },
+ {
+   "term": "folotyn"
+ },
+ {
+   "term": "foltx"
+ },
+ {
+   "term": "folvite"
+ },
+ {
+   "term": "foradil certihaler"
+ },
+ {
+   "term": "forane"
+ },
+ {
+   "term": "fortamet"
+ },
+ {
+   "term": "forteo"
+ },
+ {
+   "term": "fortesta"
+ },
+ {
+   "term": "fortical"
+ },
+ {
+   "term": "foscavir"
+ },
+ {
+   "term": "fosrenol"
+ },
+ {
+   "term": "frova"
+ },
+ {
+   "term": "fulphila"
+ },
+ {
+   "term": "furadantin"
+ },
+ {
+   "term": "furoxone"
+ },
+ {
+   "term": "fycompa"
+ },
+ {
+   "term": "gilenya"
+ },
+ {
+   "term": "gonal-f"
+ },
+ {
+   "term": "gonal-f rff"
+ },
+ {
+   "term": "halotestin"
+ },
+ {
+   "term": "iluvien"
+ },
+ {
+   "term": "injectafer"
+ },
+ {
+   "term": "ionsys"
+ },
+ {
+   "term": "konyne"
+ },
+ {
+   "term": "lasix"
+ },
+ {
+   "term": "lazanda"
+ },
+ {
+   "term": "lescol"
+ },
+ {
+   "term": "lexiva"
+ },
+ {
+   "term": "lidex"
+ },
+ {
+   "term": "limbrel"
+ },
+ {
+   "term": "lipofen"
+ },
+ {
+   "term": "lusedra"
+ },
+ {
+   "term": "luvox"
+ },
+ {
+   "term": "luvox cr"
+ },
+ {
+   "term": "monopril"
+ },
+ {
+   "term": "monopril hct"
+ },
+ {
+   "term": "monurol"
+ },
+ {
+   "term": "nalfon"
+ },
+ {
+   "term": "neupogen"
+ },
+ {
+   "term": "neuraceq"
+ },
+ {
+   "term": "niferex gold tablets"
+ },
+ {
+   "term": "nivestym"
+ },
+ {
+   "term": "ocufen"
+ },
+ {
+   "term": "oforta"
+ },
+ {
+   "term": "omegaven"
+ },
+ {
+   "term": "onsolis"
+ },
+ {
+   "term": "pepcid"
+ },
+ {
+   "term": "pepcid injection"
+ },
+ {
+   "term": "perforomist"
+ },
+ {
+   "term": "plendil"
+ },
+ {
+   "term": "pondimin"
+ },
+ {
+   "term": "profilnine"
+ },
+ {
+   "term": "prolixin"
+ },
+ {
+   "term": "propecia"
+ },
+ {
+   "term": "proplex-t"
+ },
+ {
+   "term": "proscar"
+ },
+ {
+   "term": "prozac"
+ },
+ {
+   "term": "retisert"
+ },
+ {
+   "term": "romazicon"
+ },
+ {
+   "term": "sarafem"
+ },
+ {
+   "term": "soluprep"
+ },
+ {
+   "term": "sublimaze"
+ },
+ {
+   "term": "subsys"
+ },
+ {
+   "term": "synalar"
+ },
+ {
+   "term": "tambocor"
+ },
+ {
+   "term": "tavalisse"
+ },
+ {
+   "term": "tolak"
+ },
+ {
+   "term": "toviaz"
+ },
+ {
+   "term": "trelegy ellipta"
+ },
+ {
+   "term": "tricor"
+ },
+ {
+   "term": "triferic"
+ },
+ {
+   "term": "triglide"
+ },
+ {
+   "term": "trilipix"
+ },
+ {
+   "term": "uloric"
+ },
+ {
+   "term": "urispas"
+ },
+ {
+   "term": "vanos"
+ },
+ {
+   "term": "veramyst"
+ },
+ {
+   "term": "vitravene"
+ },
+ {
+   "term": "vizamyl"
+ },
+ {
+   "term": "xhance"
+ },
+ {
+   "term": "xtoro"
+ },
+ {
+   "term": "yutiq"
+ },
+ {
+   "term": "zarxio"
+ },
+ {
+   "term": "fluorometholone"
+ },
+ {
+   "term": "glyrx-pf"
+ },
+ {
+   "term": "gabitril"
+ },
+ {
+   "term": "gadavist"
+ },
+ {
+   "term": "galafold"
+ },
+ {
+   "term": "galzin"
+ },
+ {
+   "term": "gammagard"
+ },
+ {
+   "term": "gammagard liquid"
+ },
+ {
+   "term": "gammaked"
+ },
+ {
+   "term": "gammaplex"
+ },
+ {
+   "term": "gamunex"
+ },
+ {
+   "term": "gamunex-c"
+ },
+ {
+   "term": "ganirelix"
+ },
+ {
+   "term": "gantanol"
+ },
+ {
+   "term": "gardasil"
+ },
+ {
+   "term": "gardasil 9"
+ },
+ {
+   "term": "gattex"
+ },
+ {
+   "term": "gavilyte-c"
+ },
+ {
+   "term": "gavilyte-g"
+ },
+ {
+   "term": "gavilyte-n"
+ },
+ {
+   "term": "gazyva"
+ },
+ {
+   "term": "gelnique"
+ },
+ {
+   "term": "gemzar"
+ },
+ {
+   "term": "genadur"
+ },
+ {
+   "term": "generess fe"
+ },
+ {
+   "term": "genoptic"
+ },
+ {
+   "term": "genotropin"
+ },
+ {
+   "term": "gentak"
+ },
+ {
+   "term": "gentamicin pediatric"
+ },
+ {
+   "term": "geodon"
+ },
+ {
+   "term": "gildagia"
+ },
+ {
+   "term": "glassia"
+ },
+ {
+   "term": "glatopa"
+ },
+ {
+   "term": "gleevec"
+ },
+ {
+   "term": "gleolan"
+ },
+ {
+   "term": "gleostine"
+ },
+ {
+   "term": "gliadel"
+ },
+ {
+   "term": "glucagen"
+ },
+ {
+   "term": "glucagon"
+ },
+ {
+   "term": "glucotrol"
+ },
+ {
+   "term": "glucotrol xl"
+ },
+ {
+   "term": "glucovance"
+ },
+ {
+   "term": "glumetza"
+ },
+ {
+   "term": "glynase prestab"
+ },
+ {
+   "term": "glyset"
+ },
+ {
+   "term": "golytely"
+ },
+ {
+   "term": "gonitro"
+ },
+ {
+   "term": "gralise"
+ },
+ {
+   "term": "granix"
+ },
+ {
+   "term": "grastek"
+ },
+ {
+   "term": "grifulvin v"
+ },
+ {
+   "term": "gris peg"
+ },
+ {
+   "term": "guaifenex pse 60"
+ },
+ {
+   "term": "horizant"
+ },
+ {
+   "term": "infugem"
+ },
+ {
+   "term": "iressa"
+ },
+ {
+   "term": "ismelin"
+ },
+ {
+   "term": "kytril"
+ },
+ {
+   "term": "kytril injection"
+ },
+ {
+   "term": "lonhala magnair"
+ },
+ {
+   "term": "lopid"
+ },
+ {
+   "term": "magnevist"
+ },
+ {
+   "term": "metaglip"
+ },
+ {
+   "term": "micronase"
+ },
+ {
+   "term": "multihance"
+ },
+ {
+   "term": "mylotarg"
+ },
+ {
+   "term": "myochrysine"
+ },
+ {
+   "term": "naglazyme"
+ },
+ {
+   "term": "netspot"
+ },
+ {
+   "term": "neurontin"
+ },
+ {
+   "term": "omniscan"
+ },
+ {
+   "term": "optimark"
+ },
+ {
+   "term": "pred-g"
+ },
+ {
+   "term": "prohance"
+ },
+ {
+   "term": "qbrexza"
+ },
+ {
+   "term": "ravicti"
+ },
+ {
+   "term": "raxar"
+ },
+ {
+   "term": "robinul"
+ },
+ {
+   "term": "robitussin ac"
+ },
+ {
+   "term": "sancuso"
+ },
+ {
+   "term": "seebri neohaler"
+ },
+ {
+   "term": "simponi aria"
+ },
+ {
+   "term": "sustol"
+ },
+ {
+   "term": "tenex"
+ },
+ {
+   "term": "tremfya"
+ },
+ {
+   "term": "vasovist"
+ },
+ {
+   "term": "vitrasert"
+ },
+ {
+   "term": "voraxaze"
+ },
+ {
+   "term": "zirgan"
+ },
+ {
+   "term": "zymar"
+ },
+ {
+   "term": "zymaxid"
+ },
+ {
+   "term": "gatifloxacin"
+ },
+ {
+   "term": "fluothane"
+ },
+ {
+   "term": "hms"
+ },
+ {
+   "term": "halcion"
+ },
+ {
+   "term": "haldol"
+ },
+ {
+   "term": "haldol decanoate"
+ },
+ {
+   "term": "halog ointment"
+ },
+ {
+   "term": "halog solution"
+ },
+ {
+   "term": "halog-e cream"
+ },
+ {
+   "term": "halonate"
+ },
+ {
+   "term": "harvoni"
+ },
+ {
+   "term": "havrix"
+ },
+ {
+   "term": "healon"
+ },
+ {
+   "term": "helixate fs"
+ },
+ {
+   "term": "hemangeol"
+ },
+ {
+   "term": "hemofil-m"
+ },
+ {
+   "term": "hepagam b"
+ },
+ {
+   "term": "heparin"
+ },
+ {
+   "term": "heparin preservative free"
+ },
+ {
+   "term": "heparin sodium injection"
+ },
+ {
+   "term": "heplisav b"
+ },
+ {
+   "term": "herceptin"
+ },
+ {
+   "term": "hespan"
+ },
+ {
+   "term": "hetlioz"
+ },
+ {
+   "term": "hexabrix"
+ },
+ {
+   "term": "hextend"
+ },
+ {
+   "term": "hiberix"
+ },
+ {
+   "term": "hicon"
+ },
+ {
+   "term": "hiprex"
+ },
+ {
+   "term": "hismanal"
+ },
+ {
+   "term": "histinex hc"
+ },
+ {
+   "term": "hivid"
+ },
+ {
+   "term": "hizentra"
+ },
+ {
+   "term": "humalog"
+ },
+ {
+   "term": "humalog 75-25"
+ },
+ {
+   "term": "humatin"
+ },
+ {
+   "term": "humatrope"
+ },
+ {
+   "term": "humulin 50-50"
+ },
+ {
+   "term": "humulin 70-30"
+ },
+ {
+   "term": "humulin n"
+ },
+ {
+   "term": "humulin r"
+ },
+ {
+   "term": "hyqvia"
+ },
+ {
+   "term": "hyalgan"
+ },
+ {
+   "term": "hycamtin"
+ },
+ {
+   "term": "hycamtin capsules"
+ },
+ {
+   "term": "hycodan"
+ },
+ {
+   "term": "hycofenix"
+ },
+ {
+   "term": "hycotuss"
+ },
+ {
+   "term": "hydase"
+ },
+ {
+   "term": "hydrea"
+ },
+ {
+   "term": "hydro 35"
+ },
+ {
+   "term": "hydrocortisone"
+ },
+ {
+   "term": "hylaform"
+ },
+ {
+   "term": "hylenex"
+ },
+ {
+   "term": "hyperhep b"
+ },
+ {
+   "term": "hyperrab"
+ },
+ {
+   "term": "hypertet"
+ },
+ {
+   "term": "hypertonic saline"
+ },
+ {
+   "term": "hysingla er"
+ },
+ {
+   "term": "hytrin"
+ },
+ {
+   "term": "hyzaar"
+ },
+ {
+   "term": "levbid extended release"
+ },
+ {
+   "term": "levsin"
+ },
+ {
+   "term": "levsin sl"
+ },
+ {
+   "term": "locoid lipocream"
+ },
+ {
+   "term": "locoid lotion"
+ },
+ {
+   "term": "lok pak"
+ },
+ {
+   "term": "lorcet"
+ },
+ {
+   "term": "lortab 10"
+ },
+ {
+   "term": "lortab 5"
+ },
+ {
+   "term": "lortab elixir"
+ },
+ {
+   "term": "makena"
+ },
+ {
+   "term": "melquin-3 topical solution"
+ },
+ {
+   "term": "microzide"
+ },
+ {
+   "term": "monovisc"
+ },
+ {
+   "term": "nabi-hb"
+ },
+ {
+   "term": "norco"
+ },
+ {
+   "term": "obredon"
+ },
+ {
+   "term": "ocucoat"
+ },
+ {
+   "term": "palladone"
+ },
+ {
+   "term": "pandel"
+ },
+ {
+   "term": "paremyd"
+ },
+ {
+   "term": "phisohex"
+ },
+ {
+   "term": "plaquenil"
+ },
+ {
+   "term": "proctofoam hc"
+ },
+ {
+   "term": "prohibit"
+ },
+ {
+   "term": "raxibacumab"
+ },
+ {
+   "term": "restylane"
+ },
+ {
+   "term": "restylane-l"
+ },
+ {
+   "term": "rezira"
+ },
+ {
+   "term": "siklos"
+ },
+ {
+   "term": "solu cortef"
+ },
+ {
+   "term": "speedgel"
+ },
+ {
+   "term": "supprelin la"
+ },
+ {
+   "term": "synvisc"
+ },
+ {
+   "term": "synvisc-one"
+ },
+ {
+   "term": "tri-luma"
+ },
+ {
+   "term": "tussigon"
+ },
+ {
+   "term": "tussionex"
+ },
+ {
+   "term": "ultravate ointment"
+ },
+ {
+   "term": "vantas"
+ },
+ {
+   "term": "vantrela er"
+ },
+ {
+   "term": "vaqta"
+ },
+ {
+   "term": "vicodin"
+ },
+ {
+   "term": "vicodin es"
+ },
+ {
+   "term": "vicodin hp"
+ },
+ {
+   "term": "vicoprofen"
+ },
+ {
+   "term": "vistaril"
+ },
+ {
+   "term": "vitrase"
+ },
+ {
+   "term": "voluven"
+ },
+ {
+   "term": "vytone"
+ },
+ {
+   "term": "westcort ointment"
+ },
+ {
+   "term": "xodol"
+ },
+ {
+   "term": "zamicet"
+ },
+ {
+   "term": "zohydro er"
+ },
+ {
+   "term": "zolvit"
+ },
+ {
+   "term": "zyderm"
+ },
+ {
+   "term": "zydone"
+ },
+ {
+   "term": "zyfrel"
+ },
+ {
+   "term": "ibrance"
+ },
+ {
+   "term": "ic-green"
+ },
+ {
+   "term": "iclusig"
+ },
+ {
+   "term": "idamycin"
+ },
+ {
+   "term": "idamycin pfs"
+ },
+ {
+   "term": "idelvion"
+ },
+ {
+   "term": "ifex"
+ },
+ {
+   "term": "ilevro"
+ },
+ {
+   "term": "ilumya"
+ },
+ {
+   "term": "imbruvica"
+ },
+ {
+   "term": "imitrex"
+ },
+ {
+   "term": "imitrex injection"
+ },
+ {
+   "term": "imitrex nasal spray"
+ },
+ {
+   "term": "imlygic"
+ },
+ {
+   "term": "imodium"
+ },
+ {
+   "term": "imogam rabies"
+ },
+ {
+   "term": "imovax"
+ },
+ {
+   "term": "impavido"
+ },
+ {
+   "term": "incassia"
+ },
+ {
+   "term": "incivek"
+ },
+ {
+   "term": "increlex"
+ },
+ {
+   "term": "incruse ellipta"
+ },
+ {
+   "term": "inderal"
+ },
+ {
+   "term": "inderal la"
+ },
+ {
+   "term": "inderal xl"
+ },
+ {
+   "term": "inderide"
+ },
+ {
+   "term": "indigo carmine"
  },
  {
    "term": "indocin"
+ },
+ {
+   "term": "indocin iv"
+ },
+ {
+   "term": "indocin oral suspension"
+ },
+ {
+   "term": "indocin sr"
+ },
+ {
+   "term": "infed"
+ },
+ {
+   "term": "infergen"
+ },
+ {
+   "term": "inflectra"
+ },
+ {
+   "term": "influenza a h1n1 intranasal vaccine"
+ },
+ {
+   "term": "influenza a h1n1 monovalent vaccine"
+ },
+ {
+   "term": "infumorph"
+ },
+ {
+   "term": "infuvite adult injection"
+ },
+ {
+   "term": "infuvite pediatric iv"
+ },
+ {
+   "term": "infuvite pediatric pharmacy bulk package"
+ },
+ {
+   "term": "ingrezza"
+ },
+ {
+   "term": "innopran xl"
+ },
+ {
+   "term": "innohep"
+ },
+ {
+   "term": "inomax"
+ },
+ {
+   "term": "intermezzo"
+ },
+ {
+   "term": "intron a"
+ },
+ {
+   "term": "intron a - rebetol"
+ },
+ {
+   "term": "intuniv"
+ },
+ {
+   "term": "invega"
+ },
+ {
+   "term": "invega sustenna"
+ },
+ {
+   "term": "invega trinza"
+ },
+ {
+   "term": "inveltys"
+ },
+ {
+   "term": "inversine"
+ },
+ {
+   "term": "invirase"
+ },
+ {
+   "term": "invokamet xr"
+ },
+ {
+   "term": "ionamin"
+ },
+ {
+   "term": "iplex"
+ },
+ {
+   "term": "ipol"
+ },
+ {
+   "term": "iquix"
+ },
+ {
+   "term": "isentress"
+ },
+ {
+   "term": "ismo"
+ },
+ {
+   "term": "isonarif"
+ },
+ {
+   "term": "isordil"
+ },
+ {
+   "term": "istalol"
+ },
+ {
+   "term": "istodax"
+ },
+ {
+   "term": "isuprel"
+ },
+ {
+   "term": "ixempra"
+ },
+ {
+   "term": "ixiaro"
+ },
+ {
+   "term": "ixifi"
+ },
+ {
+   "term": "ixinity"
+ },
+ {
+   "term": "izba"
+ },
+ {
+   "term": "kalydeco"
+ },
+ {
+   "term": "lantus"
+ },
+ {
+   "term": "levemir"
+ },
+ {
+   "term": "liposyn iii"
+ },
+ {
+   "term": "lozol"
+ },
+ {
+   "term": "lymphazurin"
+ },
+ {
+   "term": "marplan"
+ },
+ {
+   "term": "monoket"
+ },
+ {
+   "term": "myorisan"
+ },
+ {
+   "term": "neoprofen"
+ },
+ {
+   "term": "ninlaro"
+ },
+ {
+   "term": "novolog"
+ },
+ {
+   "term": "omnipaque"
+ },
+ {
+   "term": "onivyde"
+ },
+ {
+   "term": "onmel"
+ },
+ {
+   "term": "optiray injection"
+ },
+ {
+   "term": "oxilan"
+ },
+ {
+   "term": "paragard"
+ },
+ {
+   "term": "picato"
+ },
+ {
+   "term": "praxbind"
+ },
+ {
+   "term": "primaxin im"
+ },
+ {
+   "term": "privigen"
+ },
+ {
+   "term": "radiogardase"
+ },
+ {
+   "term": "rebif"
+ },
+ {
+   "term": "remicade"
+ },
+ {
+   "term": "renflexis"
+ },
+ {
+   "term": "roferon-a"
+ },
+ {
+   "term": "ryzodeg"
+ },
+ {
+   "term": "sklice"
+ },
+ {
+   "term": "soolantra"
+ },
+ {
+   "term": "sotret"
+ },
+ {
+   "term": "sporanox"
+ },
+ {
+   "term": "sporanox injection"
+ },
+ {
+   "term": "sporanox oral solution"
+ },
+ {
+   "term": "stromectol"
+ },
+ {
+   "term": "taltz"
+ },
+ {
+   "term": "tegsedi"
+ },
+ {
+   "term": "tibsovo"
+ },
+ {
+   "term": "tivorbex"
+ },
+ {
+   "term": "tofranil"
+ },
+ {
+   "term": "tofranil-pm"
+ },
+ {
+   "term": "toujeo"
+ },
+ {
+   "term": "tresiba"
+ },
+ {
+   "term": "trogarzo"
+ },
+ {
+   "term": "ultravist"
+ },
+ {
+   "term": "utibron neohaler"
+ },
+ {
+   "term": "vascepa"
+ },
+ {
+   "term": "velosulin"
+ },
+ {
+   "term": "venofer"
+ },
+ {
+   "term": "ventavis"
+ },
+ {
+   "term": "visipaque"
+ },
+ {
+   "term": "xeomin"
+ },
+ {
+   "term": "yervoy"
+ },
+ {
+   "term": "zenatane"
+ },
+ {
+   "term": "zevalin"
+ },
+ {
+   "term": "zyclara"
+ },
+ {
+   "term": "zydelig"
+ },
+ {
+   "term": "isoniazid"
+ },
+ {
+   "term": "jadelle"
+ },
+ {
+   "term": "jakafi"
+ },
+ {
+   "term": "jantoven"
+ },
+ {
+   "term": "janumet"
+ },
+ {
+   "term": "janumet xr"
+ },
+ {
+   "term": "januvia"
+ },
+ {
+   "term": "je-vax"
+ },
+ {
+   "term": "jentadueto"
+ },
+ {
+   "term": "jentadueto xr"
+ },
+ {
+   "term": "jetrea"
+ },
+ {
+   "term": "jinteli"
+ },
+ {
+   "term": "jivi"
+ },
+ {
+   "term": "jornay pm"
+ },
+ {
+   "term": "junel fe"
+ },
+ {
+   "term": "juvisync"
+ },
+ {
+   "term": "juxtapid"
+ },
+ {
+   "term": "jynarque"
+ },
+ {
+   "term": "k-lor"
+ },
+ {
+   "term": "k-phos neutral"
+ },
+ {
+   "term": "k-tab"
+ },
+ {
+   "term": "kcl in d5ns"
+ },
+ {
+   "term": "kcl in d5w"
+ },
+ {
+   "term": "kcl in ns"
+ },
+ {
+   "term": "kadian"
+ },
+ {
+   "term": "kaletra capsules"
+ },
+ {
+   "term": "kaletra tablets"
+ },
+ {
+   "term": "kantrex"
+ },
+ {
+   "term": "kanuma"
+ },
+ {
+   "term": "kayexalate"
+ },
+ {
+   "term": "kcentra"
+ },
+ {
+   "term": "kedrab"
+ },
+ {
+   "term": "kemadrin"
+ },
+ {
+   "term": "kenalog 10 injection"
+ },
+ {
+   "term": "kenalog spray"
+ },
+ {
+   "term": "kepivance"
+ },
+ {
+   "term": "keppra"
+ },
+ {
+   "term": "keppra xr"
+ },
+ {
+   "term": "kerledex"
+ },
+ {
+   "term": "kerydin"
+ },
+ {
+   "term": "ketalar"
+ },
+ {
+   "term": "ketek"
+ },
+ {
+   "term": "ketoconazole cream"
+ },
+ {
+   "term": "kevzara"
+ },
+ {
+   "term": "keytruda"
+ },
+ {
+   "term": "khapzory"
+ },
+ {
+   "term": "kinevac"
+ },
+ {
+   "term": "kinlytic"
+ },
+ {
+   "term": "kionex"
+ },
+ {
+   "term": "kisqali"
+ },
+ {
+   "term": "kisqali femara co-pack"
+ },
+ {
+   "term": "kitabis pak"
+ },
+ {
+   "term": "klaron"
+ },
+ {
+   "term": "klor-con"
+ },
+ {
+   "term": "kogenate fs"
+ },
+ {
+   "term": "kombiglyze xr"
+ },
+ {
+   "term": "korlym"
+ },
+ {
+   "term": "kovaltry"
+ },
+ {
+   "term": "kovanaze"
+ },
+ {
+   "term": "krintafel"
+ },
+ {
+   "term": "kristalose"
+ },
+ {
+   "term": "krystexxa"
+ },
+ {
+   "term": "kuric"
+ },
+ {
+   "term": "kurvelo"
+ },
+ {
+   "term": "kuvan"
+ },
+ {
+   "term": "kyleena"
+ },
+ {
+   "term": "kymriah"
+ },
+ {
+   "term": "kynamro"
+ },
+ {
+   "term": "levetiracetam"
+ },
+ {
+   "term": "mdp-25"
+ },
+ {
+   "term": "nizoral"
+ },
+ {
+   "term": "nizoral shampoo"
+ },
+ {
+   "term": "orudis"
+ },
+ {
+   "term": "sprix"
+ },
+ {
+   "term": "technescan"
+ },
+ {
+   "term": "toradol"
+ },
+ {
+   "term": "xolegel"
+ },
+ {
+   "term": "zaditor"
+ },
+ {
+   "term": "aldurazyme"
+ },
+ {
+   "term": "lac-hydrin"
+ },
+ {
+   "term": "lactulose solution"
+ },
+ {
+   "term": "lamictal"
+ },
+ {
+   "term": "lamictal xr"
+ },
+ {
+   "term": "lamisil"
+ },
+ {
+   "term": "lamisil oral granules"
+ },
+ {
+   "term": "lariam"
+ },
+ {
+   "term": "larin fe"
+ },
+ {
+   "term": "lartruvo"
+ },
+ {
+   "term": "latuda"
+ },
+ {
+   "term": "lenvima"
+ },
+ {
+   "term": "leukine"
+ },
+ {
+   "term": "levaquin"
+ },
+ {
+   "term": "levatol"
+ },
+ {
+   "term": "levitra"
+ },
+ {
+   "term": "levo-t"
+ },
+ {
+   "term": "levoleucovorin"
+ },
+ {
+   "term": "levoleucovorin calcium"
+ },
+ {
+   "term": "levophed"
+ },
+ {
+   "term": "levora"
+ },
+ {
+   "term": "levothroid"
+ },
+ {
+   "term": "levothyroxine sodium"
+ },
+ {
+   "term": "levoxyl"
+ },
+ {
+   "term": "lexiscan"
+ },
+ {
+   "term": "lialda"
+ },
+ {
+   "term": "lidamantle"
+ },
+ {
+   "term": "lidoderm"
+ },
+ {
+   "term": "lignospan forte"
+ },
+ {
+   "term": "lignospan standard"
+ },
+ {
+   "term": "liletta"
+ },
+ {
+   "term": "lincocin"
+ },
+ {
+   "term": "lindane lotion"
+ },
+ {
+   "term": "lindane shampoo"
+ },
+ {
+   "term": "linzess"
+ },
+ {
+   "term": "lipodox"
+ },
+ {
+   "term": "liposyn iii 30"
+ },
+ {
+   "term": "lithobid"
+ },
+ {
+   "term": "livalo"
+ },
+ {
+   "term": "livostin"
+ },
+ {
+   "term": "lo loestrin fe"
+ },
+ {
+   "term": "lo ovral"
+ },
+ {
+   "term": "lokelma"
+ },
+ {
+   "term": "lomaira"
+ },
+ {
+   "term": "loniten"
+ },
+ {
+   "term": "lonsurf"
+ },
+ {
+   "term": "lopressor"
+ },
+ {
+   "term": "lopressor hct"
+ },
+ {
+   "term": "lopressor injection"
+ },
+ {
+   "term": "lorabid"
+ },
+ {
+   "term": "lorbrena"
+ },
+ {
+   "term": "lotemax"
+ },
+ {
+   "term": "lotemax gel"
+ },
+ {
+   "term": "lovaza"
+ },
+ {
+   "term": "low-ogestrel"
+ },
+ {
+   "term": "loxapine"
+ },
+ {
+   "term": "loxitane"
+ },
+ {
+   "term": "lucemyra"
+ },
+ {
+   "term": "lucentis"
+ },
+ {
+   "term": "lumason"
+ },
+ {
+   "term": "lumoxiti"
+ },
+ {
+   "term": "lupaneta pack"
+ },
+ {
+   "term": "lupron"
+ },
+ {
+   "term": "lupron depot"
+ },
+ {
+   "term": "lutathera"
+ },
+ {
+   "term": "lutera"
+ },
+ {
+   "term": "luxturna"
+ },
+ {
+   "term": "luzu"
+ },
+ {
+   "term": "lybrel"
+ },
+ {
+   "term": "lymerix"
+ },
+ {
+   "term": "lymphoseek"
+ },
+ {
+   "term": "lynparza"
+ },
+ {
+   "term": "lyrica"
+ },
+ {
+   "term": "lyrica cr"
+ },
+ {
+   "term": "lysteda"
+ },
+ {
+   "term": "marlissa"
+ },
+ {
+   "term": "maxaquin"
+ },
+ {
+   "term": "mevacor"
+ },
+ {
+   "term": "mirena"
+ },
+ {
+   "term": "mulpleta"
+ },
+ {
+   "term": "myzilra"
+ },
+ {
+   "term": "next choice"
+ },
+ {
+   "term": "nordette-28"
+ },
+ {
+   "term": "novothyrox"
+ },
+ {
+   "term": "nutrestore"
+ },
+ {
+   "term": "oraqix"
+ },
+ {
+   "term": "orkambi"
+ },
+ {
+   "term": "orlaam"
+ },
+ {
+   "term": "plan b"
+ },
+ {
+   "term": "plan b one-step"
+ },
+ {
+   "term": "pliaglis"
+ },
+ {
+   "term": "prevacid"
+ },
+ {
+   "term": "prevpac"
+ },
+ {
+   "term": "prevymis"
+ },
+ {
+   "term": "prinivil"
+ },
+ {
+   "term": "prinzide"
+ },
+ {
+   "term": "qbrelis"
+ },
+ {
+   "term": "quartette"
+ },
+ {
+   "term": "quixin"
+ },
+ {
+   "term": "refludan"
+ },
+ {
+   "term": "restylane silk"
+ },
+ {
+   "term": "revlimid"
+ },
+ {
+   "term": "roweepra xr"
+ },
+ {
+   "term": "seasonale"
+ },
+ {
+   "term": "seasonique"
+ },
+ {
+   "term": "skyla"
+ },
+ {
+   "term": "spritam"
+ },
+ {
+   "term": "surfaxin"
+ },
+ {
+   "term": "synera"
+ },
+ {
+   "term": "synthroid"
+ },
+ {
+   "term": "takhzyro"
+ },
+ {
+   "term": "thyro-tabs"
+ },
+ {
+   "term": "tirosint"
+ },
+ {
+   "term": "tirosint-sol"
+ },
+ {
+   "term": "tradjenta"
+ },
+ {
+   "term": "trandate"
+ },
+ {
+   "term": "triostat"
+ },
+ {
+   "term": "tykerb"
+ },
+ {
+   "term": "unithroid"
+ },
+ {
+   "term": "vayarin"
+ },
+ {
+   "term": "viadur"
+ },
+ {
+   "term": "victoza"
+ },
+ {
+   "term": "vienva"
+ },
+ {
+   "term": "vimpat"
+ },
+ {
+   "term": "vyvanse"
+ },
+ {
+   "term": "vyzulta"
+ },
+ {
+   "term": "xalatan"
+ },
+ {
+   "term": "xelpros"
+ },
+ {
+   "term": "xiidra"
+ },
+ {
+   "term": "xopenex"
+ },
+ {
+   "term": "xopenex hfa"
+ },
+ {
+   "term": "xylocaine"
+ },
+ {
+   "term": "xylocaine mpf sterile solution"
+ },
+ {
+   "term": "xylocaine viscous"
+ },
+ {
+   "term": "xyzal"
+ },
+ {
+   "term": "ztlido"
+ },
+ {
+   "term": "zestoretic"
+ },
+ {
+   "term": "zestril"
+ },
+ {
+   "term": "zingo"
+ },
+ {
+   "term": "zylet"
+ },
+ {
+   "term": "zyvox"
+ },
+ {
+   "term": "lithium carbonate"
+ },
+ {
+   "term": "8-mop"
+ },
+ {
+   "term": "lysodren"
+ },
+ {
+   "term": "m-m-r ii"
+ },
+ {
+   "term": "ms-contin"
+ },
+ {
+   "term": "mvi adult"
+ },
+ {
+   "term": "macrobid"
+ },
+ {
+   "term": "macrodantin"
+ },
+ {
+   "term": "macugen"
+ },
+ {
+   "term": "magnesium sulfate"
+ },
+ {
+   "term": "manganese"
+ },
+ {
+   "term": "mannitol iv"
+ },
+ {
+   "term": "marqibo"
+ },
+ {
+   "term": "matulane"
+ },
+ {
+   "term": "mavik"
+ },
+ {
+   "term": "mavyret"
+ },
+ {
+   "term": "maxair"
+ },
+ {
+   "term": "maxalt"
+ },
+ {
+   "term": "maxide"
+ },
+ {
+   "term": "maxitrol"
+ },
+ {
+   "term": "mebaral"
+ },
+ {
+   "term": "meclizine hydrochloride"
+ },
+ {
+   "term": "meclofenamate"
+ },
+ {
+   "term": "medrol"
+ },
+ {
+   "term": "mefenamic acid"
+ },
+ {
+   "term": "megace"
+ },
+ {
+   "term": "megace es"
+ },
+ {
+   "term": "megestrol acetate oral suspension"
+ },
+ {
+   "term": "megestrol acetate tablets"
+ },
+ {
+   "term": "mekinist"
+ },
+ {
+   "term": "mellaril"
+ },
+ {
+   "term": "menhibrix"
+ },
+ {
+   "term": "menactra"
+ },
+ {
+   "term": "menomune"
+ },
+ {
+   "term": "menopur"
+ },
+ {
+   "term": "menveo"
+ },
+ {
+   "term": "mepergan"
+ },
+ {
+   "term": "mephyton"
+ },
+ {
+   "term": "meprobamate"
+ },
+ {
+   "term": "mepsevii"
+ },
+ {
+   "term": "meridia"
+ },
+ {
+   "term": "meruvax"
+ },
+ {
+   "term": "mestinon"
+ },
+ {
+   "term": "metadate cd"
+ },
+ {
+   "term": "metadate er"
+ },
+ {
+   "term": "metanx"
+ },
+ {
+   "term": "metastron"
+ },
+ {
+   "term": "methadone hydrochloride"
+ },
+ {
+   "term": "methadone hydrochloride injection"
+ },
+ {
+   "term": "methadose"
+ },
+ {
+   "term": "methazolamide"
+ },
+ {
+   "term": "methergine"
+ },
+ {
+   "term": "methitest"
+ },
+ {
+   "term": "methyclothiazide"
+ },
+ {
+   "term": "methyldopate hcl"
+ },
+ {
+   "term": "methylene blue"
+ },
+ {
+   "term": "methylin chewable tablets"
+ },
+ {
+   "term": "methylin oral solution"
+ },
+ {
+   "term": "metolazone"
+ },
+ {
+   "term": "metopirone"
+ },
+ {
+   "term": "metrocream"
+ },
+ {
+   "term": "metrogel 75"
+ },
+ {
+   "term": "metrolotion"
+ },
+ {
+   "term": "metrodin"
+ },
+ {
+   "term": "metrogel"
+ },
+ {
+   "term": "metronidazole"
+ },
+ {
+   "term": "metvixia"
+ },
+ {
+   "term": "mexitil"
+ },
+ {
+   "term": "micardis"
+ },
+ {
+   "term": "micardis hct"
+ },
+ {
+   "term": "micro-k"
+ },
+ {
+   "term": "micro-k for liquid suspension"
+ },
+ {
+   "term": "minastrin 24 fe"
+ },
+ {
+   "term": "minipress"
+ },
+ {
+   "term": "minocin"
+ },
+ {
+   "term": "minolira"
+ },
+ {
+   "term": "minoxidil"
+ },
+ {
+   "term": "mintezol"
+ },
+ {
+   "term": "miralax"
+ },
+ {
+   "term": "miraluma"
+ },
+ {
+   "term": "mirapex"
+ },
+ {
+   "term": "mirapex er"
+ },
+ {
+   "term": "mircera"
+ },
+ {
+   "term": "mithracin"
+ },
+ {
+   "term": "mitosol"
+ },
+ {
+   "term": "mivacron"
+ },
+ {
+   "term": "moban"
+ },
+ {
+   "term": "mobic"
+ },
+ {
+   "term": "moderiba"
+ },
+ {
+   "term": "monistat vaginal cream"
+ },
+ {
+   "term": "mono-vacc"
+ },
+ {
+   "term": "mononine"
+ },
+ {
+   "term": "morgidox"
+ },
+ {
+   "term": "morphabond"
+ },
+ {
+   "term": "morphine tablets"
+ },
+ {
+   "term": "morrhuate sodium"
+ },
+ {
+   "term": "movantik"
+ },
+ {
+   "term": "moviprep"
+ },
+ {
+   "term": "moxeza"
+ },
+ {
+   "term": "moxidectin"
+ },
+ {
+   "term": "mozobil"
+ },
+ {
+   "term": "mugard"
+ },
+ {
+   "term": "mumps skin test antigen"
+ },
+ {
+   "term": "mumpsvax"
+ },
+ {
+   "term": "mustargen"
+ },
+ {
+   "term": "mutamycin"
+ },
+ {
+   "term": "myalept"
+ },
+ {
+   "term": "mycamine"
+ },
+ {
+   "term": "mydayis"
+ },
+ {
+   "term": "mydriacil"
+ },
+ {
+   "term": "myfortic"
+ },
+ {
+   "term": "myoview"
+ },
+ {
+   "term": "myrbetriq"
+ },
+ {
+   "term": "mysoline"
+ },
+ {
+   "term": "namenda"
+ },
+ {
+   "term": "namenda xr"
+ },
+ {
+   "term": "namzaric"
+ },
+ {
+   "term": "noritate"
+ },
+ {
+   "term": "novantrone"
+ },
+ {
+   "term": "nucala"
+ },
+ {
+   "term": "nuvessa"
+ },
+ {
+   "term": "opsumit"
+ },
+ {
+   "term": "optipranolol"
+ },
+ {
+   "term": "oravig"
+ },
+ {
+   "term": "otrexup"
+ },
+ {
+   "term": "ovide"
+ },
+ {
+   "term": "oxsoralen"
+ },
+ {
+   "term": "oxsoralen-ultra"
+ },
+ {
+   "term": "pentasa"
+ },
+ {
+   "term": "plasma-lyte 148"
+ },
+ {
+   "term": "poly-vi-flor"
+ },
+ {
+   "term": "ponstel"
+ },
+ {
+   "term": "poteligeo"
+ },
+ {
+   "term": "proamatine"
+ },
+ {
+   "term": "proquad"
+ },
+ {
+   "term": "prosed ds"
+ },
+ {
+   "term": "provayblue"
+ },
+ {
+   "term": "provera"
+ },
+ {
+   "term": "provigil"
+ },
+ {
+   "term": "provocholine"
+ },
+ {
+   "term": "purinethol"
+ },
+ {
+   "term": "purixan"
+ },
+ {
+   "term": "qmiiz-odt"
+ },
+ {
+   "term": "quillichew er"
+ },
+ {
+   "term": "quillivant xr"
+ },
+ {
+   "term": "rasuvo"
+ },
+ {
+   "term": "recedo"
+ },
+ {
+   "term": "reglan"
+ },
+ {
+   "term": "reglan injection"
+ },
+ {
+   "term": "reglan odt"
+ },
+ {
+   "term": "relistor"
+ },
+ {
+   "term": "remeron"
+ },
+ {
+   "term": "repronex"
+ },
+ {
+   "term": "rheumatrex"
+ },
+ {
+   "term": "riomet"
+ },
+ {
+   "term": "ritalin"
+ },
+ {
+   "term": "ritalin la"
+ },
+ {
+   "term": "robaxin"
+ },
+ {
+   "term": "rowasa"
+ },
+ {
+   "term": "roxanol"
+ },
+ {
+   "term": "rydapt"
+ },
+ {
+   "term": "sansert"
+ },
+ {
+   "term": "savella"
+ },
+ {
+   "term": "scandonest"
+ },
+ {
+   "term": "selzentry"
+ },
+ {
+   "term": "singulair"
+ },
+ {
+   "term": "sinuva"
+ },
+ {
+   "term": "skelaxin"
+ },
+ {
+   "term": "solage"
+ },
+ {
+   "term": "solodyn"
+ },
+ {
+   "term": "solu medrol"
+ },
+ {
+   "term": "sulfamylon"
+ },
+ {
+   "term": "sulfamylon cream"
+ },
+ {
+   "term": "tapazole"
+ },
+ {
+   "term": "teslascan"
+ },
+ {
+   "term": "testred"
+ },
+ {
+   "term": "toprol xl"
+ },
+ {
+   "term": "trexall"
+ },
+ {
+   "term": "trumenba"
+ },
+ {
+   "term": "uniretic"
+ },
+ {
+   "term": "univasc"
+ },
+ {
+   "term": "urex"
+ },
+ {
+   "term": "uvadex"
+ },
+ {
+   "term": "vabomere"
+ },
+ {
+   "term": "valchlor"
+ },
+ {
+   "term": "vandazole"
+ },
+ {
+   "term": "vecamyl"
+ },
+ {
+   "term": "vermox"
+ },
+ {
+   "term": "vigamox"
+ },
+ {
+   "term": "vivlodex"
+ },
+ {
+   "term": "vusion"
+ },
+ {
+   "term": "xatmep"
+ },
+ {
+   "term": "ximino"
+ },
+ {
+   "term": "zaroxolyn"
+ },
+ {
+   "term": "zavesca"
+ },
+ {
+   "term": "meloxicam"
+ },
+ {
+   "term": "methyldopa"
+ },
+ {
+   "term": "mupirocin cream"
+ },
+ {
+   "term": "corgard"
+ },
+ {
+   "term": "np-thyroid"
+ },
+ {
+   "term": "naftin cream"
+ },
+ {
+   "term": "naprelan"
+ },
+ {
+   "term": "narcan"
+ },
+ {
+   "term": "narcan nasal"
+ },
+ {
+   "term": "nardil"
+ },
+ {
+   "term": "naropin"
+ },
+ {
+   "term": "nasacort aq"
+ },
+ {
+   "term": "nasalide"
+ },
+ {
+   "term": "nasonex"
+ },
+ {
+   "term": "natacyn"
+ },
+ {
+   "term": "nateglinide"
+ },
+ {
+   "term": "natesto"
+ },
+ {
+   "term": "natpara"
+ },
+ {
+   "term": "natrecor"
+ },
+ {
+   "term": "natroba"
+ },
+ {
+   "term": "nature-throid"
+ },
+ {
+   "term": "navane"
+ },
+ {
+   "term": "navelbine"
+ },
+ {
+   "term": "nebupent"
+ },
+ {
+   "term": "necon"
+ },
+ {
+   "term": "neggram"
+ },
+ {
+   "term": "nembutal"
+ },
+ {
+   "term": "neo-fradin"
+ },
+ {
+   "term": "neo-synalar"
+ },
+ {
+   "term": "neo-synephrine"
+ },
+ {
+   "term": "neotect"
+ },
+ {
+   "term": "neodecadron"
+ },
+ {
+   "term": "neomycin sulfate"
+ },
+ {
+   "term": "neosalus cream"
+ },
+ {
+   "term": "neosalus foam"
+ },
+ {
+   "term": "neosalus lotion"
+ },
+ {
+   "term": "neosporin ophthalmic ointment"
+ },
+ {
+   "term": "neosporin-gu"
+ },
+ {
+   "term": "neotrace-4"
+ },
+ {
+   "term": "nerlynx"
+ },
+ {
+   "term": "neulasta"
+ },
+ {
+   "term": "neumega"
+ },
+ {
+   "term": "neupro"
+ },
+ {
+   "term": "neutrexin"
+ },
+ {
+   "term": "nevanac"
+ },
+ {
+   "term": "nexavar"
+ },
+ {
+   "term": "niacor"
+ },
+ {
+   "term": "nicotrol"
+ },
+ {
+   "term": "nicotrol ns"
+ },
+ {
+   "term": "niferex capsules"
+ },
+ {
+   "term": "niferex elixir"
+ },
+ {
+   "term": "niferex-150"
+ },
+ {
+   "term": "niferex-150 forte"
+ },
+ {
+   "term": "nikita"
+ },
+ {
+   "term": "nilandron"
+ },
+ {
+   "term": "nimotop"
+ },
+ {
+   "term": "nipent"
+ },
+ {
+   "term": "nipride rtu"
+ },
+ {
+   "term": "nithiodote"
+ },
+ {
+   "term": "nitro-dur"
+ },
+ {
+   "term": "nitromist"
+ },
+ {
+   "term": "nitrolingual pumpspray"
+ },
+ {
+   "term": "nitropress"
+ },
+ {
+   "term": "nitrostat"
+ },
+ {
+   "term": "nityr"
+ },
+ {
+   "term": "nolvadex"
+ },
+ {
+   "term": "nor-qd"
+ },
+ {
+   "term": "norditropin"
+ },
+ {
+   "term": "norflex"
+ },
+ {
+   "term": "norgesic"
+ },
+ {
+   "term": "normal saline"
+ },
+ {
+   "term": "norminest fe and norquest fe"
+ },
+ {
+   "term": "normocarb hf"
+ },
+ {
+   "term": "noroxin"
+ },
+ {
+   "term": "norplant"
+ },
+ {
+   "term": "nortriptyline hydrochloride"
+ },
+ {
+   "term": "nortriptyline hydrochloride oral solution"
+ },
+ {
+   "term": "norvir"
+ },
+ {
+   "term": "novoeight"
+ },
+ {
+   "term": "novolin n innolet"
+ },
+ {
+   "term": "novolin r"
+ },
+ {
+   "term": "novoseven"
+ },
+ {
+   "term": "noxafil"
+ },
+ {
+   "term": "nplate"
+ },
+ {
+   "term": "nulytely"
+ },
+ {
+   "term": "nubain"
+ },
+ {
+   "term": "nucynta"
+ },
+ {
+   "term": "nucynta er"
+ },
+ {
+   "term": "nulecit"
+ },
+ {
+   "term": "numorphan"
+ },
+ {
+   "term": "nuplazid"
+ },
+ {
+   "term": "nutrilipid"
+ },
+ {
+   "term": "nutropin"
+ },
+ {
+   "term": "nutropin aq"
+ },
+ {
+   "term": "nutropin depot"
+ },
+ {
+   "term": "nuzyra"
+ },
+ {
+   "term": "nyamyc"
+ },
+ {
+   "term": "nymalize"
+ },
+ {
+   "term": "nystatin cream"
+ },
+ {
+   "term": "nystatin and triamcinolone acetonide"
+ },
+ {
+   "term": "nystop"
+ },
+ {
+   "term": "ofev"
+ },
+ {
+   "term": "opdivo"
+ },
+ {
+   "term": "opill"
+ },
+ {
+   "term": "orfadin"
+ },
+ {
+   "term": "ortho evra"
+ },
+ {
+   "term": "ortho tri-cyclen lo"
+ },
+ {
+   "term": "ortho-novum"
+ },
+ {
+   "term": "ovcon"
+ },
+ {
+   "term": "pamelor"
+ },
+ {
+   "term": "pediotic"
+ },
+ {
+   "term": "perlane-l"
+ },
+ {
+   "term": "philith"
+ },
+ {
+   "term": "portrazza"
+ },
+ {
+   "term": "procardia"
+ },
+ {
+   "term": "procardia xl"
+ },
+ {
+   "term": "prostigmin"
+ },
+ {
+   "term": "rectiv"
+ },
+ {
+   "term": "relafen"
+ },
+ {
+   "term": "revex"
+ },
+ {
+   "term": "revia"
+ },
+ {
+   "term": "rhopressa"
+ },
+ {
+   "term": "serzone"
+ },
+ {
+   "term": "sprintec"
+ },
+ {
+   "term": "sular"
+ },
+ {
+   "term": "symproic"
+ },
+ {
+   "term": "synarel"
+ },
+ {
+   "term": "taytulla"
+ },
+ {
+   "term": "tilade"
+ },
+ {
+   "term": "tri-sprintec"
+ },
+ {
+   "term": "trinessa"
+ },
+ {
+   "term": "tysabri"
+ },
+ {
+   "term": "vimovo"
+ },
+ {
+   "term": "viracept"
+ },
+ {
+   "term": "viramune"
+ },
+ {
+   "term": "viramune xr"
+ },
+ {
+   "term": "vivitrol"
+ },
+ {
+   "term": "vyfemla"
+ },
+ {
+   "term": "xulane"
+ },
+ {
+   "term": "zejula"
+ },
+ {
+   "term": "naltrexone hydrochloride"
+ },
+ {
+   "term": "obizur"
+ },
+ {
+   "term": "ocaliva"
+ },
+ {
+   "term": "ocrevus"
+ },
+ {
+   "term": "octagam"
+ },
+ {
+   "term": "ocuflox"
+ },
+ {
+   "term": "odomzo"
+ },
+ {
+   "term": "ofloxacin ophthalmic solution"
+ },
+ {
+   "term": "ogivri"
+ },
+ {
+   "term": "oleptro"
+ },
+ {
+   "term": "olysio"
+ },
+ {
+   "term": "omeclamox-pak"
+ },
+ {
+   "term": "omidria"
+ },
+ {
+   "term": "omnipred"
+ },
+ {
+   "term": "omnitrope"
+ },
+ {
+   "term": "omontys"
+ },
+ {
+   "term": "omtryg"
+ },
+ {
+   "term": "oncaspar"
+ },
+ {
+   "term": "onglyza"
+ },
+ {
+   "term": "onpattro"
+ },
+ {
+   "term": "onzetra xsail"
+ },
+ {
+   "term": "opana"
+ },
+ {
+   "term": "opana er"
+ },
+ {
+   "term": "optison"
+ },
+ {
+   "term": "oraverse"
+ },
+ {
+   "term": "oralair"
+ },
+ {
+   "term": "orap"
+ },
+ {
+   "term": "orapred odt"
+ },
+ {
+   "term": "orbactiv iv"
+ },
+ {
+   "term": "orimune"
+ },
+ {
+   "term": "orphenadrine citrate"
+ },
+ {
+   "term": "orphengesic"
+ },
+ {
+   "term": "osmoprep"
+ },
+ {
+   "term": "osphena"
+ },
+ {
+   "term": "oxacillin"
+ },
+ {
+   "term": "oxandrin"
+ },
+ {
+   "term": "oxaydo"
+ },
+ {
+   "term": "oxazepam"
+ },
+ {
+   "term": "oxecta"
+ },
+ {
+   "term": "oxistat"
+ },
+ {
+   "term": "oxtellar xr"
+ },
+ {
+   "term": "oxycontin"
+ },
+ {
+   "term": "oxytrol"
+ },
+ {
+   "term": "ozempic"
+ },
+ {
+   "term": "pataday"
+ },
+ {
+   "term": "patanase nasal spray"
+ },
+ {
+   "term": "patanol"
+ },
+ {
+   "term": "pazeo"
+ },
+ {
+   "term": "percocet"
+ },
+ {
+   "term": "pitocin"
+ },
+ {
+   "term": "prilosec"
+ },
+ {
+   "term": "roxicet"
+ },
+ {
+   "term": "roxicodone"
+ },
+ {
+   "term": "roxybond"
+ },
+ {
+   "term": "sandostatin"
+ },
+ {
+   "term": "sandostatin lar"
+ },
+ {
+   "term": "simvastatin"
+ },
+ {
+   "term": "striverdi respimat"
+ },
+ {
+   "term": "symbyax"
+ },
+ {
+   "term": "synribo"
+ },
+ {
+   "term": "tagrisso"
+ },
+ {
+   "term": "tamiflu"
+ },
+ {
+   "term": "targiniq er"
+ },
+ {
+   "term": "technivie"
+ },
+ {
+   "term": "terra-cortril"
+ },
+ {
+   "term": "terramycin"
+ },
+ {
+   "term": "tribenzor"
+ },
+ {
+   "term": "trileptal"
+ },
+ {
+   "term": "troxyca er"
+ },
+ {
+   "term": "tylox"
+ },
+ {
+   "term": "urobiotic"
+ },
+ {
+   "term": "vayarol"
+ },
+ {
+   "term": "viekira pak"
+ },
+ {
+   "term": "xartemis xr"
+ },
+ {
+   "term": "xenical"
+ },
+ {
+   "term": "xepi"
+ },
+ {
+   "term": "xolair"
+ },
+ {
+   "term": "xtampza er"
+ },
+ {
+   "term": "zegerid"
+ },
+ {
+   "term": "zofran"
+ },
+ {
+   "term": "zofran injection"
+ },
+ {
+   "term": "zuplenz"
+ },
+ {
+   "term": "zyprexa relprevv"
+ },
+ {
+   "term": "dilantin infatabs"
+ },
+ {
+   "term": "diprivan"
+ },
+ {
+   "term": "palynziq"
+ },
+ {
+   "term": "pancreaze"
+ },
+ {
+   "term": "pancrecarb"
+ },
+ {
+   "term": "papaverine"
+ },
+ {
+   "term": "papaverine injection"
+ },
+ {
+   "term": "paricalcitol"
+ },
+ {
+   "term": "parnate"
+ },
+ {
+   "term": "paromomycin sulfate"
+ },
+ {
+   "term": "pavulon"
+ },
+ {
+   "term": "paxil"
+ },
+ {
+   "term": "paxil-cr"
+ },
+ {
+   "term": "pediapred"
+ },
+ {
+   "term": "pedtrace"
+ },
+ {
+   "term": "peg-intron"
+ },
+ {
+   "term": "pegintron"
+ },
+ {
+   "term": "pegasys"
+ },
+ {
+   "term": "penicillin g potassium"
+ },
+ {
+   "term": "penicillin g procaine"
+ },
+ {
+   "term": "penicillin vk"
+ },
+ {
+   "term": "pentacel"
+ },
+ {
+   "term": "pentothal"
+ },
+ {
+   "term": "perjeta"
+ },
+ {
+   "term": "perlane"
+ },
+ {
+   "term": "permax"
+ },
+ {
+   "term": "perphenazine"
+ },
+ {
+   "term": "perseris"
+ },
+ {
+   "term": "pertzye"
+ },
+ {
+   "term": "pexeva"
+ },
+ {
+   "term": "pfizerpen"
+ },
+ {
+   "term": "phendimetrazine tartrate"
+ },
+ {
+   "term": "phenergan"
+ },
+ {
+   "term": "phenergan vc"
+ },
+ {
+   "term": "phenobarbital"
+ },
+ {
+   "term": "phosphocol"
+ },
+ {
+   "term": "photofrin"
+ },
+ {
+   "term": "photrexa viscous"
+ },
+ {
+   "term": "pilopine hs"
+ },
+ {
+   "term": "pipracil"
+ },
+ {
+   "term": "pitressin"
+ },
+ {
+   "term": "plegisol"
+ },
+ {
+   "term": "plegridy"
+ },
+ {
+   "term": "plenvu"
+ },
+ {
+   "term": "plexion"
+ },
+ {
+   "term": "pneumovax 23"
+ },
+ {
+   "term": "podocon-25"
+ },
+ {
+   "term": "poly-pred"
+ },
+ {
+   "term": "polymyxin b"
+ },
+ {
+   "term": "polytrim"
+ },
+ {
+   "term": "pomalyst"
+ },
+ {
+   "term": "potassium acetate"
+ },
+ {
+   "term": "potassium chloride extended release tablets"
+ },
+ {
+   "term": "prandimet"
+ },
+ {
+   "term": "prandin"
+ },
+ {
+   "term": "pravachol"
+ },
+ {
+   "term": "pred forte"
+ },
+ {
+   "term": "pred mild"
+ },
+ {
+   "term": "prednisolone"
+ },
+ {
+   "term": "prednisolone oral solution"
+ },
+ {
+   "term": "prednisone"
+ },
+ {
+   "term": "prelone"
+ },
+ {
+   "term": "prepopik"
+ },
+ {
+   "term": "prestalia"
+ },
+ {
+   "term": "prevnar"
+ },
+ {
+   "term": "prevnar 13"
+ },
+ {
+   "term": "prexxartan"
+ },
+ {
+   "term": "prialt"
+ },
+ {
+   "term": "priftin"
+ },
+ {
+   "term": "primaquine"
+ },
+ {
+   "term": "primsol"
+ },
+ {
+   "term": "prismasol solution"
+ },
+ {
+   "term": "probenecid and colchicine"
+ },
+ {
+   "term": "procan sr"
+ },
+ {
+   "term": "prochieve"
+ },
+ {
+   "term": "prochlorperazine maleate tablets"
+ },
+ {
+   "term": "progesterone injection"
+ },
+ {
+   "term": "prograf"
+ },
+ {
+   "term": "promethazine hcl"
+ },
+ {
+   "term": "promethazine hcl injection"
+ },
+ {
+   "term": "promethazine hcl suppositories"
+ },
+ {
+   "term": "promethazine hcl syrup"
+ },
+ {
+   "term": "prometrium"
+ },
+ {
+   "term": "pronestyl"
+ },
+ {
+   "term": "propranolol hydrochloride injection"
+ },
+ {
+   "term": "propulsid"
+ },
+ {
+   "term": "propylthiouracil"
+ },
+ {
+   "term": "protamine"
+ },
+ {
+   "term": "protonix"
+ },
+ {
+   "term": "protopam"
+ },
+ {
+   "term": "protopic"
+ },
+ {
+   "term": "provenge"
+ },
+ {
+   "term": "provisc"
+ },
+ {
+   "term": "pyrazinamide"
+ },
+ {
+   "term": "pyridium"
+ },
+ {
+   "term": "qsymia"
+ },
+ {
+   "term": "rapivab"
+ },
+ {
+   "term": "rayos"
+ },
+ {
+   "term": "regonol"
+ },
+ {
+   "term": "renese"
+ },
+ {
+   "term": "rythmol"
+ },
+ {
+   "term": "rythmol sr"
+ },
+ {
+   "term": "salagen"
+ },
+ {
+   "term": "signifor"
+ },
+ {
+   "term": "signifor-lar"
+ },
+ {
+   "term": "slow-k"
+ },
+ {
+   "term": "somavert"
+ },
+ {
+   "term": "sudafed"
+ },
+ {
+   "term": "sylatron"
+ },
+ {
+   "term": "symlin"
+ },
+ {
+   "term": "synagis"
+ },
+ {
+   "term": "talacen"
+ },
+ {
+   "term": "talwin compound"
+ },
+ {
+   "term": "talwin injection"
+ },
+ {
+   "term": "talwin nx"
+ },
+ {
+   "term": "thyrel trh"
+ },
+ {
+   "term": "trental"
+ },
+ {
+   "term": "trilyte"
+ },
+ {
+   "term": "trulance"
+ },
+ {
+   "term": "udenyca"
+ },
+ {
+   "term": "ultrase"
+ },
+ {
+   "term": "ultrase mt"
+ },
+ {
+   "term": "ultresa"
+ },
+ {
+   "term": "varithena"
+ },
+ {
+   "term": "vazculep"
+ },
+ {
+   "term": "vectibix"
+ },
+ {
+   "term": "veltassa"
+ },
+ {
+   "term": "viokace"
+ },
+ {
+   "term": "viokase"
+ },
+ {
+   "term": "visken"
+ },
+ {
+   "term": "vivactil"
+ },
+ {
+   "term": "votrient"
+ },
+ {
+   "term": "zemdri"
+ },
+ {
+   "term": "zemplar"
+ },
+ {
+   "term": "zenpep"
+ },
+ {
+   "term": "zn-dtpa"
+ },
+ {
+   "term": "zosyn"
+ },
+ {
+   "term": "zosyn injection"
+ },
+ {
+   "term": "zypitamag"
+ },
+ {
+   "term": "paclitaxel"
+ },
+ {
+   "term": "pentoxifylline"
+ },
+ {
+   "term": "quadramet"
+ },
+ {
+   "term": "qualaquin"
+ },
+ {
+   "term": "qudexy xr"
+ },
+ {
+   "term": "quelicin"
+ },
+ {
+   "term": "quinidex"
+ },
+ {
+   "term": "quinidine gluconate"
+ },
+ {
+   "term": "quinidine injection"
+ },
+ {
+   "term": "quinidine sulfate"
+ },
+ {
+   "term": "seroquel"
+ },
+ {
+   "term": "seroquel xr"
+ },
+ {
+   "term": "synercid"
+ },
+ {
+   "term": "mycobutin"
+ },
+ {
+   "term": "rabavert"
+ },
+ {
+   "term": "radiogenix system"
+ },
+ {
+   "term": "ragwitek"
+ },
+ {
+   "term": "ranexa"
+ },
+ {
+   "term": "rapaflo capsules"
+ },
+ {
+   "term": "rapamune"
+ },
+ {
+   "term": "raplixa"
+ },
+ {
+   "term": "raplon"
+ },
+ {
+   "term": "rebetol"
+ },
+ {
+   "term": "rebetron"
+ },
+ {
+   "term": "rebinyn"
+ },
+ {
+   "term": "reclast"
+ },
+ {
+   "term": "recombinate"
+ },
+ {
+   "term": "recombivax"
+ },
+ {
+   "term": "recothrom"
+ },
+ {
+   "term": "relenza"
+ },
+ {
+   "term": "remodulin"
+ },
+ {
+   "term": "renagel"
+ },
+ {
+   "term": "renova"
+ },
+ {
+   "term": "renvela"
+ },
+ {
+   "term": "requip"
+ },
+ {
+   "term": "requip xl"
+ },
+ {
+   "term": "rescula"
+ },
+ {
+   "term": "restoril"
+ },
+ {
+   "term": "retavase"
+ },
+ {
+   "term": "retin-a"
+ },
+ {
+   "term": "retrovir"
+ },
+ {
+   "term": "retrovir iv"
+ },
+ {
+   "term": "revatio"
+ },
+ {
+   "term": "revonto"
+ },
+ {
+   "term": "rezulin"
+ },
+ {
+   "term": "rhophylac"
+ },
+ {
+   "term": "riastap"
+ },
+ {
+   "term": "ridaura"
+ },
+ {
+   "term": "rifadin"
+ },
+ {
+   "term": "rifamate"
+ },
+ {
+   "term": "rifater"
+ },
+ {
+   "term": "rilutek"
+ },
+ {
+   "term": "ringers in dextrose"
+ },
+ {
+   "term": "risperdal"
+ },
+ {
+   "term": "rituxan"
+ },
+ {
+   "term": "rituxan hycela"
+ },
+ {
+   "term": "rixubis"
+ },
+ {
+   "term": "rosanil"
+ },
+ {
+   "term": "rosula"
+ },
+ {
+   "term": "rotateq"
+ },
+ {
+   "term": "rotarix"
+ },
+ {
+   "term": "rozerem"
+ },
+ {
+   "term": "ruby-fill"
+ },
+ {
+   "term": "rufinamide"
+ },
+ {
+   "term": "ryzolt"
+ },
+ {
+   "term": "stivarga"
+ },
+ {
+   "term": "tiglutik"
+ },
+ {
+   "term": "tritec"
+ },
+ {
+   "term": "ultiva"
+ },
+ {
+   "term": "varubi"
+ },
+ {
+   "term": "vexol"
+ },
+ {
+   "term": "vioxx"
+ },
+ {
+   "term": "virazole"
+ },
+ {
+   "term": "xarelto"
+ },
+ {
+   "term": "xifaxan"
+ },
+ {
+   "term": "xofigo"
+ },
+ {
+   "term": "yupelri"
+ },
+ {
+   "term": "zantac"
+ },
+ {
+   "term": "zantac injection"
+ },
+ {
+   "term": "zemuron"
+ },
+ {
+   "term": "rosuvastatin calcium"
+ },
+ {
+   "term": "betapace af"
+ },
+ {
+   "term": "clinoril"
+ },
+ {
+   "term": "symfi"
+ },
+ {
+   "term": "sabril"
+ },
+ {
+   "term": "saizen"
+ },
+ {
+   "term": "samsca"
+ },
+ {
+   "term": "sanctura"
+ },
+ {
+   "term": "sanctura xr"
+ },
+ {
+   "term": "saxenda"
+ },
+ {
+   "term": "seconal sodium"
+ },
+ {
+   "term": "secreflo"
+ },
+ {
+   "term": "selseb"
+ },
+ {
+   "term": "selsun"
+ },
+ {
+   "term": "seprafilm"
+ },
+ {
+   "term": "septra"
+ },
+ {
+   "term": "serevent diskus"
+ },
+ {
+   "term": "serostim"
+ },
+ {
+   "term": "seysara"
+ },
+ {
+   "term": "shingrix"
+ },
+ {
+   "term": "silvadene"
+ },
+ {
+   "term": "simcor"
+ },
+ {
+   "term": "sivextro"
+ },
+ {
+   "term": "skelid"
+ },
+ {
+   "term": "skin exposure paste"
+ },
+ {
+   "term": "slo-phyllin"
+ },
+ {
+   "term": "smoflipid"
+ },
+ {
+   "term": "sodium acetate"
+ },
+ {
+   "term": "sodium bicarbonate"
+ },
+ {
+   "term": "sodium iodide i 131"
+ },
+ {
+   "term": "sodium lactate"
+ },
+ {
+   "term": "solesta"
+ },
+ {
+   "term": "solosec"
+ },
+ {
+   "term": "soltamox"
+ },
+ {
+   "term": "sonata"
+ },
+ {
+   "term": "sorine"
+ },
+ {
+   "term": "sotradecol"
+ },
+ {
+   "term": "sotylize"
+ },
+ {
+   "term": "sovaldi"
+ },
+ {
+   "term": "spiriva"
+ },
+ {
+   "term": "spiriva respimat"
+ },
+ {
+   "term": "stavzor"
+ },
+ {
+   "term": "staxyn"
+ },
+ {
+   "term": "stelazine"
+ },
+ {
+   "term": "sterile water"
+ },
+ {
+   "term": "steritalc"
+ },
+ {
+   "term": "stiolto respimat"
+ },
+ {
+   "term": "streptase"
+ },
+ {
+   "term": "streptomycin"
+ },
+ {
+   "term": "striant"
+ },
+ {
+   "term": "suclear"
+ },
+ {
+   "term": "sucraid"
+ },
+ {
+   "term": "sufenta"
+ },
+ {
+   "term": "sulfatrim"
+ },
+ {
+   "term": "sultrin"
+ },
+ {
+   "term": "sumadan"
+ },
+ {
+   "term": "sumavel dosepro"
+ },
+ {
+   "term": "sumycin"
+ },
+ {
+   "term": "supartz fx"
+ },
+ {
+   "term": "suprenza"
+ },
+ {
+   "term": "surmontil"
+ },
+ {
+   "term": "sutent"
+ },
+ {
+   "term": "sylvant"
+ },
+ {
+   "term": "symdeko"
+ },
+ {
+   "term": "syndros"
+ },
+ {
+   "term": "syprine"
+ },
+ {
+   "term": "tev-tropin"
+ },
+ {
+   "term": "treximet"
+ },
+ {
+   "term": "trobicin"
+ },
+ {
+   "term": "ultane"
+ },
+ {
+   "term": "vesicare"
+ },
+ {
+   "term": "valtropin"
+ },
+ {
+   "term": "vasocidin"
+ },
+ {
+   "term": "velphoro"
+ },
+ {
+   "term": "veregen"
+ },
+ {
+   "term": "viagra"
+ },
+ {
+   "term": "visicol"
+ },
+ {
+   "term": "vosevi"
+ },
+ {
+   "term": "xadago"
+ },
+ {
+   "term": "xyrem"
+ },
+ {
+   "term": "zagam"
+ },
+ {
+   "term": "zanosar"
+ },
+ {
+   "term": "zecuity"
+ },
+ {
+   "term": "zelapar"
+ },
+ {
+   "term": "zembrace-symtouch"
+ },
+ {
+   "term": "zerit"
+ },
+ {
+   "term": "zocor"
+ },
+ {
+   "term": "zoloft"
+ },
+ {
+   "term": "zorbtive"
+ },
+ {
+   "term": "zotrim"
+ },
+ {
+   "term": "retin-a micro"
+ },
+ {
+   "term": "tobi podhaler"
+ },
+ {
+   "term": "tpoxx"
+ },
+ {
+   "term": "true test"
+ },
+ {
+   "term": "tabloid"
+ },
+ {
+   "term": "talzenna"
+ },
+ {
+   "term": "tao"
+ },
+ {
+   "term": "tarka"
+ },
+ {
+   "term": "tasmar"
+ },
+ {
+   "term": "tazorac"
+ },
+ {
+   "term": "tazorac cream"
+ },
+ {
+   "term": "technelite"
+ },
+ {
+   "term": "teflaro"
+ },
+ {
+   "term": "temodar"
+ },
+ {
+   "term": "tenivac"
+ },
+ {
+   "term": "tepadina"
+ },
+ {
+   "term": "terbutaline sulfate"
+ },
+ {
+   "term": "teslac"
+ },
+ {
+   "term": "testim"
+ },
+ {
+   "term": "testoderm"
+ },
+ {
+   "term": "testopel"
+ },
+ {
+   "term": "tetanus"
+ },
+ {
+   "term": "tetanus toxoid adsorbed"
+ },
+ {
+   "term": "thallous chloride"
+ },
+ {
+   "term": "thalomid"
+ },
+ {
+   "term": "tham"
+ },
+ {
+   "term": "theo-24"
+ },
+ {
+   "term": "theolair"
+ },
+ {
+   "term": "theracys"
+ },
+ {
+   "term": "therapeutic insect allergen extracts"
+ },
+ {
+   "term": "thiola"
+ },
+ {
+   "term": "thioridazine"
+ },
+ {
+   "term": "thiotepa"
+ },
+ {
+   "term": "thymoglobulin"
+ },
+ {
+   "term": "thyrogen"
+ },
+ {
+   "term": "ticlid"
+ },
+ {
+   "term": "tigan"
+ },
+ {
+   "term": "tigan injection"
+ },
+ {
+   "term": "timentin"
+ },
+ {
+   "term": "timentin injection"
+ },
+ {
+   "term": "timolide"
+ },
+ {
+   "term": "timoptic"
+ },
+ {
+   "term": "timoptic in ocudose"
+ },
+ {
+   "term": "timoptic-xe"
+ },
+ {
+   "term": "tindamax"
+ },
+ {
+   "term": "tnkase"
+ },
+ {
+   "term": "tobi"
+ },
+ {
+   "term": "tobradex"
+ },
+ {
+   "term": "tobradex st"
+ },
+ {
+   "term": "tobramycin injection"
+ },
+ {
+   "term": "tobrex"
+ },
+ {
+   "term": "tolectin"
+ },
+ {
+   "term": "tolinase"
+ },
+ {
+   "term": "tonocard"
+ },
+ {
+   "term": "topamax"
+ },
+ {
+   "term": "torecan"
+ },
+ {
+   "term": "torisel"
+ },
+ {
+   "term": "toxiban"
+ },
+ {
+   "term": "travasol"
+ },
+ {
+   "term": "travatan"
+ },
+ {
+   "term": "travatan z"
+ },
+ {
+   "term": "tree weed feathers mold penicillium allergenic extracts"
+ },
+ {
+   "term": "trelstar"
+ },
+ {
+   "term": "trelstar depot"
+ },
+ {
+   "term": "trelstar la"
+ },
+ {
+   "term": "tretten"
+ },
+ {
+   "term": "triacin c"
+ },
+ {
+   "term": "triamcinolone cream"
+ },
+ {
+   "term": "triamcinolone lotion"
+ },
+ {
+   "term": "triamcinolone ointment"
+ },
+ {
+   "term": "trianex"
+ },
+ {
+   "term": "tridione"
+ },
+ {
+   "term": "triesence"
+ },
+ {
+   "term": "trimethoprim"
+ },
+ {
+   "term": "trintellix"
+ },
+ {
+   "term": "triptodur"
+ },
+ {
+   "term": "trivaris"
+ },
+ {
+   "term": "trokendi xr"
+ },
+ {
+   "term": "trovan - zithromax"
+ },
+ {
+   "term": "tubersol"
+ },
+ {
+   "term": "twinrix"
+ },
+ {
+   "term": "twynsta"
+ },
+ {
+   "term": "tygacil"
+ },
+ {
+   "term": "typhim"
+ },
+ {
+   "term": "tyvaso"
+ },
+ {
+   "term": "tyzeka"
+ },
+ {
+   "term": "ultra-technekow"
+ },
+ {
+   "term": "ultracet"
+ },
+ {
+   "term": "ultram"
+ },
+ {
+   "term": "ultram er"
+ },
+ {
+   "term": "uniphyl"
+ },
+ {
+   "term": "vagistat-1"
+ },
+ {
+   "term": "vesanoid"
+ },
+ {
+   "term": "vibativ"
+ },
+ {
+   "term": "viread"
+ },
+ {
+   "term": "viroptic"
+ },
+ {
+   "term": "visionblue"
+ },
+ {
+   "term": "vogelxo"
+ },
+ {
+   "term": "vumon"
+ },
+ {
+   "term": "wp-thyroid"
+ },
+ {
+   "term": "westhroid"
+ },
+ {
+   "term": "xeljanz"
+ },
+ {
+   "term": "xenazine"
+ },
+ {
+   "term": "xermelo"
+ },
+ {
+   "term": "xyosted"
+ },
+ {
+   "term": "yondelis"
+ },
+ {
+   "term": "zadaxin"
+ },
+ {
+   "term": "zanaflex"
+ },
+ {
+   "term": "zelnorm"
+ },
+ {
+   "term": "zilretta"
+ },
+ {
+   "term": "uptravi"
+ },
+ {
+   "term": "urso"
+ },
+ {
+   "term": "utopic"
+ },
+ {
+   "term": "vistogard"
+ },
+ {
+   "term": "xuriden"
+ },
+ {
+   "term": "aquasol a"
+ },
+ {
+   "term": "covera-hs"
+ },
+ {
+   "term": "vigiv"
+ },
+ {
+   "term": "vpriv"
+ },
+ {
+   "term": "valcyte"
+ },
+ {
+   "term": "valstar"
+ },
+ {
+   "term": "valtrex"
+ },
+ {
+   "term": "varizig"
+ },
+ {
+   "term": "varivax"
+ },
+ {
+   "term": "vasostrict"
+ },
+ {
+   "term": "vecuronium bromide"
+ },
+ {
+   "term": "venclexta"
+ },
+ {
+   "term": "verapamil hydrochloride"
+ },
+ {
+   "term": "verelan"
+ },
+ {
+   "term": "verelan pm"
+ },
+ {
+   "term": "vfend"
+ },
+ {
+   "term": "viibryd"
+ },
+ {
+   "term": "vinblastine sulfate"
+ },
+ {
+   "term": "vincasar pfs"
+ },
+ {
+   "term": "vira-a"
+ },
+ {
+   "term": "visudyne"
+ },
+ {
+   "term": "vituz"
+ },
+ {
+   "term": "vivaglobin"
+ },
+ {
+   "term": "vonvendi"
+ },
+ {
+   "term": "zelboraf"
+ },
+ {
+   "term": "zenate prenatal"
+ },
+ {
+   "term": "zolinza"
+ },
+ {
+   "term": "zontivity"
+ },
+ {
+   "term": "wilate"
+ },
+ {
+   "term": "xalkori"
+ },
+ {
+   "term": "xenon xe 133 gas"
+ },
+ {
+   "term": "aphrodyne"
+ },
+ {
+   "term": "yocon"
+ },
+ {
+   "term": "zaltrap"
+ },
+ {
+   "term": "zemaira"
+ },
+ {
+   "term": "zinc"
+ },
+ {
+   "term": "zioptan"
+ },
+ {
+   "term": "zoderm"
+ },
+ {
+   "term": "zolpimist"
+ },
+ {
+   "term": "zomacton"
+ },
+ {
+   "term": "zometa"
+ },
+ {
+   "term": "zomig"
+ },
+ {
+   "term": "zomig nasal spray"
+ },
+ {
+   "term": "zonegran"
+ },
+ {
+   "term": "zostavax"
+ },
+ {
+   "term": "zurampic"
+ },
+ {
+   "term": "zutripro"
+ },
+ {
+   "term": "zyflo"
+ },
+ {
+   "term": "zyflo cr"
  }
 ]

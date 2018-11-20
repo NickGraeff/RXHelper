@@ -76,7 +76,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         nameField.setBottomBorder()
         dosageField.setBottomBorder()
-        self.hideKeyboardWhenTappedAround()
+        //self.hideKeyboardWhenTappedAround()
     }
 
     // If user changes text, hide the tableView
