@@ -29,6 +29,13 @@ func fetchMainUsersInfo() {
                                 let member = Member()
                                 member.name = dictionary1["name"] as! String
                                 member.key = dictionary1["key"] as! String
+                                if dictionary1["isPet"] == nil{
+                                    member.isPet = false
+                                }
+                                else {
+                                    member.isPet = dictionary1["isPet"] as! Bool
+                                }
+                                //member.isPet = dictionary1["isPet"] as? Bool
                                 owner.members.append(member)
                             }
                         }

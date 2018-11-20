@@ -729,7 +729,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAb-j4-ieX">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAb-j4-ieX">
                                 <rect key="frame" x="23" y="186" width="330" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -737,7 +737,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-fz-sOP">
-                                <rect key="frame" x="148" y="237" width="80" height="34"/>
+                                <rect key="frame" x="148" y="311" width="80" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add"/>
@@ -745,11 +745,23 @@
                                     <action selector="addNewUserButton:" destination="e08-HQ-S2O" eventType="touchUpInside" id="Kx2-w4-DUf"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-i2-CCW">
+                                <rect key="frame" x="287" y="256" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is new user a pet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-2e-ADT">
+                                <rect key="frame" x="23" y="256" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="kyE-1f-hAY"/>
                     </view>
                     <connections>
+                        <outlet property="isPetSwitch" destination="Aj6-i2-CCW" id="E8Z-iT-qNj"/>
                         <outlet property="newUsersName" destination="yAb-j4-ieX" id="9ew-lS-7LE"/>
                         <segue destination="qie-E2-2wT" kind="show" identifier="toHome" id="ZaM-cr-wzR"/>
                     </connections>
@@ -957,22 +969,24 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="249" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-U6-Gdg">
-                                                            <rect key="frame" x="6" y="0.0" width="245" height="44"/>
+                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2g-U6-Gdg">
+                                                            <rect key="frame" x="50" y="0.0" width="201" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="isg-vS-4Xt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="v2g-U6-Gdg" firstAttribute="top" secondItem="mBA-td-d0w" secondAttribute="top" id="TvR-rP-tCB"/>
-                                                        <constraint firstAttribute="bottom" secondItem="v2g-U6-Gdg" secondAttribute="bottom" id="hSB-Po-l5N"/>
-                                                        <constraint firstAttribute="trailingMargin" secondItem="v2g-U6-Gdg" secondAttribute="trailing" constant="-17" id="l8X-Bd-s2b"/>
-                                                        <constraint firstItem="v2g-U6-Gdg" firstAttribute="leading" secondItem="mBA-td-d0w" secondAttribute="leadingMargin" constant="-9" id="vEu-1t-aF2"/>
-                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="userImage" destination="isg-vS-4Xt" id="DHJ-AA-WUi"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>

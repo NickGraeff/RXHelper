@@ -12,9 +12,11 @@ class Member: NSObject {
     var name: String
     var prescriptions = [Prescription]()
     var key: String
+    var isPet: Bool
     
     override init() {
         self.name = ""
         self.key = ""
+        self.isPet = false
     }
 }

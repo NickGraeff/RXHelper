@@ -10,6 +10,7 @@ import UIKit
 
 class MenuTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var userImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

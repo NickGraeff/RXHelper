@@ -45,6 +45,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.textLabel?.text = member.name
             cell.textLabel?.font = UIFont.systemFont(ofSize: 17.0)
 
+            if (member.isPet == true) {
+                cell.imageView?.image = UIImage(named: "pet icon")
+            }
+            else {
+                cell.imageView?.image = UIImage(named: "human icon")
+            }
+
             return cell
         }
         // Selected "add user"
@@ -90,14 +97,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                 //remove the item from the data model
                 deleteMember(member: owner.members[indexPath.row])
 
-                
                 if owner.currentUser == owner.members[indexPath.row] {
                     owner.currentUser = owner.primaryUser
                 }
-                
+
                 //remove from members array
                 owner.members.remove(at: indexPath.row)
-                
+
 
                 //delete the table view row
                 tableView.deleteRows(at: [indexPath], with: .fade)

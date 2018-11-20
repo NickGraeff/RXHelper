@@ -11,6 +11,7 @@ import FirebaseDatabase
 
 class AddUserViewController: UIViewController {
 
+    @IBOutlet weak var isPetSwitch: UISwitch!
     @IBOutlet weak var newUsersName: UITextField!
     @IBAction func addNewUserButton(_ sender: Any) {
         //insert new user beneath getDisplayName()
@@ -35,6 +36,14 @@ class AddUserViewController: UIViewController {
             let memExample = Member()
             memExample.name = newUsersName.text!
             memExample.key = newref.key!
+
+            if (isPetSwitch.isOn) {
+                newref.child("isPet").setValue(true)
+                memExample.isPet = true
+            }
+            else {
+                newref.child("isPet").setValue(false)
+            }
             owner.members.append(memExample)
             //members.setValue("\(newUsersName.text!)")
             owner.currentUser = memExample
