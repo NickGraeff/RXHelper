@@ -13,7 +13,7 @@ class Prescription: NSObject {
     
     // MARK: Properties
     var name: String? = nil
-    var dosage: Int? = nil
+    var dosage: String? = nil
     var remainingDoses: Int? = nil
     var key: String?
     var alerts = [Alert]()
@@ -38,7 +38,7 @@ class Prescription: NSObject {
         
         var upcomingAlerts = [Alert]()
         for alert in alerts {
-            if alert.hours! > hours && alert.minutes! > minutes {
+            if (alert.hours! > hours || (alert.hours! == hours && alert.minutes! > minutes)) {
                 upcomingAlerts.append(alert)
             }
         }

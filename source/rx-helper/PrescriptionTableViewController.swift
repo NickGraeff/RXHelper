@@ -148,6 +148,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     if prescription.getUpcomingAlerts().count > 0 {
                         if count == indexPath.row {
                             prescriptionToReturn = prescription
+                            break
                         }
                         count += 1
                     }
@@ -159,6 +160,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     if prescription.getTakenAlerts().count > 0 {
                         if count == indexPath.row {
                             prescriptionToReturn = prescription
+                            break
                         }
                         count += 1
                     }
@@ -170,6 +172,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     if prescription.getSkippedAlerts().count > 0 {
                         if count == indexPath.row {
                             prescriptionToReturn = prescription
+                            break
                         }
                         count += 1
                     }
@@ -182,14 +185,24 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         cell.nameLabel.text = prescriptionToReturn!.name
         //cell.prescriptionImageView.image = prescription!.photo
         
-        if prescriptionToReturn!.alerts.count > 0 {
-            cell.nextDueLabel.text = prescriptionToReturn!.alerts[0].alertValue
+        let upcomingAlerts = prescriptionToReturn!.getUpcomingAlerts()
+        if upcomingAlerts.count > 0 {
+            var minAlert: Alert? = nil
+            for alert in upcomingAlerts {
+                if minAlert == nil {
+                    minAlert = alert
+                } else if minAlert!.hours! > alert.hours! || (minAlert!.hours! == alert.hours! && minAlert!.minutes! > alert.minutes!) {
+                    minAlert = alert
+                }
+                
+            }
+            cell.nextDueLabel.text = minAlert!.alertValue
         } else {
             cell.nextDueLabel.text = "Never"
         }
 
         //TO FIX
-        cell.dosageLabel.text = String(prescriptionToReturn!.dosage ?? 0)
+        cell.dosageLabel.text = String(prescriptionToReturn!.dosage ?? "0")
         
 //        cell.contentView.backgroundColor = UIColor.clear
 //        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
@@ -206,12 +219,6 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         return cell
     }
 
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -224,6 +231,32 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
+    }
+    
+    // method to disable cell editing for "Add user" row
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        
+        switch kindOfTableSelected {
+            
+        // All prescriptions
+        case PrescriptionTableViewController.allSelected:
+            return true
+            
+        // All upcoming prescriptions
+        case PrescriptionTableViewController.upcomingSelected:
+            return false
+            
+        // All prescriptions taken today
+        case PrescriptionTableViewController.takenTodaySelected:
+            return false
+            
+        // All upcoming prescriptions
+        case PrescriptionTableViewController.missedSelected:
+            return false
+            
+        default:
+            fatalError("Invalid tab selected")
+        }
     }
 
     /*
@@ -292,12 +325,12 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
             savePrescriptions()
             
             for alert in prescription.alerts {
-                setAlarm(prescription.name!, alert.hours!, alert.minutes!, prescription)
+                setAlarm(prescription.name!, alert.hours!, alert.minutes!, prescription, alert)
             }
         }
     }
     
-    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int, _ prescription: Prescription) {
+    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int, _ prescription: Prescription, _ alert: Alert) {
         makeAlarmCategories()
         
         let owner = MainUser.getInstance()
@@ -309,7 +342,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         owner.badge += 1
         content.badge = owner.badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
-        content.userInfo = ["Key" : prescription.key!]
+        content.userInfo = ["Key" : prescription.key!, "alertKey" : alert.key!]
         
         // Actual alarm setter
         var dateComponents = DateComponents()
@@ -330,7 +363,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         UNUserNotificationCenter.current().setNotificationCategories([category])
     }
     
-    func pressedSnooze (_ key: String) {
+    func pressedSnooze (_ key: String, _ alertKey: String) {
         makeAlarmCategories()
         
         let owner = MainUser.getInstance()
@@ -341,6 +374,12 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
             for prescription in member.prescriptions {
                 if prescription.key == key {
                     alarmedPrescription = prescription
+                    for alert in alarmedPrescription!.alerts {
+                        if alert.key == alertKey {
+                            alert.skipped = true
+                            break
+                        }
+                    }
                     break
                 }
             }
@@ -356,7 +395,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         owner.badge += 1
         content.badge = owner.badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
-        content.userInfo = ["Key" : key]
+        content.userInfo = ["Key" : key, "alertKey" : alertKey]
         
         
         // Snoozes for 15 minutes, switch 5 to 900
@@ -369,14 +408,22 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let userInfo = response.notification.request.content.userInfo
         let key = userInfo["Key"] as! String
+        let alarmKey = userInfo["alertKey"] as! String
         
         var alarmedPrescription: Prescription? = nil
+        var alarmedAlert : Alert? = nil
         let owner = MainUser.getInstance()
         
         for member in owner.members {
             for prescription in member.prescriptions {
                 if prescription.key == key {
                     alarmedPrescription = prescription
+                    for alert in alarmedPrescription!.alerts {
+                        if alert.key == alarmKey {
+                            alarmedAlert = alert
+                            break
+                        }
+                    }
                     break
                 }
             }
@@ -387,15 +434,18 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         }
         
         if response.actionIdentifier == "takeAction" {
+            UIApplication.shared.applicationIconBadgeNumber = 0
             owner.badge = 0
             alarmedPrescription!.remainingDoses! -= 1
+            alarmedAlert!.taken = true
+            alarmedAlert!.skipped = false
             
             if (alarmedPrescription!.remainingDoses)! < 10 {
                 createAlert("Time to refill your \(alarmedPrescription!.name!)!", "You have \(alarmedPrescription!.remainingDoses!) doses remaining.")
             }
         }
         else if response.actionIdentifier == "snoozeAction" {
-            pressedSnooze(key)
+            pressedSnooze(key, alarmKey)
         }
         
         completionHandler()
@@ -413,9 +463,9 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
     private func loadSamplePrescriptions() {
         
         // Making new prescriptions
-        let prescription1 = Prescription(); prescription1.name = "Sample Prescription 1"; prescription1.dosage = 0;
-        let prescription2 = Prescription(); prescription2.name = "Sample Prescription 2"; prescription2.dosage = 0;
-        let prescription3 = Prescription(); prescription3.name = "Sample Prescription 3"; prescription3.dosage = 0;
+        let prescription1 = Prescription(); prescription1.name = "Sample Prescription 1"; prescription1.dosage = "0";
+        let prescription2 = Prescription(); prescription2.name = "Sample Prescription 2"; prescription2.dosage = "0";
+        let prescription3 = Prescription(); prescription3.name = "Sample Prescription 3"; prescription3.dosage = "0";
         
         let owner = MainUser.getInstance()
         owner.currentUser.prescriptions += [prescription1, prescription2, prescription3]
@@ -497,7 +547,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     // Retrieving the values
                     prescription.name = dict[Prescription.PropertyKey.name] as? String
                     prescription.key = prescriptionSnapshot.key
-                    prescription.dosage = dict[Prescription.PropertyKey.dosage] as? Int
+                    prescription.dosage = dict[Prescription.PropertyKey.dosage] as? String
                     prescription.remainingDoses = dict[Prescription.PropertyKey.remainingDoses] as? Int
                     
                     // Retrieving the alerts for this prescription

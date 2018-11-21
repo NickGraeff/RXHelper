@@ -182,7 +182,9 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         case nameField:
             dosageField.becomeFirstResponder()
         case dosageField:
-            dosageField.resignFirstResponder()
+            remainingDosageField.becomeFirstResponder()
+        case remainingDosageField:
+            remainingDosageField.resignFirstResponder()
         default:
             self.hideKeyboardWhenTappedAround()
         }
@@ -267,9 +269,14 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         if editingStyle == .delete {
             // Delete the row from the data source
             
-            deleteAlert(key: prescription!.alerts[indexPath.row].key)
-            prescription!.alerts.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            if indexPath.row < prescription!.alerts.count {
+                deleteAlert(key: prescription!.alerts[indexPath.row].key)
+                prescription!.alerts.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            } else {
+                tempAlerts?.remove(at: indexPath.row - prescription!.alerts.count)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
             
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -337,7 +344,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
         }
 
         prescription!.name = nameField.text!
-        prescription!.dosage = Int(dosageField.text!)
+        prescription!.dosage = dosageField.text!
         prescription!.remainingDoses = Int(remainingDosageField.text!)
         prescription!.alerts += tempAlerts!
 
