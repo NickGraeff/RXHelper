@@ -36,6 +36,7 @@
 		C61566CC2150DF730031A3D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61566CB2150DF730031A3D4 /* Assets.xcassets */; };
 		C61566CF2150DF730031A3D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61566CD2150DF730031A3D4 /* LaunchScreen.storyboard */; };
 		C649526C219B95B0004ABB35 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C649526B219B95B0004ABB35 /* GradientView.swift */; };
+		C6594B9B21A4986100CB42F4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6594B9A21A4986100CB42F4 /* PageViewController.swift */; };
 		C6D7000E2150F27D000FCB96 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		C61566CE2150DF730031A3D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61566D02150DF730031A3D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C649526B219B95B0004ABB35 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C6594B9A21A4986100CB42F4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		C6D7000D2150F27D000FCB96 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D562F00EDC09CE018A1166F7 /* Pods-rx-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rx-helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-rx-helper/Pods-rx-helper.release.xcconfig"; sourceTree = "<group>"; };
 		D85C0675CEC1FCA61DA26275 /* Pods_rx_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rx_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 				B5FB1D5C2172D20C00795C7E /* StartViewController.swift */,
 				384B657A218C5B2E00A92ECB /* TOSViewController.swift */,
 				C60868E0219F4FE90067260D /* rxListMed.json */,
+				C6594B9A21A4986100CB42F4 /* PageViewController.swift */,
 				384B6576218C58E600A92ECB /* TutorialViewController.swift */,
 				AEB4EBAA21937BE4003C3DD7 /* WebViewController.swift */,
 				B57FE759216EA0CE006CD02A /* WelcomeViewController.swift */,
@@ -328,6 +331,7 @@
 				384B6575218B0F0A00A92ECB /* SupportPageViewController.swift in Sources */,
 				B5FCA293217C7536000A441A /* MenuTableViewCell.swift in Sources */,
 				384B6581218C60E000A92ECB /* FAQViewController.swift in Sources */,
+				C6594B9B21A4986100CB42F4 /* PageViewController.swift in Sources */,
 				B57FE75A216EA0CE006CD02A /* WelcomeViewController.swift in Sources */,
 				AEB4EBAB21937BE4003C3DD7 /* WebViewController.swift in Sources */,
 				C649526C219B95B0004ABB35 /* GradientView.swift in Sources */,
@@ -486,13 +490,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5K8K34A9U;
+				DEVELOPMENT_TEAM = W6D2R8B3FA;
 				INFOPLIST_FILE = "rx-helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cs47769.rx-helper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs477.rx-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,13 +509,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z5K8K34A9U;
+				DEVELOPMENT_TEAM = W6D2R8B3FA;
 				INFOPLIST_FILE = "rx-helper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cs47769.rx-helper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cs477.rx-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

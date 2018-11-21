@@ -461,7 +461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLe-L8-oga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4254" y="233"/>
+            <point key="canvasLocation" x="4494" y="231"/>
         </scene>
         <!--Your Prescriptions-->
         <scene sceneID="23U-Rn-RHt">
@@ -641,7 +641,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
-                                <rect key="frame" x="22" y="373" width="334" height="259"/>
+                                <rect key="frame" x="22" y="298" width="334" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -923,10 +923,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="About us. Version number, whatever. This is going to be hardcoded" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-NE-gcY">
-                                <rect key="frame" x="67" y="175" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-NE-gcY">
+                                <rect key="frame" x="67" y="175" width="260" height="484"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <mutableString key="text">Version 1.0.
+2018 rx-helper Project Ltd.
+
+
+	Rx-helper –  Easy to use and reliable app that helps you remember to take your medications at the right time. It allows you to create any type of recurring reminders (every X hours, specific times, daily, weekly, monthly, every  X days, etc). It tracks the remaining quantity of each medication and shows a refill alert when running low. 
+
+It has everything you need: 
+•	Reschedule Medications 
+•	Refill Reminders 
+•	Multiple User use 
+By remembering to take all of your medications at the right time, you are taking control of your own health. 
+
+With rx-helper, you won’t forget to take your medications. 
+</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -937,7 +951,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nq1-hV-9kT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9836" y="-1112"/>
+            <point key="canvasLocation" x="9836" y="-1112.0689655172414"/>
         </scene>
         <!--MenuViewController-->
         <scene sceneID="sZh-4R-N7k">
@@ -1265,8 +1279,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                     <connections>
                         <outlet property="acceptButton" destination="7cI-T3-A03" id="xPR-B3-Jg9"/>
                         <outlet property="declineButton" destination="4oN-68-MYq" id="23Q-gR-KmI"/>
-                        <segue destination="vBx-eX-KqG" kind="show" identifier="toTutorial" id="611-fh-fsp"/>
                         <segue destination="Rrf-9c-tFF" kind="presentation" identifier="toVeryFirstPage" id="YJK-qj-6TA"/>
+                        <segue destination="3Up-dR-LoM" kind="show" identifier="toTutorial" id="io5-4o-R27"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29I-no-Qci" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1293,13 +1307,100 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="LlD-jv-EZQ"/>
                     </view>
-                    <connections>
-                        <segue destination="fog-eU-5dq" kind="show" identifier="toWelcome" id="baA-6e-Ir6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YI8-Ss-OVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3858" y="971"/>
+            <point key="canvasLocation" x="3708" y="1731"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Ojg-Bg-QqN">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="3Up-dR-LoM" customClass="PageViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="fog-eU-5dq" kind="show" identifier="toWelcome" id="n0f-2W-D2p"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRC-Cr-MHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3772" y="988"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SS6-Az-Jjv">
+            <objects>
+                <viewController storyboardIdentifier="sbRed" id="jpb-Z7-7UP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s1a-uW-yam">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial2 2" translatesAutoresizingMaskIntoConstraints="NO" id="HKS-yU-JV6">
+                                <rect key="frame" x="0.0" y="144" width="375" height="483"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="sVr-lJ-Jmg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOE-rV-pmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4520.8000000000002" y="987.93103448275861"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rhJ-bf-zuy">
+            <objects>
+                <viewController storyboardIdentifier="sbGreen" id="TvH-D3-5J0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aF6-ZP-5aa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="Egb-0D-m5T">
+                                <rect key="frame" x="0.0" y="139" width="375" height="547"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UKB-Hw-pUJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdr-kp-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4544.8000000000002" y="1631.5270935960591"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2cW-5u-af9">
+            <objects>
+                <viewController storyboardIdentifier="sbBlue" id="Gmf-y0-pJw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="67K-R1-dvn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutoriaSet1" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-3S-AHk">
+                                <rect key="frame" x="16" y="110" width="351" height="586"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="zdH-qI-hVH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GuC-m1-Bd1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5197.6000000000004" y="987.93103448275861"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8WU-KM-gNf">
+            <objects>
+                <viewController id="133-zZ-JTN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cG7-fc-prX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bsu-Zq-qns"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vh-MF-Ehv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5249" y="1650"/>
         </scene>
         <!--Privacy Policy-->
         <scene sceneID="aAl-xT-eqa">
@@ -1313,7 +1414,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                                 <rect key="frame" x="16" y="65" width="343" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">Privacy Policy
+                                <mutableString key="text">Privacy Policy
 
 Rx-Helper Dev Team built the Rx-Helper app as a Free app. This SERVICE is provided by Rx-Helper Dev Team at no cost and is intended for use as is.
 
@@ -1370,7 +1471,7 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 
 Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</string>
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1443,11 +1544,14 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="rxpill" width="256" height="256"/>
+        <image name="tutoriaSet1" width="2722" height="4425"/>
+        <image name="tutorial2 2" width="1927" height="2270"/>
+        <image name="tutorial3" width="1607" height="2092"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C60-Ki-geU"/>
         <segue reference="SRL-wu-cp2"/>
-        <segue reference="YJK-qj-6TA"/>
-        <segue reference="ZaM-cr-wzR"/>
+        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="nJG-Ol-Vdj"/>
     </inferredMetricsTieBreakers>
 </document>

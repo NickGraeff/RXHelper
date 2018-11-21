@@ -25,13 +25,15 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         //print("med segue is:")
             //print(myString)
 
            // let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm")
             //let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm#description")
             let url = URL(string: "https://www.rxlist.com/\(myString)-drug/patient-images-side-effects.htm#whatis")
+        //let urlNew:String = ur
+        
+        
             let request = URLRequest(url: url!)
             web.load(request)
 
