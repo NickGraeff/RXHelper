@@ -20,6 +20,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dosageField: UITextField!
+    @IBOutlet weak var remainingDosageField: UITextField!
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertTable: UITableView!
@@ -41,6 +42,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         self.nameField.setBottomBorder()
         self.dosageField.setBottomBorder()
+        self.remainingDosageField.setBottomBorder()
 
         if let prescription = prescription {
             navigationItem.title = prescription.name
@@ -62,6 +64,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
 
         nameField.delegate = self
+        dosageField.delegate = self
+        remainingDosageField.delegate = self
 
         tableView.delegate = self
         tableView.dataSource = self
