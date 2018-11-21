@@ -190,6 +190,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
 
         //TO FIX
         cell.dosageLabel.text = String(prescriptionToReturn!.dosage ?? 0)
+        
 //        cell.contentView.backgroundColor = UIColor.clear
 //        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
 //        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
@@ -287,12 +288,12 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                 tableView.reloadRows(at: [newIndexPath], with: .none)
             }
             
+            // Save Prescriptions
+            savePrescriptions()
+            
             for alert in prescription.alerts {
                 setAlarm(prescription.name!, alert.hours!, alert.minutes!, prescription)
             }
-            
-            // Save Prescriptions
-            savePrescriptions()
         }
     }
     
@@ -386,6 +387,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         
         if response.actionIdentifier == "takeAction" {
             print ("I took \(alarmedPrescription!.name!)")
+            alarmedPrescription!.remainingDoses = alarmedPrescription!.remainingDoses! - 1
             // Subtract from quantity of medicine
             // Perform check for refill
         }
@@ -443,6 +445,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
             // Set all values desired
             ref2.child("\(Prescription.PropertyKey.name)").setValue(prescription.name)
             ref2.child("\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+            ref2.child("\(Prescription.PropertyKey.remainingDoses)").setValue(prescription.remainingDoses ?? 0)
             
             // Set all alert values
             for alert in prescription.alerts {
@@ -485,6 +488,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     prescription.name = dict[Prescription.PropertyKey.name] as? String
                     prescription.key = prescriptionSnapshot.key
                     prescription.dosage = dict[Prescription.PropertyKey.dosage] as? Int
+                    prescription.remainingDoses = dict[Prescription.PropertyKey.remainingDoses] as? Int
                     
                     // Retrieving the alerts for this prescription
                     for alertNest in prescriptionSnapshot.children {

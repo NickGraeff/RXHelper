@@ -52,6 +52,12 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             } else {
                 dosageField.text = ""
             }
+            
+            if prescription.remainingDoses != nil {
+                remainingDosageField.text = String(prescription.remainingDoses!)
+            } else {
+                remainingDosageField.text = ""
+            }
             //etcetcetc (name, image, etc)
 
         } else {
@@ -332,6 +338,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         prescription!.name = nameField.text!
         prescription!.dosage = Int(dosageField.text!)
+        prescription!.remainingDoses = Int(remainingDosageField.text!)
         prescription!.alerts += tempAlerts!
 
         self.tableView.reloadData()

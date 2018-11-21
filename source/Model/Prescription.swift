@@ -14,6 +14,7 @@ class Prescription: NSObject {
     // MARK: Properties
     var name: String? = nil
     var dosage: Int? = nil
+    var remainingDoses: Int? = nil
     var key: String?
     var alerts = [Alert]()
     
@@ -22,6 +23,7 @@ class Prescription: NSObject {
         static let key = "key"
         static let dosage = "dosage"
         static let alerts = "alerts"
+        static let remainingDoses = "remainingDoses"
     }
     
     override init() {
