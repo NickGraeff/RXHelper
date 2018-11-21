@@ -380,23 +380,33 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     break
                 }
             }
+            
             if alarmedPrescription != nil {
                 break
             }
         }
         
         if response.actionIdentifier == "takeAction" {
-            print ("I took \(alarmedPrescription!.name!)")
-            alarmedPrescription!.remainingDoses = alarmedPrescription!.remainingDoses! - 1
-            // Subtract from quantity of medicine
-            // Perform check for refill
+            owner.badge = 0
+            alarmedPrescription!.remainingDoses! -= 1
+            
+            if (alarmedPrescription!.remainingDoses)! < 10 {
+                createAlert("Time to refill your \(alarmedPrescription!.name!)!", "You have \(alarmedPrescription!.remainingDoses!) doses remaining.")
+            }
         }
         else if response.actionIdentifier == "snoozeAction" {
-            print ("I snoozed \(alarmedPrescription!.name!)")
             pressedSnooze(key)
         }
         
         completionHandler()
+    }
+    
+    func createAlert (_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: Private Methods
