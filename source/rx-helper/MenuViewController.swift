@@ -59,6 +59,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.textLabel?.text = "Add User +"
             cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 13.5)
             cell.textLabel?.textColor = UIColor(red:0.36, green:0.60, blue:0.81, alpha:1.0)
+            cell.imageView?.image = nil
 
             return cell
         }

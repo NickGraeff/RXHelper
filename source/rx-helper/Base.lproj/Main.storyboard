@@ -471,11 +471,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="Ya1-jA-9AJ">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Ya1-jA-9AJ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Medicines" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLW-Ka-YMT">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Medicine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLW-Ka-YMT">
                                     <rect key="frame" x="8" y="1" width="367" height="50"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
@@ -578,7 +578,7 @@
             <objects>
                 <viewController id="oPS-gF-Kkf" customClass="PrescriptionViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gce-7q-QgW" customClass="GradientView" customModule="rx_helper" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEX-fg-hkt">
@@ -626,7 +626,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Dosage" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-xP-UFJ">
                                 <rect key="frame" x="22" y="166" width="330" height="30"/>
@@ -634,7 +634,7 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="293" translatesAutoresizingMaskIntoConstraints="NO" id="O57-JC-B5i">
                                 <rect key="frame" x="0.0" y="156" width="45.333333333333336" height="20.333333333333332"/>
@@ -646,10 +646,10 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
-                                <rect key="frame" x="20" y="129" width="334" height="259"/>
+                                <rect key="frame" x="16" y="145" width="334" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1431,10 +1431,30 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Put all the faqs here. I can also put a button that redoes the tutorial here but I need a tutorial first." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-aY-8NO">
-                                <rect key="frame" x="57" y="260" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-aY-8NO">
+                                <rect key="frame" x="16" y="77" width="343" height="701"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <mutableString key="text">What is Rx Helper?
+Rx Helper is an application dedicated to helping you remember to take your medication!
+
+How do I get started?
+If you're reading this, then you're already halfway there. You can add and manage your prescriptions from the home screen. There's also a handy tutorial in settings if you have any questions.
+
+Is my account fully set up?
+That depends. You can add and manage your prescriptions as your needs change. In addition to this, you can add in your pharmacist and their phone number if you haven't already.
+
+Can I keep track of my family member's prescriptions?
+Yes! Not only can you keep track of your family member's prescriptions, but you can keep track of your pets' prescriptions as well.
+
+How much does this service cost?
+Rx Helper is 100% free. We wanted to make a simple, easy-to-use app that is accessible to anyone and everyone, because your health should be your #1 priority.
+
+Does this app have advertisements?
+No, this app is 100% advertisement-free because we want to deliver to you the best experience possible.
+
+Why do you need my personal information?
+Your personal information is 100% secure. We only collect this information in order to help personalize the app for you. We won't use your personal information for anything you wouldn't want us to.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1445,14 +1465,14 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eg0-He-etT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10977" y="-542"/>
+            <point key="canvasLocation" x="10976.799999999999" y="-542.36453201970448"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="3RR-E2-ygU">
             <objects>
                 <viewController storyboardIdentifier="WebViewController" id="a1w-N4-fdN" customClass="WebViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a1j-av-9Ge">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SV4-c7-sd8">
@@ -1485,7 +1505,7 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
         <image name="rxpill" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C60-Ki-geU"/>
+        <segue reference="g9g-aY-nnD"/>
         <segue reference="SRL-wu-cp2"/>
         <segue reference="YJK-qj-6TA"/>
         <segue reference="ZaM-cr-wzR"/>
