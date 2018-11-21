@@ -190,6 +190,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
 
         //TO FIX
         cell.dosageLabel.text = String(prescriptionToReturn!.dosage ?? 0)
+        
 //        cell.contentView.backgroundColor = UIColor.clear
 //        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
 //        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
@@ -287,16 +288,16 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                 tableView.reloadRows(at: [newIndexPath], with: .none)
             }
             
-            for alert in prescription.alerts {
-                setAlarm(prescription.name!, alert.hours!, alert.minutes!)
-            }
-            
             // Save Prescriptions
             savePrescriptions()
+            
+            for alert in prescription.alerts {
+                setAlarm(prescription.name!, alert.hours!, alert.minutes!, prescription)
+            }
         }
     }
     
-    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int) {
+    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int, _ prescription: Prescription) {
         makeAlarmCategories()
         
         let owner = MainUser.getInstance()
@@ -308,6 +309,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         owner.badge += 1
         content.badge = owner.badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
+        content.userInfo = ["Key" : prescription.key!]
         
         // Actual alarm setter
         var dateComponents = DateComponents()
@@ -328,18 +330,34 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         UNUserNotificationCenter.current().setNotificationCategories([category])
     }
     
-    func pressedSnooze () {
+    func pressedSnooze (_ key: String) {
         makeAlarmCategories()
         
         let owner = MainUser.getInstance()
         
+        var alarmedPrescription: Prescription? = nil
+        
+        for member in owner.members {
+            for prescription in member.prescriptions {
+                if prescription.key == key {
+                    alarmedPrescription = prescription
+                    break
+                }
+            }
+            if alarmedPrescription != nil {
+                break
+            }
+        }
+        
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
-        content.body = "Time to take your medicine!"
+        content.body = "Time to take your \(alarmedPrescription!.name!)!"
         content.sound = UNNotificationSound.default
         owner.badge += 1
         content.badge = owner.badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
+        content.userInfo = ["Key" : key]
+        
         
         // Snoozes for 15 minutes, switch 5 to 900
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
@@ -349,16 +367,46 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        let key = userInfo["Key"] as! String
+        
+        var alarmedPrescription: Prescription? = nil
+        let owner = MainUser.getInstance()
+        
+        for member in owner.members {
+            for prescription in member.prescriptions {
+                if prescription.key == key {
+                    alarmedPrescription = prescription
+                    break
+                }
+            }
+            
+            if alarmedPrescription != nil {
+                break
+            }
+        }
+        
         if response.actionIdentifier == "takeAction" {
-            print ("Take medicine")
-            // Subtract from quantity of medicine
-            // Perform check for refill
+            owner.badge = 0
+            alarmedPrescription!.remainingDoses! -= 1
+            
+            if (alarmedPrescription!.remainingDoses)! < 10 {
+                createAlert("Time to refill your \(alarmedPrescription!.name!)!", "You have \(alarmedPrescription!.remainingDoses!) doses remaining.")
+            }
         }
         else if response.actionIdentifier == "snoozeAction" {
-            pressedSnooze()
+            pressedSnooze(key)
         }
         
         completionHandler()
+    }
+    
+    func createAlert (_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: Private Methods
@@ -407,6 +455,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
             // Set all values desired
             ref2.child("\(Prescription.PropertyKey.name)").setValue(prescription.name)
             ref2.child("\(Prescription.PropertyKey.dosage)").setValue(prescription.dosage ?? 0)
+            ref2.child("\(Prescription.PropertyKey.remainingDoses)").setValue(prescription.remainingDoses ?? 0)
             
             // Set all alert values
             for alert in prescription.alerts {
@@ -449,6 +498,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
                     prescription.name = dict[Prescription.PropertyKey.name] as? String
                     prescription.key = prescriptionSnapshot.key
                     prescription.dosage = dict[Prescription.PropertyKey.dosage] as? Int
+                    prescription.remainingDoses = dict[Prescription.PropertyKey.remainingDoses] as? Int
                     
                     // Retrieving the alerts for this prescription
                     for alertNest in prescriptionSnapshot.children {

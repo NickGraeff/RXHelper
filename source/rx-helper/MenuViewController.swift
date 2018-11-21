@@ -25,7 +25,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     //setting the number of cells in the table View
@@ -106,7 +105,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
                 //delete the table view row
-                tableView.deleteRows(at: [indexPath], with: .fade)
+                tableView.deleteRows(at: [indexPath], with: .automatic)
                 tableView.reloadData()
             }
             else if editingStyle == .insert{

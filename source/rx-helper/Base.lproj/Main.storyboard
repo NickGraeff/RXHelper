@@ -581,26 +581,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Prescription Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usU-XW-qeO">
-                                <rect key="frame" x="22.666666666666664" y="186" width="330" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Dosage" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-xP-UFJ">
-                                <rect key="frame" x="22.666666666666664" y="245" width="330" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="293" translatesAutoresizingMaskIntoConstraints="NO" id="O57-JC-B5i">
-                                <rect key="frame" x="0.0" y="235" width="45.333333333333336" height="20.333333333333332"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEX-fg-hkt">
                                 <rect key="frame" x="38" y="318" width="298" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -640,8 +620,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Prescription Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usU-XW-qeO">
+                                <rect key="frame" x="22" y="107" width="330" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Dosage" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-xP-UFJ">
+                                <rect key="frame" x="22" y="166" width="330" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="293" translatesAutoresizingMaskIntoConstraints="NO" id="O57-JC-B5i">
+                                <rect key="frame" x="0.0" y="156" width="45.333333333333336" height="20.333333333333332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Remaining Doses" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81r-fD-zhb">
+                                <rect key="frame" x="22" y="221" width="330" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
-                                <rect key="frame" x="22" y="298" width="334" height="259"/>
+
+                                <rect key="frame" x="20" y="129" width="334" height="259"/>
+                                
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -689,6 +699,7 @@
                         <outlet property="alertTable" destination="4sa-9A-c8f" id="caB-Kt-Zpw"/>
                         <outlet property="dosageField" destination="5Vy-xP-UFJ" id="XSO-jO-zJn"/>
                         <outlet property="nameField" destination="usU-XW-qeO" id="kM3-Sz-XJK"/>
+                        <outlet property="remainingDosageField" destination="81r-fD-zhb" id="6vV-wP-Wgz"/>
                         <outlet property="saveButton" destination="6Ic-Yn-0gO" id="ldE-z3-w7E"/>
                         <outlet property="tableView" destination="DoR-p8-K8H" id="san-eP-btH"/>
                         <outlet property="timePicker" destination="Aut-Em-pGd" id="3Yy-wL-JjI"/>
@@ -729,35 +740,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAb-j4-ieX">
-                                <rect key="frame" x="23" y="186" width="330" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAb-j4-ieX">
+                                <rect key="frame" x="23" y="186" width="329" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-fz-sOP">
-                                <rect key="frame" x="148" y="311" width="80" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFd-fz-sOP">
+                                <rect key="frame" x="148" y="303" width="45" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addNewUserButton:" destination="e08-HQ-S2O" eventType="touchUpInside" id="Kx2-w4-DUf"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-i2-CCW">
-                                <rect key="frame" x="287" y="256" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is new user a pet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-2e-ADT">
-                                <rect key="frame" x="23" y="256" width="138" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is new user a pet?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-2e-ADT">
+                                <rect key="frame" x="23" y="245" width="275" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="275" id="gd3-E4-wJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="leading" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-i2-CCW">
+                                <rect key="frame" x="306" y="238" width="51" height="31"/>
+                                <color key="onTintColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fFd-fz-sOP" firstAttribute="top" secondItem="HRd-2e-ADT" secondAttribute="bottom" constant="41" id="Ak6-cE-Izl"/>
+                            <constraint firstItem="Aj6-i2-CCW" firstAttribute="leading" secondItem="HRd-2e-ADT" secondAttribute="trailing" constant="8" symbolic="YES" id="GER-5i-Aja"/>
+                            <constraint firstItem="HRd-2e-ADT" firstAttribute="centerY" secondItem="Aj6-i2-CCW" secondAttribute="centerY" id="Ltd-OH-JaK"/>
+                            <constraint firstItem="yAb-j4-ieX" firstAttribute="leading" secondItem="HRd-2e-ADT" secondAttribute="leading" id="OEJ-m0-VUT"/>
+                            <constraint firstItem="Aj6-i2-CCW" firstAttribute="top" secondItem="yAb-j4-ieX" secondAttribute="bottom" constant="22" id="RYw-Rv-nIT"/>
+                            <constraint firstItem="yAb-j4-ieX" firstAttribute="centerX" secondItem="bIJ-7F-75i" secondAttribute="centerX" id="Vi1-hu-Anz"/>
+                            <constraint firstItem="yAb-j4-ieX" firstAttribute="top" secondItem="kyE-1f-hAY" secondAttribute="top" constant="142" id="g3p-oD-Ulx"/>
+                            <constraint firstItem="fFd-fz-sOP" firstAttribute="leading" secondItem="kyE-1f-hAY" secondAttribute="leading" constant="148" id="orh-0b-gzS"/>
+                            <constraint firstItem="yAb-j4-ieX" firstAttribute="leading" secondItem="kyE-1f-hAY" secondAttribute="leading" constant="23" id="q0D-Gj-cFX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kyE-1f-hAY"/>
                     </view>
                     <connections>
@@ -970,10 +992,13 @@ With rx-helper, you won’t forget to take your medications.
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOj-Zi-YF0">
                                 <rect key="frame" x="0.0" y="0.0" width="265" height="812"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-L1-ntP">
-                                        <rect key="frame" x="8" y="138" width="249" height="579"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-L1-ntP">
+                                        <rect key="frame" x="8" y="93" width="249" height="579"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="579" id="6cZ-SC-sXG"/>
+                                            <constraint firstAttribute="width" constant="249" id="suU-lG-CcK"/>
+                                        </constraints>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MenuTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuTableViewCell" id="20V-Vo-Inv" customClass="MenuTableViewCell" customModule="rx_helper" customModuleProvider="target">
@@ -991,8 +1016,8 @@ With rx-helper, you won’t forget to take your medications.
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="isg-vS-4Xt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="44"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="isg-vS-4Xt">
+                                                            <rect key="frame" x="0.0" y="10" width="25" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
@@ -1008,9 +1033,12 @@ With rx-helper, you won’t forget to take your medications.
                                             <outlet property="delegate" destination="ogu-im-fBh" id="8zg-3l-C5m"/>
                                         </connections>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-7Y-YZw">
-                                        <rect key="frame" x="10" y="727" width="89" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7X5-7Y-YZw">
+                                        <rect key="frame" x="10" y="682" width="89" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="C6u-ib-p1P"/>
+                                            <constraint firstAttribute="width" constant="89" id="f8A-zK-0E3"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1019,15 +1047,29 @@ With rx-helper, you won’t forget to take your medications.
                                             <segue destination="GGf-Yu-fjH" kind="show" identifier="toSupport" id="tMb-xc-R8G"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accounts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-dZ-Yot">
-                                        <rect key="frame" x="8" y="103" width="112" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accounts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-dZ-Yot">
+                                        <rect key="frame" x="8" y="53" width="112" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="HUa-SP-jYq"/>
+                                            <constraint firstAttribute="width" constant="112" id="gXm-y2-OdI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Cr5-L1-ntP" firstAttribute="leading" secondItem="xOj-Zi-YF0" secondAttribute="leadingMargin" id="4HQ-gl-D1A"/>
+                                    <constraint firstItem="7X5-7Y-YZw" firstAttribute="leading" secondItem="xOj-Zi-YF0" secondAttribute="leadingMargin" constant="2" id="6Z1-mo-J3B"/>
+                                    <constraint firstItem="Ec3-dZ-Yot" firstAttribute="top" secondItem="xOj-Zi-YF0" secondAttribute="topMargin" constant="1" id="Lf9-g7-rqJ"/>
+                                    <constraint firstItem="7X5-7Y-YZw" firstAttribute="top" secondItem="Cr5-L1-ntP" secondAttribute="bottom" constant="10" id="MiG-o6-RQN"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Ec3-dZ-Yot" secondAttribute="trailing" constant="137" id="YJ6-xI-BqK"/>
+                                    <constraint firstItem="Cr5-L1-ntP" firstAttribute="top" secondItem="Ec3-dZ-Yot" secondAttribute="bottom" constant="10" id="cOH-AX-JFd"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="7X5-7Y-YZw" secondAttribute="bottom" constant="54" id="uvA-hR-twb"/>
+                                    <constraint firstItem="Ec3-dZ-Yot" firstAttribute="leading" secondItem="xOj-Zi-YF0" secondAttribute="leadingMargin" id="w0F-BH-4e8"/>
+                                    <constraint firstItem="Cr5-L1-ntP" firstAttribute="top" secondItem="Ec3-dZ-Yot" secondAttribute="bottom" constant="10" id="wAV-le-dw6"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>

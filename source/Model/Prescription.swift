@@ -9,11 +9,12 @@
 import UIKit
 import os.log
 
-class Prescription {
+class Prescription: NSObject {
     
     // MARK: Properties
     var name: String? = nil
     var dosage: Int? = nil
+    var remainingDoses: Int? = nil
     var key: String?
     var alerts = [Alert]()
     
@@ -22,6 +23,11 @@ class Prescription {
         static let key = "key"
         static let dosage = "dosage"
         static let alerts = "alerts"
+        static let remainingDoses = "remainingDoses"
+    }
+    
+    override init() {
+        super.init()
     }
     
     func getUpcomingAlerts() -> [Alert] {

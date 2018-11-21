@@ -20,6 +20,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var dosageField: UITextField!
+    @IBOutlet weak var remainingDosageField: UITextField!
     @IBOutlet weak var timePicker: UIDatePicker!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertTable: UITableView!
@@ -41,6 +42,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         self.nameField.setBottomBorder()
         self.dosageField.setBottomBorder()
+        self.remainingDosageField.setBottomBorder()
 
         if let prescription = prescription {
             navigationItem.title = prescription.name
@@ -49,6 +51,12 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
                 dosageField.text = String(prescription.dosage!)
             } else {
                 dosageField.text = ""
+            }
+            
+            if prescription.remainingDoses != nil {
+                remainingDosageField.text = String(prescription.remainingDoses!)
+            } else {
+                remainingDosageField.text = ""
             }
             //etcetcetc (name, image, etc)
 
@@ -62,6 +70,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
 
         nameField.delegate = self
+        dosageField.delegate = self
+        remainingDosageField.delegate = self
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -328,6 +338,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         prescription!.name = nameField.text!
         prescription!.dosage = Int(dosageField.text!)
+        prescription!.remainingDoses = Int(remainingDosageField.text!)
         prescription!.alerts += tempAlerts!
 
         self.tableView.reloadData()
