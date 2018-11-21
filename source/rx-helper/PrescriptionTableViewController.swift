@@ -288,7 +288,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
             }
             
             for alert in prescription.alerts {
-                setAlarm(prescription.name!, alert.hours!, alert.minutes!)
+                setAlarm(prescription.name!, alert.hours!, alert.minutes!, prescription)
             }
             
             // Save Prescriptions
@@ -296,7 +296,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         }
     }
     
-    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int) {
+    func setAlarm (_ name: String, _ hours: Int, _ minutes: Int, _ prescription: Prescription) {
         makeAlarmCategories()
         
         let owner = MainUser.getInstance()
@@ -308,6 +308,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         owner.badge += 1
         content.badge = owner.badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
+        content.userInfo = ["prescription" : prescription]
         
         // Actual alarm setter
         var dateComponents = DateComponents()
@@ -328,18 +329,19 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         UNUserNotificationCenter.current().setNotificationCategories([category])
     }
     
-    func pressedSnooze () {
+    func pressedSnooze (_ prescription: Prescription) {
         makeAlarmCategories()
         
         let owner = MainUser.getInstance()
         
         let content = UNMutableNotificationContent()
         content.title = "Rx Helper"
-        content.body = "Time to take your medicine!"
+        content.body = "Time to take your \(prescription.name)!"
         content.sound = UNNotificationSound.default
         owner.badge += 1
         content.badge = owner.badge as NSNumber
         content.categoryIdentifier = "RxHelperCategory"
+        content.userInfo = ["prescription" : prescription]
         
         // Snoozes for 15 minutes, switch 5 to 900
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
@@ -349,13 +351,16 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        let prescription = userInfo["prescription"] as! Prescription
+        
         if response.actionIdentifier == "takeAction" {
-            print ("Take medicine")
             // Subtract from quantity of medicine
             // Perform check for refill
         }
         else if response.actionIdentifier == "snoozeAction" {
-            pressedSnooze()
+            
+            pressedSnooze(prescription)
         }
         
         completionHandler()
