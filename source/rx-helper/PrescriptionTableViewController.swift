@@ -435,8 +435,10 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         
         if response.actionIdentifier == "takeAction" {
             UIApplication.shared.applicationIconBadgeNumber = 0
+            owner.badge = 0
             alarmedPrescription!.remainingDoses! -= 1
             alarmedAlert!.taken = true
+            alarmedAlert!.skipped = false
             
             if (alarmedPrescription!.remainingDoses)! < 10 {
                 createAlert("Time to refill your \(alarmedPrescription!.name!)!", "You have \(alarmedPrescription!.remainingDoses!) doses remaining.")
