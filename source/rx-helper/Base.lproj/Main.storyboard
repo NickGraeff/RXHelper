@@ -754,17 +754,18 @@
                                     <action selector="addNewUserButton:" destination="e08-HQ-S2O" eventType="touchUpInside" id="Kx2-w4-DUf"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-i2-CCW">
-                                <rect key="frame" x="287" y="256" width="49" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is new user a pet?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-2e-ADT">
+                                <rect key="frame" x="23" y="245" width="117" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Is new user a pet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-2e-ADT">
-                                <rect key="frame" x="23" y="256" width="138" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aj6-i2-CCW">
+                                <rect key="frame" x="306" y="238" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="kyE-1f-hAY"/>
@@ -986,8 +987,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="isg-vS-4Xt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="42" height="44"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="isg-vS-4Xt">
+                                                            <rect key="frame" x="0.0" y="10" width="25" height="25"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
@@ -1457,6 +1458,6 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
         <segue reference="C60-Ki-geU"/>
         <segue reference="SRL-wu-cp2"/>
         <segue reference="YJK-qj-6TA"/>
-        <segue reference="ZaM-cr-wzR"/>
+        <segue reference="vkh-CW-d9B"/>
     </inferredMetricsTieBreakers>
 </document>
