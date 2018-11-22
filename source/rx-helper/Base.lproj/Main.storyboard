@@ -471,7 +471,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Ya1-jA-9AJ">
+                        <view key="tableHeaderView" contentMode="scaleToFill" misplaced="YES" id="Ya1-jA-9AJ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -649,9 +649,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
-
                                 <rect key="frame" x="16" y="145" width="334" height="259"/>
-
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -958,7 +956,7 @@
 It has everything you need: 
 •	Reschedule Medications 
 •	Refill Reminders 
-•	Multiple User use 
+•	Multiple User use                                    
 By remembering to take all of your medications at the right time, you are taking control of your own health. 
 
 With rx-helper, you won’t forget to take your medications. 
@@ -1374,8 +1372,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial2 2" translatesAutoresizingMaskIntoConstraints="NO" id="HKS-yU-JV6">
-                                <rect key="frame" x="0.0" y="144" width="375" height="483"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="UaH-uI-7IW">
+                                <rect key="frame" x="11" y="153" width="354" height="470"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1395,8 +1393,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial3" translatesAutoresizingMaskIntoConstraints="NO" id="Egb-0D-m5T">
-                                <rect key="frame" x="0.0" y="139" width="375" height="547"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial11" translatesAutoresizingMaskIntoConstraints="NO" id="AbN-xc-d9m">
+                                <rect key="frame" x="33" y="134" width="318" height="535"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1416,8 +1414,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutoriaSet1" translatesAutoresizingMaskIntoConstraints="NO" id="Gjd-3S-AHk">
-                                <rect key="frame" x="16" y="110" width="351" height="586"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial0" translatesAutoresizingMaskIntoConstraints="NO" id="fE0-Sk-wm2">
+                                <rect key="frame" x="16" y="122" width="343" height="577"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1432,17 +1430,44 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
         <!--View Controller-->
         <scene sceneID="8WU-KM-gNf">
             <objects>
-                <viewController id="133-zZ-JTN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbBlack" id="133-zZ-JTN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cG7-fc-prX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial10" translatesAutoresizingMaskIntoConstraints="NO" id="fA4-wf-lLw">
+                                <rect key="frame" x="31" y="76" width="314" height="608"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bsu-Zq-qns"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vh-MF-Ehv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5249" y="1650"/>
+            <point key="canvasLocation" x="5248.8000000000002" y="1650"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SU7-iV-ZIn">
+            <objects>
+                <viewController storyboardIdentifier="sbWhite" id="goI-8C-VnO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GWc-ZJ-jkD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image8" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-71-pAk">
+                                <rect key="frame" x="25" y="115" width="315" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5no-Tc-eIh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zcl-TX-DOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4968.8000000000002" y="2314.2857142857142"/>
         </scene>
         <!--Privacy Policy-->
         <scene sceneID="aAl-xT-eqa">
@@ -1456,7 +1481,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                                 <rect key="frame" x="16" y="65" width="343" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <mutableString key="text">Privacy Policy
+                                <string key="text">Privacy Policy
 
 Rx-Helper Dev Team built the Rx-Helper app as a Free app. This SERVICE is provided by Rx-Helper Dev Team at no cost and is intended for use as is.
 
@@ -1513,7 +1538,7 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 
 Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</mutableString>
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1538,7 +1563,7 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
                                 <rect key="frame" x="16" y="77" width="343" height="701"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <mutableString key="text">What is Rx Helper?
+                                <string key="text">What is Rx Helper?
 Rx Helper is an application dedicated to helping you remember to take your medication!
 
 How do I get started?
@@ -1557,7 +1582,7 @@ Does this app have advertisements?
 No, this app is 100% advertisement-free because we want to deliver to you the best experience possible.
 
 Why do you need my personal information?
-Your personal information is 100% secure. We only collect this information in order to help personalize the app for you. We won't use your personal information for anything you wouldn't want us to.</mutableString>
+Your personal information is 100% secure. We only collect this information in order to help personalize the app for you. We won't use your personal information for anything you wouldn't want us to.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1605,10 +1630,12 @@ Your personal information is 100% secure. We only collect this information in or
     </scenes>
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
+        <image name="image8" width="3159" height="3853"/>
         <image name="rxpill" width="256" height="256"/>
-        <image name="tutoriaSet1" width="2722" height="4425"/>
-        <image name="tutorial2 2" width="1927" height="2270"/>
-        <image name="tutorial3" width="1607" height="2092"/>
+        <image name="tutorial0" width="2152" height="3531"/>
+        <image name="tutorial10" width="2179" height="3941"/>
+        <image name="tutorial11" width="2616" height="3794"/>
+        <image name="tutorial2" width="1981" height="2317"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g9g-aY-nnD"/>

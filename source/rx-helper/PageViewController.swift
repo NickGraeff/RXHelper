@@ -15,7 +15,9 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "sbBlue"),
                 self.newVc(viewController: "sbRed"),
-                self.newVc(viewController: "sbGreen")]
+                self.newVc(viewController: "sbGreen"),
+                self.newVc(viewController: "sbWhite"),
+                self.newVc(viewController: "sbBlack")]
     }()
     
     override func viewDidLoad() {
