@@ -24,7 +24,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         
         super.viewDidLoad()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 500.0){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 30.0){
             self.performSegue(withIdentifier: "toWelcome", sender: nil)
         }
         

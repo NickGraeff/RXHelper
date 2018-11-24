@@ -13,6 +13,7 @@ class WebViewController: UIViewController {
 
     
     var myString = String()
+    
     @IBOutlet var web: WKWebView!
     @IBOutlet weak var backButton: UIButton!
     
@@ -24,13 +25,13 @@ class WebViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
+        var formatted = myString.replacingOccurrences(of: " ", with: "")
         super.viewDidLoad()
-        //print("med segue is:")
-            //print(myString)
-
            // let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm")
             //let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm#description")
-            let url = URL(string: "https://www.rxlist.com/\(myString)-drug/patient-images-side-effects.htm#whatis")
+            let url = URL(string: "https://www.rxlist.com/\(formatted)-drug/patient-images-side-effects.htm#whatis")
+        
         //let urlNew:String = ur
         
         
