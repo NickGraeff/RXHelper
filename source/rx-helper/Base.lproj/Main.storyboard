@@ -185,7 +185,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Gv8-of-Kzr"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="rxD-GK-FLF"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
                             </textField>
@@ -195,7 +195,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="bWb-oD-de4"/>
                                     <constraint firstAttribute="height" constant="30" id="y7P-PW-9on"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="name"/>
                             </textField>
@@ -205,7 +205,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NPq-AL-ArJ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="fqc-MT-X5r"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="organization"/>
                             </textField>
@@ -215,7 +215,7 @@
                                     <constraint firstAttribute="height" constant="30" id="T8v-tG-KOF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="jRl-zG-Pgv"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -225,7 +225,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="MF5-PJ-Rkz"/>
                                     <constraint firstAttribute="height" constant="30" id="QN8-TB-c3z"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" textContentType="tel"/>
                             </textField>
@@ -235,7 +235,7 @@
                                     <constraint firstAttribute="height" constant="30" id="QWG-kt-qhc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="hKx-On-sWg"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES" textContentType="new-password">
                                     <passwordRules key="passwordRules" passwordRulesDescriptor="At least six characters long"/>
@@ -1630,17 +1630,17 @@ Your personal information is 100% secure. We only collect this information in or
     </scenes>
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
-        <image name="image8" width="3159" height="3853"/>
+        <image name="image8" width="227.447998046875" height="277.41598510742188"/>
         <image name="rxpill" width="256" height="256"/>
-        <image name="tutorial0" width="2152" height="3531"/>
-        <image name="tutorial10" width="2179" height="3773"/>
-        <image name="tutorial11" width="2616" height="3794"/>
-        <image name="tutorial2" width="1427" height="2233"/>
+        <image name="tutorial0" width="154.94400024414062" height="254.23199462890625"/>
+        <image name="tutorial10" width="156.88800048828125" height="271.656005859375"/>
+        <image name="tutorial11" width="188.35200500488281" height="273.16799926757812"/>
+        <image name="tutorial2" width="102.74400329589844" height="160.7760009765625"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g9g-aY-nnD"/>
         <segue reference="SRL-wu-cp2"/>
-        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="GFu-Z9-wLc"/>
         <segue reference="nJG-Ol-Vdj"/>
     </inferredMetricsTieBreakers>
 </document>
