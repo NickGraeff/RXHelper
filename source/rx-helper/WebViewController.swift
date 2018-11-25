@@ -26,7 +26,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        var formatted = myString.replacingOccurrences(of: " ", with: "")
+        let formatted = myString.replacingOccurrences(of: " ", with: "")
         super.viewDidLoad()
            // let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm")
             //let url = URL(string: "https://www.rxlist.com/\(myString)-drug.htm#description")
