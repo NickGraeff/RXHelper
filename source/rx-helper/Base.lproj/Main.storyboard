@@ -185,7 +185,7 @@
                                     <constraint firstAttribute="height" constant="30" id="Gv8-of-Kzr"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="rxD-GK-FLF"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
                             </textField>
@@ -195,7 +195,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="bWb-oD-de4"/>
                                     <constraint firstAttribute="height" constant="30" id="y7P-PW-9on"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="name"/>
                             </textField>
@@ -205,7 +205,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NPq-AL-ArJ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="fqc-MT-X5r"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="organization"/>
                             </textField>
@@ -215,7 +215,7 @@
                                     <constraint firstAttribute="height" constant="30" id="T8v-tG-KOF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="jRl-zG-Pgv"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
@@ -225,7 +225,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="MF5-PJ-Rkz"/>
                                     <constraint firstAttribute="height" constant="30" id="QN8-TB-c3z"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" textContentType="tel"/>
                             </textField>
@@ -235,7 +235,7 @@
                                     <constraint firstAttribute="height" constant="30" id="QWG-kt-qhc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="hKx-On-sWg"/>
                                 </constraints>
-                                <color key="textColor" red="0.4979824424" green="0.49807190899999998" blue="0.4979767799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES" textContentType="new-password">
                                     <passwordRules key="passwordRules" passwordRulesDescriptor="At least six characters long"/>
@@ -467,7 +467,7 @@
         <scene sceneID="23U-Rn-RHt">
             <objects>
                 <tableViewController id="Nm7-Sk-fax" customClass="PrescriptionTableViewController" customModule="rx_helper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="73" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IOZ-rn-Gge">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="73" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IOZ-rn-Gge">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -490,7 +490,7 @@
                                 <rect key="frame" x="0.0" y="78" width="375" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xuh-lU-sWd" id="vtH-MZ-616">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="72.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyj-0A-Aoh">
@@ -584,12 +584,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEX-fg-hkt">
-                                <rect key="frame" x="38" y="318" width="298" height="47"/>
+                                <rect key="frame" x="38" y="360" width="300" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="0.47225492294520549" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Medicine Info">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Get Medicine Info">
+                                    <color key="titleColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="a1w-N4-fdN" kind="show" identifier="segue01" id="MsS-bs-T2w"/>
@@ -603,27 +602,32 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9r-hJ-3Du">
-                                <rect key="frame" x="155" y="748" width="72" height="30"/>
+                                <rect key="frame" x="151" y="747" width="80" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Alarm"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Add Alarm">
+                                    <color key="titleColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="schedule:" destination="oPS-gF-Kkf" eventType="touchUpInside" id="kQL-7Q-uIy"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-9A-c8f">
-                                <rect key="frame" x="16" y="423" width="334" height="163"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-9A-c8f">
+                                <rect key="frame" x="16" y="453" width="334" height="163"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alarms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tg-Nl-9hb">
-                                <rect key="frame" x="156" y="396" width="54" height="21"/>
+                                <rect key="frame" x="154" y="430" width="65" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Prescription Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usU-XW-qeO">
-                                <rect key="frame" x="22" y="107" width="330" height="30"/>
+                                <rect key="frame" x="23" y="186" width="330" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
@@ -631,7 +635,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Dosage" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Vy-xP-UFJ">
-                                <rect key="frame" x="22" y="166" width="330" height="30"/>
+                                <rect key="frame" x="23" y="245" width="330" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
@@ -643,15 +647,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="Remaining Doses" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="81r-fD-zhb">
-                                <rect key="frame" x="22" y="221" width="330" height="30"/>
+                                <rect key="frame" x="23" y="304" width="330" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
-                                <rect key="frame" x="16" y="145" width="334" height="259"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
+                                <rect key="frame" x="15" y="217" width="334" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -661,7 +665,7 @@
                                         <rect key="frame" x="0.0" y="28" width="334" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7p3-Ci-aVq" id="GK5-0y-xQg">
-                                            <rect key="frame" x="0.0" y="0.0" width="334" height="66.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
@@ -828,7 +832,7 @@
                                 <rect key="frame" x="23" y="310" width="113" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="pharmacyPhoneID" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zuL-4f-HFi">
@@ -842,7 +846,7 @@
                                 <rect key="frame" x="23" y="369" width="176" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8L-v4-BPu">
@@ -890,14 +894,14 @@
                                 <rect key="frame" x="23" y="251" width="37" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foB-2l-JUb">
                                 <rect key="frame" x="23" y="192" width="41" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52B-pu-8mD">
@@ -1632,17 +1636,19 @@ Your personal information is 100% secure. We only collect this information in or
     </scenes>
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
-        <image name="image8" width="3159" height="3853"/>
+        <image name="image8" width="227.447998046875" height="277.41598510742188"/>
         <image name="rxpill" width="256" height="256"/>
+
         <image name="tutorial0" width="1762" height="3531"/>
         <image name="tutorial10" width="1878" height="3773"/>
         <image name="tutorial11" width="2199" height="3794"/>
         <image name="tutorial2" width="1130" height="2233"/>
+
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g9g-aY-nnD"/>
         <segue reference="SRL-wu-cp2"/>
-        <segue reference="KIV-Q3-MVh"/>
+        <segue reference="PnF-Z9-q2T"/>
         <segue reference="nJG-Ol-Vdj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -173,7 +173,6 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         // TODO: Your app can do something when textField finishes editing
         searching = false
-        print("The textField ended editing. Do something based on app requirements.")
     }
 
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -226,6 +225,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
             let cell = UITableViewCell()
             cell.textLabel?.text = alertTime.alertValue
             cell.textLabel?.textAlignment = .center
+            cell.backgroundColor = UIColor.clear
             return cell
         }
 
