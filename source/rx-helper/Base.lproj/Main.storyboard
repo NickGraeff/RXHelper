@@ -515,10 +515,6 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rxpill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-6c-rsD">
-                                            <rect key="frame" x="10" y="13" width="56" height="46"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-AT-KHM">
                                             <rect key="frame" x="145" y="50" width="80" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -527,10 +523,16 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-mf-T3y">
+                                            <rect key="frame" x="3" y="6" width="80" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellPhoto" destination="Hz4-mf-T3y" id="bpX-FM-cKa"/>
                                     <outlet property="dosageLabel" destination="6Y6-l5-TPZ" id="JfW-e7-vt0"/>
                                     <outlet property="nameLabel" destination="Iyj-0A-Aoh" id="cGR-uy-cig"/>
                                     <outlet property="nextDueLabel" destination="TWr-AT-KHM" id="0h0-He-PJU"/>
@@ -1372,8 +1374,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="io3-rF-zKW">
-                                <rect key="frame" x="0.0" y="124" width="359" height="555"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-Xs-PXh">
+                                <rect key="frame" x="16" y="84" width="336" height="583"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1393,8 +1395,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial11" translatesAutoresizingMaskIntoConstraints="NO" id="jhE-9v-Mne">
-                                <rect key="frame" x="16" y="111" width="343" height="458"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial11" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-Vr-Z3E">
+                                <rect key="frame" x="16" y="111" width="350" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1414,8 +1416,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial0" translatesAutoresizingMaskIntoConstraints="NO" id="fE0-Sk-wm2">
-                                <rect key="frame" x="16" y="122" width="343" height="577"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial0" translatesAutoresizingMaskIntoConstraints="NO" id="zmm-Sh-dqd">
+                                <rect key="frame" x="16" y="79" width="343" height="591"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1435,8 +1437,8 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial10" translatesAutoresizingMaskIntoConstraints="NO" id="RBw-q2-IRi">
-                                <rect key="frame" x="16" y="88" width="331" height="571"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial10" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-1M-rLo">
+                                <rect key="frame" x="16" y="85" width="343" height="581"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1457,7 +1459,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image8" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-71-pAk">
-                                <rect key="frame" x="25" y="115" width="315" height="536"/>
+                                <rect key="frame" x="16" y="115" width="343" height="536"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1631,11 +1633,10 @@ Your personal information is 100% secure. We only collect this information in or
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="image8" width="3159" height="3853"/>
-        <image name="rxpill" width="256" height="256"/>
-        <image name="tutorial0" width="2152" height="3531"/>
-        <image name="tutorial10" width="2179" height="3773"/>
-        <image name="tutorial11" width="2616" height="3794"/>
-        <image name="tutorial2" width="1427" height="2233"/>
+        <image name="tutorial0" width="1762" height="3531"/>
+        <image name="tutorial10" width="1878" height="3773"/>
+        <image name="tutorial11" width="2199" height="3794"/>
+        <image name="tutorial2" width="1130" height="2233"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g9g-aY-nnD"/>

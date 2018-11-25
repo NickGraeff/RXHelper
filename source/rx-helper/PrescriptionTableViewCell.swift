@@ -16,6 +16,9 @@ class PrescriptionTableViewCell: UITableViewCell {
     @IBOutlet weak var nextDueLabel: UILabel!
     @IBOutlet weak var dosageLabel: UILabel!
     
+    
+    @IBOutlet weak var cellPhoto: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
