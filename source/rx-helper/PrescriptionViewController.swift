@@ -158,6 +158,8 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     // Toggle the tableView visibility when click on textField
     @objc func textFieldDidChange(_ textField: UITextField) {
         filteredRxList = rxlist.array!.filter({$0["term"].stringValue.prefix(self.nameField.text!.count) == nameField.text!.lowercased()})
+        
+        
         searching = true
         if nameField.text != "" {
             tableView.isHidden = false
