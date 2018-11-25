@@ -129,7 +129,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PrescriptionTableViewCell else {
             fatalError("The dequeued cell is not an instance of PrescriptionTableViewCell")
         }
-            var logoImages: [UIImage] = [
+            /*var logoImages: [UIImage] = [
             UIImage(named: "pill3.png")!,
             UIImage(named: "pill4.png")!,
             UIImage(named: "pill6.png")!,
@@ -143,7 +143,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
         if rndomImage == rndomImage{
             rndomImage = logoImages.randomElement()
         }
-            cell.cellPhoto.image = rndomImage
+            cell.cellPhoto.image = rndomImage*/
     
         // Fetches the appropriate prescription for the data source layout
         let owner = MainUser.getInstance()

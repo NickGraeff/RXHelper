@@ -523,8 +523,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-mf-T3y">
-                                            <rect key="frame" x="3" y="6" width="80" height="65"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rxpill" translatesAutoresizingMaskIntoConstraints="NO" id="Hz4-mf-T3y">
+                                            <rect key="frame" x="3" y="6" width="75" height="60"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
@@ -1633,6 +1633,7 @@ Your personal information is 100% secure. We only collect this information in or
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="image8" width="3159" height="3853"/>
+        <image name="rxpill" width="256" height="256"/>
         <image name="tutorial0" width="1762" height="3531"/>
         <image name="tutorial10" width="1878" height="3773"/>
         <image name="tutorial11" width="2199" height="3794"/>
