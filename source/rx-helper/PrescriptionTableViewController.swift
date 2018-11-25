@@ -203,19 +203,7 @@ class PrescriptionTableViewController: UITableViewController, UNUserNotification
 
         //TO FIX
         cell.dosageLabel.text = String(prescriptionToReturn!.dosage ?? "0")
-        
-//        cell.contentView.backgroundColor = UIColor.clear
-//        var whiteRoundedView : UIView = UIView(frame: CGRect(x:0, y:10, width:self.view.frame.size.width, height:70))
-//        whiteRoundedView.layer.backgroundColor = UIColor.lightGray.cgColor
-//        whiteRoundedView.layer.masksToBounds = false
-//        whiteRoundedView.layer.cornerRadius = 3.0
-//        //whiteRoundedView.layer.shadowOpacity = 0.5
-//        cell.contentView.addSubview(whiteRoundedView)
-//        cell.contentView.sendSubviewToBack(whiteRoundedView)
 
-//        cell.backgroundColor = UIColor.white
-//        cell.contentView.layer.cornerRadius = 50
-//        cell.contentView.clipsToBounds = true
         return cell
     }
 
