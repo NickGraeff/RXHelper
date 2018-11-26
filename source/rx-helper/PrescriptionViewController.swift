@@ -86,7 +86,21 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         nameField.setBottomBorder()
         dosageField.setBottomBorder()
-        //self.hideKeyboardWhenTappedAround()
+
+        //init toolbar
+        let toolbar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0,  width: self.view.frame.size.width, height: 30))
+        //create left side empty space so that done button set on right side
+        let flexSpace = UIBarButtonItem(barButtonSystemItem:    .flexibleSpace, target: nil, action: nil)
+        let doneBtn: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(PrescriptionViewController.doneButtonAction))
+        toolbar.setItems([flexSpace, doneBtn], animated: false)
+        toolbar.sizeToFit()
+        //setting toolbar as inputAccessoryView
+        self.remainingDosageField.inputAccessoryView = toolbar
+
+    }
+
+    @objc func doneButtonAction() {
+        self.view.endEditing(true)
     }
 
     // If user changes text, hide the tableView
