@@ -494,7 +494,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyj-0A-Aoh">
-                                            <rect key="frame" x="86" y="3" width="139" height="36"/>
+                                            <rect key="frame" x="86" y="3" width="273" height="36"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration" identifier="nameLabel"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -516,7 +516,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWr-AT-KHM">
-                                            <rect key="frame" x="145" y="50" width="80" height="20"/>
+                                            <rect key="frame" x="145" y="50" width="121" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <accessibility key="accessibilityConfiguration" identifier="nextDueLabel"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1638,12 +1638,10 @@ Your personal information is 100% secure. We only collect this information in or
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="image8" width="227.447998046875" height="277.41598510742188"/>
         <image name="rxpill" width="256" height="256"/>
-
-        <image name="tutorial0" width="1762" height="3531"/>
-        <image name="tutorial10" width="1878" height="3773"/>
-        <image name="tutorial11" width="2199" height="3794"/>
-        <image name="tutorial2" width="1130" height="2233"/>
-
+        <image name="tutorial0" width="126.86399841308594" height="254.23199462890625"/>
+        <image name="tutorial10" width="135.21600341796875" height="271.656005859375"/>
+        <image name="tutorial11" width="158.3280029296875" height="273.16799926757812"/>
+        <image name="tutorial2" width="81.360000610351562" height="160.7760009765625"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g9g-aY-nnD"/>
