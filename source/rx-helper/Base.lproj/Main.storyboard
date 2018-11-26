@@ -587,7 +587,7 @@
                                 <rect key="frame" x="38" y="360" width="300" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Get Medicine Info">
+                                <state key="normal" title="Get Medication Information">
                                     <color key="titleColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -674,6 +674,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magnifying_glass" translatesAutoresizingMaskIntoConstraints="NO" id="e70-UF-jJS">
+                                <rect key="frame" x="38" y="374" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="bUS-Q9-c2Q"/>
@@ -702,6 +706,7 @@
                     <connections>
                         <outlet property="alertTable" destination="4sa-9A-c8f" id="caB-Kt-Zpw"/>
                         <outlet property="dosageField" destination="5Vy-xP-UFJ" id="XSO-jO-zJn"/>
+                        <outlet property="magnifyingGlass" destination="e70-UF-jJS" id="z4T-bL-pSI"/>
                         <outlet property="nameField" destination="usU-XW-qeO" id="kM3-Sz-XJK"/>
                         <outlet property="remainingDosageField" destination="81r-fD-zhb" id="6vV-wP-Wgz"/>
                         <outlet property="saveButton" destination="6Ic-Yn-0gO" id="ldE-z3-w7E"/>
@@ -1810,6 +1815,7 @@ Your personal information is 100% secure. We only collect this information in or
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="image8" width="227.447998046875" height="277.41598510742188"/>
+        <image name="magnifying_glass" width="25.600000381469727" height="25.600000381469727"/>
         <image name="rxpill" width="256" height="256"/>
         <image name="tutorial0" width="126.86399841308594" height="254.23199462890625"/>
         <image name="tutorial10" width="135.21600341796875" height="271.656005859375"/>

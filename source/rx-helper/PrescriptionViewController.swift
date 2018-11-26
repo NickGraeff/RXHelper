@@ -25,6 +25,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertTable: UITableView!
     @IBOutlet weak var webInfo: UIButton!
+    @IBOutlet weak var magnifyingGlass: UIImageView!
 
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
@@ -66,6 +67,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         if prescription?.name == nil {
             webInfo.isHidden = true
+            magnifyingGlass.isHidden = true
         }
 
 
