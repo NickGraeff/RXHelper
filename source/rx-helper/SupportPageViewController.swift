@@ -74,9 +74,9 @@ class SupportPageViewController: UIViewController, UITextViewDelegate {
     }
 
     @IBAction func reportIssue(_ sender: Any) {
-        let subject = "RxHelper Issue"
-        let body = "Hi, I have an issue"
-        let coded = "mailto:rxheler18@gmail.com?subject=\(subject)&body=\(body)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let subject = "Rx Helper Issue"
+        let body = "Hello, I have an issue."
+        let coded = "mailto:rxhelper18@gmail.com?subject=\(subject)&body=\(body)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
 
         if let emailURL:NSURL = NSURL(string: coded!)
         {

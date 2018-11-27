@@ -25,6 +25,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertTable: UITableView!
     @IBOutlet weak var webInfo: UIButton!
+    @IBOutlet weak var magnifyingGlass: UIImageView!
 
     let searchController = UISearchController(searchResultsController: nil)
     let rxlist = try! JSON(data: NSData(contentsOfFile: Bundle.main.path(forResource: "rxListMed", ofType: "json")!)! as Data)
@@ -66,6 +67,7 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         if prescription?.name == nil {
             webInfo.isHidden = true
+            magnifyingGlass.isHidden = true
         }
 
 
@@ -86,7 +88,21 @@ class PrescriptionViewController: UIViewController, UITableViewDataSource, UITab
 
         nameField.setBottomBorder()
         dosageField.setBottomBorder()
-        //self.hideKeyboardWhenTappedAround()
+
+        //init toolbar
+        let toolbar:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0,  width: self.view.frame.size.width, height: 30))
+        //create left side empty space so that done button set on right side
+        let flexSpace = UIBarButtonItem(barButtonSystemItem:    .flexibleSpace, target: nil, action: nil)
+        let doneBtn: UIBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(PrescriptionViewController.doneButtonAction))
+        toolbar.setItems([flexSpace, doneBtn], animated: false)
+        toolbar.sizeToFit()
+        //setting toolbar as inputAccessoryView
+        self.remainingDosageField.inputAccessoryView = toolbar
+
+    }
+
+    @objc func doneButtonAction() {
+        self.view.endEditing(true)
     }
 
     // If user changes text, hide the tableView

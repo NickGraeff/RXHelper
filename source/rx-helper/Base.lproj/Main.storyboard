@@ -190,7 +190,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7e-zT-Lt1">
-                                <rect key="frame" x="22.666666666666657" y="245" width="330" height="30"/>
+                                <rect key="frame" x="20" y="245" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="bWb-oD-de4"/>
                                     <constraint firstAttribute="height" constant="30" id="y7P-PW-9on"/>
@@ -199,8 +199,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="name"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pharmacy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-wf-tFY">
-                                <rect key="frame" x="22.666666666666657" y="304" width="330" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pharmacy (Optional)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IVG-wf-tFY">
+                                <rect key="frame" x="20" y="304" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NPq-AL-ArJ"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="fqc-MT-X5r"/>
@@ -210,7 +210,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="next" textContentType="organization"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uiT-0r-jDw">
-                                <rect key="frame" x="22.666666666666657" y="481" width="330" height="30"/>
+                                <rect key="frame" x="20" y="481" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="T8v-tG-KOF"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="jRl-zG-Pgv"/>
@@ -219,8 +219,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pharmacy Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-N2-mkh">
-                                <rect key="frame" x="22.666666666666657" y="363" width="330" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pharmacy Phone Number (Optional)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmQ-N2-mkh">
+                                <rect key="frame" x="20" y="363" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="MF5-PJ-Rkz"/>
                                     <constraint firstAttribute="height" constant="30" id="QN8-TB-c3z"/>
@@ -230,7 +230,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="next" textContentType="tel"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="87m-r0-7ft">
-                                <rect key="frame" x="22.666666666666657" y="422" width="330" height="30"/>
+                                <rect key="frame" x="20" y="422" width="335" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QWG-kt-qhc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="hKx-On-sWg"/>
@@ -587,13 +587,17 @@
                                 <rect key="frame" x="38" y="360" width="300" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <state key="normal" title="Get Medicine Info">
+                                <state key="normal" title="Get Medication Information">
                                     <color key="titleColor" red="0.35508963469999999" green="0.60956072809999995" blue="0.83468419309999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="a1w-N4-fdN" kind="show" identifier="segue01" id="MsS-bs-T2w"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magnifying_glass" translatesAutoresizingMaskIntoConstraints="NO" id="e70-UF-jJS">
+                                <rect key="frame" x="38" y="374" width="18" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Aut-Em-pGd">
                                 <rect key="frame" x="16" y="594" width="327" height="144"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -655,17 +659,17 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DoR-p8-K8H">
-                                <rect key="frame" x="15" y="217" width="334" height="260"/>
+                                <rect key="frame" x="15" y="217" width="340" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell02" rowHeight="67" id="7p3-Ci-aVq">
-                                        <rect key="frame" x="0.0" y="28" width="334" height="67"/>
+                                        <rect key="frame" x="0.0" y="28" width="340" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7p3-Ci-aVq" id="GK5-0y-xQg">
-                                            <rect key="frame" x="0.0" y="0.0" width="334" height="67"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
@@ -702,6 +706,7 @@
                     <connections>
                         <outlet property="alertTable" destination="4sa-9A-c8f" id="caB-Kt-Zpw"/>
                         <outlet property="dosageField" destination="5Vy-xP-UFJ" id="XSO-jO-zJn"/>
+                        <outlet property="magnifyingGlass" destination="e70-UF-jJS" id="z4T-bL-pSI"/>
                         <outlet property="nameField" destination="usU-XW-qeO" id="kM3-Sz-XJK"/>
                         <outlet property="remainingDosageField" destination="81r-fD-zhb" id="6vV-wP-Wgz"/>
                         <outlet property="saveButton" destination="6Ic-Yn-0gO" id="ldE-z3-w7E"/>
@@ -867,9 +872,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQ1-Bf-wHG">
-                                <rect key="frame" x="140.66666666666666" y="570" width="94" height="30"/>
+                                <rect key="frame" x="144.66666666666697" y="570" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Report Issues"/>
+                                <state key="normal" title="Report Issue"/>
                                 <connections>
                                     <action selector="reportIssue:" destination="GGf-Yu-fjH" eventType="touchUpInside" id="mgX-oc-S0O"/>
                                 </connections>
@@ -949,25 +954,101 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-NE-gcY">
-                                <rect key="frame" x="67" y="175" width="260" height="484"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfQ-NE-gcY">
+                                <rect key="frame" x="0.0" y="80" width="343" height="567"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">Version 1.0.
-2018 rx-helper Project Ltd.
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Version 1.0.
+2018 Rx Helper Project Ltd.
 
-
-	Rx-helper –  Easy to use and reliable app that helps you remember to take your medications at the right time. It allows you to create any type of recurring reminders (every X hours, specific times, daily, weekly, monthly, every  X days, etc). It tracks the remaining quantity of each medication and shows a refill alert when running low. 
-
-It has everything you need: 
+Rx Helper –  Easy to use and reliable app that helps you remember to take your medications at the right time. It allows you to create any type of recurring reminders (every X hours, specific times, daily, weekly, monthly, every  X days, etc). It tracks the remaining quantity of each medication and shows a refill alert when running low. 
+It has everything you need: </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 •	Reschedule Medications 
 •	Refill Reminders 
-•	Multiple User use                                    
-By remembering to take all of your medications at the right time, you are taking control of your own health. 
-
-With rx-helper, you won’t forget to take your medications. 
+•	Multi-user Use                                    
+By remembering to take all of your medications at the right time, you are taking control of your own health. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+You can contact through our email: rxhelper18@gmail.com
+
+If you find any issues/bugs within our app you may also contact us through the "Report Issue" button in the Settings page.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1483,19 +1564,26 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-Wg-QDp">
-                                <rect key="frame" x="16" y="65" width="343" height="698"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-Wg-QDp">
+                                <rect key="frame" x="0.0" y="80" width="359" height="698"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">Privacy Policy
+                                <attributedString key="attributedText">
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
 
-Rx-Helper Dev Team built the Rx-Helper app as a Free app. This SERVICE is provided by Rx-Helper Dev Team at no cost and is intended for use as is.
+Rx Helper Dev Team built the Rx Helper app as a Free app. This SERVICE is provided by Rx Helper Dev Team at no cost and is intended for use as is.
 
 This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
 
 If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
 
-The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Rx-Helper unless otherwise defined in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Rx Helper unless otherwise defined in this Privacy Policy.
 
 Information Collection and Use
 
@@ -1544,8 +1632,12 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 
 Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1565,31 +1657,117 @@ If you have any questions or suggestions about our Privacy Policy, do not hesita
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-aY-8NO">
-                                <rect key="frame" x="16" y="77" width="343" height="701"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCv-aY-8NO">
+                                <rect key="frame" x="0.0" y="80" width="359" height="693"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <string key="text">What is Rx Helper?
-Rx Helper is an application dedicated to helping you remember to take your medication!
+                                <attributedString key="attributedText">
+                                    <fragment content="What is Rx Helper?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Rx Helper is an application dedicated to helping you remember to take your medication!
 
-How do I get started?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How do I get started?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 If you're reading this, then you're already halfway there. You can add and manage your prescriptions from the home screen. There's also a handy tutorial in settings if you have any questions.
 
-Is my account fully set up?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Is my account fully set up?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 That depends. You can add and manage your prescriptions as your needs change. In addition to this, you can add in your pharmacist and their phone number if you haven't already.
 
-Can I keep track of my family member's prescriptions?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Can I keep track of my family member's prescriptions?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 Yes! Not only can you keep track of your family member's prescriptions, but you can keep track of your pets' prescriptions as well.
 
-How much does this service cost?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="How much does this service cost?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 Rx Helper is 100% free. We wanted to make a simple, easy-to-use app that is accessible to anyone and everyone, because your health should be your #1 priority.
 
-Does this app have advertisements?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Does this app have advertisements?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 No, this app is 100% advertisement-free because we want to deliver to you the best experience possible.
 
-Why do you need my personal information?
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Why do you need my personal information?">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
 Your personal information is 100% secure. We only collect this information in order to help personalize the app for you. We won't use your personal information for anything you wouldn't want us to.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1637,6 +1815,7 @@ Your personal information is 100% secure. We only collect this information in or
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
         <image name="image8" width="227.447998046875" height="277.41598510742188"/>
+        <image name="magnifying_glass" width="25.600000381469727" height="25.600000381469727"/>
         <image name="rxpill" width="256" height="256"/>
         <image name="tutorial0" width="126.86399841308594" height="254.23199462890625"/>
         <image name="tutorial10" width="135.21600341796875" height="271.656005859375"/>
