@@ -15,18 +15,18 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     lazy var orderedViewControllers: [UIViewController] = {
         return [self.newVc(viewController: "sbBlue"),
                 self.newVc(viewController: "sbRed"),
-                self.newVc(viewController: "sbGreen"),
-                self.newVc(viewController: "sbWhite"),
                 self.newVc(viewController: "sbBlack")]
+                //self.newVc(viewController: "sbWhite"),
+                //self.newVc(viewController: "sbBlack")]
     }()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 35.0){
+       /* DispatchQueue.main.asyncAfter(deadline: .now() + 35.0){
             self.performSegue(withIdentifier: "toWelcome", sender: nil)
-        }
+        }*/
         
         
         

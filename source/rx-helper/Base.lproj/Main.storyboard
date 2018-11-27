@@ -1006,46 +1006,7 @@ You can contact through our email: rxhelper18@gmail.com
 If you find any issues/bugs within our app you may also contact us through the "Report Issue" button in the Settings page.</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1459,8 +1420,12 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial2" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-Xs-PXh">
-                                <rect key="frame" x="16" y="84" width="336" height="583"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filler" translatesAutoresizingMaskIntoConstraints="NO" id="fv0-Xs-PXh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.16.17 PM" translatesAutoresizingMaskIntoConstraints="NO" id="StS-sR-y4i">
+                                <rect key="frame" x="0.0" y="114" width="375" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1475,23 +1440,17 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
         <!--View Controller-->
         <scene sceneID="rhJ-bf-zuy">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdr-kp-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="sbGreen" id="TvH-D3-5J0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aF6-ZP-5aa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial11" translatesAutoresizingMaskIntoConstraints="NO" id="dhd-Vr-Z3E">
-                                <rect key="frame" x="16" y="111" width="350" height="520"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="UKB-Hw-pUJ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdr-kp-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4544.8000000000002" y="1631.5270935960591"/>
+            <point key="canvasLocation" x="5697" y="2441"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2cW-5u-af9">
@@ -1501,8 +1460,12 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial0" translatesAutoresizingMaskIntoConstraints="NO" id="zmm-Sh-dqd">
-                                <rect key="frame" x="16" y="79" width="343" height="591"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filler" translatesAutoresizingMaskIntoConstraints="NO" id="m81-vR-g3Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="823"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.15.24 PM" translatesAutoresizingMaskIntoConstraints="NO" id="rct-Ow-jmq">
+                                <rect key="frame" x="0.0" y="117" width="375" height="511"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -1522,10 +1485,28 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial10" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-1M-rLo">
-                                <rect key="frame" x="16" y="85" width="343" height="581"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filler" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-1M-rLo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.16.44 PM" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-Pr-gCs">
+                                <rect key="frame" x="0.0" y="117" width="375" height="498"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcG-Ub-hy8">
+                                <rect key="frame" x="47" y="676" width="281" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58879106285265359" green="0.71349035769431912" blue="0.85134438451776651" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fog-eU-5dq" kind="show" identifier="toWelcome" id="4nQ-3b-WXM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bsu-Zq-qns"/>
@@ -1533,7 +1514,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6vh-MF-Ehv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5248.8000000000002" y="1650"/>
+            <point key="canvasLocation" x="4896.8000000000002" y="1690.6403940886701"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SU7-iV-ZIn">
@@ -1542,19 +1523,13 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                     <view key="view" contentMode="scaleToFill" id="GWc-ZJ-jkD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image8" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-71-pAk">
-                                <rect key="frame" x="16" y="115" width="343" height="536"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5no-Tc-eIh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcl-TX-DOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4968.8000000000002" y="2314.2857142857142"/>
+            <point key="canvasLocation" x="5001" y="2441"/>
         </scene>
         <!--Privacy Policy-->
         <scene sceneID="aAl-xT-eqa">
@@ -1575,7 +1550,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <mutableString key="content">
+                                        <string key="content">
 
 Rx Helper Dev Team built the Rx Helper app as a Free app. This SERVICE is provided by Rx Helper Dev Team at no cost and is intended for use as is.
 
@@ -1632,7 +1607,7 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 
 Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</mutableString>
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="14"/>
                                         </attributes>
@@ -1814,17 +1789,16 @@ Your personal information is 100% secure. We only collect this information in or
     </scenes>
     <resources>
         <image name="LogoNoBackground" width="2732" height="2048"/>
-        <image name="image8" width="227.447998046875" height="277.41598510742188"/>
-        <image name="magnifying_glass" width="25.600000381469727" height="25.600000381469727"/>
+        <image name="Screen Shot 2018-11-27 at 3.15.24 PM" width="670" height="789"/>
+        <image name="Screen Shot 2018-11-27 at 3.16.17 PM" width="676" height="790"/>
+        <image name="Screen Shot 2018-11-27 at 3.16.44 PM" width="707" height="787"/>
+        <image name="filler" width="379" height="545"/>
+        <image name="magnifying_glass" width="32" height="32"/>
         <image name="rxpill" width="256" height="256"/>
-        <image name="tutorial0" width="126.86399841308594" height="254.23199462890625"/>
-        <image name="tutorial10" width="135.21600341796875" height="271.656005859375"/>
-        <image name="tutorial11" width="158.3280029296875" height="273.16799926757812"/>
-        <image name="tutorial2" width="81.360000610351562" height="160.7760009765625"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g9g-aY-nnD"/>
-        <segue reference="SRL-wu-cp2"/>
+        <segue reference="4nQ-3b-WXM"/>
         <segue reference="PnF-Z9-q2T"/>
         <segue reference="nJG-Ol-Vdj"/>
     </inferredMetricsTieBreakers>
