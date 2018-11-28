@@ -1424,7 +1424,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.16.17 PM" translatesAutoresizingMaskIntoConstraints="NO" id="StS-sR-y4i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.16.17 PM" translatesAutoresizingMaskIntoConstraints="NO" id="StS-sR-y4i">
                                 <rect key="frame" x="0.0" y="114" width="375" height="533"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1440,7 +1440,6 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
         <!--View Controller-->
         <scene sceneID="rhJ-bf-zuy">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdr-kp-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="sbGreen" id="TvH-D3-5J0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aF6-ZP-5aa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -1449,6 +1448,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                         <viewLayoutGuide key="safeArea" id="UKB-Hw-pUJ"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rdr-kp-E3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5697" y="2441"/>
         </scene>
@@ -1464,7 +1464,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="823"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.15.24 PM" translatesAutoresizingMaskIntoConstraints="NO" id="rct-Ow-jmq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.15.24 PM" translatesAutoresizingMaskIntoConstraints="NO" id="rct-Ow-jmq">
                                 <rect key="frame" x="0.0" y="117" width="375" height="511"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1489,7 +1489,7 @@ Questions about the Terms of Service should be sent to us at rxhelper18@gmail.co
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.16.44 PM" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-Pr-gCs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-11-27 at 3.16.44 PM" translatesAutoresizingMaskIntoConstraints="NO" id="GSf-Pr-gCs">
                                 <rect key="frame" x="0.0" y="117" width="375" height="498"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1793,7 +1793,7 @@ Your personal information is 100% secure. We only collect this information in or
         <image name="Screen Shot 2018-11-27 at 3.16.17 PM" width="676" height="790"/>
         <image name="Screen Shot 2018-11-27 at 3.16.44 PM" width="707" height="787"/>
         <image name="filler" width="379" height="545"/>
-        <image name="magnifying_glass" width="32" height="32"/>
+        <image name="magnifying_glass" width="25.600000381469727" height="25.600000381469727"/>
         <image name="rxpill" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
